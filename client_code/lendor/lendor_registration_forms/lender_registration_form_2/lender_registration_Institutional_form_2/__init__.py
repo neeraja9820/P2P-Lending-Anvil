@@ -47,8 +47,17 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     if self.last_six_statements:
         self.file_loader_1.file = self.last_six_statements
     
-    # Any code you write here will run before the form opens.
+   #Function to open the form with a specific user ID
+  def open_form_with_user_id(user_id):
+    # Instantiate the form with the user_id argument
+    my_form = lender_registration_Institutional_form_2(user_id=user_id)
+    # Open the form
+    my_form.show()
 
+# Example usage
+user_id = "123456789"  # Replace this with the actual user ID
+open_form_with_user_id(user_id)
+# Any code you write here will run before the form opens.
   def button_2_click(self, **event_args):
     industry_type = self.text_box_1.text
     turn_over = self.text_box_2.text
@@ -81,5 +90,9 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
 
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
-    pas
+    pass
+
+  def date_picker_1_change(self, **event_args):
+    """This method is called when the selected date changes"""
+    self.date_picker_1.date = datetime.now().date()
     
