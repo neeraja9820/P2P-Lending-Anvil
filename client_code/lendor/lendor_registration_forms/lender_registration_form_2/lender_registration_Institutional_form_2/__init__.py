@@ -79,10 +79,4 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     if file:
       self.image_1.source = self.file_loader_1.file
       
-  def check_due_date_alert(self, due_date):
-        try:
-            current_date = datetime.now().date()
-            if due_date < current_date:
-                Notification("The due date has passed!").show()
-        except Exception as e:
-            Notification("An error occurred while checking due date: {}".format(str(e))).show()  
+  
