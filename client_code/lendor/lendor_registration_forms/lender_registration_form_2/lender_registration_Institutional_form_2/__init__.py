@@ -47,16 +47,7 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     if self.last_six_statements:
         self.file_loader_1.file = self.last_six_statements
     
-   #Function to open the form with a specific user ID
-  def open_form_with_user_id(user_id):
-    # Instantiate the form with the user_id argument
-    my_form = lender_registration_Institutional_form_2(user_id=user_id)
-    # Open the form
-    my_form.show()
-
-# Example usage
-user_id = "123456789"  # Replace this with the actual user ID
-open_form_with_user_id(user_id)
+  
 # Any code you write here will run before the form opens.
   def button_2_click(self, **event_args):
     industry_type = self.text_box_1.text
