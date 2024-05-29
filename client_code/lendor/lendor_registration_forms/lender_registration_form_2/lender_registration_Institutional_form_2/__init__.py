@@ -55,7 +55,7 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     turn_over = self.text_box_2.text
     year = self.date_picker_1.date
     last_six_statements = self.file_loader_1.file
-    user_id=self.userId
+    user_id=self.user_id
     
     # Get today's date
     today = date.today()

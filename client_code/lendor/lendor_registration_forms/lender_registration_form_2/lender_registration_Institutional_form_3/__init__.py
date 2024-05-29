@@ -7,7 +7,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-import re
+
 
 class lender_registration_Institutional_form_3(lender_registration_Institutional_form_3Template):
   def __init__(self,user_id, **properties):
