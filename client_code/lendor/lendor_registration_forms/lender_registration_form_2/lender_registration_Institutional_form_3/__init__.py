@@ -43,16 +43,6 @@ class lender_registration_Institutional_form_3(lender_registration_Institutional
     cin = self.text_box_4.text
     proof_verification = self.file_loader_1.file
     user_id = self.userId
-
-     # CIN validation
-    if not (cin and len(cin) == 21 and cin.isalnum()):
-      Notification("CIN must be exactly 21 alphanumeric characters").show()
-      return
-    
-    # DIN validation
-    if not (din and len(din) == 8 and din.isdigit()):
-      Notification("DIN must be exactly 8 digits").show()
-      return
       
     if not reg_office_add  or not proof_verification or not din or not cin:
       Notification("Please all the fields").show()
