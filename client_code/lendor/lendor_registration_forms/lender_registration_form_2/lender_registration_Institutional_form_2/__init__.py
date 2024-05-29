@@ -8,10 +8,12 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from datetime import datetime, timedelta, date
+from ...bank_user
 
 class lender_registration_Institutional_form_2(lender_registration_Institutional_form_2Template):
   def init(self,user_id, **properties):
     self.userId = user_id
+    user_id=self.userId
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     user_data = anvil.server.call('get_user_data', user_id)
@@ -53,8 +55,7 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     turn_over = self.text_box_2.text
     year = self.date_picker_1.date
     last_six_statements = self.file_loader_1.file
-    user_id = self.userId
-    self.userId = user_id
+    user_id=self.userId
     
     # Get today's date
     today = date.today()
