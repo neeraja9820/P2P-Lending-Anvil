@@ -90,7 +90,7 @@ def add_borrower_step6(bank_id, bank_branch, user_id):
     if row:
         row[0]['bank_id'] = bank_id
         row[0]['account_bank_branch'] = bank_branch
-        ascend_value = final_points_update_ascend_table(user_id)
+        ascend_value = final_points_update_ascend_table()(user_id)
         if ascend_value is not None:
            row[0]['ascend_value'] = float(ascend_value)
         else:
