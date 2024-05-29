@@ -94,11 +94,11 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
   def date_picker_1_change(self, **event_args):
     """This method is called when the selected date changes"""
     selected_date = self.date_picker_1.date
-    # today = date.today()
+    today = date.today()
    
-    # if selected_date and selected_date.year > today.year:
-    #   alert("The year cannot be in the future. Please select a valid year.", title="Invalid Year")
-    # elif selected_date and selected_date.year == today.year and selected_date.month > today.month:
-    #   alert("The month cannot be in the future. Please select a valid month.", title="Invalid Month")
-    # elif selected_date and selected_date.year == today.year and selected_date.month == today.month and selected_date.day > today.day:
-    #   alert("The date cannot be in the future. Please select a valid date.", title="Invalid Date")
+    if selected_date and selected_date.year > today.year:
+      alert("The year cannot be in the future. Please select a valid year.", title="Invalid Year")
+    elif selected_date and selected_date.year == today.year and selected_date.month > today.month:
+      alert("The month cannot be in the future. Please select a valid month.", title="Invalid Month")
+    elif selected_date and selected_date.year == today.year and selected_date.month == today.month and selected_date.day > today.day:
+      alert("The date cannot be in the future. Please select a valid date.", title="Invalid Date")

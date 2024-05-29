@@ -7,6 +7,7 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import re
 
 class lender_registration_Institutional_form_3(lender_registration_Institutional_form_3Template):
   def __init__(self,user_id, **properties):
@@ -42,6 +43,16 @@ class lender_registration_Institutional_form_3(lender_registration_Institutional
     cin = self.text_box_4.text
     proof_verification = self.file_loader_1.file
     user_id = self.userId
+
+     # Validate DIN
+    if not self.validate_din(din):
+      Notification("Invalid DIN format. Please enter a valid DIN.").show()
+      return
+     # Validate CIN
+    if not self.validate_cin(cin):
+      Notification("Invalid CIN format. Please enter a valid CIN.").show()
+      return 
+      
     if not reg_office_add  or not proof_verification or not din or not cin:
       Notification("Please all the fields").show()
     else:
@@ -62,4 +73,20 @@ class lender_registration_Institutional_form_3(lender_registration_Institutional
     """This method is called when a new file is loaded into this FileLoader"""
     if file:
       self.image_1.source = self.file_loader_1.file
+
+  def validate_din(self, din):
+    """
+    Validates the DIN (Director Identification Number) format.
+    Returns True if the DIN is valid, False otherwise.
+    """
+    din_pattern = r'^\d{8}$'
+    return bool(re.match(din_pattern, din))
+
+  def validate_cin(self, cin):
+    """
+    Validates the CIN (Corporate Identification Number) format.
+    Returns True if the CIN is valid, False otherwise.
+    """
+    cin_pattern = r'^[L|U]\d{5}[A-Z]{2}\d{4}[A-Z]{3}\d{1}$'
+    return bool(re.match(cin_pattern, cin))
     
