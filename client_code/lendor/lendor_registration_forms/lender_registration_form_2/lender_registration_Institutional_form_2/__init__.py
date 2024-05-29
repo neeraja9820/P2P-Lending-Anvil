@@ -54,6 +54,7 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     year = self.date_picker_1.date
     last_six_statements = self.file_loader_1.file
     user_id = self.userId
+    self.userId = user_id
     
     # Get today's date
     today = date.today()
