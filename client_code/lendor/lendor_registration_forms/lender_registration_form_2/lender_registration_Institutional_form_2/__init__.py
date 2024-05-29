@@ -78,5 +78,9 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     """This method is called when a new file is loaded into this FileLoader"""
     if file:
       self.image_1.source = self.file_loader_1.file
+
+  def date_picker_1_change(self, **event_args):
+    """This method is called when the selected date changes"""
+    pass
       
   
