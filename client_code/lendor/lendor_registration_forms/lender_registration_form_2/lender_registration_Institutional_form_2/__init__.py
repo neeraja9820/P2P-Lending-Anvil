@@ -7,11 +7,10 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from datetime import datetime, timedelta
-
+from datetime import datetime, timedelta, date
 
 class lender_registration_Institutional_form_2(lender_registration_Institutional_form_2Template):
-  def __init__(self,user_id, **properties):
+  def init(self,user_id, **properties):
     self.userId = user_id
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -56,11 +55,24 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     last_six_statements = self.file_loader_1.file
     user_id = self.userId
     
+    # Get today's date
+    today = date.today()
+    
+    # Check if the selected date is in the future
+    if year and year.year > today.year:
+      alert("The year cannot be in the future. Please select a valid year.", title="Invalid Year")
+      return
+    elif year and year.year == today.year and year.month > today.month:
+      alert("The month cannot be in the future. Please select a valid month.", title="Invalid Month")
+      return
+    elif year and year.year == today.year and year.month == today.month and year.day > today.day:
+      alert("The date cannot be in the future. Please select a valid date.", title="Invalid Date")
+      return
+
     if not year or not industry_type or not turn_over or not last_six_statements:
       Notification("Please fill all the fields").show()
     else:
-     today = datetime.today()
-     months = today.year * 12 + today.month - year.year * 12 - year.month
+     months = (datetime.now().year - year.year) * 12 + (datetime.now().month - year.month)
      anvil.server.call('add_lendor_institutional_form_2',year,months,industry_type,turn_over,last_six_statements,user_id)
      open_form('lendor.lendor_registration_forms.lender_registration_form_2.lender_registration_Institutional_form_3',user_id = user_id)
      """This method is called when the button is clicked"""
@@ -82,9 +94,14 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
   def date_picker_1_change(self, **event_args):
     """This method is called when the selected date changes"""
     selected_date = self.date_picker_1.date
-    today = datetime.today().date()
+    today = date.today()
     two_days_before = today - timedelta(days=2)
     
     if selected_date and selected_date <= two_days_before:
       Notification("The selected date is within two days before today. Please choose a valid date.").show()
-    
+    elif selected_date and selected_date.year > today.year:
+      alert("The year cannot be in the future. Please select a valid year.", title="Invalid Year")
+    elif selected_date and selected_date.year == today.year and selected_date.month > today.month:
+      alert("The month cannot be in the future. Please select a valid month.", title="Invalid Month")
+    elif selected_date and selected_date.year == today.year and selected_date.month == today.month and selected_date.day > today.day:
+      alert("The date cannot be in the future. Please select a valid date.", title="Invalid Date")
