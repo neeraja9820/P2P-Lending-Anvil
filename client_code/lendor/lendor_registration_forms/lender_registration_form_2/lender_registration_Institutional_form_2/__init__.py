@@ -81,6 +81,11 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
 
   def date_picker_1_change(self, **event_args):
     """This method is called when the selected date changes"""
-    pass
+    selected_date = self.date_picker_1.date
+    today = datetime.today().date()
+    two_days_before = today - timedelta(days=2)
+    
+    if selected_date and selected_date <= two_days_before:
+      Notification("The selected date is within two days before today. Please choose a valid date.").show()
       
   
