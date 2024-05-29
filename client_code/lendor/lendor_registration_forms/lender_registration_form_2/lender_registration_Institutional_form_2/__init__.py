@@ -8,11 +8,11 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from datetime import datetime, timedelta, date
-from ...bank_user
+from .....bank_users.main_form import main_form_module
 
 class lender_registration_Institutional_form_2(lender_registration_Institutional_form_2Template):
   def init(self,user_id, **properties):
-    self.userId = user_id
+    self.user_id = main_form_module.userId
     user_id=self.userId
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
