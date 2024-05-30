@@ -19,20 +19,20 @@ class add_subcategory(add_subcategoryTemplate):
 
   def refresh(self):
     """Refresh repeating panels with the latest data"""
-    self.repeating_panel_1.items = app_tables.fin_admin_beseem_categories.search(group_name="gender")
-    self.repeating_panel_2.items = app_tables.fin_admin_beseem_categories.search(group_name="qualification")
-    self.repeating_panel_3.items = app_tables.fin_admin_beseem_categories.search(group_name="marital_status")
-    self.repeating_panel_5.items = app_tables.fin_admin_beseem_categories.search(group_name="profession")
-    self.repeating_panel_6.items = app_tables.fin_admin_beseem_categories.search(group_name="organization_type")
-    self.repeating_panel_7.items = app_tables.fin_admin_beseem_categories.search(group_name="present_address")
-    self.repeating_panel_8.items = app_tables.fin_admin_beseem_categories.search(group_name="duration_at_address")
-    self.repeating_panel_9.items = app_tables.fin_admin_beseem_categories.search(group_name="salary_type")
-    self.repeating_panel_10.items = app_tables.fin_admin_beseem_categories.search(group_name='spouse_profession')
-    self.repeating_panel_11.items = app_tables.fin_admin_beseem_categories.search(group_name='age_of_business')
-    self.repeating_panel_12.items = app_tables.fin_admin_beseem_categories.search(group_name="home_loan")
-    self.repeating_panel_13.items = app_tables.fin_admin_beseem_categories.search(group_name="other_loan")
-    self.repeating_panel_14.items = app_tables.fin_admin_beseem_categories.search(group_name="credit_card_loan")
-    self.repeating_panel_15.items = app_tables.fin_admin_beseem_categories.search(group_name="vehicle_loan")
+    self.repeating_panel_1.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="gender")
+    self.repeating_panel_2.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="qualification")
+    self.repeating_panel_3.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="marital_status")
+    self.repeating_panel_5.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="profession")
+    self.repeating_panel_6.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="organization_type")
+    self.repeating_panel_7.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="present_address")
+    self.repeating_panel_8.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="duration_at_address")
+    self.repeating_panel_9.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="salary_type")
+    self.repeating_panel_10.items = app_tables.fin_admin_ascend_categories_categories.search(group_name='spouse_profession')
+    self.repeating_panel_11.items = app_tables.fin_admin_ascend_categories_categories.search(group_name='age_of_business')
+    self.repeating_panel_12.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="home_loan")
+    self.repeating_panel_13.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="other_loan")
+    self.repeating_panel_14.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="credit_card_loan")
+    self.repeating_panel_15.items = app_tables.fin_admin_ascend_categories_categories.search(group_name="vehicle_loan")
   
   def back_btn_click(self, **event_args):
     """This method is called when the button is clicked"""
