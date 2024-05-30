@@ -65,7 +65,7 @@ class add_subcategory(add_subcategoryTemplate):
     """This method is called when the button is clicked"""
     entered_sub = self.text_box_3.text.lower()
     entered_min_pts = int(self.text_box_4.text)
-    new_row = app_tables.fin_admin_beseem_categories.add_row(group_name='qualification',sub_category=entered_sub,min_points=entered_min_pts)
+    new_row = app_tables.fin_admin_ascend_categories.add_row(group_name='qualification',sub_category=entered_sub,min_points=entered_min_pts)
     self.text_box_3.text = ' '
     self.text_box_4.text = ' '
     self.refresh()
