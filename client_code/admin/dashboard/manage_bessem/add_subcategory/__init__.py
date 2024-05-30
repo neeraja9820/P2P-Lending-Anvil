@@ -70,7 +70,7 @@ class add_subcategory(add_subcategoryTemplate):
     self.text_box_4.text = ' '
     self.refresh()
 
-    existing_min_points = [row["min_points"] for row in app_tables.fin_admin_beseem_categories.search(group_name='qualification')]
+    existing_min_points = [row["min_points"] for row in app_tables.fin_admin_ascend_categories.search(group_name='qualification')]
 
     max_points = max(existing_min_points + [entered_min_pts])
 
