@@ -36,7 +36,7 @@ class edit_profession(edit_professionTemplate):
       # Save changes to the database
       self.selected_row.update()
 
-      existing_min_points = [row["min_points"] for row in app_tables.f.search(group_name="profession")]
+      existing_min_points = [row["min_points"] for row in app_tables.fin_admin_ascend_categories.search(group_name="profession")]
       max_points = max(existing_min_points + [updated_points])
 
       existing_group_row  = app_tables.fin_admin_ascend_groups.get(group_name="profession")
