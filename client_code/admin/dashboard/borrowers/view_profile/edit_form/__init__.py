@@ -293,31 +293,28 @@ class edit_form(edit_formTemplate):
     # self.get = get_customer_id_value
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    Notification("You cannot edit the user age.").show()
-    data = tables.app_tables.fin_user_profile.search()
-    # data = tables.app_tables.fin_borrower.search()
-    # data = tables.app_tables.fin_wallet.search()
-    # data = tables.app_tables.fin_wallet_bank_account_table.search()
+    # Calculate the age based on the entered date of birth
+    dob = datetime.strptime(self.text_box_5.text, '%Y-%m')
+    current_date = datetime.now().date()
+    age = current_date.year - dob.year - ((current_date.month, current_date.day) < (dob.month, dob.day))
 
-    id_list = [i['customer_id'] for i in data]
+    # Get the user age entered by the user
+    user_age = int(self.text_box_5.text)
 
-    if self.get in id_list:
-        a = id_list.index(self.get)
-        user_data = data[a]
-    
+    # Compare the calculated age with the entered user age
+    if age != user_age:
+        Notification("The entered date of birth does not match the entered age.").show()
+        return
 
-        # Update user profile data with values from the text boxes
+    # If age validation passed, proceed with updating user profile and related data
+    # Update user profile data with values from the text boxes
+    user_data = app_tables.fin_user_profile.get(customer_id=self.get)
+    if user_data:
         user_data['full_name'] = self.text_box_2.text
         user_data['profile_status'] = bool(self.text_box_3.text)
         user_data['gender'] = self.drop_down_1.selected_value
-        user_data['user_age'] = int(self.text_box_5.text) 
-        dob = self.calculate_dob_from_age(int(self.text_box_5.text))
-        if dob > date.today():
-          Notification("Date of Birth cannot be in the future.").show()
-          return
-        
-        user_data['date_of_birth'] = dob.strftime('%Y-%m-%d')
-        # user_data['date_of_birth'] = self.date_picker_1
+        user_data['user_age'] = user_age
+        user_data['date_of_birth'] = dob
         user_data['mobile'] = self.text_box_7.text
         user_data['aadhaar_no'] = self.text_box_8.text
         user_data['pan_number'] = self.text_box_9.text
@@ -326,7 +323,6 @@ class edit_form(edit_formTemplate):
         user_data['mobile_check'] = bool(self.text_box_13.text)
         user_data['mouther_tounge'] = self.text_box_14.text
         user_data['marital_status'] = self.drop_down_2.selected_value
-        # user_data['Date_mariage'] = self.date_picker_2.date
         user_data['spouse_name'] = self.text_box_17.text
         user_data['spouse_mobile'] = self.text_box_18.text
         user_data['spouse_company_name'] = self.text_box_19.text
@@ -358,10 +354,7 @@ class edit_form(edit_formTemplate):
         user_data['account_type'] = self.drop_down_6.selected_value
         user_data['account_number'] = self.text_box_42.text
         user_data['account_bank_branch'] = self.text_box_43.text
-        # user_data['ifsc_code'] = self.text_box_44.text
         user_data['salary_type'] = self.drop_down_7.selected_value
-        # user_data['select_bank'] = self.text_box_46.text
-        # user_data['net_bank'] = self.text_box_47.text
         user_data['father_name'] = self.text_box_48.text
         user_data['father_age'] = self.text_box_49.text
         user_data['mother_name'] = self.text_box_50.text
@@ -369,51 +362,45 @@ class edit_form(edit_formTemplate):
         user_data['college_name'] = self.text_box_52.text
         user_data['college_id'] = self.text_box_53.text
         user_data['college_address'] = self.text_box_54.text
+
         # Calculate ascend score and update
         ascend_value = anvil.server.call('final_points_update_ascend_table', self.get)
         if ascend_value is not None:
-    # Convert ascend_value to float before assigning it to ascend_score
-         user_data['ascend_value'] = float(ascend_value)
-         # Fetch the borrower data
-         borrower = app_tables.fin_borrower.get(customer_id=self.get)
-         if borrower:
-            borrower['user_name'] = self.text_box_2.text
-         # Update the wallet data
-         wallet = app_tables.fin_wallet.get(customer_id=self.get)
-         if wallet:
-            wallet['user_name'] = self.text_box_2.text 
-         # update the foreclosure
-         foreclosure = app_tables.fin_foreclosure.get(customer_id=self.get)
-         if foreclosure:
-            foreclosure['borrower_name']=self.text_box_2.text
-         # update the extends
-         extends_loan = app_tables.fin_extends_loan.get(customer_id=self.get)
-         if extends_loan:
-            extends_loan['borrower_full_name']=self.text_box_2.text  
-         # update the loan_details 
-         loan_details = app_tables.fin_loan_details.get(customer_id=self.get)
-         if loan_details:
-            loan_details['borrower_full_name']=self.text_box_2.text    
-  
-              # Assign the converted value to ascend_score
-            borrower['ascend_score'] = float(ascend_value)
-        # data.update()
-        print(f"Updated user profile, borrower, foreclosure, extends loan, loan_details and wallet table for customer_id: {self.get}")
-        open_form('admin.dashboard.borrowers.view_profile', self.get)
-  def calculate_dob_from_age(self, age):
-      """Calculate date of birth from age"""
-      today = date.today()
-      year_of_birth = today.year - age
-      dob = date(year_of_birth, today.month, today.day)
-      # Adjust if the birthdate is not valid (e.g., leap year)
-      while True:
-        try:
-          dob = dob.replace(year=year_of_birth)
-          break
-        except ValueError:
-          year_of_birth -= 1
-      return dob    
+            user_data['ascend_value'] = float(ascend_value)
+            user_data['ascend_score'] = float(ascend_value)
 
+        user_data.update()
+
+        # Update related data
+        borrower = app_tables.fin_borrower.get(customer_id=self.get)
+        if borrower:
+            borrower['user_name'] = self.text_box_2.text
+            borrower.save()
+
+        wallet = app_tables.fin_wallet.get(customer_id=self.get)
+        if wallet:
+            wallet['user_name'] = self.text_box_2.text
+            wallet.save()
+
+        foreclosure = app_tables.fin_foreclosure.get(borrower_customer_id=self.get)
+        if foreclosure:
+            foreclosure['borrower_name'] = self.text_box_2.text
+            foreclosure.save()
+
+        extends_loan = app_tables.fin_extends_loan.get(borrower_customer_id=self.get)
+        if extends_loan:
+            extends_loan['borrower_full_name'] = self.text_box_2.text
+            extends_loan.save()
+
+        loan_details = app_tables.fin_loan_details.get(borrower_customer_id=self.get)
+        if loan_details:
+            loan_details['borrower_full_name'] = self.text_box_2.text
+            loan_details.save()
+
+        print(f"Updated user profile, borrower, foreclosure, extends-loan, loan_details and wallet table for customer_id: {self.get}")
+        open_form('admin.dashboard.borrowers.view_profile', self.get)  
+    else:
+        Notification("User profile data not found.").show()
   # def button_2_click(self, **event_args):
   #   """This method is called when the button is clicked"""
   #   data = tables.app_tables.fin_user_profile.search()
