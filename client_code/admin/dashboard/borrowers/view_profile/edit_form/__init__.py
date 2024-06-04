@@ -294,17 +294,17 @@ class edit_form(edit_formTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     # Calculate the age based on the entered date of birth
-    dob = self.text_box_5.text
+    dob_str = self.text_box_5.text
 
-    # # Check if the date of birth is in the correct format
-    # try:
-    #     dob = datetime.strptime(dob_str, '%Y-%m-%d')
-    # except ValueError:
-    #     try:
-    #         dob = datetime.strptime(dob_str, '%m/%d/%Y')
-    #     except ValueError:
-    #         Notification("Please enter the date of birth in the format YYYY-MM-DD or MM/DD/YYYY.").show()
-    #         return
+    # Check if the date of birth is in the correct format
+    try:
+        dob = datetime.strptime(dob_str, '%Y-%m-%d')
+    except ValueError:
+        try:
+            dob = datetime.strptime(dob_str, '%m/%d/%Y')
+        except ValueError:
+            Notification("Please enter the date of birth in the format YYYY-MM-DD or MM/DD/YYYY.").show()
+            return
     current_date = datetime.now().date()
     age = current_date.year - dob.year - ((current_date.month, current_date.day) < (dob.month, dob.day))
 
@@ -411,6 +411,10 @@ class edit_form(edit_formTemplate):
         open_form('admin.dashboard.borrowers.view_profile', self.get)  
     else:
         Notification("User profile data not found.").show()
+except Exception as e:
+        # Handle any exceptions that may occur during the update process
+        print(f"Error updating user profile: {str(e)}")
+        Notification("An error occurred while updating the user profile. Please try again later.").show()  
   # def button_2_click(self, **event_args):
   #   """This method is called when the button is clicked"""
   #   data = tables.app_tables.fin_user_profile.search()
