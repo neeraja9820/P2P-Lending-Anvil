@@ -294,17 +294,17 @@ class edit_form(edit_formTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     # Calculate the age based on the entered date of birth
-    dob_str = self.text_box_5.text
+    dob = self.text_box_5.text
 
-    # Check if the date of birth is in the correct format
-    try:
-        dob = datetime.strptime(dob_str, '%Y-%m-%d')
-    except ValueError:
-        try:
-            dob = datetime.strptime(dob_str, '%m/%d/%Y')
-        except ValueError:
-            Notification("Please enter the date of birth in the format YYYY-MM-DD or MM/DD/YYYY.").show()
-            return
+    # # Check if the date of birth is in the correct format
+    # try:
+    #     dob = datetime.strptime(dob_str, '%Y-%m-%d')
+    # except ValueError:
+    #     try:
+    #         dob = datetime.strptime(dob_str, '%m/%d/%Y')
+    #     except ValueError:
+    #         Notification("Please enter the date of birth in the format YYYY-MM-DD or MM/DD/YYYY.").show()
+    #         return
     current_date = datetime.now().date()
     age = current_date.year - dob.year - ((current_date.month, current_date.day) < (dob.month, dob.day))
 
