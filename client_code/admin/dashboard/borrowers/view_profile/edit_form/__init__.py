@@ -101,6 +101,7 @@ class edit_form(edit_formTemplate):
     self.drop_down_5.items = [(et['borrower_employee_type'], et['borrower_employee_type']) for et in self.employment_type]
     self.drop_down_6.items = [(at['borrower_account_type'], at['borrower_account_type']) for at in self.account_type]
     self.drop_down_7.items = [(st['borrower_salary_type'], st['borrower_salary_type']) for st in self.salary_type]
+    self.drop_down_9.items = [(pt['borrower_profession'], pt['borrower_profession']) for pt in self.profession_type]
     
     a = -1
     for i in self.data:
@@ -111,6 +112,9 @@ class edit_form(edit_formTemplate):
       self.gender_list.append(i['gender'])
       self.age_list.append(i['user_age'])
       self.dob_list.append(i['date_of_birth'])
+      self.address_list.append(i['address'])
+      self.country_list.append(i['country'])
+      self.profession_type_list.append(i['profession_type'])
       self.aadhar_list.append(i['aadhaar_no'])
       self.pan_list.append(i['pan_number'])
       self.city_list.append(i['city'])
@@ -175,6 +179,10 @@ class edit_form(edit_formTemplate):
       self.drop_down_1.selected_value=self.gender_list[c]
       self.set_textbox_visibility(self.text_box_5,self.label_6, self.age_list[c])
       self.set_textbox_visibility(self.text_box,self.label_7, self.dob_list[c])
+      self.set_textbox_visibility(self.text_box_4,self.label_60,self.email_user_list[c])
+      self.set_textbox_visibility(self.text_box_11,self.label_61,self.address_list[c])
+      self.set_textbox_visibility(self.text_box_15,self.label_63,self.country_list[c])
+      self.drop_down_9.selected_value=self.profession_type_list[c]
       self.set_textbox_visibility(self.text_box_7,self.label_10, self.mobile_list[c])
       self.set_textbox_visibility(self.text_box_8,self.label_11, self.aadhar_list[c])
       self.set_textbox_visibility(self.text_box_9,self.label_12, self.pan_list[c])
@@ -316,6 +324,7 @@ class edit_form(edit_formTemplate):
         user_data['gender'] = self.drop_down_1.selected_value
         user_data['user_age'] = int(self.text_box_5.text) 
         user_data['date_of_birth'] = self.text_box.text
+        user_data['email_user'] = self.text_box_4.
         user_data['mobile'] = self.text_box_7.text
         user_data['aadhaar_no'] = self.text_box_8.text
         user_data['pan_number'] = self.text_box_9.text
