@@ -411,7 +411,7 @@ class edit_form(edit_formTemplate):
         print(f"Updated user profile, borrower, foreclosure, extends-loan, loan_details and wallet table for customer_id: {self.get}")
         open_form('admin.dashboard.borrowers.view_profile', self.get)
     else:
-        alert("Customer user data not found. ", title="Error")
+        alert("Customer user d not found. ", title="Error")
     
   # def button_2_click(self, **event_args):
   #   """This method is called when the button is clicked"""
