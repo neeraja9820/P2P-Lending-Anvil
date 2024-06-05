@@ -315,9 +315,6 @@ class edit_form(edit_formTemplate):
     new_dob_year = today.year - entered_age
     new_dob = dob.replace(year=new_dob_year).strftime('%Y-%m-%d')
     self.text_box.text = new_dob  
-    dob.update(age)
-  
-
 
     data = tables.app_tables.fin_user_profile.search()
 
@@ -421,7 +418,7 @@ class edit_form(edit_formTemplate):
         # data.update()
         print(f"Updated user profile, borrower, foreclosure, extends-loan, loan_details and wallet table for customer_id: {self.get}")
         open_form('admin.dashboard.borrowers.view_profile', self.get)
-  
+    
   # def button_2_click(self, **event_args):
   #   """This method is called when the button is clicked"""
   #   data = tables.app_tables.fin_user_profile.search()

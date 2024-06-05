@@ -8,6 +8,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 from anvil import *
+from datetime import datetime, timedelta
 
 
 # Define server function to navigate to the Invest Now form
@@ -186,6 +187,12 @@ def search_borrower(query):
       or query in str(x['email_user'])
     ]
   return result
+def update_dob_from_age(self, age):
+    """Calculate the birth date based on the age provided"""
+    today = datetime.today()
+    birth_date = today - timedelta(days=365.25 * age)  # assuming a year is 365.25 days on average
+    return birth_date.strftime('%Y-%m-%d')  
+  
 
 @anvil.server.callable
 def search_lender(query):
