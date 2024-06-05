@@ -1290,6 +1290,9 @@ db_schema:
     - name: account_type
       admin_ui: {width: 200, order: 8}
       type: string
+    - name: customer_id
+      admin_ui: {width: 200, order: 9}
+      type: number
     title: fin_wallet_bank_account_table
   fin_product_group:
     client: full

@@ -35,7 +35,7 @@ class edit_form(edit_formTemplate):
     self.gender_list = []
     self.age_list = []
     self.dob_list = []
-    self.street_address_list = []
+    self.address_list = []
     self.profession_type_list = []
     self.country_list = []
     self.aadhar_list = []
@@ -79,7 +79,7 @@ class edit_form(edit_formTemplate):
     self.account_type_list = []
     self.account_number = []
     self.account_bank_branch = []
-    self.ifsc_code = []
+    self.bank_id = []
     self.salary_type_list = []
     self.street_list = []
     self.select_bank = []
@@ -112,14 +112,14 @@ class edit_form(edit_formTemplate):
       self.gender_list.append(i['gender'])
       self.age_list.append(i['user_age'])
       self.dob_list.append(i['date_of_birth'])
-      self.street_address_list.append(i['street_adress_1'])
+      self.address_list.append(i['street_adress_1'])
       self.country_list.append(i['country'])
       self.profession_type_list.append(i['profession'])
       self.street_list.append(i['street'])
-      self.aadhar_list.append(i['aadhaar_no'])
-      self.pan_list.append(i['pan_number'])
+      # self.aadhar_list.append(i['aadhaar_no'])
+      # self.pan_list.append(i['pan_number'])
       self.city_list.append(i['city'])
-      self.email_user_list.append(i['email_user'])
+      # self.email_user_list.append(i['email_user'])
       self.last_confirm_list.append(i['last_confirm'])
       self.mobile_check_list.append(i['mobile_check'])
       self.mother_status_list.append(i['marital_status'])
@@ -158,7 +158,7 @@ class edit_form(edit_formTemplate):
       self.account_type_list.append(i['account_type'])
       self.account_number.append(i['account_number'])
       self.account_bank_branch.append(i['account_bank_branch'])
-      # self.ifsc_code.append(i['ifsc_code'])
+      # self.bank_id.append(i['bank_id'])
       self.salary_type_list.append(i['salary_type'])
       # self.select_bank.append(i['select_bank'])
       # self.net_bank.append(i['net_bank'])
@@ -180,13 +180,13 @@ class edit_form(edit_formTemplate):
       self.drop_down_1.selected_value=self.gender_list[c]
       self.set_textbox_visibility(self.text_box_5,self.label_6, self.age_list[c])
       self.set_textbox_visibility(self.text_box,self.label_7, self.dob_list[c])
-      self.set_textbox_visibility(self.text_box_4,self.label_60,self.email_user_list[c])
-      self.set_textbox_visibility(self.text_box_11,self.label_61,self.street_address_list[c])
+      # self.set_textbox_visibility(self.text_box_4,self.label_60,self.email_user_list[c])
+      self.set_textbox_visibility(self.text_box_11,self.label_61,self.address_list[c])
       self.set_textbox_visibility(self.text_box_15,self.label_63,self.country_list[c])
       self.drop_down_9.selected_value=self.profession_type_list[c]
       self.set_textbox_visibility(self.text_box_7,self.label_10, self.mobile_list[c])
-      self.set_textbox_visibility(self.text_box_8,self.label_11, self.aadhar_list[c])
-      self.set_textbox_visibility(self.text_box_9,self.label_12, self.pan_list[c])
+      # self.set_textbox_visibility(self.text_box_8,self.label_11, self.aadhar_list[c])
+      # self.set_textbox_visibility(self.text_box_9,self.label_12, self.pan_list[c])
       self.set_textbox_visibility(self.text_box_10,self.label_13, self.city_list[c])
       self.set_textbox_visibility(self.text_box_12,self.label_15, str(self.last_confirm_list[c]))
       self.set_textbox_visibility(self.text_box_13,self.label_16, str(self.mobile_check_list[c]))
@@ -215,6 +215,7 @@ class edit_form(edit_formTemplate):
       self.drop_down_4.selected_value=self.organization_type_list[c]
       self.drop_down_5.selected_value = self.employment_type_list[c]
       self.set_textbox_visibility(self.text_box_31, self.label_14,self.business_no[c])
+      # self.set_textbox_visibility(self.text_box_44,self.label_48,self.bank_id[c])
       self.set_textbox_visibility(self.text_box_36,self.label_33, self.company_landmark[c])
       self.set_textbox_visibility(self.text_box_37,self.label_39, self.company_address[c])
       self.set_textbox_visibility(self.text_box_38,self.label_40, self.annual_salary[c])
@@ -325,13 +326,13 @@ class edit_form(edit_formTemplate):
         user_data['gender'] = self.drop_down_1.selected_value
         user_data['user_age'] = int(self.text_box_5.text) 
         user_data['date_of_birth'] = self.text_box.text
-        user_data['email_user'] = self.text_box_4.text
+        # user_data['email_user'] = self.text_box_4.text
         user_data['street_adress_1'] = self.text_box_11.text
         user_data['country'] = self.text_box_15.text
         user_data['profession'] = self.drop_down_9.selected_value
         user_data['mobile'] = self.text_box_7.text
-        user_data['aadhaar_no'] = self.text_box_8.text
-        user_data['pan_number'] = self.text_box_9.text
+        # user_data['aadhaar_no'] = self.text_box_8.text
+        # user_data['pan_number'] = self.text_box_9.text
         user_data['city'] = self.text_box_10.text
         user_data['last_confirm'] = bool(self.text_box_12.text)
         user_data['mobile_check'] = bool(self.text_box_13.text)
@@ -369,7 +370,7 @@ class edit_form(edit_formTemplate):
         user_data['account_type'] = self.drop_down_6.selected_value
         user_data['account_number'] = self.text_box_42.text
         user_data['account_bank_branch'] = self.text_box_43.text
-        # user_data['ifsc_code'] = self.text_box_44.text
+        # user_data['bank_id'] = self.text_box_44.text
         user_data['salary_type'] = self.drop_down_7.selected_value
         # user_data['select_bank'] = self.text_box_46.text
         # user_data['net_bank'] = self.text_box_47.text
@@ -420,8 +421,11 @@ class edit_form(edit_formTemplate):
          if loan_details:
             loan_details['borrower_full_name']=self.text_box_2.text 
             loan_details.update()
-           
-  
+         # update the wallet_bank_account_table
+         wallet_bank_account_table = app_tables.fin_wallet_bank_account_table.get(customer_id=self.get)
+         if wallet_bank_account_table:
+            wallet_bank_account_table['account_name']=self.text_box_40.text  
+ 
               # Assign the converted value to ascend_score
             borrower['ascend_score'] = float(ascend_value)
         # Update the user profile

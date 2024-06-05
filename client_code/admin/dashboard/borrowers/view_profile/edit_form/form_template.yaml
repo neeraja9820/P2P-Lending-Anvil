@@ -101,7 +101,7 @@ components:
       name: label_7
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ CJLCWH,YIIGZL'}
     - name: text_box
-      properties: {}
+      properties: {visible: false}
       type: Label
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ CJLCWH,VMZZIJ'}
     - name: label_60
@@ -109,7 +109,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ DVOEFH,BGEFRF'}
     - name: text_box_4
-      properties: {role: outlined}
+      properties: {role: outlined, enabled: true, visible: false}
       type: TextBox
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ DVOEFH,JVCNIK'}
     - type: Label
@@ -170,11 +170,11 @@ components:
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ IZITLP,PMBIGE'}
       event_bindings: {pressed_enter: text_box_1_pressed_enter}
     - name: label_61
-      properties: {text: '   Street Address', bold: true, visible: false}
+      properties: {text: '   Address', bold: true, visible: false}
       type: Label
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ PAFWDM,SMGPYT'}
     - name: text_box_11
-      properties: {role: outlined, visible: true}
+      properties: {role: outlined, visible: false}
       type: TextBox
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ PAFWDM,MLCMKI'}
     - type: Label
@@ -221,7 +221,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ ZABOOT,KGJYYG'}
     - name: text_box_15
-      properties: {role: outlined}
+      properties: {role: outlined, visible: false}
       type: TextBox
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ ZABOOT,GIHIAO'}
     - type: Label
@@ -654,7 +654,7 @@ components:
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ NBYDDG,HDABIC'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Account number', font_size: null, font: '', spacing_above: small,
+        visible: false, text: '   Account number', font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
         underline: false, icon: ''}
       name: label_46

@@ -106,7 +106,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'DKVFGO,OSCEES IHIHBN,EYNAUL'}
   - name: label_129
-    properties: {text: '   Street Address', bold: true, visible: true}
+    properties: {text: '   Address', bold: true, visible: false}
     type: Label
     layout_properties: {grid_position: 'DKVFGO,OSCEES GDXPUY,SDYNZD'}
   - name: label_28
@@ -131,7 +131,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'DKVFGO,OSCEES PCUDSB,GAZBQS'}
   - name: label_131
-    properties: {text: '   Country', bold: true, visible: true}
+    properties: {text: '   Country', bold: true, visible: false}
     type: Label
     layout_properties: {grid_position: 'DKVFGO,OSCEES PZHBLJ,BTQRAE'}
   - name: label_34
@@ -149,7 +149,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'DKVFGO,OSCEES MOERQS,NWDLGI'}
   - name: label_133
-    properties: {text: '   Profession Type', bold: true, visible: true}
+    properties: {text: '   Profession Type', bold: true, visible: false}
     type: Label
     layout_properties: {grid_position: 'DKVFGO,OSCEES JNTRCG,NHXKXV'}
   - name: label_17
