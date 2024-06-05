@@ -35,7 +35,7 @@ class edit_form(edit_formTemplate):
     self.gender_list = []
     self.age_list = []
     self.dob_list = []
-    self.address_list = []
+    self.street_address_list = []
     self.profession_type_list = []
     self.country_list = []
     self.aadhar_list = []
@@ -54,7 +54,6 @@ class edit_form(edit_formTemplate):
     self.mail_id_list = []
     self.qualification_list = []
     self.address_type_list = []
-    self.street_list = []
     self.build_name_list = []
     self.house_no_list = []
     self.landmark_list = []
@@ -82,6 +81,7 @@ class edit_form(edit_formTemplate):
     self.account_bank_branch = []
     self.ifsc_code = []
     self.salary_type_list = []
+    self.street_list = []
     self.select_bank = []
     self.net_bank = []
     self.father_name = []
@@ -112,9 +112,10 @@ class edit_form(edit_formTemplate):
       self.gender_list.append(i['gender'])
       self.age_list.append(i['user_age'])
       self.dob_list.append(i['date_of_birth'])
-      self.address_list.append(i['address'])
+      self.street_address_list.append(i['street_adress_1'])
       self.country_list.append(i['country'])
-      self.profession_type_list.append(i['profession_type'])
+      self.profession_type_list.append(i['profession'])
+      self.street_list.append(i['street'])
       self.aadhar_list.append(i['aadhaar_no'])
       self.pan_list.append(i['pan_number'])
       self.city_list.append(i['city'])
@@ -180,7 +181,7 @@ class edit_form(edit_formTemplate):
       self.set_textbox_visibility(self.text_box_5,self.label_6, self.age_list[c])
       self.set_textbox_visibility(self.text_box,self.label_7, self.dob_list[c])
       self.set_textbox_visibility(self.text_box_4,self.label_60,self.email_user_list[c])
-      self.set_textbox_visibility(self.text_box_11,self.label_61,self.address_list[c])
+      self.set_textbox_visibility(self.text_box_11,self.label_61,self.street_address_list[c])
       self.set_textbox_visibility(self.text_box_15,self.label_63,self.country_list[c])
       self.drop_down_9.selected_value=self.profession_type_list[c]
       self.set_textbox_visibility(self.text_box_7,self.label_10, self.mobile_list[c])
@@ -194,10 +195,10 @@ class edit_form(edit_formTemplate):
       self.set_textbox_visibility(self.text_box_17,self.label_20, self.space_name_list[c])
       self.set_textbox_visibility(self.text_box_24,self.label_27, self.about_list[c])
       self.set_textbox_visibility(self.text_box_26,self.label_29, str(self.alets_list[c]))
+      self.set_textbox_visibility(self.text_box_34,self.label_37,self.street_list[c])
       self.set_textbox_visibility(self.text_box_35,self.label_38, str(self.terms_list[c]))
       self.drop_down_3.selected_value = self.qualification_list[c]
       self.drop_down_4.selected_value = self.address_type_list[c]
-      self.set_textbox_visibility(self.text_box_34,self.label_37, self.street_list[c])
       self.set_textbox_visibility(self.text_box_27,self.label_30, self.build_name_list[c])
       self.set_textbox_visibility(self.text_box_29,self.label_32, self.house_no_list[c])
       self.set_textbox_visibility(self.text_box_28,self.label_31, self.landmark_list[c])
@@ -324,7 +325,10 @@ class edit_form(edit_formTemplate):
         user_data['gender'] = self.drop_down_1.selected_value
         user_data['user_age'] = int(self.text_box_5.text) 
         user_data['date_of_birth'] = self.text_box.text
-        user_data['email_user'] = self.text_box_4.
+        user_data['email_user'] = self.text_box_4.text
+        user_data['street_adress_1'] = self.text_box_11.text
+        user_data['country'] = self.text_box_15.text
+        user_data['profession'] = self.drop_down_9.selected_value
         user_data['mobile'] = self.text_box_7.text
         user_data['aadhaar_no'] = self.text_box_8.text
         user_data['pan_number'] = self.text_box_9.text

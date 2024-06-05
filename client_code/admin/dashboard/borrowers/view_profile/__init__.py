@@ -38,10 +38,9 @@ class view_profile(view_profileTemplate):
     self.terms_list = []
     self.mail_id_list = []
     self.qualification_list = []
-    self.address_list = []
+    self.street_address_list = []
     self.address_type_list = []
     self.profession_type_list = []
-    self.street_list = []
     self.build_name_list = []
     self.house_no_list = []
     self.landmark_list = []
@@ -81,6 +80,7 @@ class view_profile(view_profileTemplate):
     self.college_address = []
     self.running_loan = []
     self.profile = []
+    self.street_list = []
     self.aadhaar_photo = []
     self.pan_photo = []
     self.emp_id_proof = []
@@ -96,12 +96,13 @@ class view_profile(view_profileTemplate):
       self.gender_list.append(i['gender'])
       self.age_list.append(i['user_age'])
       self.dob_list.append(i['date_of_birth'])
-      self.address_list.append(i['address'])
+      self.street_address_list.append(i['street_adress_1'])
       self.country_list.append(i['country'])
-      self.profession_type_list.append(i['profession_type'])
+      self.profession_type_list.append(i['profession'])
       self.aadhar_list.append(i['aadhaar_no'])
       self.pan_list.append(i['pan_number'])
       self.city_list.append(i['city'])
+      self.street_list.append(i['street'])
       self.email_user_list.append(i['email_user'])
       self.last_confirm_list.append(i['last_confirm'])
       self.mobile_check_list.append(i['mobile_check'])
@@ -115,7 +116,6 @@ class view_profile(view_profileTemplate):
       self.mail_id_list.append(i['mail_id'])
       self.qualification_list.append(i['qualification'])
       self.address_type_list.append(i['address_type'])
-      self.street_list.append(i['street'])
       self.build_name_list.append(i['building_name'])
       self.house_no_list.append(i['house_no'])
       self.landmark_list.append(i['house_landmark'])
@@ -173,9 +173,9 @@ class view_profile(view_profileTemplate):
         self.set_label_visibility(self.label_39,self.label_5, self.gender_list[b])
         self.set_label_visibility(self.label_40, self.label_6,str(self.age_list[b]) if self.age_list[b] else '')
         self.set_label_visibility(self.label_41,self.label_7, self.dob_list[b])
-        self.set_label_visibility(self.label_129,self.label_130,self.address_list[b])
-        self.set_label_visibility(self.label_131,self.label_132,self.country_list[b])
-        self.set_label_visibility(self.label_133,self.label_134,self.profession_type_list[b])
+        self.set_label_visibility(self.label_130,self.label_129,self.street_address_list[b])
+        self.set_label_visibility(self.label_132,self.label_131,self.country_list[b])
+        self.set_label_visibility(self.label_134,self.label_133,self.profession_type_list[b])
         self.set_label_visibility(self.label_44,self.label_10, self.mobile_list[b])
         self.set_label_visibility(self.label_45,self.label_11, self.aadhar_list[b])
         self.set_label_visibility(self.label_46,self.label_12, self.pan_list[b])
@@ -188,10 +188,10 @@ class view_profile(view_profileTemplate):
         self.set_label_visibility(self.label_54,self.label_20, self.space_name_list[b])
         self.set_label_visibility(self.label_61,self.label_27, self.about_list[b])
         self.set_label_visibility(self.label_63,self.label_29, bool(self.alets_list[b]))
+        self.set_label_visibility(self.label_37,self.label_71,self.street_list[b])
         self.set_label_visibility(self.label_72,self.label_38, bool(self.terms_list[b]))
         self.set_label_visibility(self.label_69,self.label_35, self.qualification_list[b])
         self.set_label_visibility(self.label_62,self.label_28, self.address_type_list[b])
-        self.set_label_visibility(self.label_71,self.label_37, self.street_list[b])
         self.set_label_visibility(self.label_64,self.label_30, self.build_name_list[b])
         self.set_label_visibility(self.label_66,self.label_32, self.house_no_list[b])
         self.set_label_visibility(self.label_65,self.label_31, self.landmark_list[b])
