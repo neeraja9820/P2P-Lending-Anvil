@@ -324,7 +324,8 @@ class edit_form(edit_formTemplate):
         user_data['gender'] = self.drop_down_1.selected_value
         user_data['user_age'] = int(self.text_box_5.text) 
         user_data['date_of_birth'] = self.text_box.text
-        user_data['email_user'] = self.text_box_4.
+        user_data['email_user'] = self.text_box_4.text
+        user_data['address'] = self.
         user_data['mobile'] = self.text_box_7.text
         user_data['aadhaar_no'] = self.text_box_8.text
         user_data['pan_number'] = self.text_box_9.text
