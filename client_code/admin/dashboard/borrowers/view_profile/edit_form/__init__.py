@@ -295,6 +295,21 @@ class edit_form(edit_formTemplate):
     """This method is called when the button is clicked"""
     # Calculate the age based on the entered date of birth
     Notification("You cannot edit the user age.").show()
+    # Get the entered date of birth
+    dob_text = self.text_box.text
+    dob = datetime.strptime(dob_text, '%Y-%m-%d')
+    
+    # Calculate the age based on the entered date of birth
+    today = datetime.today()
+    age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
+    
+    # Get the entered user age
+    entered_age = int(self.text_box_5.text)
+    
+    # Compare calculated age with entered age
+    if age != entered_age:
+        Notification("Age does not match with the entered date of birth.").show()
+        return
 
     data = tables.app_tables.fin_user_profile.search()
 
@@ -309,10 +324,8 @@ class edit_form(edit_formTemplate):
         user_data['full_name'] = self.text_box_2.text
         user_data['profile_status'] = bool(self.text_box_3.text)
         user_data['gender'] = self.drop_down_1.selected_value
-        user_data['user_age'] = user_age
-        user_data['date_of_birth'] = dob
-        # user_data['user_age'] = int(self.text_box_5.text) 
-        # user_data['date_of_birth'] = self.date_picker_1
+        user_data['user_age'] = int(self.text_box_5.text) 
+        user_data['date_of_birth'] = self.text_box.text
         user_data['mobile'] = self.text_box_7.text
         user_data['aadhaar_no'] = self.text_box_8.text
         user_data['pan_number'] = self.text_box_9.text
