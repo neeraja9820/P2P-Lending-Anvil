@@ -26,6 +26,7 @@ class edit_form(edit_formTemplate):
     self.employment_type = tables.app_tables.fin_borrower_employee_type.search()
     self.account_type = tables.app_tables.fin_borrower_account_type.search()
     self.salary_type = tables.app_tables.fin_borrower_salary_type.search()
+    self.profession_type=tables.app_tables.fin_borrower_profession.search()
   
 
     self.id_list = []
@@ -34,6 +35,9 @@ class edit_form(edit_formTemplate):
     self.gender_list = []
     self.age_list = []
     self.dob_list = []
+    self.address_list = []
+    self.profession_type_list = []
+    self.country_list = []
     self.aadhar_list = []
     self.pan_list = []
     self.city_list = []
