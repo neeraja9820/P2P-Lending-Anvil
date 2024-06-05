@@ -403,6 +403,7 @@ class edit_form(edit_formTemplate):
          wallet = app_tables.fin_wallet.get(customer_id=self.get)
          if wallet:
             wallet['user_name'] = self.text_box_2.text
+            wallet['user_type'] = self.text_box_22.text
             wallet.update()
          # update the foreclosure
          foreclosure = app_tables.fin_foreclosure.get(borrower_customer_id=self.get)
@@ -419,6 +420,7 @@ class edit_form(edit_formTemplate):
          if loan_details:
             loan_details['borrower_full_name']=self.text_box_2.text 
             loan_details.update()
+           
   
               # Assign the converted value to ascend_score
             borrower['ascend_score'] = float(ascend_value)
