@@ -294,27 +294,27 @@ class edit_form(edit_formTemplate):
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    # Calculate the age based on the entered date of birth
-    Notification("You cannot edit the user age.").show()
-    # Get the entered date of birth
-    dob_text = self.text_box.text
-    dob = datetime.strptime(dob_text, '%Y-%m-%d')
+    # # Calculate the age based on the entered date of birth
+    # Notification("You cannot edit the user age.").show()
+    # # Get the entered date of birth
+    # dob_text = self.text_box.text
+    # dob = datetime.strptime(dob_text, '%Y-%m-%d')
     
-    # Calculate the age based on the entered date of birth
-    today = datetime.today()
-    age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
+    # # Calculate the age based on the entered date of birth
+    # today = datetime.today()
+    # age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
     
-    # Get the entered user age
-    entered_age = int(self.text_box_5.text)
+    # # Get the entered user age
+    # entered_age = int(self.text_box_5.text)
     
-    # Compare calculated age with entered age
-    if age != entered_age:
-        Notification("Age does not match with the entered date of birth.").show()
-        return
-    # Automatically update the date of birth based on the entered age
-    new_dob_year = today.year - entered_age
-    new_dob = dob.replace(year=new_dob_year).strftime('%Y-%m-%d')
-    self.text_box.text = new_dob  
+    # # Compare calculated age with entered age
+    # if age != entered_age:
+    #     Notification("Age does not match with the entered date of birth.").show()
+    #     return
+    # # Automatically update the date of birth based on the entered age
+    # new_dob_year = today.year - entered_age
+    # new_dob = dob.replace(year=new_dob_year).strftime('%Y-%m-%d')
+    # self.text_box.text = new_dob  
 
     data = tables.app_tables.fin_user_profile.search()
 
