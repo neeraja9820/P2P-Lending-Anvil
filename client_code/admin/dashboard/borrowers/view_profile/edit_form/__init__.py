@@ -296,25 +296,6 @@ class edit_form(edit_formTemplate):
     """This method is called when the button is clicked"""
     # # Calculate the age based on the entered date of birth
     # Notification("You cannot edit the user age.").show()
-    # # Get the entered date of birth
-    # dob_text = self.text_box.text
-    # dob = datetime.strptime(dob_text, '%Y-%m-%d')
-    
-    # # Calculate the age based on the entered date of birth
-    # today = datetime.today()
-    # age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
-    
-    # # Get the entered user age
-    # entered_age = int(self.text_box_5.text)
-    
-    # # Compare calculated age with entered age
-    # if age != entered_age:
-    #     Notification("Age does not match with the entered date of birth.").show()
-    #     return
-    # # Automatically update the date of birth based on the entered age
-    # new_dob_year = today.year - entered_age
-    # new_dob = dob.replace(year=new_dob_year).strftime('%Y-%m-%d')
-    # self.text_box.text = new_dob  
 
     data = tables.app_tables.fin_user_profile.search()
 
@@ -382,6 +363,15 @@ class edit_form(edit_formTemplate):
         user_data['college_name'] = self.text_box_52.text
         user_data['college_id'] = self.text_box_53.text
         user_data['college_address'] = self.text_box_54.text
+
+      # Calculate age based on the entered date of birth
+        dob_text = self.text_box.text
+        dob = datetime.strptime(dob_text, '%Y-%m-%d')
+        today = datetime.today()
+        age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
+
+        # Update user_age with calculated age
+        user_data['user_age'] = age
         # Calculate ascend score and update
         ascend_value = anvil.server.call('final_points_update_ascend_table', self.get)
         if ascend_value is not None:
@@ -415,9 +405,13 @@ class edit_form(edit_formTemplate):
   
               # Assign the converted value to ascend_score
             borrower['ascend_score'] = float(ascend_value)
-        # data.update()
+        # Update the user profile
+        user_data.update()
+        alert("Date of birth and age updated successfully.", title="Success")
         print(f"Updated user profile, borrower, foreclosure, extends-loan, loan_details and wallet table for customer_id: {self.get}")
         open_form('admin.dashboard.borrowers.view_profile', self.get)
+    else:
+        alert("Customer user data not found. ", title="Error")
     
   # def button_2_click(self, **event_args):
   #   """This method is called when the button is clicked"""
