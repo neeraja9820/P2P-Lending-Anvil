@@ -295,6 +295,7 @@ class edit_form(edit_formTemplate):
     """This method is called when the button is clicked"""
     # Calculate the age based on the entered date of birth
     Notification("You cannot edit the user age.").show()
+
     data = tables.app_tables.fin_user_profile.search()
 
     id_list = [i['customer_id'] for i in data]
@@ -308,7 +309,9 @@ class edit_form(edit_formTemplate):
         user_data['full_name'] = self.text_box_2.text
         user_data['profile_status'] = bool(self.text_box_3.text)
         user_data['gender'] = self.drop_down_1.selected_value
-        user_data['user_age'] = int(self.text_box_5.text) 
+        user_data['user_age'] = user_age
+        user_data['date_of_birth'] = dob
+        # user_data['user_age'] = int(self.text_box_5.text) 
         # user_data['date_of_birth'] = self.date_picker_1
         user_data['mobile'] = self.text_box_7.text
         user_data['aadhaar_no'] = self.text_box_8.text
