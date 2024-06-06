@@ -22,8 +22,8 @@ components:
       properties: {}
       layout_properties: {grid_position: 'XXWHIM,OYNVOT', full_width_row: true, row_background: '#Edf0f4'}
       name: home_button_admin_1
-    - properties: {col_widths: '{"FPVXBC":20,"TKKLJH":23,"WPTHSG":20}', background: '#Edf0f4',
-        role: null}
+    - properties: {col_widths: '{"TKKLJH":13,"WPTHSG":20,"GYRTBL":20,"LICGZQ":20}',
+        background: '#Edf0f4', role: null}
       type: ColumnPanel
       layout_properties: {grid_position: 'PDOIAL,CJGCFE', full_width_row: true}
       name: content_panel_copy_copy_3_copy_3_copy_copy_copy_copy
@@ -45,7 +45,7 @@ components:
         name: spacer_2
       - properties: {col_widths: '{}', background: white, role: elevated-card}
         type: ColumnPanel
-        layout_properties: {grid_position: 'LKTWOF,FPVXBC'}
+        layout_properties: {grid_position: 'LKTWOF,LICGZQ'}
         name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_5
         components:
         - properties: {source: _/theme/admin/dashboard/manage-membership.png, display_mode: shrink_to_fit,
@@ -60,6 +60,20 @@ components:
           layout_properties: {grid_position: 'ACYJSY,PBMAUO'}
           event_bindings: {click: button_1_click}
           name: button_1
+      - name: column_panel_1
+        properties: {background: 'theme:On Primary', role: elevated-card, col_spacing: medium}
+        type: ColumnPanel
+        layout_properties: {grid_position: 'LKTWOF,GYRTBL'}
+        components:
+        - name: image_1
+          properties: {height: 126, display_mode: shrink_to_fit}
+          type: Image
+          layout_properties: {grid_position: 'HOQWVM,OSDHLL'}
+          data_bindings: []
+        - name: button_2
+          properties: {text: Manage Ascend Score, bold: true}
+          type: Button
+          layout_properties: {grid_position: 'TSJIZZ,BKUGLK'}
       - properties: {height: 32}
         type: Spacer
         layout_properties: {grid_position: 'LKTWOF,TKKLJH'}
