@@ -43,7 +43,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'WREXWD,BCJHUK'}
   - name: label_6
-    properties: {text: Very Good, bold: true}
+    properties: {text: VeryGood, bold: true}
     type: Label
     layout_properties: {grid_position: 'MSVZJQ,OVJBSY'}
   - name: text_box_1
@@ -115,9 +115,11 @@ components:
       foreground: 'theme:On Primary', role: filled-button}
     type: Button
     layout_properties: {grid_position: 'FRIJXM,IHOFUB'}
+    event_bindings: {click: button_1_click}
   - name: button_2
     properties: {text: Save, align: left, role: filled-button, foreground: 'theme:On
         Primary', background: '#05264d'}
     type: Button
     layout_properties: {grid_position: 'FRIJXM,PCNMLI'}
+    event_bindings: {click: button_2_click}
 is_package: true
