@@ -109,9 +109,9 @@ components:
       type: Label
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ DVOEFH,BGEFRF'}
     - name: text_box_4
-      properties: {role: outlined}
-      type: TextBox
-      layout_properties: {grid_position: 'NIPFIX,JTFJZJ DVOEFH,JVCNIK'}
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'NIPFIX,JTFJZJ DVOEFH,DMECIF'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: false, text: '   Mobile ', font_size: null, font: '', spacing_above: small,
@@ -133,13 +133,10 @@ components:
         underline: false, icon: ''}
       name: label_11
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ OFLXSO,PLCNDF'}
-    - type: TextBox
-      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
-          your Aadhaar_no', border: '', enabled: true, foreground: '', visible: false,
-        text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false}
-      name: text_box_8
-      layout_properties: {grid_position: 'NIPFIX,JTFJZJ OFLXSO,YXEAQM'}
+    - name: text_box_8
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'NIPFIX,JTFJZJ OFLXSO,HMXDZE'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: false, text: '   Govt ID2', font_size: null, font: '', spacing_above: small,
@@ -147,13 +144,10 @@ components:
         underline: false, icon: ''}
       name: label_12
       layout_properties: {grid_position: 'NIPFIX,JTFJZJ GGAROP,ULVBAH'}
-    - type: TextBox
-      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
-          your Pan_number', border: '', enabled: true, foreground: '', visible: false,
-        text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false}
-      name: text_box_9
-      layout_properties: {grid_position: 'NIPFIX,JTFJZJ GGAROP,ZIRQGF'}
+    - name: text_box_9
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'NIPFIX,JTFJZJ GGAROP,XWCXTK'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: false, text: '   Another email', font_size: null, font: '', spacing_above: small,

@@ -12,7 +12,7 @@ from datetime import date
 
 
 class edit_form(edit_formTemplate):
-  def __init__(self, get_customer_id_value, **properties):
+  def _init_(self, get_customer_id_value, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
@@ -54,7 +54,6 @@ class edit_form(edit_formTemplate):
     self.mail_id_list = []
     self.qualification_list = []
     self.address_type_list = []
-    self.street_list = []
     self.build_name_list = []
     self.house_no_list = []
     self.landmark_list = []
@@ -80,8 +79,9 @@ class edit_form(edit_formTemplate):
     self.account_type_list = []
     self.account_number = []
     self.account_bank_branch = []
-    self.ifsc_code = []
+    self.bank_id = []
     self.salary_type_list = []
+    self.street_list = []
     self.select_bank = []
     self.net_bank = []
     self.father_name = []
@@ -112,9 +112,10 @@ class edit_form(edit_formTemplate):
       self.gender_list.append(i['gender'])
       self.age_list.append(i['user_age'])
       self.dob_list.append(i['date_of_birth'])
-      self.address_list.append(i['address'])
+      self.address_list.append(i['street_adress_1'])
       self.country_list.append(i['country'])
-      self.profession_type_list.append(i['profession_type'])
+      self.profession_type_list.append(i['profession'])
+      self.street_list.append(i['street'])
       self.aadhar_list.append(i['aadhaar_no'])
       self.pan_list.append(i['pan_number'])
       self.city_list.append(i['city'])
@@ -157,7 +158,7 @@ class edit_form(edit_formTemplate):
       self.account_type_list.append(i['account_type'])
       self.account_number.append(i['account_number'])
       self.account_bank_branch.append(i['account_bank_branch'])
-      # self.ifsc_code.append(i['ifsc_code'])
+      # self.bank_id.append(i['bank_id'])
       self.salary_type_list.append(i['salary_type'])
       # self.select_bank.append(i['select_bank'])
       # self.net_bank.append(i['net_bank'])
@@ -194,10 +195,10 @@ class edit_form(edit_formTemplate):
       self.set_textbox_visibility(self.text_box_17,self.label_20, self.space_name_list[c])
       self.set_textbox_visibility(self.text_box_24,self.label_27, self.about_list[c])
       self.set_textbox_visibility(self.text_box_26,self.label_29, str(self.alets_list[c]))
+      self.set_textbox_visibility(self.text_box_34,self.label_37,self.street_list[c])
       self.set_textbox_visibility(self.text_box_35,self.label_38, str(self.terms_list[c]))
       self.drop_down_3.selected_value = self.qualification_list[c]
       self.drop_down_4.selected_value = self.address_type_list[c]
-      self.set_textbox_visibility(self.text_box_34,self.label_37, self.street_list[c])
       self.set_textbox_visibility(self.text_box_27,self.label_30, self.build_name_list[c])
       self.set_textbox_visibility(self.text_box_29,self.label_32, self.house_no_list[c])
       self.set_textbox_visibility(self.text_box_28,self.label_31, self.landmark_list[c])
@@ -214,6 +215,7 @@ class edit_form(edit_formTemplate):
       self.drop_down_4.selected_value=self.organization_type_list[c]
       self.drop_down_5.selected_value = self.employment_type_list[c]
       self.set_textbox_visibility(self.text_box_31, self.label_14,self.business_no[c])
+      # self.set_textbox_visibility(self.text_box_44,self.label_48,self.bank_id[c])
       self.set_textbox_visibility(self.text_box_36,self.label_33, self.company_landmark[c])
       self.set_textbox_visibility(self.text_box_37,self.label_39, self.company_address[c])
       self.set_textbox_visibility(self.text_box_38,self.label_40, self.annual_salary[c])
@@ -325,7 +327,9 @@ class edit_form(edit_formTemplate):
         user_data['user_age'] = int(self.text_box_5.text) 
         user_data['date_of_birth'] = self.text_box.text
         user_data['email_user'] = self.text_box_4.text
-        user_data['address'] = self.
+        user_data['street_adress_1'] = self.text_box_11.text
+        user_data['country'] = self.text_box_15.text
+        user_data['profession'] = self.drop_down_9.selected_value
         user_data['mobile'] = self.text_box_7.text
         user_data['aadhaar_no'] = self.text_box_8.text
         user_data['pan_number'] = self.text_box_9.text
@@ -366,7 +370,7 @@ class edit_form(edit_formTemplate):
         user_data['account_type'] = self.drop_down_6.selected_value
         user_data['account_number'] = self.text_box_42.text
         user_data['account_bank_branch'] = self.text_box_43.text
-        # user_data['ifsc_code'] = self.text_box_44.text
+        # user_data['bank_id'] = self.text_box_44.text
         user_data['salary_type'] = self.drop_down_7.selected_value
         # user_data['select_bank'] = self.text_box_46.text
         # user_data['net_bank'] = self.text_box_47.text
@@ -400,6 +404,7 @@ class edit_form(edit_formTemplate):
          wallet = app_tables.fin_wallet.get(customer_id=self.get)
          if wallet:
             wallet['user_name'] = self.text_box_2.text
+            wallet['user_type'] = self.text_box_22.text
             wallet.update()
          # update the foreclosure
          foreclosure = app_tables.fin_foreclosure.get(borrower_customer_id=self.get)
@@ -416,7 +421,11 @@ class edit_form(edit_formTemplate):
          if loan_details:
             loan_details['borrower_full_name']=self.text_box_2.text 
             loan_details.update()
-  
+         # update the wallet_bank_account_table
+         wallet_bank_account_table = app_tables.fin_wallet_bank_account_table.get(customer_id=self.get)
+         if wallet_bank_account_table:
+            wallet_bank_account_table['account_name']=self.text_box_40.text  
+ 
               # Assign the converted value to ascend_score
             borrower['ascend_score'] = float(ascend_value)
         # Update the user profile
