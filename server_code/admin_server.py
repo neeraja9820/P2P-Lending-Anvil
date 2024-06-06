@@ -186,6 +186,12 @@ def search_borrower(query):
       or query in str(x['email_user'])
     ]
   return result
+def update_dob_from_age(self, age):
+        """Calculate the birth date based on the age provided"""
+        today = datetime.today()
+        birth_date = today - timedelta(days=365.25 * age)  # assuming a year is 365.25 days on average
+        return birth_date.strftime('%Y-%m-%d')  
+  
 
 @anvil.server.callable
 def search_lender(query):
@@ -199,3 +205,23 @@ def search_lender(query):
       or query in str(x['email_user'])
     ]
   return result
+
+import anvil.server
+import datetime
+
+@anvil.server.background_task
+def update_ages():
+    # Get all users
+    users = tables.app_tables.fin_user_profile.search()
+
+    # Update each user's age
+    for user in users:
+        dob = datetime.datetime.strptime(user['date_of_birth'], '%Y-%m-%d')
+        today = datetime.datetime.today()
+        age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
+
+        # Update the user's age
+        user['user_age'] = age
+
+    # Save the changes
+    tables.app_tables.fin_user_profile.commit()
