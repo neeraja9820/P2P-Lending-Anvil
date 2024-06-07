@@ -7,29 +7,29 @@ components:
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
     spacing_below: small, background: ''}
-  name: content_panel
   layout_properties: {slot: default}
+  name: content_panel
   components:
   - type: form:admin.dashboard.home_button_admin
     properties: {}
-    name: home_button_admin_1
     layout_properties: {grid_position: 'OIWWSN,IPOCYG', row_background: '', full_width_row: true}
-  - name: column_panel_1
-    properties: {col_widths: '{"QOMVMS":12,"ELERTG":57}'}
+    name: home_button_admin_1
+  - properties: {col_widths: '{"QOMVMS":12,"ELERTG":57}'}
     type: ColumnPanel
+    layout_properties: {grid_position: 'ACQPTG,ZCOIZR'}
+    name: column_panel_1
     components:
-    - name: text_box_1
-      properties: {background: white, foreground: black, placeholder: Enter text to Search}
+    - properties: {background: white, foreground: black, placeholder: Enter text to Search}
       type: TextBox
       layout_properties: {grid_position: 'KYEEZZ,ELERTG'}
-    - name: button_1
-      properties: {text: Search, icon: 'fa:search', bold: true, font_size: 14, role: elevated-button,
+      name: text_box_1
+    - properties: {text: Search, icon: 'fa:search', bold: true, font_size: 14, role: elevated-button,
         background: '#05264d', foreground: white}
       type: Button
       layout_properties: {grid_position: 'KYEEZZ,QOMVMS'}
       event_bindings: {click: search_borrower}
-    - name: data_grid_1
-      properties:
+      name: button_1
+    - properties:
         columns:
         - {id: JKSDUP, title: Customer ID, data_key: column_1}
         - {id: VJQQOR, title: Name, data_key: column_2}
@@ -40,28 +40,28 @@ components:
         role: tonal-data-grid
         show_page_controls: false
       type: DataGrid
+      layout_properties: {grid_position: 'YBKSAK,BEBYQS'}
+      name: data_grid_1
       components:
-      - name: repeating_panel_2
-        properties: {item_template: admin.dashboard.borrowers.RowTemplate14, visible: true}
+      - properties: {item_template: admin.dashboard.borrowers.RowTemplate14, visible: true}
         type: RepeatingPanel
         layout_properties: {}
-      layout_properties: {grid_position: 'YBKSAK,BEBYQS'}
-    layout_properties: {grid_position: 'ACQPTG,ZCOIZR'}
-  - name: label_1_copy
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+        name: repeating_panel_2
+  - properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: true, text: Manage Borrower, font_size: 18, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     type: Label
     layout_properties: {grid_position: 'QGBNSM,FMVGHD'}
-  - name: xy_panel_1
-    properties: {height: 528.7000122070312}
+    name: label_1_copy
+  - properties: {height: 528.7000122070312}
     type: XYPanel
     layout_properties: {grid_position: 'WAZVYK,OIZWQV', full_width_row: false}
+    name: xy_panel_1
     components:
-    - name: repeating_panel_1
-      properties: {item_template: admin.dashboard.borrowers.ItemTemplate96}
+    - properties: {item_template: admin.dashboard.borrowers.ItemTemplate96}
       type: RepeatingPanel
       layout_properties: {x: 8.4124755859375, y: 0, width: 944.7875366210938}
       data_bindings:
-      - {property: tooltip, code: '', writeback: false}
+      - {code: '', writeback: false, property: tooltip}
+      name: repeating_panel_1
