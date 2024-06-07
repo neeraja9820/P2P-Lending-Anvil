@@ -15,3 +15,5 @@ class manage_ascend_score_range(manage_ascend_score_rangeTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    
+
