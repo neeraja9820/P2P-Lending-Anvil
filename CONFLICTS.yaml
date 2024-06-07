@@ -1,0 +1,12 @@
+merge:
+  parents: [900eee1aef236eb090de1c6fd91b7e3a96cf06d5, f3510096b1f93cbbd68d37a784afa72257a2d654]
+  base: 00c3068569caededecf7362844dfd5c725b45de1
+conflicting_items:
+- text_chunks:
+  - start: 17
+    alternatives:
+    - {s: A, l: 17, n: 231}
+    - {s: B, l: 248, n: 0}
+  components: []
+  item: [client_code, admin.dashboard.manage_settings.manage_ascend_score_range]
+  app_path: [CODE, forms/admin.dashboard.manage_settings.manage_ascend_score_range]
