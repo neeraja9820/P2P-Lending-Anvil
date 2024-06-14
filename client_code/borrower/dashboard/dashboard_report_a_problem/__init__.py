@@ -40,7 +40,7 @@ class dashboard_report_a_problem(dashboard_report_a_problemTemplate):
         name = self.name_box.text
         email = self.email_box.text
         mobile = self.mobile_box.text
-        issue_photo =self.img_file_loader.file
+        issue_photo = self.img_file_loader.file
         category = self.drop_down_1.selected_value
         subcategory = self.drop_down_2.selected_value
         description = self.description_box.text
@@ -64,7 +64,7 @@ class dashboard_report_a_problem(dashboard_report_a_problemTemplate):
 
         current_datetime = datetime.datetime.now()
 
-        # Get the file uploaded via file_loader_1
+        # Get the file uploaded via file_loader
         file = self.imd_file_loader.file
          # Check if the checkbox is checked
         it_is_urgent = self.check_box_1.checked
