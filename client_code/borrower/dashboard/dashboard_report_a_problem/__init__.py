@@ -35,6 +35,7 @@ class dashboard_report_a_problem(dashboard_report_a_problemTemplate):
         if file is not None:
             # Display the image in an Image component 
           self.image_issue.source =self.img_file_loader.file
+          
     def button_2_click(self, **event_args):
         # Get input values from text boxes
         name = self.name_box.text
