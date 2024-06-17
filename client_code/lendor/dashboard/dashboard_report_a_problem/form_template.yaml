@@ -44,7 +44,7 @@ components:
     layout_properties: {grid_position: 'FKNXLA,PDRAWC HVCDVF,GFQMNN'}
     components:
     - name: image_1_copy_2
-      properties: {display_mode: zoom_to_fill, height: 641, source: _/theme/lender/dashboard/report_a_problem.png}
+      properties: {display_mode: zoom_to_fill, height: 566, source: _/theme/lender/dashboard/report_a_problem.png}
       type: Image
       layout_properties: {grid_position: 'SJFOZW,KKJHVN'}
   - name: spacer_3
@@ -127,7 +127,7 @@ components:
     name: label_7
     layout_properties: {grid_position: 'FKNXLA,ZCFBEH YIQLID,OMJDMP'}
   - type: TextArea
-    properties: {role: outlined, bold: false, align: right, placeholder: '', spacing_above: small, background: 'theme:On Primary', underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: true, font_size: null, tooltip: '', height: 168, text: ''}
+    properties: {role: outlined, bold: false, align: right, placeholder: '', spacing_above: small, background: 'theme:On Primary', underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: true, font_size: null, tooltip: '', height: 78, text: ''}
     name: description_box
     layout_properties: {grid_position: 'FKNXLA,ZCFBEH AOZFDF,IQFSEY'}
     event_bindings: {change: issue_description_change}

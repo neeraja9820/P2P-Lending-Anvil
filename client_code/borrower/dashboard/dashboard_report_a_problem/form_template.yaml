@@ -21,7 +21,7 @@ components:
     name: navigation_form_dashboard_1
     layout_properties: {grid_position: 'BJJQVM,LWRTNM', full_width_row: true}
   - type: ColumnPanel
-    properties: {role: null, col_widths: '{"FSWDBX":32,"NHPBXK":3,"USORJN":25,"UZFIIR":20,"WLBQDJ":40,"XVZWQS":20,"VDKBMC":40,"MZGOGW":20,"NNMBXK":40,"HUPKGN":20,"CWYUZB":40,"LELVZJ":20,"DAOYNB":40}', wrap_on: mobile}
+    properties: {role: null, col_widths: '{"FSWDBX":32,"NHPBXK":3,"USORJN":25}', wrap_on: mobile}
     name: outlined_card_2_copy
     layout_properties: {grid_position: 'RIQNFU,FKBJMA'}
     components:
@@ -74,6 +74,20 @@ components:
       properties: {}
       type: Label
       layout_properties: {grid_position: 'JKULIH,USORJN ZLZTYL,VDKBMC'}
+    - name: label_8_copy1
+      properties: {text: Issue Photo, bold: true}
+      type: Label
+      layout_properties: {grid_position: 'JKULIH,USORJN OJHCCD,HUICLJ'}
+    - name: file_loader_1
+      properties: {}
+      type: FileLoader
+      layout_properties: {grid_position: 'JKULIH,USORJN OJHCCD,NOQJTR'}
+      event_bindings: {change: file_loader_1_change}
+    - name: image_issue
+      properties: {height: '100'}
+      type: Image
+      layout_properties: {grid_position: 'JKULIH,USORJN OJHCCD,RLWAZX'}
+      event_bindings: {}
     - name: label_2
       properties: {text: Category, bold: true}
       type: Label
@@ -96,20 +110,6 @@ components:
         role: outlined
       type: DropDown
       layout_properties: {grid_position: 'JKULIH,USORJN AMGDQY,DAOYNB'}
-    - name: label_8_copy1
-      properties: {text: Issue Photo, bold: true}
-      type: Label
-      layout_properties: {grid_position: 'JKULIH,USORJN MKGJXJ,VNVRZY'}
-    - name: file_loader_1
-      properties: {}
-      type: FileLoader
-      layout_properties: {grid_position: 'JKULIH,USORJN MKGJXJ,ZJESDF'}
-      event_bindings: {change: file_loader_1_change}
-    - name: image_issue
-      properties: {height: 51}
-      type: Image
-      layout_properties: {grid_position: 'JKULIH,USORJN MKGJXJ,HJPJKF'}
-      event_bindings: {}
     - name: check_box_1
       properties: {text: It is Urgent}
       type: CheckBox
