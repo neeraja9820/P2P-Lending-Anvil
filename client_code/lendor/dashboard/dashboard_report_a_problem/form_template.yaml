@@ -103,7 +103,7 @@ components:
       layout_properties: {grid_position: 'ESNDLC,BUGFUP'}
       event_bindings: {change: file_loader_1_change}
     - name: image_issue
-      properties: {display_mode: original_size, height: 139}
+      properties: {display_mode: shrink_to_fit, height: 23}
       type: Image
       layout_properties: {grid_position: 'ESNDLC,YDEYIP'}
     - name: check_box_1
@@ -123,7 +123,7 @@ components:
       name: label_7
       layout_properties: {grid_position: 'UAKVEQ,GQHBVQ'}
     - type: TextArea
-      properties: {role: outlined, bold: false, align: right, placeholder: '', spacing_above: small, background: 'theme:On Primary', underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: true, font_size: null, tooltip: '', height: 75, text: ''}
+      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: true, font_size: null, tooltip: '', height: 75, text: ''}
       name: description_box
       layout_properties: {grid_position: 'TISILT,EAGAXN'}
       event_bindings: {change: issue_description_change}
