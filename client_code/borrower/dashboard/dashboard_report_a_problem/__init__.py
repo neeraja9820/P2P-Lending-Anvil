@@ -24,9 +24,8 @@ class dashboard_report_a_problem(dashboard_report_a_problemTemplate):
 
         self.usertype = properties.get('usertype', 'borrower')  # Default value is 'borrower'
         # Populate dropdowns or other components here
-        self.subcategory = app_tables.fin_borrower_subcategory_loan_issue.search()
-        self.subcategory = app_tables.fin_lendor_subcategory_loan_issue.search()
-        self.subcategory = app_tables.fin_subcategory_technical_issue.search()
+        self.subcategory = app_tables.f.search()
+        # self.subcategory = app_tables.fin_subcategory_technical_issue.search()
         self.category = app_tables.fin_issue_category.search()
         self.drop_down_1.items = [(c['issue_category'], c['issue_category']) for c in self.category]
         self.drop_down_1.selected_value = self.category[0]['issue_category']  # Set default value
@@ -39,11 +38,11 @@ class dashboard_report_a_problem(dashboard_report_a_problemTemplate):
     def update_subcategory(self, **event_args):
         selected_category = self.drop_down_1.selected_value
         if selected_category == 'Loan Issue':
-            self.drop_down_2.items = [(bsli['borrower_subcategory_loan_issue'], bsli['borrower_subcategory_loan_issue']) for bsli in self.subcategory]
+            self.drop_down_2.items = [(sli['borrower_subcategory_loan_issue'], sli['borrower_subcategory_loan_issue']) for sli in self.subcategory]
         elif selected_category == 'Technical Issue':
             self.drop_down_2.items = [(sti['subcategory_technical_issue'], sti['subcategory_technical_issue']) for sti in self.subcategory]
         else:
-            self.drop_down_2.items = [(bsli['borrower_subcategory_loan_issue'], bsli['borrower_subcategory_loan_issue']) for bsli in self.subcategory]
+            self.drop_down_2.items = [(sli['borrower_subcategory_loan_issue'], sli['borrower_subcategory_loan_issue']) for sli in self.subcategory]
 
 
 

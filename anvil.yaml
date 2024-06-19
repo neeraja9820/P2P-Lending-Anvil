@@ -816,7 +816,7 @@ db_schema:
       admin_ui: {width: 200}
       type: string
   fin_issue_category_2:
-    title: fin_issue_category
+    title: fin_issue_category_2
     client: full
     server: full
     columns:
@@ -1460,14 +1460,6 @@ db_schema:
       admin_ui: {width: 200, order: 9}
       type: bool
     title: fin_wallet
-  fin_subcategory_technical_issue:
-    client: full
-    server: full
-    columns:
-    - name: subcategory_technical_issue
-      admin_ui: {order: -1, width: 243}
-      type: string
-    title: fin_subcategory_technical_issue
   fin_product_group:
     client: full
     server: full
@@ -1626,6 +1618,20 @@ db_schema:
       admin_ui: {width: 200, order: 0}
       type: string
     title: fin_borrower_profession
+  fin_report_issue_category:
+    client: full
+    server: full
+    columns:
+    - name: subcategory_technical_issue
+      admin_ui: {order: -1, width: 243}
+      type: string
+    - name: borrower_subcategory_loan_issue
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: lendor_subcategory_loan_issue
+      admin_ui: {width: 200, order: 2}
+      type: string
+    title: fin_report_issue_category
   fin_lendor_organization_type:
     client: full
     server: full
