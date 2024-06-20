@@ -5,6 +5,8 @@ components:
   properties: {height: 55}
   type: Image
   layout_properties: {column: JKSDUP}
+  data_bindings:
+  - {property: source, code: 'self.item[''user_photo'']', writeback: false}
 - name: label_1
   properties: {align: center}
   type: Label

@@ -173,6 +173,7 @@ unique_ids:
     ? borrower.borrower_registration_forms.star_1_borrower_registration_form_2_employment.star_1_borrower_registration_form_2_employment_farmer
     : '1713758768936643850890613.9849'
     admin.dashboard.manage_settings.approval_days: '171738656206145864182938.08747'
+    admin.dashboard.accounting.performance_tracker.under_process_loans.RowTemplate55: '1718864467403750237857975.653'
     borrower.dashboard.application_tracker.view_profile: P5NXTQOFPOXB24AC7BIY6NNQYVHMF6W5
     wallet.wallet.all_transaction.RowTemplate29: '1704884931461492157927200.2286'
     admin.dashboard.reporting_and_analytical_modules.risk_pool.risk_view_details: '1718021128801365023897480.50354'
@@ -265,6 +266,7 @@ unique_ids:
     lendor.dashboard.lender_profile: '1712724541915396786396964.4494'
     bank_users.repeating_panels.lendor: '1709025964802603788749674.3102'
     lendor.dashboard.view_borrower_loan_request.payment_details_view_loan_request: '170556116522824824545651.86143'
+    admin.dashboard.accounting.performance_tracker.rejected_loans.RowTemplate54: '1718863929321300006205649.5969'
     bank_users.repeating_panels.borrower: '1709109885364260908712663.55365'
     admin.dashboard.customer_management.handles_customer_registration.lenders.RowTemplate4: '1700737487916312936831844.4892'
     lendor.dashboard.lender_view_loans.ItemTemplate52: '1709612227020162730100778.72473'
