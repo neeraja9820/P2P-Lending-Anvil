@@ -30,4 +30,9 @@ components:
     properties: {item_template: admin.dashboard.accounting.performance_tracker.closed_loans.RowTemplate52}
     type: RepeatingPanel
   layout_properties: {grid_position: 'XXDCAL,UFASFO', full_width_row: true}
+- name: button_1
+  properties: {text: Back, foreground: white, icon: 'fa:backward', background: '#05264d'}
+  type: Button
+  layout_properties: {grid_position: 'YTCVLF,TIJVDB'}
+  event_bindings: {click: button_1_click}
 is_package: true

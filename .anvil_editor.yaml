@@ -163,6 +163,7 @@ unique_ids:
     admin.dashboard.manage_ascend_score.view_ascend_group: '1709796304196496012609333.1965'
     admin.dashboard.loan_management.view_loans.approved_loans.view_profile: '1700740546893987573171578.3491'
     borrower.dashboard.dashboard_contact: FIR5BFHIYOQWYLKGMJEOPHHQ4NCLSFIP
+    admin.dashboard.accounting.performance_tracker.open_loans.RowTemplate53: '1718862027002108786455647.48712'
     borrower.dashboard.foreclosure_request: NSTHITAYUUWSXBJKK5RVW4OD4LDYZDWR
     borrower.dashboard.edit_profile: 6NE5B3XPBSQHXJ5GMY77XFDUZ6U6SKJF
     admin.dashboard.manage_cms.add_borrower_dropdown_details.ItemTemplate12: '1706093168840918172459238.2472'

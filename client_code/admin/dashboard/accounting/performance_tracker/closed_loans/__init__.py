@@ -48,3 +48,7 @@ class closed_loans(closed_loansTemplate):
     # Display alert if no approved loans found
     if not self.result:
         alert("No disbursed Loans Available!")
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.accounting.performance_tracker')
