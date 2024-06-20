@@ -1,0 +1,15 @@
+container: {type: ColumnPanel}
+components:
+- name: home_button_admin_1_copy
+  properties: {}
+  type: form:admin.dashboard.home_button_admin
+  layout_properties: {grid_position: 'QXDZAT,WYZEHI', full_width_row: true}
+- name: label_1
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'ZFIKWF,TXZSMR'}
+- name: spacer_1
+  properties: {height: 15}
+  type: Spacer
+  layout_properties: {grid_position: 'BRECOY,TYOPYS'}
+is_package: true

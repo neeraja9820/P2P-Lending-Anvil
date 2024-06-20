@@ -15,36 +15,52 @@ class performance_tracker(performance_trackerTemplate):
 
     # Any code you write here will run before the form opens.
     self.data = tables.app_tables.fin_loan_details.search()
+    # Calculate count of 'approved' records
+    approved_count = len([record for record in self.data if record['loan_updated_status'] == 'disbursed'])
+    rejected_count = len([record for record in self.data if record['loan_updated_status'] == 'rejected'])
+    opened_count = len([record for record in self.data if record['loan_updated_status'] == 'disbursed'])
+    closed_count = len([record for record in self.data if record['loan_updated_status'] == 'closed'])
+    under_process = len([record for record in self.data if record['loan_updated_status'] == 'under process'])
+    loan_updated_status_count = len([record for record in self.data if record['loan_updated_status']])
 
-    self.name_list = []
+            
+
+    # Update UI label_8
+    self.label_8.text = str(approved_count)
+    self.label_6.text = str(rejected_count)
+    self.label_14.text = str(opened_count)
+    self.label_12.text = str(closed_count)
+    self.label_13.text = str(under_process)
+    self.label_4.text = str(loan_updated_status_count)
+    # self.name_list = []
     
-    a = 0
-    for i in self.data:
-      self.name_list.append(i['loan_updated_status'])
+    # a = 0
+    # for i in self.data:
+    #   self.name_list.append(i['loan_updated_status'])
       
-      a += 1
-    self.label_4.text = a
-    b = 0
-    c = 0
-    d = 0
-    e = 0
-    f = 0
-    for i in self.name_list:
-      if i == 'approved':
-        b += 1
-      elif i == 'rejected':
-        c += 1
-      elif i == 'opened':
-        d += 1
-      elif i == 'closed':
-        e += 1 
-      elif i == 'under process':
-        f += 1
-    self.label_8.text = b
-    self.label_6.text = c
-    self.label_14.text = d
-    self.label_12.text = e
-    self.label_13.text = f
+    #   a += 1
+    # self.label_4.text = a
+    # b = 0
+    # c = 0
+    # d = 0
+    # e = 0
+    # f = 0
+    # for i in self.name_list:
+    #   if i == 'approved':
+    #     b += 1
+    #   elif i == 'rejected':
+    #     c += 1
+    #   elif i == 'opened':
+    #     d += 1
+    #   elif i == 'closed':
+    #     e += 1 
+    #   elif i == 'under process':
+    #     f += 1
+    # self.label_8.text = b
+    # self.label_6.text = c
+    # self.label_14.text = d
+    # self.label_12.text = e
+    # self.label_13.text = f
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
