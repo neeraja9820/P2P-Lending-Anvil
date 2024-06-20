@@ -16,8 +16,11 @@ class open_loans(open_loansTemplate):
 
     # Any code you write here will run before the form opens.
     # Fetch approved loans data from fin_loan_details table
-    self.data = app_tables.fin_loan_details.search(loan_updated_status=q.like('disbursed%','extension%'))
-        
+    # self.data = app_tables.fin_loan_details.search((q.like('extention%')) & (q.like('disbursed%')))
+    self.data = app_tables.fin_loan_details.search(
+            (q.like('loan_updated_status', 'extention%')) & 
+            (q.like('loan_updated_status', 'disbursed%'))
+    )  
     # Initialize an empty list to store formatted loan details
     self.result = []
         
