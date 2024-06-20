@@ -63,85 +63,80 @@ class performance_tracker(performance_trackerTemplate):
     # self.label_13.text = f
 
   def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('admin.dashboard')
+        """This method is called when the button is clicked"""
+        open_form('admin.dashboard')
 
   def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('admin.dashboard.loan_management.approved_loans')
+      """This method is called when the link is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.approved_loans')
 
   def link_2_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('admin.dashboard.loan_management.rejected_loans')
+      """This method is called when the link is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.rejected_loans')
 
   def link_3_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('admin.dashboard.loan_management.open_loans')
+      """This method is called when the link is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.open_loans')
 
   def link_4_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('admin.dashboard.loan_management.closed_loans')
+      """This method is called when the link is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.closed_loans')
 
   def link_5_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    open_form('admin.dashboard.loan_management.under_process')
+      """This method is called when the link is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.under_process_loan')
 
   def button_1_copy_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('admin.dashboard.manage_settings')
-
-  
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.accounting')
 
   def button_9_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('admin.dashboard.loan_management.approved_loans')
-
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.approved_loans')
 
   def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('admin.dashboard.loan_management.closed_loans')
-
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.closed_loans')
 
   def button_10_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('admin.dashboard.loan_management.under_process')
-
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.under_process_loan')
 
   def button_14_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('admin.dashboard.loan_management.rejected_loans')
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.rejected_loans')
 
   def button_11_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('admin.dashboard.loan_management.open_loans')
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.accounting.performance_tracker.open_loans')
 
   def link_6_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    pass
+      """This method is called when the link is clicked"""
+      pass
 
   def image_4_copy_mouse_up(self, x, y, button, **event_args):
-    """This method is called when a mouse button is released on this component"""
-    open_form('admin.dashboard.loan_management.approved_loans')
+      """This method is called when a mouse button is released on this component"""
+      open_form('admin.dashboard.accounting.performance_tracker.approved_loans')
 
   def image_4_copy_10_mouse_up(self, x, y, button, **event_args):
-    """This method is called when a mouse button is released on this component"""
-    open_form('admin.dashboard.loan_management.rejected_loans')
+      """This method is called when a mouse button is released on this component"""
+      open_form('admin.dashboard.accounting.performance_tracker.rejected_loans')
 
   def image_4_copy_5_mouse_up(self, x, y, button, **event_args):
-    """This method is called when a mouse button is released on this component"""
-    open_form('admin.dashboard.loan_management.open_loans')
+      """This method is called when a mouse button is released on this component"""
+      open_form('admin.dashboard.accounting.performance_tracker.open_loans')
 
   def image_4_copy_2_mouse_up(self, x, y, button, **event_args):
-    """This method is called when a mouse button is released on this component"""
-    open_form('admin.dashboard.loan_management.closed_loans')
+       """This method is called when a mouse button is released on this component"""
+       open_form('admin.dashboard.accounting.performance_tracker.closed_loans')
 
   def image_4_copy_3_mouse_up(self, x, y, button, **event_args):
-    """This method is called when a mouse button is released on this component"""
-    open_form('admin.dashboard.loan_management.under_process')
+        """This method is called when a mouse button is released on this component"""
+        open_form('admin.dashboard.accounting.performance_tracker.under_process_loan')
 
   def button_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+        """This method is called when the button is clicked"""
+        pass
 
 
 
