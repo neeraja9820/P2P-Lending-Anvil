@@ -16,7 +16,7 @@ class performance_tracker(performance_trackerTemplate):
     # Any code you write here will run before the form opens.
     self.data = tables.app_tables.fin_loan_details.search()
     # Calculate count of 'approved' records
-    approved_count = len([record for record in self.data if record['loan_updated_status'] == 'disbursed'])
+    approved_count = len([record for record in self.data if record['loan_updated_status'] == 'approved'])
     rejected_count = len([record for record in self.data if record['loan_updated_status'] == 'rejected'])
     opened_count = len([record for record in self.data if record['loan_updated_status'] == 'disbursed'])
     closed_count = len([record for record in self.data if record['loan_updated_status'] == 'closed'])
