@@ -340,14 +340,6 @@ db_schema:
       admin_ui: {order: 2.5, width: 200}
       type: string
     title: fin_admin_ascend_categories
-  fin_lendor_subcategory_loan_issue:
-    client: full
-    server: full
-    columns:
-    - name: lendor_subcategory_loan_issue
-      admin_ui: {width: 200, order: 0}
-      type: string
-    title: fin_lendor_subcategory_loan_issue
   fin_lendor_employee_type:
     client: full
     server: full
@@ -959,14 +951,6 @@ db_schema:
       admin_ui: {width: 200, order: 10.5}
       type: number
     title: fin_extends_loan
-  fin_borrower_subcategory_loan_issue:
-    client: full
-    server: full
-    columns:
-    - name: borrower_subcategory_loan_issue
-      admin_ui: {width: 200, order: 0}
-      type: string
-    title: fin_borrower_subcategory_loan_issue
   fin_manage_credit_limit:
     title: fin_manage_credit_limit
     client: none

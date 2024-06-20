@@ -47,7 +47,7 @@ class rejected_loans(rejected_loansTemplate):
         
     # Display alert if no approved loans found
     if not self.result:
-        alert("No under process Loans Available!")
+        alert("No rejected Loans Available!")
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
