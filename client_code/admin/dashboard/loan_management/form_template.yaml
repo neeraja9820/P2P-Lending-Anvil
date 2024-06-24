@@ -73,7 +73,7 @@ components:
     layout_properties: {grid_position: 'HITTPX,IEDABQ'}
     event_bindings: {click: button_2_click}
 - name: spacer_2
-  properties: {height: 32}
+  properties: {height: 15}
   type: Spacer
   layout_properties: {grid_position: 'ASCOCD,XTBOGS'}
 - name: button_1_copy_2

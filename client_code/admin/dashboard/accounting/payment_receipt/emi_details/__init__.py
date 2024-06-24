@@ -57,3 +57,7 @@ class emi_details(emi_detailsTemplate):
     
     # Display the filtered EMIs in a repeating panel or similar component
     self.repeating_panel_1.items = filtered_emis
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.accounting.payment_receipt')

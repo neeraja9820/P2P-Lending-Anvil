@@ -97,6 +97,15 @@ components:
       type: Button
       layout_properties: {grid_position: 'EPLEQI,XCMPWT'}
       event_bindings: {click: button_2_click}
+  - name: spacer_1
+    properties: {height: 7}
+    type: Spacer
+    layout_properties: {grid_position: 'CJXPGC,MWNMTC'}
+  - name: button_1
+    properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'PSSYFJ,SCULNI'}
+    event_bindings: {click: button_1_click}
   - name: spacer_5
     properties: {height: '350'}
     type: Spacer

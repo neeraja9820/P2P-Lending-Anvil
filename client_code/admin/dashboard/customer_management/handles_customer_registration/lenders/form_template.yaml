@@ -59,7 +59,17 @@ components:
     type: RepeatingPanel
     layout_properties: {grid_position: 'CNJLWB,PYWMOQ'}
     name: repeating_panel_1
+  - name: spacer_1
+    properties: {height: 3}
+    type: Spacer
+    layout_properties: {grid_position: 'MAZAIY,BHVFDA'}
+  - name: button_2
+    properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'ICEWWA,DZGOVE'}
+    event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   layout_properties: {slot: nav-right}
   name: navbar_links
+  components: []

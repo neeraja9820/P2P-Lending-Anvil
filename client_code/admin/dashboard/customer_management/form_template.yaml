@@ -64,3 +64,12 @@ components:
     layout_properties: {grid_position: 'JFGEHI,VYIDYK'}
     event_bindings: {click: button_3_click}
     name: button_3
+- name: spacer_1
+  properties: {height: 14}
+  type: Spacer
+  layout_properties: {grid_position: 'OEPMZD,EXCIHT'}
+- name: button_4
+  properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+  type: Button
+  layout_properties: {grid_position: 'EWYGOS,XDGPAN'}
+  event_bindings: {click: button_4_click}

@@ -117,15 +117,15 @@ components:
     properties: {height: '3'}
     type: Spacer
     layout_properties: {grid_position: 'LXEPFH,FVTVHC'}
+  - name: button_2
+    properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'SZNEZY,XFNGSO'}
+    event_bindings: {click: button_2_click}
   - name: spacer_2_copy
     properties: {height: 8.071441650390625}
     type: Spacer
     layout_properties: {grid_position: 'GMXCYG,JYPKRB'}
-  - name: button_1_copy_3
-    properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-    type: Button
-    layout_properties: {grid_position: 'IHMRYK,JOPIVV'}
-    event_bindings: {click: button_1_copy_3_click}
   - name: spacer_1
     properties: {height: '350'}
     type: Spacer
