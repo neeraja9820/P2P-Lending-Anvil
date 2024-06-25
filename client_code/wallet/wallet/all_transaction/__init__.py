@@ -73,3 +73,7 @@ class all_transaction(all_transactionTemplate):
         open_form("lendor.dashboard")
     else:
         open_form("borrower.dashboard")
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('wallet.wallet')
