@@ -231,3 +231,7 @@ class payment_details_extension(payment_details_extensionTemplate):
     else:
         # Handle case where loan details are not found
         print("Loan details not found for loan ID:", selected_row['loan_id'])
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('borrower.dashboard.extension_loan_request')
