@@ -55,10 +55,6 @@ class borrower_view_profile(borrower_view_profileTemplate):
         elif guarantor_details["another_person"].lower() == "Spouse":
             self.column_panel_1.visible = False
             self.column_panel_3.visible = True
-    else:
-        # Handle case where guarantor details are not found
-        self.column_panel_1.visible = False
-        self.column_panel_3.visible = True
 
   def load_user_profile(self):
     user_profile = app_tables.fin_user_profile.get(customer_id=self.user_id)
