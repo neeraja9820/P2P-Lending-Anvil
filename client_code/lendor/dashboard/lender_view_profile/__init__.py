@@ -46,13 +46,13 @@ class lender_view_profile(lender_view_profileTemplate):
         if guarantor_details["another_person"].lower() in ["Father", "Mother" ,"Other"]:
             self.column_panel_1.visible = True
             self.column_panel_3.visible = False
-        elif guarantor_details["another_person"].lower() == "Spouse":
+        elif guarantor_details["another_person"].lower() in "Spouse":
             self.column_panel_1.visible = False
             self.column_panel_3.visible = True
-    else:
-        # Handle case where guarantor details are not found
-        self.column_panel_1.visible = False
-        self.column_panel_3.visible = False
+        else:
+            # Handle case where guarantor details are not found
+            self.column_panel_1.visible = False
+            self.column_panel_3.visible = False
 
   def load_user_profile(self):
     user_profile = app_tables.fin_user_profile.get(customer_id=self.user_id)
