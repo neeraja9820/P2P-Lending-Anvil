@@ -1,69 +1,69 @@
-is_package: true
-container: {type: ColumnPanel}
 components:
-- name: xy_panel_1
-  properties: {height: 347.85711669921875, role: outlined-card}
-  type: XYPanel
-  layout_properties: {grid_position: 'WVXQKB,MTPNYM'}
-  components:
-  - name: image_1
+- components:
+  - data_bindings: []
+    layout_properties: {width: 66, x: 3.050000000745058, y: 0}
+    name: image_1
     properties: {height: 63.399932861328125, source: 'https://freesvg.org/img/abstract-user-flat-4.png'}
     type: Image
-    layout_properties: {x: 3.050000000745058, y: 0, width: 66}
-    data_bindings: []
-  - name: label_1
+  - data_bindings:
+    - {code: 'self.item[''full_name'']', property: text, writeback: false}
+    layout_properties: {width: 200, x: 78.48750000074506, y: 0}
+    name: label_1
     properties: {bold: true}
     type: Label
-    layout_properties: {x: 78.48750000074506, y: 0, width: 200}
-    data_bindings:
-    - {property: text, code: 'self.item[''full_name'']', writeback: false}
-  - name: label_6
+  - data_bindings:
+    - {code: 'self.item[''mobile_no'']', property: text, writeback: false}
+    layout_properties: {width: 200, x: 78.53748779371381, y: 27.950009156018496}
+    name: label_6
     properties: {}
     type: Label
-    layout_properties: {x: 78.53748779371381, y: 27.950009156018496, width: 200}
-    data_bindings:
-    - {property: text, code: 'self.item[''mobile_no'']', writeback: false}
-  - name: label_3
-    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: grey, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'}
+  - layout_properties: {width: 937.71435546875, x: 0, y: 79.41071428731084}
+    name: label_3
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: grey, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {x: 0, y: 79.41071428731084, width: 937.71435546875}
-  - name: label_4
-    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Admin  ID :'}
+  - layout_properties: {width: 92.00000762939453, x: 17.071465630084276, y: 130.8214503712952}
+    name: label_4
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Admin  ID :', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {x: 17.071465630084276, y: 130.8214503712952, width: 92.00000762939453}
-  - name: label_11
+  - layout_properties: {width: 200.00001525878906, x: 20.2321406789124, y: 181.53574480488896}
+    name: label_11
     properties: {text: Admin Role}
     type: Label
-    layout_properties: {x: 20.2321406789124, y: 181.53574480488896, width: 200.00001525878906}
-  - name: label_12
+  - layout_properties: {width: 200.00001525878906, x: 18.00002397969365, y: 233.0178309865296}
+    name: label_12
     properties: {text: Super Admin Name}
     type: Label
-    layout_properties: {x: 18.00002397969365, y: 233.0178309865296, width: 200.00001525878906}
-  - name: label_8
-    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Join Date}
+  - layout_properties: {width: 92.00000762939453, x: 20.6071406789124, y: 281.9642421193421}
+    name: label_8
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Join Date, tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {x: 20.6071406789124, y: 281.9642421193421, width: 92.00000762939453}
-  - name: credit
+  - data_bindings:
+    - {code: 'self.item[''ref_admin_name'']', property: text, writeback: false}
+    layout_properties: {width: 200.00001525878906, x: 717.3214503712952, y: 233.0357753224671}
+    name: credit
     properties: {}
     type: Label
-    layout_properties: {x: 717.3214503712952, y: 233.0357753224671, width: 200.00001525878906}
-    data_bindings:
-    - {property: text, code: 'self.item[''ref_admin_name'']', writeback: false}
-  - name: beseem
+  - data_bindings:
+    - {code: 'self.item[''join_date'']', property: text, writeback: false}
+    layout_properties: {width: 200.00001525878906, x: 713.9286281056702, y: 281.0714503712952}
+    name: beseem
     properties: {}
     type: Label
-    layout_properties: {x: 713.9286281056702, y: 281.0714503712952, width: 200.00001525878906}
-    data_bindings:
-    - {property: text, code: 'self.item[''join_date'']', writeback: false}
-  - name: adhar
+  - data_bindings:
+    - {code: 'self.item[''admin_role'']', property: text, writeback: false}
+    layout_properties: {width: 200.00001525878906, x: 717.4106837697327, y: 188.55356707051396}
+    name: adhar
     properties: {}
     type: Label
-    layout_properties: {x: 717.4106837697327, y: 188.55356707051396, width: 200.00001525878906}
-    data_bindings:
-    - {property: text, code: 'self.item[''admin_role'']', writeback: false}
-  - name: link_1
+  - data_bindings:
+    - {code: 'self.item[''admin_id'']', property: text, writeback: false}
+    layout_properties: {width: 200.00001525878906, x: 712.7142726369202, y: 136.9464198537171}
+    name: link_1
     properties: {}
     type: Label
-    layout_properties: {x: 712.7142726369202, y: 136.9464198537171, width: 200.00001525878906}
-    data_bindings:
-    - {property: text, code: 'self.item[''admin_id'']', writeback: false}
+  layout_properties: {grid_position: 'WVXQKB,MTPNYM'}
+  name: xy_panel_1
+  properties: {height: 347.85711669921875, role: outlined-card}
+  type: XYPanel
+container: {type: ColumnPanel}
+is_package: true

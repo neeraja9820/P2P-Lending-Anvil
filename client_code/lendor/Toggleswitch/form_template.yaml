@@ -1,22 +1,22 @@
-properties:
-- {name: shape, type: string, default_value: round, important: true, default_binding_prop: true}
-- {name: enabled, type: boolean, default_value: true, important: true}
-- {name: visible, type: boolean, default_value: true, important: true}
-- {name: checked, type: boolean, default_value: false, important: true}
-- {name: spacing_above, type: string, default_value: small, important: true}
-- {name: spacing_below, type: string, default_value: small, important: true}
-is_package: true
+components:
+- event_bindings: {change: check_box_1_change, hide: check_box_1_hide, show: check_box_1_show}
+  layout_properties: {slot: default}
+  name: check_box_1
+  properties: {align: left, allow_indeterminate: false, background: '', bold: false, border: '', checked: false, enabled: true, font: '', font_size: null, foreground: '', italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+  type: CheckBox
+container:
+  properties: {background: '', border: '', foreground: '', html: '@theme:toggle-switch.html', role: null, tooltip: '', visible: true}
+  type: HtmlTemplate
+custom_component: true
 events:
-- {name: x_change, default_event: true}
+- {default_event: true, name: x_change}
 - {name: x_show}
 - {name: x_hide}
-custom_component: true
-components:
-- type: CheckBox
-  properties: {role: null, bold: false, align: left, spacing_above: small, background: '', allow_indeterminate: false, underline: false, font: '', foreground: '', checked: false, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
-  name: check_box_1
-  layout_properties: {slot: default}
-  event_bindings: {show: check_box_1_show, hide: check_box_1_hide, change: check_box_1_change}
-container:
-  type: HtmlTemplate
-  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true, role: null, html: '@theme:toggle-switch.html'}
+is_package: true
+properties:
+- {default_binding_prop: true, default_value: round, important: true, name: shape, type: string}
+- {default_value: true, important: true, name: enabled, type: boolean}
+- {default_value: true, important: true, name: visible, type: boolean}
+- {default_value: false, important: true, name: checked, type: boolean}
+- {default_value: small, important: true, name: spacing_above, type: string}
+- {default_value: small, important: true, name: spacing_below, type: string}

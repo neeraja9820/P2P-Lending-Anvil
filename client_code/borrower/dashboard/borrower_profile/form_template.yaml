@@ -1,96 +1,96 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{"TZYKJF":15,"CICCQS":45}', role: elevated-card}
-  layout_properties: {slot: default}
-  name: content_panel
-  components:
-  - properties: {}
-    type: form:borrower.dashboard.Navigation_form_dashboard
-    layout_properties: {grid_position: 'VBSPQG,GULKOC', full_width_row: true}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'VBSPQG,GULKOC'}
     name: navigation_form_dashboard_1
-  - properties: {height: 206.428466796875, role: null, display_mode: zoom_to_fill}
-    type: Image
-    layout_properties: {grid_position: 'ZAYVLA,TZYKJF'}
+    properties: {}
+    type: form:borrower.dashboard.Navigation_form_dashboard
+  - layout_properties: {grid_position: 'ZAYVLA,TZYKJF'}
     name: image_1
-  - properties: {height: 169.28570556640625}
-    type: Spacer
-    layout_properties: {grid_position: 'ZAYVLA,CICCQS'}
+    properties: {display_mode: zoom_to_fill, height: 206.428466796875, role: null}
+    type: Image
+  - layout_properties: {grid_position: 'ZAYVLA,CICCQS'}
     name: spacer_1
-  - properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: 'theme:Secondary Container', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 25, tooltip: '', text: View Profile}
-    type: Label
-    layout_properties: {grid_position: 'KNDMSV,WRKCLN'}
+    properties: {height: 169.28570556640625}
+    type: Spacer
+  - layout_properties: {grid_position: 'KNDMSV,WRKCLN'}
     name: label_1_copy_1_copy_1
-  - properties: {role: elevated-card, col_widths: '{}'}
-    type: ColumnPanel
+    properties: {align: left, background: 'theme:Secondary Container', bold: true, border: '', font: '', font_size: 25, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: View Profile, tooltip: '', underline: false, visible: true}
+    type: Label
+  - components:
+    - layout_properties: {grid_position: 'ZELVBX,FFWAID'}
+      name: label_8
+      properties: {bold: true, role: null, text: 'Name :'}
+      type: Label
+    - layout_properties: {grid_position: 'ZELVBX,LIAWHO'}
+      name: label_1
+      properties: {font_size: null}
+      type: Label
+    - layout_properties: {grid_position: 'NAHEIR,ZSJNRV'}
+      name: label_2
+      properties: {bold: true, role: null, text: 'Email :'}
+      type: Label
+    - layout_properties: {grid_position: 'NAHEIR,YIBXYE'}
+      name: email
+      properties: {font_size: null}
+      type: Label
+    - layout_properties: {grid_position: 'OXHLSY,MXRUDZ'}
+      name: label_3
+      properties: {bold: true, role: null, text: 'Mobile No :'}
+      type: Label
+    - layout_properties: {grid_position: 'OXHLSY,IXTTYG'}
+      name: mobile
+      properties: {font: '', font_size: null}
+      type: Label
+    - layout_properties: {grid_position: 'ZACLMT,FIETLK'}
+      name: label_4
+      properties: {bold: true, role: null, text: 'Date Of Birth :'}
+      type: Label
+    - layout_properties: {grid_position: 'ZACLMT,ZOBFUW'}
+      name: birh
+      properties: {font_size: null}
+      type: Label
+    - layout_properties: {grid_position: 'XXBUIO,QPSBXK'}
+      name: label_5
+      properties: {bold: true, role: null, text: 'City :'}
+      type: Label
+    - layout_properties: {grid_position: 'XXBUIO,VUDFAB'}
+      name: city
+      properties: {font_size: null}
+      type: Label
+    - layout_properties: {grid_position: 'NHMYWK,QRZNKL'}
+      name: label_6
+      properties: {bold: true, role: null, text: 'Gender :'}
+      type: Label
+    - layout_properties: {grid_position: 'NHMYWK,WYAWBB'}
+      name: gender
+      properties: {font_size: null}
+      type: Label
+    - layout_properties: {grid_position: 'FXFFWV,ATTGOH'}
+      name: label_7
+      properties: {bold: true, role: null, text: 'Marrital Status :'}
+      type: Label
+    - layout_properties: {grid_position: 'FXFFWV,EUAOBE'}
+      name: status
+      properties: {font_size: null}
+      type: Label
     layout_properties: {grid_position: 'TFMQSU,CQCFYS'}
     name: column_panel_1
-    components:
-    - properties: {role: null, text: 'Name :', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'ZELVBX,FFWAID'}
-      name: label_8
-    - properties: {font_size: null}
-      type: Label
-      layout_properties: {grid_position: 'ZELVBX,LIAWHO'}
-      name: label_1
-    - properties: {role: null, text: 'Email :', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'NAHEIR,ZSJNRV'}
-      name: label_2
-    - properties: {font_size: null}
-      type: Label
-      layout_properties: {grid_position: 'NAHEIR,YIBXYE'}
-      name: email
-    - properties: {role: null, text: 'Mobile No :', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'OXHLSY,MXRUDZ'}
-      name: label_3
-    - properties: {font: '', font_size: null}
-      type: Label
-      layout_properties: {grid_position: 'OXHLSY,IXTTYG'}
-      name: mobile
-    - properties: {role: null, text: 'Date Of Birth :', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'ZACLMT,FIETLK'}
-      name: label_4
-    - properties: {font_size: null}
-      type: Label
-      layout_properties: {grid_position: 'ZACLMT,ZOBFUW'}
-      name: birh
-    - properties: {role: null, text: 'City :', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'XXBUIO,QPSBXK'}
-      name: label_5
-    - properties: {font_size: null}
-      type: Label
-      layout_properties: {grid_position: 'XXBUIO,VUDFAB'}
-      name: city
-    - properties: {role: null, text: 'Gender :', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'NHMYWK,QRZNKL'}
-      name: label_6
-    - properties: {font_size: null}
-      type: Label
-      layout_properties: {grid_position: 'NHMYWK,WYAWBB'}
-      name: gender
-    - properties: {role: null, text: 'Marrital Status :', bold: true}
-      type: Label
-      layout_properties: {grid_position: 'FXFFWV,ATTGOH'}
-      name: label_7
-    - properties: {font_size: null}
-      type: Label
-      layout_properties: {grid_position: 'FXFFWV,EUAOBE'}
-      name: status
-  - name: button_1
-    properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 18, tooltip: '', text: Edit details}
-    type: Button
+    properties: {col_widths: '{}', role: elevated-card}
+    type: ColumnPanel
+  - event_bindings: {click: button_1_click}
     layout_properties: {grid_position: 'BXZVUV,KDTADG'}
-    event_bindings: {click: button_1_click}
-- type: FlowPanel
-  properties: {}
-  layout_properties: {slot: nav-right}
+    name: button_1
+    properties: {align: center, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: 18, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Edit details, tooltip: '', underline: false, visible: true}
+    type: Button
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{"TZYKJF":15,"CICCQS":45}', role: elevated-card}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
   name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

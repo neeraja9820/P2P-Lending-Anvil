@@ -1,40 +1,40 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{"AQIQSM":50,"XRTMPH":10}'}
 components:
-- name: home_button_admin_1
+- layout_properties: {full_width_row: true, grid_position: 'HSEXSO,GJMQJB'}
+  name: home_button_admin_1
   properties: {}
   type: form:admin.dashboard.home_button_admin
-  layout_properties: {grid_position: 'HSEXSO,GJMQJB', full_width_row: true}
-- name: button_1
-  properties: {text: Back, bold: true, foreground: 'theme:On Primary', background: '#05264d', align: right, role: elevated-button, icon: 'fa:backward'}
+- event_bindings: {click: button_1_click}
+  layout_properties: {full_width_row: true, grid_position: 'ZECITE,XRTMPH'}
+  name: button_1
+  properties: {align: right, background: '#05264d', bold: true, foreground: 'theme:On Primary', icon: 'fa:backward', role: elevated-button, text: Back}
   type: Button
-  layout_properties: {grid_position: 'ZECITE,XRTMPH', full_width_row: true}
-  event_bindings: {click: button_1_click}
-- name: label_5_copy
-  properties: {text: Customer details and Contact information, bold: true, align: center, role: title}
+- layout_properties: {full_width_row: true, grid_position: 'PIITAL,SOIJCB'}
+  name: label_5_copy
+  properties: {align: center, bold: true, role: title, text: Customer details and Contact information}
   type: Label
-  layout_properties: {grid_position: 'PIITAL,SOIJCB', full_width_row: true}
-- name: label_2
+- layout_properties: {full_width_row: true, grid_position: 'AKUHWB,PUZLWO'}
+  name: label_2
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'AKUHWB,PUZLWO', full_width_row: true}
-- name: data_grid_1
-  properties:
-    columns:
-    - {id: JKSDUP, title: ' Photo  ', data_key: image}
-    - {id: VJQQOR, title: '  FullName  ', data_key: name, expand: true}
-    - {id: OJLQEN, title: '   Email', data_key: mail_id, expand: true}
-    - {id: HWDHRQ, data_key: ph_no, title: '   Mobile   ', expand: false, width: 104.5555419921875}
-    - {id: KLWTCJ, data_key: usertype, title: Usertype, expand: true}
-    - {id: KGTTKP, data_key: relation, title: Gurantor, expand: true}
-    - {id: POAYGK, data_key: G_name, title: 'Gurantor Name ', expand: true}
-    - {id: GWUTQO, data_key: G_ph_no, title: Gurantor  Mobile, expand: true}
-    role: tonal-data-grid
-  type: DataGrid
-  components:
+- components:
   - name: repeating_panel_1
     properties: {item_template: admin.dashboard.customer_management.managing_customer_profile.RowTemplate41}
     type: RepeatingPanel
-  layout_properties: {grid_position: 'ZNBFSX,TIWYAH', full_width_row: true}
+  layout_properties: {full_width_row: true, grid_position: 'ZNBFSX,TIWYAH'}
+  name: data_grid_1
+  properties:
+    columns:
+    - {data_key: image, id: JKSDUP, title: ' Photo  '}
+    - {data_key: name, expand: true, id: VJQQOR, title: '  FullName  '}
+    - {data_key: mail_id, expand: true, id: OJLQEN, title: '   Email'}
+    - {data_key: ph_no, expand: false, id: HWDHRQ, title: '   Mobile   ', width: 104.5555419921875}
+    - {data_key: usertype, expand: true, id: KLWTCJ, title: Usertype}
+    - {data_key: relation, expand: true, id: KGTTKP, title: Gurantor}
+    - {data_key: G_name, expand: true, id: POAYGK, title: 'Gurantor Name '}
+    - {data_key: G_ph_no, expand: true, id: GWUTQO, title: Gurantor  Mobile}
+    role: tonal-data-grid
+  type: DataGrid
+container:
+  properties: {col_widths: '{"AQIQSM":50,"XRTMPH":10}'}
+  type: ColumnPanel
 is_package: true

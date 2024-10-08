@@ -1,137 +1,137 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: form:borrower.dashboard.Navigation_form_dashboard
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'AYSYCJ,ZQGYKS'}
     name: navigation_form_dashboard_1
-    layout_properties: {grid_position: 'AYSYCJ,ZQGYKS', full_width_row: true}
-  - name: column_panel_1_copy
-    properties: {background: '#Edf0f4'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'WDKIPQ,FPRAAB', full_width_row: true}
-    components:
-    - name: label_3_copy
-      properties: {text: Borrower Extension Request, bold: true, font_size: 30, align: center}
+    properties: {}
+    type: form:borrower.dashboard.Navigation_form_dashboard
+  - components:
+    - layout_properties: {grid_position: 'YSBCDH,HOTHOD'}
+      name: label_3_copy
+      properties: {align: center, bold: true, font_size: 30, text: Borrower Extension Request}
       type: Label
-      layout_properties: {grid_position: 'YSBCDH,HOTHOD'}
-    - name: card
-      properties: {role: elevated-card, col_widths: '{}', background: white}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'SFBINH,YONEPH'}
-      components:
-      - name: grid_panel_1
+    - components:
+      - components:
+        - layout_properties: {col_xs: 0, row: SZJOUE, width_xs: 3}
+          name: label_7_copy
+          properties: {bold: true, role: input-prompt, text: '  Borrower Name:'}
+          type: Label
+        - layout_properties: {col_xs: 3, row: SZJOUE, width_xs: 2}
+          name: label_name
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 6, row: SZJOUE, width_xs: 3}
+          name: label_8_copy
+          properties: {bold: true, role: input-prompt, text: '  Loan Amount:'}
+          type: Label
+        - layout_properties: {col_xs: 9, row: SZJOUE, width_xs: 3}
+          name: label_loan_amount
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 0, row: MOOUVE, width_xs: 3}
+          name: label_11_copy
+          properties: {bold: true, role: input-prompt, text: '  Intrest Rate:'}
+          type: Label
+        - layout_properties: {col_xs: 3, row: MOOUVE, width_xs: 3}
+          name: label_interest_rate
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 6, row: MOOUVE, width_xs: 3}
+          name: label_7
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Extension Allowed :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 9, row: MOOUVE, width_xs: 3}
+          name: extension_allow
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 0, row: PSRIDP, width_xs: 2}
+          name: label_10_copy
+          properties: {bold: true, role: input-prompt, text: '  Tenure:'}
+          type: Label
+        - layout_properties: {col_xs: 3, row: PSRIDP, width_xs: 2}
+          name: label_loan_tenure
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 6, row: PSRIDP, width_xs: 3}
+          name: label_16
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Extension Fee(%) :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 9, row: PSRIDP, width_xs: 3}
+          name: extension_fee
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+          type: Label
+        - layout_properties: {col_xs: 0, row: QTIARG, width_xs: 12}
+          name: label_3
+          properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Extension Months :', tooltip: '', underline: false, visible: true}
+          type: Label
+        layout_properties: {grid_position: 'YXXRXY,ANWOQL'}
+        name: grid_panel_1
         properties: {}
         type: GridPanel
-        layout_properties: {grid_position: 'YXXRXY,ANWOQL'}
-        components:
-        - name: label_7_copy
-          properties: {text: '  Borrower Name:', bold: true, role: input-prompt}
-          type: Label
-          layout_properties: {row: SZJOUE, width_xs: 3, col_xs: 0}
-        - name: label_name
-          properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
-          type: Label
-          layout_properties: {row: SZJOUE, width_xs: 2, col_xs: 3}
-        - name: label_8_copy
-          properties: {bold: true, text: '  Loan Amount:', role: input-prompt}
-          type: Label
-          layout_properties: {row: SZJOUE, width_xs: 3, col_xs: 6}
-        - name: label_loan_amount
-          properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
-          type: Label
-          layout_properties: {row: SZJOUE, width_xs: 3, col_xs: 9}
-        - name: label_11_copy
-          properties: {bold: true, text: '  Intrest Rate:', role: input-prompt}
-          type: Label
-          layout_properties: {row: MOOUVE, width_xs: 3, col_xs: 0}
-        - name: label_interest_rate
-          properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
-          type: Label
-          layout_properties: {row: MOOUVE, width_xs: 3, col_xs: 3}
-        - name: label_7
-          properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Extension Allowed :'}
-          type: Label
-          layout_properties: {row: MOOUVE, width_xs: 3, col_xs: 6}
-        - name: extension_allow
-          properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
-          type: Label
-          layout_properties: {row: MOOUVE, width_xs: 3, col_xs: 9}
-        - name: label_10_copy
-          properties: {bold: true, text: '  Tenure:', role: input-prompt}
-          type: Label
-          layout_properties: {row: PSRIDP, width_xs: 2, col_xs: 0}
-        - name: label_loan_tenure
-          properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
-          type: Label
-          layout_properties: {row: PSRIDP, width_xs: 2, col_xs: 3}
-        - name: label_16
-          properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Extension Fee(%) :'}
-          type: Label
-          layout_properties: {row: PSRIDP, width_xs: 3, col_xs: 6}
-        - name: extension_fee
-          properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
-          type: Label
-          layout_properties: {row: PSRIDP, width_xs: 3, col_xs: 9}
-        - name: label_3
-          properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Extension Months :'}
-          type: Label
-          layout_properties: {row: QTIARG, width_xs: 12, col_xs: 0}
-      - name: text_box_1
-        properties: {role: outlined, bold: false, align: left, placeholder: Enter months you want extension, spacing_above: small, background: white, type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '1px solid ', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
+      - layout_properties: {grid_position: 'YPMPQK,KGOYRE'}
+        name: text_box_1
+        properties: {align: left, background: white, bold: false, border: '1px solid ', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: Enter months you want extension, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
         type: TextBox
-        layout_properties: {grid_position: 'YPMPQK,KGOYRE'}
-      - name: label_5_copy
-        properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Error', spacing_below: small, visible: false, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
+      - layout_properties: {grid_position: 'AVZUCC,SHVQSZ'}
+        name: label_5_copy
+        properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:Error', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
         type: Label
-        layout_properties: {grid_position: 'AVZUCC,SHVQSZ'}
-      - name: label_5_copy_2
-        properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Error', spacing_below: small, visible: false, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
+      - layout_properties: {grid_position: 'MCZKFR,DSXAVY'}
+        name: label_5_copy_2
+        properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:Error', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
         type: Label
-        layout_properties: {grid_position: 'MCZKFR,DSXAVY'}
-      - name: label_5_copy_3
-        properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Error', spacing_below: small, visible: false, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
+      - layout_properties: {grid_position: 'LNKSJU,VVAMIK'}
+        name: label_5_copy_3
+        properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:Error', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
         type: Label
-        layout_properties: {grid_position: 'LNKSJU,VVAMIK'}
-    - name: spacer_5
+      layout_properties: {grid_position: 'SFBINH,YONEPH'}
+      name: card
+      properties: {background: white, col_widths: '{}', role: elevated-card}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'ICEFVE,TQYGDK'}
+      name: spacer_5
       properties: {height: 14}
       type: Spacer
-      layout_properties: {grid_position: 'ICEFVE,TQYGDK'}
-    - name: button_1_copy
-      properties: {role: filled-button, bold: false, align: full, spacing_above: small, background: '#0b2547', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: false, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-      type: Button
+    - event_bindings: {click: button_1_copy_click}
       layout_properties: {grid_position: 'NILGRX,ADKOOO'}
-      event_bindings: {click: button_1_copy_click}
-    - name: button_2
-      properties: {role: filled-button, bold: false, align: full, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: false, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Extension Request}
+      name: button_1_copy
+      properties: {align: full, background: '#0b2547', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: filled-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: false}
       type: Button
+    - event_bindings: {click: button_2_click}
       layout_properties: {grid_position: 'NILGRX,ULDBYU'}
-      event_bindings: {click: button_2_click}
-    - name: button_1
-      properties: {role: filled-button, bold: false, align: center, spacing_above: small, background: '#0b2547', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: false, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+      name: button_2
+      properties: {align: full, background: '#0b2547', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: filled-button, spacing_above: small, spacing_below: small, text: Extension Request, tooltip: '', underline: false, visible: false}
       type: Button
+    - event_bindings: {click: button_1_click}
       layout_properties: {grid_position: 'HUAIUN,TRLXUR'}
-      event_bindings: {click: button_1_click}
-    - name: button_s
-      properties: {text: Back, background: '#0b2547', foreground: 'theme:On Primary', role: filled-button, icon: 'fa:backward', visible: false}
+      name: button_1
+      properties: {align: center, background: '#0b2547', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: filled-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: false}
       type: Button
+    - event_bindings: {click: button_s_click}
       layout_properties: {grid_position: 'YPVUZE,GDDLAE'}
-      event_bindings: {click: button_s_click}
-    - name: label_2
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: null, tooltip: '', text: 'Loan Id :'}
+      name: button_s
+      properties: {background: '#0b2547', foreground: 'theme:On Primary', icon: 'fa:backward', role: filled-button, text: Back, visible: false}
+      type: Button
+    - layout_properties: {grid_position: 'BMPXJO,PVEFYB'}
+      name: label_2
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Loan Id :', tooltip: '', underline: false, visible: false}
       type: Label
-      layout_properties: {grid_position: 'BMPXJO,PVEFYB'}
-    - name: label_loan_id
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'CFNPJW,KTPVWS'}
+      name: label_loan_id
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
       type: Label
-      layout_properties: {grid_position: 'CFNPJW,KTPVWS'}
-    - name: spacer_1
+    - layout_properties: {grid_position: 'WHICQD,YXRYBK'}
+      name: spacer_1
       properties: {height: 104.50006103515625}
       type: Spacer
-      layout_properties: {grid_position: 'WHICQD,YXRYBK'}
+    layout_properties: {full_width_row: true, grid_position: 'WDKIPQ,FPRAAB'}
+    name: column_panel_1_copy
+    properties: {background: '#Edf0f4'}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

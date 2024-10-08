@@ -1,23 +1,23 @@
-container: {type: ColumnPanel}
 components:
-- name: navigation_bar_lender_dashbord_1
+- layout_properties: {full_width_row: true, grid_position: 'XARKAT,ZWJNXI'}
+  name: navigation_bar_lender_dashbord_1
   properties: {}
   type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
-  layout_properties: {grid_position: 'XARKAT,ZWJNXI', full_width_row: true}
-- name: spacer_1
+- layout_properties: {grid_position: 'CSVXMU,RPDIQF'}
+  name: spacer_1
   properties: {height: 32}
   type: Spacer
-  layout_properties: {grid_position: 'CSVXMU,RPDIQF'}
-- name: label_1
-  properties: {align: center, text: Lender Commitment, bold: true, font_size: 20}
+- layout_properties: {grid_position: 'CFXCOG,UKBMON'}
+  name: label_1
+  properties: {align: center, bold: true, font_size: 20, text: Lender Commitment}
   type: Label
-  layout_properties: {grid_position: 'CFXCOG,UKBMON'}
-- name: spacer_1_copy
+- layout_properties: {grid_position: 'HLDPBB,CPODFM'}
+  name: spacer_1_copy
   properties: {height: 10.25}
   type: Spacer
-  layout_properties: {grid_position: 'HLDPBB,CPODFM'}
-- name: plot_1
+- layout_properties: {grid_position: 'MNGZDK,JBOLTQ'}
+  name: plot_1
   properties: {}
   type: Plot
-  layout_properties: {grid_position: 'MNGZDK,JBOLTQ'}
+container: {type: ColumnPanel}
 is_package: true

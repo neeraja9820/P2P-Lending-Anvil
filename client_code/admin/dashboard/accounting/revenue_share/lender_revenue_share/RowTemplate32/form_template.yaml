@@ -1,33 +1,33 @@
-is_package: true
-container: {type: DataRowPanel}
 components:
-- name: label_1
-  properties: {align: center}
-  type: Label
+- data_bindings: []
   layout_properties: {column: JKSDUP}
-  data_bindings: []
-- name: label_2
+  name: label_1
   properties: {align: center}
   type: Label
+- data_bindings: []
   layout_properties: {column: VJQQOR}
-  data_bindings: []
-- name: label_3
+  name: label_2
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item['''']', property: text, writeback: false}
   layout_properties: {column: OJLQEN}
-  data_bindings:
-  - {property: text, code: 'self.item['''']', writeback: false}
-- name: label_4
+  name: label_3
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item['''']', property: text, writeback: false}
   layout_properties: {column: QARCVI}
-  data_bindings:
-  - {property: text, code: 'self.item['''']', writeback: false}
-- name: label_5
+  name: label_4
   properties: {align: center}
   type: Label
-  layout_properties: {column: WGHMGB}
-- name: label_6
+- layout_properties: {column: WGHMGB}
+  name: label_5
   properties: {align: center}
   type: Label
-  layout_properties: {column: ZEEWWL}
+- layout_properties: {column: ZEEWWL}
+  name: label_6
+  properties: {align: center}
+  type: Label
+container: {type: DataRowPanel}
+is_package: true

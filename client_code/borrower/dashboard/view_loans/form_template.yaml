@@ -1,183 +1,183 @@
-is_package: true
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: form:borrower.dashboard.Navigation_form_dashboard
-  properties: {}
-  layout_properties: {grid_position: 'SDKXCK,XNYOMQ', full_width_row: true}
+- layout_properties: {full_width_row: true, grid_position: 'SDKXCK,XNYOMQ'}
   name: navigation_form_dashboard_1
-- type: Spacer
-  properties: {height: 0}
-  layout_properties: {grid_position: 'TMKJCG,DHQYVX'}
+  properties: {}
+  type: form:borrower.dashboard.Navigation_form_dashboard
+- layout_properties: {grid_position: 'TMKJCG,DHQYVX'}
   name: spacer_1
-- properties: {role: elevated-card, col_widths: '', spacing_above: small, background: '#0b2547', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
-  type: ColumnPanel
+  properties: {height: 0}
+  type: Spacer
+- components:
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'YUTUEO,ZDKIXA'}
+    name: button_1
+    properties:
+      align: center
+      background: ''
+      bold: true
+      border: ''
+      enabled: true
+      font: ''
+      font_size: null
+      foreground: theme:On Primary
+      icon: ''
+      icon_align: left
+      italic: false
+      role: null
+      spacing_above: small
+      spacing_below: small
+      text: "Open \nLoans"
+      tooltip: ''
+      underline: false
+      visible: true
+    type: Button
+  - layout_properties: {grid_position: 'NZNCOP,SKGMZB'}
+    name: label_5
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
   layout_properties: {grid_position: 'LCSCLJ,HWKVCB'}
   name: outlined_card_1
-  components:
-  - properties:
-      role: null
-      bold: true
-      align: center
-      spacing_above: small
-      background: ''
-      icon: ''
-      underline: false
-      font: ''
-      icon_align: left
-      foreground: theme:On Primary
-      spacing_below: small
-      visible: true
-      border: ''
-      italic: false
-      enabled: true
-      font_size: null
-      tooltip: ''
-      text: "Open \nLoans"
-    type: Button
-    layout_properties: {grid_position: 'YUTUEO,ZDKIXA'}
-    event_bindings: {click: button_1_click}
-    name: button_1
-  - properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
-    type: Label
-    layout_properties: {grid_position: 'NZNCOP,SKGMZB'}
-    name: label_5
-- properties: {role: elevated-card, col_widths: '', spacing_above: small, background: '#0b2547', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
+  properties: {background: '#0b2547', border: '', col_spacing: medium, col_widths: '', foreground: '', role: elevated-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
   type: ColumnPanel
-  layout_properties: {grid_position: 'LCSCLJ,YUYEIE'}
-  name: outlined_card_2
-  components:
-  - properties:
-      role: null
-      bold: true
+- components:
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'FNHLVB,HDEYKB'}
+    name: button_2
+    properties:
       align: center
-      spacing_above: small
       background: ''
-      icon: ''
-      underline: false
-      font: ''
-      icon_align: left
-      foreground: theme:On Primary
-      spacing_below: small
-      visible: true
+      bold: true
       border: ''
-      italic: false
       enabled: true
+      font: ''
       font_size: null
-      tooltip: ''
+      foreground: theme:On Primary
+      icon: ''
+      icon_align: left
+      italic: false
+      role: null
+      spacing_above: small
+      spacing_below: small
       text: |-
         Closed
         Loans
+      tooltip: ''
+      underline: false
+      visible: true
     type: Button
-    layout_properties: {grid_position: 'FNHLVB,HDEYKB'}
-    event_bindings: {click: button_2_click}
-    name: button_2
-  - properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
-    type: Label
-    layout_properties: {grid_position: 'UZVEOM,KGCRHE'}
+  - layout_properties: {grid_position: 'UZVEOM,KGCRHE'}
     name: label_6
-- properties: {role: elevated-card, col_widths: '', spacing_above: small, background: '#0b2547', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
+  layout_properties: {grid_position: 'LCSCLJ,YUYEIE'}
+  name: outlined_card_2
+  properties: {background: '#0b2547', border: '', col_spacing: medium, col_widths: '', foreground: '', role: elevated-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
   type: ColumnPanel
+- components:
+  - event_bindings: {click: button_3_click}
+    layout_properties: {grid_position: 'TYKZVH,HTOGIY'}
+    name: button_3
+    properties:
+      align: center
+      background: ''
+      bold: true
+      border: ''
+      enabled: true
+      font: ''
+      font_size: null
+      foreground: theme:On Primary
+      icon: ''
+      icon_align: left
+      italic: false
+      role: null
+      spacing_above: small
+      spacing_below: small
+      text: "Rejected \nLoans"
+      tooltip: ''
+      underline: false
+      visible: true
+    type: Button
+  - layout_properties: {grid_position: 'XIDDNT,YUSBUB'}
+    name: label_7
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
   layout_properties: {grid_position: 'LCSCLJ,KJNUCJ'}
   name: outlined_card_3
-  components:
-  - properties:
-      role: null
-      bold: true
-      align: center
-      spacing_above: small
-      background: ''
-      icon: ''
-      underline: false
-      font: ''
-      icon_align: left
-      foreground: theme:On Primary
-      spacing_below: small
-      visible: true
-      border: ''
-      italic: false
-      enabled: true
-      font_size: null
-      tooltip: ''
-      text: "Rejected \nLoans"
-    type: Button
-    layout_properties: {grid_position: 'TYKZVH,HTOGIY'}
-    event_bindings: {click: button_3_click}
-    name: button_3
-  - properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
-    type: Label
-    layout_properties: {grid_position: 'XIDDNT,YUSBUB'}
-    name: label_7
-- properties: {role: elevated-card, col_widths: '', spacing_above: small, background: '#0b2547', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
+  properties: {background: '#0b2547', border: '', col_spacing: medium, col_widths: '', foreground: '', role: elevated-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
   type: ColumnPanel
+- components:
+  - event_bindings: {click: button_4_click}
+    layout_properties: {grid_position: 'ZATBCN,CWOXRK'}
+    name: button_4
+    properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Underprocess Loans, tooltip: '', underline: false, visible: true}
+    type: Button
+  - layout_properties: {grid_position: 'WXCULQ,LTJFAT'}
+    name: label_8
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
   layout_properties: {grid_position: 'LCSCLJ,FSYNPZ'}
   name: outlined_card_4
-  components:
-  - properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Underprocess Loans}
-    type: Button
-    layout_properties: {grid_position: 'ZATBCN,CWOXRK'}
-    event_bindings: {click: button_4_click}
-    name: button_4
-  - properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
-    type: Label
-    layout_properties: {grid_position: 'WXCULQ,LTJFAT'}
-    name: label_8
-- properties: {role: elevated-card, col_widths: '', spacing_above: small, background: '#0b2547', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
+  properties: {background: '#0b2547', border: '', col_spacing: medium, col_widths: '', foreground: '', role: elevated-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
   type: ColumnPanel
+- components:
+  - event_bindings: {click: button_5_click}
+    layout_properties: {grid_position: 'NMQGPC,HLVLHH'}
+    name: button_5
+    properties: {align: center, background: '', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Foreclosure Loans, tooltip: '', underline: false, visible: true}
+    type: Button
+  - layout_properties: {grid_position: 'VGAPII,WLWKHM'}
+    name: label_9
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 20, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
   layout_properties: {grid_position: 'LCSCLJ,VJJTRT'}
   name: outlined_card_5
-  components:
-  - properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Foreclosure Loans}
-    type: Button
-    layout_properties: {grid_position: 'NMQGPC,HLVLHH'}
-    event_bindings: {click: button_5_click}
-    name: button_5
-  - properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: ''}
-    type: Label
-    layout_properties: {grid_position: 'VGAPII,WLWKHM'}
-    name: label_9
-- type: Spacer
-  properties: {height: 29}
-  layout_properties: {grid_position: 'YSSFYN,LDPQTL'}
+  properties: {background: '#0b2547', border: '', col_spacing: medium, col_widths: '', foreground: '', role: elevated-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
+- layout_properties: {grid_position: 'YSSFYN,LDPQTL'}
   name: spacer_2
-- properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 18, tooltip: '', text: Open Loans}
-  type: Label
-  layout_properties: {grid_position: 'QNSBZS,CGBXYN'}
+  properties: {height: 29}
+  type: Spacer
+- layout_properties: {grid_position: 'QNSBZS,CGBXYN'}
   name: label_1
-- properties: {bold: true, align: center, text: Closed Loans, visible: false, font_size: 18}
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 18, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Open Loans, tooltip: '', underline: false, visible: false}
   type: Label
-  layout_properties: {grid_position: 'SETITB,KGRYUO'}
+- layout_properties: {grid_position: 'SETITB,KGRYUO'}
   name: label_2
-- properties: {bold: true, align: center, text: Rejected Loans, visible: false, font_size: 18}
+  properties: {align: center, bold: true, font_size: 18, text: Closed Loans, visible: false}
   type: Label
-  layout_properties: {grid_position: 'LUEZMM,LACBYS'}
+- layout_properties: {grid_position: 'LUEZMM,LACBYS'}
   name: label_3
-- properties: {bold: true, align: center, text: UnderProcess Loans, visible: false, font_size: 18}
+  properties: {align: center, bold: true, font_size: 18, text: Rejected Loans, visible: false}
   type: Label
-  layout_properties: {grid_position: 'KPPWKA,PHYLTR'}
+- layout_properties: {grid_position: 'KPPWKA,PHYLTR'}
   name: label_4
-- properties: {bold: true, align: center, text: ForeClousure Loans, visible: false, font_size: 18}
+  properties: {align: center, bold: true, font_size: 18, text: UnderProcess Loans, visible: false}
   type: Label
-  layout_properties: {grid_position: 'ZTCJTB,XTXYWX'}
+- layout_properties: {grid_position: 'ZTCJTB,XTXYWX'}
   name: label_10
-- properties: {item_template: borrower.dashboard.view_loans.ItemTemplate41, visible: false}
-  type: RepeatingPanel
-  layout_properties: {grid_position: 'KSECDY,QYVOLK'}
+  properties: {align: center, bold: true, font_size: 18, text: ForeClousure Loans, visible: false}
+  type: Label
+- layout_properties: {grid_position: 'KSECDY,QYVOLK'}
   name: repeating_panel_6
-- properties: {item_template: borrower.dashboard.view_loans.ItemTemplate42, visible: false}
+  properties: {item_template: borrower.dashboard.view_loans.ItemTemplate41, visible: false}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'VWZMCG,FNHIYC'}
+- layout_properties: {grid_position: 'VWZMCG,FNHIYC'}
   name: repeating_panel_7
-- properties: {item_template: borrower.dashboard.view_loans.ItemTemplate43, visible: false}
+  properties: {item_template: borrower.dashboard.view_loans.ItemTemplate42, visible: false}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'ELHRPB,OUPOCQ'}
+- layout_properties: {grid_position: 'ELHRPB,OUPOCQ'}
   name: repeating_panel_8
-- properties: {item_template: borrower.dashboard.view_loans.ItemTemplate44, visible: false}
+  properties: {item_template: borrower.dashboard.view_loans.ItemTemplate43, visible: false}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'XVNVCJ,FWUABT'}
+- layout_properties: {grid_position: 'XVNVCJ,FWUABT'}
   name: repeating_panel_9
-- properties: {item_template: borrower.dashboard.view_loans.ItemTemplate45, visible: false}
+  properties: {item_template: borrower.dashboard.view_loans.ItemTemplate44, visible: false}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'WXWASA,HGRKUI'}
+- layout_properties: {grid_position: 'WXWASA,HGRKUI'}
   name: repeating_panel_10
+  properties: {item_template: borrower.dashboard.view_loans.ItemTemplate45, visible: false}
+  type: RepeatingPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+is_package: true

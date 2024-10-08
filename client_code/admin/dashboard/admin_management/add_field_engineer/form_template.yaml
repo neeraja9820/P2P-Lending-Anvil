@@ -1,133 +1,133 @@
-container: {type: ColumnPanel}
 components:
-- name: home_button_admin_1
+- layout_properties: {full_width_row: true, grid_position: 'UFPVSG,ACEMUE'}
+  name: home_button_admin_1
   properties: {}
   type: form:admin.dashboard.home_button_admin
-  layout_properties: {grid_position: 'UFPVSG,ACEMUE', full_width_row: true}
-- name: button_1
-  properties: {text: Back, foreground: 'theme:On Primary', icon: 'fa:backward', background: '#05264d', bold: true, align: right}
+- event_bindings: {click: button_1_click}
+  layout_properties: {full_width_row: true, grid_position: 'MKJZOZ,WBCRJV'}
+  name: button_1
+  properties: {align: right, background: '#05264d', bold: true, foreground: 'theme:On Primary', icon: 'fa:backward', text: Back}
   type: Button
-  layout_properties: {grid_position: 'MKJZOZ,WBCRJV', full_width_row: true}
-  event_bindings: {click: button_1_click}
-- name: flow_panel_1
-  properties: {role: outlined-card, spacing: huge, align: center, background: '#05264d', foreground: 'theme:On Primary'}
-  type: FlowPanel
-  layout_properties: {grid_position: 'BSPSIY,SJBAFG'}
-  components:
-  - name: label_1
-    properties: {text: 'Enter Field Engineer Details ', bold: true, align: center, font_size: 18, foreground: 'theme:On Primary'}
+- components:
+  - layout_properties: {}
+    name: label_1
+    properties: {align: center, bold: true, font_size: 18, foreground: 'theme:On Primary', text: 'Enter Field Engineer Details '}
     type: Label
-    layout_properties: {}
-- name: label_2
+  layout_properties: {grid_position: 'BSPSIY,SJBAFG'}
+  name: flow_panel_1
+  properties: {align: center, background: '#05264d', foreground: 'theme:On Primary', role: outlined-card, spacing: huge}
+  type: FlowPanel
+- layout_properties: {grid_position: 'MPJMKI,ENNIVC'}
+  name: label_2
   properties: {align: center, bold: true, visible: false}
   type: Label
-  layout_properties: {grid_position: 'MPJMKI,ENNIVC'}
-- name: column_panel_2
-  properties: {role: elevated-card, col_widths: '{"JGTWGA":35,"OAUSYI":35,"ZJBHAN":55,"KVDHMP":5,"VPXZNF":15,"VWHOAF":45}'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'KXEJIQ,WHVOVD'}
-  components:
-  - name: spacer_1
+- components:
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VPXZNF'}
+    name: spacer_1
     properties: {height: 465.99993896484375}
     type: Spacer
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VPXZNF'}
-  - name: label_1_copy
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '    Date :'}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF FWRHQG,AOAQOT'}
+    name: label_1_copy
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '    Date :', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF FWRHQG,AOAQOT'}
-  - name: date_lable
-    properties: {role: outlined, background: white, enabled: false}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF FWRHQG,NMOEGP'}
+    name: date_lable
+    properties: {background: white, enabled: false, role: outlined}
     type: TextBox
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF FWRHQG,NMOEGP'}
-  - name: label_1_copy_copy
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '    Name :'}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF SLQBMT,UWXBOE'}
+    name: label_1_copy_copy
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '    Name :', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF SLQBMT,UWXBOE'}
-  - name: admin_name
-    properties: {role: outlined, placeholder: Enter Full Name}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF SLQBMT,GAZWJT'}
+    name: admin_name
+    properties: {placeholder: Enter Full Name, role: outlined}
     type: TextBox
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF SLQBMT,GAZWJT'}
-  - name: label_2_copy
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '    Email Id: '}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF EBCAEF,FEUENQ'}
+    name: label_2_copy
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '    Email Id: ', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF EBCAEF,FEUENQ'}
-  - name: admin_email
-    properties: {role: outlined, placeholder: Enter Your Email}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF EBCAEF,IEQYWB'}
+    name: admin_email
+    properties: {placeholder: Enter Your Email, role: outlined}
     type: TextBox
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF EBCAEF,IEQYWB'}
-  - name: label_3
-    properties: {text: '    Mobile Number:', bold: true}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QLQNPH,QEPEMQ'}
+    name: label_3
+    properties: {bold: true, text: '    Mobile Number:'}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QLQNPH,QEPEMQ'}
-  - name: mobile_number
-    properties: {role: outlined, placeholder: Enter Mobile Number}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QLQNPH,SDMSPR'}
+    name: mobile_number
+    properties: {placeholder: Enter Mobile Number, role: outlined}
     type: TextBox
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QLQNPH,SDMSPR'}
-  - name: label_4
-    properties: {text: '    Date Of Birth:', bold: true}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF CNEYGA,EZVIJA'}
+    name: label_4
+    properties: {bold: true, text: '    Date Of Birth:'}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF CNEYGA,EZVIJA'}
-  - name: dob
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF CNEYGA,MPRYFJ'}
+    name: dob
     properties: {role: outlined}
     type: DatePicker
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF CNEYGA,MPRYFJ'}
-  - name: label_5
-    properties: {text: '    Gender:', bold: true}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF KIWXXY,ZKXFIV'}
+    name: label_5
+    properties: {bold: true, text: '    Gender:'}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF KIWXXY,ZKXFIV'}
-  - name: gender
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF KIWXXY,YRSXRI'}
+    name: gender
     properties:
-      role: outlined
+      include_placeholder: true
       items: ['']
       placeholder: Chose Gender
-      include_placeholder: true
+      role: outlined
     type: DropDown
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF KIWXXY,YRSXRI'}
-  - name: label_6
-    properties: {text: '    Role:', bold: true}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF NWGYTJ,OZIKSY'}
+    name: label_6
+    properties: {bold: true, text: '    Role:'}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF NWGYTJ,OZIKSY'}
-  - name: role
-    properties: {role: outlined, enabled: false}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF NWGYTJ,NRCKBD'}
+    name: role
+    properties: {enabled: false, role: outlined}
     type: TextBox
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF NWGYTJ,NRCKBD'}
-  - name: label_7
-    properties: {text: '    Address :', bold: true}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF JYKZFD,ZEEHLJ'}
+    name: label_7
+    properties: {bold: true, text: '    Address :'}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF JYKZFD,ZEEHLJ'}
-  - name: address_text_box
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF JYKZFD,ZHJIXT'}
+    name: address_text_box
     properties: {role: outlined}
     type: TextBox
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF JYKZFD,ZHJIXT'}
-  - name: lable
-    properties: {text: '    Create Password:', bold: true}
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF KTPWQK,SKVLJW'}
+    name: lable
+    properties: {bold: true, text: '    Create Password:'}
     type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF KTPWQK,SKVLJW'}
-  - name: create_password_text
-    properties: {role: outlined, placeholder: Create Password}
-    type: TextBox
+  - event_bindings: {pressed_enter: create_password_text_pressed_enter}
     layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF KTPWQK,CUFTKV'}
-    event_bindings: {pressed_enter: create_password_text_pressed_enter}
-  - name: labled
-    properties: {text: '   Re Enter  Password:', bold: true}
-    type: Label
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QSOCDE,ZEZFCF'}
-  - name: re_enter_password
-    properties: {role: outlined, placeholder: Re Enter Password}
+    name: create_password_text
+    properties: {placeholder: Create Password, role: outlined}
     type: TextBox
-    layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QSOCDE,JGQPMZ'}
-  - name: spacer_2
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QSOCDE,ZEZFCF'}
+    name: labled
+    properties: {bold: true, text: '   Re Enter  Password:'}
+    type: Label
+  - layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF QSOCDE,JGQPMZ'}
+    name: re_enter_password
+    properties: {placeholder: Re Enter Password, role: outlined}
+    type: TextBox
+  - layout_properties: {grid_position: 'WJWNQB,KVDHMP'}
+    name: spacer_2
     properties: {height: 437.71417236328125}
     type: Spacer
-    layout_properties: {grid_position: 'WJWNQB,KVDHMP'}
-  - name: clear_function
-    properties: {text: '   clear   ', bold: true, role: filled-button, background: '#05264d', icon: '', align: right, foreground: 'theme:On Primary', icon_align: left}
-    type: Button
+  - event_bindings: {click: clear_function_click}
     layout_properties: {grid_position: 'PKTVOO,JGTWGA'}
-    event_bindings: {click: clear_function_click}
-  - name: save_all_fields
-    properties: {text: save, role: filled-button, background: '#05264d', bold: true, icon: 'fa:save', align: left, foreground: 'theme:On Primary'}
+    name: clear_function
+    properties: {align: right, background: '#05264d', bold: true, foreground: 'theme:On Primary', icon: '', icon_align: left, role: filled-button, text: '   clear   '}
     type: Button
+  - event_bindings: {click: save_all_fields_click}
     layout_properties: {grid_position: 'PKTVOO,OAUSYI'}
-    event_bindings: {click: save_all_fields_click}
+    name: save_all_fields
+    properties: {align: left, background: '#05264d', bold: true, foreground: 'theme:On Primary', icon: 'fa:save', role: filled-button, text: save}
+    type: Button
+  layout_properties: {grid_position: 'KXEJIQ,WHVOVD'}
+  name: column_panel_2
+  properties: {col_widths: '{"JGTWGA":35,"OAUSYI":35,"ZJBHAN":55,"KVDHMP":5,"VPXZNF":15,"VWHOAF":45}', role: elevated-card}
+  type: ColumnPanel
+container: {type: ColumnPanel}
 is_package: true

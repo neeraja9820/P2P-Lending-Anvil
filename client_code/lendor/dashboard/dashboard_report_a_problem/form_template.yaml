@@ -1,134 +1,134 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'VHTEXR,LDHUCH'}
     name: navigation_bar_lender_dashbord_1
-    layout_properties: {grid_position: 'VHTEXR,LDHUCH', full_width_row: true}
-  - name: button_1
-    properties: {text: Back, align: right, background: '#05264d', foreground: white, icon: 'fa:backward'}
+    properties: {}
+    type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
+  - event_bindings: {click: button_1_click}
+    layout_properties: {full_width_row: true, grid_position: 'GQTEFM,WPXKXS'}
+    name: button_1
+    properties: {align: right, background: '#05264d', foreground: white, icon: 'fa:backward', text: Back}
     type: Button
-    layout_properties: {grid_position: 'GQTEFM,WPXKXS', full_width_row: true}
-    event_bindings: {click: button_1_click}
-- type: ColumnPanel
-  properties: {role: null, col_widths: '{"GFJMMM":10,"ZJRRGD":40,"NFWEZN":10}', wrap_on: mobile}
-  name: outlined_card_2_copy
-  layout_properties: {grid_position: 'ECKBEK,XFTDMP', row: QBZMKP, width_xs: 12, col_xs: 0}
-  components:
-  - type: Label
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Report A Problem}
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - layout_properties: {grid_position: 'GVLWCJ,GRXWIJ'}
     name: label_1
-    layout_properties: {grid_position: 'GVLWCJ,GRXWIJ'}
-  - type: Spacer
-    properties: {height: 9}
+    properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 18, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Report A Problem, tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'GCEQKF,IFFCMA'}
     name: spacer_1
-    layout_properties: {grid_position: 'GCEQKF,IFFCMA'}
-  - name: spacer_5
+    properties: {height: 9}
+    type: Spacer
+  - layout_properties: {grid_position: 'ZBQSRM,GFJMMM'}
+    name: spacer_5
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'ZBQSRM,GFJMMM'}
-  - name: column_panel_1
-    properties: {col_widths: '{"BXIYGF":40}', role: elevated-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'ZBQSRM,ZJRRGD'}
-    components:
-    - name: label_4
-      properties: {text: Full Name, bold: true}
+  - components:
+    - layout_properties: {grid_position: 'LRORSR,GVFZCG'}
+      name: label_4
+      properties: {bold: true, text: Full Name}
       type: Label
-      layout_properties: {grid_position: 'LRORSR,GVFZCG'}
-    - name: name_box
+    - layout_properties: {grid_position: 'LRORSR,TYNVMV'}
+      name: name_box
       properties: {}
       type: Label
-      layout_properties: {grid_position: 'LRORSR,TYNVMV'}
-    - name: label_6
-      properties: {text: 'Mobile ', bold: true}
+    - layout_properties: {grid_position: 'ENBLDE,XTBCZH'}
+      name: label_6
+      properties: {bold: true, text: 'Mobile '}
       type: Label
-      layout_properties: {grid_position: 'ENBLDE,XTBCZH'}
-    - name: mobile_box
+    - layout_properties: {grid_position: 'ENBLDE,PFYZLC'}
+      name: mobile_box
       properties: {}
       type: Label
-      layout_properties: {grid_position: 'ENBLDE,PFYZLC'}
-    - name: label_5
-      properties: {text: Email Id, bold: true}
+    - layout_properties: {grid_position: 'DWOXLJ,ZOPHUW'}
+      name: label_5
+      properties: {bold: true, text: Email Id}
       type: Label
-      layout_properties: {grid_position: 'DWOXLJ,ZOPHUW'}
-    - name: email_box
+    - layout_properties: {grid_position: 'DWOXLJ,MENSYS'}
+      name: email_box
       properties: {}
       type: Label
-      layout_properties: {grid_position: 'DWOXLJ,MENSYS'}
-    - name: label_2
-      properties: {text: Category, bold: true}
+    - layout_properties: {grid_position: 'NWGTYA,PGWMDX'}
+      name: label_2
+      properties: {bold: true, text: Category}
       type: Label
-      layout_properties: {grid_position: 'NWGTYA,PGWMDX'}
-    - name: drop_down_1
+    - layout_properties: {grid_position: 'GZAZQW,SFCNAO'}
+      name: drop_down_1
       properties:
-        placeholder: ''
-        items: [Select Catrgory]
-        role: outlined
         align: full
+        items: [Select Catrgory]
+        placeholder: ''
+        role: outlined
       type: DropDown
-      layout_properties: {grid_position: 'GZAZQW,SFCNAO'}
-    - name: label_9
-      properties: {text: Subcategory, bold: true}
+    - layout_properties: {grid_position: 'LBBAPS,TXAHNO'}
+      name: label_9
+      properties: {bold: true, text: Subcategory}
       type: Label
-      layout_properties: {grid_position: 'LBBAPS,TXAHNO'}
-    - name: drop_down_2
+    - layout_properties: {grid_position: 'RJEXIV,NRILRK'}
+      name: drop_down_2
       properties:
         items: [Select Subcategory]
         role: outlined
       type: DropDown
-      layout_properties: {grid_position: 'RJEXIV,NRILRK'}
-    - name: label_8_copy_1
-      properties: {text: Issue Photo, bold: true}
+    - layout_properties: {grid_position: 'ESNDLC,OEINHO'}
+      name: label_8_copy_1
+      properties: {bold: true, text: Issue Photo}
       type: Label
-      layout_properties: {grid_position: 'ESNDLC,OEINHO'}
-    - name: file_loader_1
+    - event_bindings: {change: file_loader_1_change}
+      layout_properties: {grid_position: 'ESNDLC,BUGFUP'}
+      name: file_loader_1
       properties: {}
       type: FileLoader
-      layout_properties: {grid_position: 'ESNDLC,BUGFUP'}
-      event_bindings: {change: file_loader_1_change}
-    - name: image_issue
+    - layout_properties: {grid_position: 'ESNDLC,YDEYIP'}
+      name: image_issue
       properties: {display_mode: original_size, height: 139}
       type: Image
-      layout_properties: {grid_position: 'ESNDLC,YDEYIP'}
-    - name: check_box_1
+    - layout_properties: {grid_position: 'RJNGNM,KTUTFL'}
+      name: check_box_1
       properties: {text: It is Urgent}
       type: CheckBox
-      layout_properties: {grid_position: 'RJNGNM,KTUTFL'}
-    - name: spacer_2
+    - layout_properties: {grid_position: 'RJNGNM,KNSNBH'}
+      name: spacer_2
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'RJNGNM,KNSNBH'}
-    - type: Label
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Describe the problem}
+    - layout_properties: {grid_position: 'KCEFAB,XUJHBE'}
       name: label_3
-      layout_properties: {grid_position: 'KCEFAB,XUJHBE'}
-    - type: Label
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Please provide as much detail as possible so we can better identify the problem.}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 18, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Describe the problem, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'UAKVEQ,GQHBVQ'}
       name: label_7
-      layout_properties: {grid_position: 'UAKVEQ,GQHBVQ'}
-    - type: TextArea
-      properties: {role: outlined, bold: false, align: right, placeholder: '', spacing_above: small, background: 'theme:On Primary', underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: true, font_size: null, tooltip: '', height: 75, text: ''}
-      name: description_box
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Please provide as much detail as possible so we can better identify the problem., tooltip: '', underline: false, visible: true}
+      type: Label
+    - event_bindings: {change: issue_description_change}
       layout_properties: {grid_position: 'TISILT,EAGAXN'}
-      event_bindings: {change: issue_description_change}
-  - name: spacer_4
+      name: description_box
+      properties: {align: right, auto_expand: true, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', height: 75, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: TextArea
+    layout_properties: {grid_position: 'ZBQSRM,ZJRRGD'}
+    name: column_panel_1
+    properties: {col_widths: '{"BXIYGF":40}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'ZBQSRM,NFWEZN'}
+    name: spacer_4
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'ZBQSRM,NFWEZN'}
-  - name: spacer_3
+  - layout_properties: {grid_position: 'CHYGUQ,TXOZCP'}
+    name: spacer_3
     properties: {height: 6}
     type: Spacer
-    layout_properties: {grid_position: 'CHYGUQ,TXOZCP'}
-  - type: Button
-    properties: {role: null, bold: false, align: center, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Submit Complaint}
-    name: button_2
+  - event_bindings: {click: button_2_click}
     layout_properties: {grid_position: 'AGGTCZ,KJCIXK'}
-    event_bindings: {click: button_2_click}
+    name: button_2
+    properties: {align: center, background: '#05264d', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Submit Complaint, tooltip: '', underline: false, visible: true}
+    type: Button
+  layout_properties: {col_xs: 0, grid_position: 'ECKBEK,XFTDMP', row: QBZMKP, width_xs: 12}
+  name: outlined_card_2_copy
+  properties: {col_widths: '{"GFJMMM":10,"ZJRRGD":40,"NFWEZN":10}', role: null, wrap_on: mobile}
+  type: ColumnPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

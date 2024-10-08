@@ -1,83 +1,83 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: form:borrower.navigation_bar_main
-  properties: {prop: ''}
+- layout_properties: {full_width_row: true, grid_position: 'PEZTYQ,QFWUIA'}
   name: navigation_bar_1
-  layout_properties: {grid_position: 'PEZTYQ,QFWUIA', full_width_row: true}
-- name: registration_process_1
+  properties: {prop: ''}
+  type: form:borrower.navigation_bar_main
+- layout_properties: {grid_position: 'YENSGD,NCUYOS'}
+  name: registration_process_1
   properties: {}
   type: form:borrower.borrower_registration_forms.registration_process
-  layout_properties: {grid_position: 'YENSGD,NCUYOS'}
-- name: button_1
-  properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward', align: right}
+- event_bindings: {click: button_1_click}
+  layout_properties: {full_width_row: true, grid_position: 'QPWRJY,XKWCIL'}
+  name: button_1
+  properties: {align: right, background: '#05264d', foreground: white, icon: 'fa:backward', text: Back}
   type: Button
-  layout_properties: {grid_position: 'QPWRJY,XKWCIL', full_width_row: true}
-  event_bindings: {click: button_1_click}
-- name: label_1_copy_1_copy_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: true, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Confirm Your Registration   '}
+- layout_properties: {grid_position: 'TILNLI,CFVZSX'}
+  name: label_1_copy_1_copy_1_copy_1
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Confirm Your Registration   ', tooltip: '', underline: true, visible: true}
   type: Label
-  layout_properties: {grid_position: 'TILNLI,CFVZSX'}
-- name: label_2_copy_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Your Name :'}
+- layout_properties: {grid_position: 'GGBVYS,HTOHXA'}
+  name: label_2_copy_1_copy_1
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Your Name :', tooltip: '', underline: false, visible: true}
   type: Label
-  layout_properties: {grid_position: 'GGBVYS,HTOHXA'}
-- name: check_out_name_lable
+- layout_properties: {grid_position: 'GGBVYS,RNIZIL'}
+  name: check_out_name_lable
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'GGBVYS,RNIZIL'}
-- name: label_2_copy_1_copy_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Your Mail :'}
+- layout_properties: {grid_position: 'SVPWFL,XPEWCO'}
+  name: label_2_copy_1_copy_1_copy_1
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Your Mail :', tooltip: '', underline: false, visible: true}
   type: Label
-  layout_properties: {grid_position: 'SVPWFL,XPEWCO'}
-- name: chekc_out_mail_lable
+- layout_properties: {grid_position: 'SVPWFL,SWBOJQ'}
+  name: chekc_out_mail_lable
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'SVPWFL,SWBOJQ'}
-- name: label_2_copy_1_copy_1_copy_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Your Mobile No :'}
+- layout_properties: {grid_position: 'PKPNND,LKEJLM'}
+  name: label_2_copy_1_copy_1_copy_1_copy_1
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Your Mobile No :', tooltip: '', underline: false, visible: true}
   type: Label
-  layout_properties: {grid_position: 'PKPNND,LKEJLM'}
-- name: check_out_mobile_lable
+- layout_properties: {grid_position: 'PKPNND,HCCLII'}
+  name: check_out_mobile_lable
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'PKPNND,HCCLII'}
-- name: label_2_copy_1_copy_1_copy_1_copy_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Date Of Birth :'}
+- layout_properties: {grid_position: 'BYISWQ,KPGHSD'}
+  name: label_2_copy_1_copy_1_copy_1_copy_1_copy_1
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Date Of Birth :', tooltip: '', underline: false, visible: true}
   type: Label
-  layout_properties: {grid_position: 'BYISWQ,KPGHSD'}
-- name: check_out_dob_lable
+- layout_properties: {grid_position: 'BYISWQ,ECLLRY'}
+  name: check_out_dob_lable
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'BYISWQ,ECLLRY'}
-- name: label_2_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Pan Number :'}
+- layout_properties: {grid_position: 'JYWSEX,HQLTSL'}
+  name: label_2_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Pan Number :', tooltip: '', underline: false, visible: true}
   type: Label
-  layout_properties: {grid_position: 'JYWSEX,HQLTSL'}
-- name: check_out_pan_lable
+- layout_properties: {grid_position: 'JYWSEX,IOBVOI'}
+  name: check_out_pan_lable
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'JYWSEX,IOBVOI'}
-- name: label_2_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Aadhaar Number :'}
+- layout_properties: {grid_position: 'RXYWDR,HYFSIY'}
+  name: label_2_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1_copy_1
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Aadhaar Number :', tooltip: '', underline: false, visible: true}
   type: Label
-  layout_properties: {grid_position: 'RXYWDR,HYFSIY'}
-- name: check_out_aadhaar_number_lable
+- layout_properties: {grid_position: 'RXYWDR,KBKITU'}
+  name: check_out_aadhaar_number_lable
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'RXYWDR,KBKITU'}
-- name: spacer_1
+- layout_properties: {grid_position: 'KABIWE,PZHIZV'}
+  name: spacer_1
   properties: {height: 32}
   type: Spacer
-  layout_properties: {grid_position: 'KABIWE,PZHIZV'}
-- name: prev_borrower_button
-  properties: {role: null, bold: true, align: right, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: prev}
+- layout_properties: {grid_position: 'CDBLHM,YTESTB'}
+  name: prev_borrower_button
+  properties: {align: right, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:angle-double-left', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: prev, tooltip: '', underline: false, visible: true}
   type: Button
-  layout_properties: {grid_position: 'CDBLHM,YTESTB'}
-- name: checkout_borrower_submit_button
-  properties: {role: elevated-button, bold: true, align: left, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-right', underline: false, font: '', icon_align: right, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Submit}
-  type: Button
+- event_bindings: {click: button_2_click}
   layout_properties: {grid_position: 'CDBLHM,ETZZOJ'}
-  event_bindings: {click: button_2_click}
+  name: checkout_borrower_submit_button
+  properties: {align: left, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:angle-double-right', icon_align: right, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Submit, tooltip: '', underline: false, visible: true}
+  type: Button
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

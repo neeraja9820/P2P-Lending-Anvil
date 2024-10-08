@@ -1,33 +1,33 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- name: navigation_form_dashboard_1
+- layout_properties: {full_width_row: true, grid_position: 'TNKGOP,OTGILL'}
+  name: navigation_form_dashboard_1
   properties: {}
   type: form:borrower.dashboard.Navigation_form_dashboard
-  layout_properties: {grid_position: 'TNKGOP,OTGILL', full_width_row: true}
-- name: button_1
-  properties: {text: Back, align: right, background: '#05264d', foreground: White, icon: 'fa:backward'}
+- event_bindings: {click: button_1_click}
+  layout_properties: {full_width_row: true, grid_position: 'NPYOLM,VOEZQF'}
+  name: button_1
+  properties: {align: right, background: '#05264d', foreground: White, icon: 'fa:backward', text: Back}
   type: Button
-  layout_properties: {grid_position: 'NPYOLM,VOEZQF', full_width_row: true}
-  event_bindings: {click: button_1_click}
-- name: label_1
-  properties: {align: center, text: Lenders List, font_size: 20, bold: true}
+- layout_properties: {grid_position: 'VGPTGS,LJAGDO'}
+  name: label_1
+  properties: {align: center, bold: true, font_size: 20, text: Lenders List}
   type: Label
-  layout_properties: {grid_position: 'VGPTGS,LJAGDO'}
-- name: data_grid_1
-  properties:
-    columns:
-    - {id: JKSDUP, title: Lender Name, data_key: column_1}
-    - {id: VJQQOR, title: Lender Email, data_key: column_2}
-    - {id: OJLQEN, title: Lending Type, data_key: column_3}
-    - {id: RBCPXE, data_key: column_1, title: Membership}
-    - {id: GONDTU, data_key: column_4, title: ''}
-    role: tonal-data-grid
-  type: DataGrid
-  components:
+- components:
   - name: repeating_panel_1
     properties: {item_template: lendor.dashboard.lender_portfolio_first_page.RowTemplate32}
     type: RepeatingPanel
   layout_properties: {grid_position: 'WKYEMY,NCTJKT'}
+  name: data_grid_1
+  properties:
+    columns:
+    - {data_key: column_1, id: JKSDUP, title: Lender Name}
+    - {data_key: column_2, id: VJQQOR, title: Lender Email}
+    - {data_key: column_3, id: OJLQEN, title: Lending Type}
+    - {data_key: column_1, id: RBCPXE, title: Membership}
+    - {data_key: column_4, id: GONDTU, title: ''}
+    role: tonal-data-grid
+  type: DataGrid
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

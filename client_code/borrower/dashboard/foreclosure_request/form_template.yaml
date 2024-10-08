@@ -1,25 +1,25 @@
-is_package: true
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: form:borrower.dashboard.Navigation_form_dashboard
-  properties: {}
-  layout_properties: {grid_position: 'BHXQVU,IRRUIB', full_width_row: true}
+- layout_properties: {full_width_row: true, grid_position: 'BHXQVU,IRRUIB'}
   name: navigation_form_dashboard_1
-- type: Label
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: true, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: Active Loans}
-  layout_properties: {grid_position: 'QQNRWX,MGPSVS'}
+  properties: {}
+  type: form:borrower.dashboard.Navigation_form_dashboard
+- layout_properties: {grid_position: 'QQNRWX,MGPSVS'}
   name: label_1
-- properties: {item_template: borrower.dashboard.foreclosure_request.ItemTemplate95}
-  type: RepeatingPanel
-  layout_properties: {grid_position: 'LAIFBI,TQIALC'}
+  properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 20, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Active Loans, tooltip: '', underline: true, visible: true}
+  type: Label
+- layout_properties: {grid_position: 'LAIFBI,TQIALC'}
   name: repeating_panel_1
-- properties: {item_template: borrower.dashboard.foreclosure_request.ItemTemplate118}
+  properties: {item_template: borrower.dashboard.foreclosure_request.ItemTemplate95}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'LAIFBI,XSKLPJ'}
+- layout_properties: {grid_position: 'LAIFBI,XSKLPJ'}
   name: repeating_panel_2
-- properties: {item_template: borrower.dashboard.foreclosure_request.ItemTemplate72, visible: false}
+  properties: {item_template: borrower.dashboard.foreclosure_request.ItemTemplate118}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'JJWMMO,KGZRIQ'}
+- layout_properties: {grid_position: 'JJWMMO,KGZRIQ'}
   name: repeat
+  properties: {item_template: borrower.dashboard.foreclosure_request.ItemTemplate72, visible: false}
+  type: RepeatingPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+is_package: true

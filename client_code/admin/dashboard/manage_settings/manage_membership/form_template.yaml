@@ -1,103 +1,103 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - name: home_button_admin_1
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'KJEPHH,FOTLJH'}
+    name: home_button_admin_1
     properties: {}
     type: form:admin.dashboard.home_button_admin
-    layout_properties: {grid_position: 'KJEPHH,FOTLJH', full_width_row: true}
-  - name: content_panel_copy
-    properties: {col_widths: '{"WOYHGQ":12,"EGFOTH":17,"ISDGKT":12,"FFMPVH":17,"PRDTTE":12,"DCBBZO":17,"BEVBQQ":17,"ZBGJEI":12,"DSPDVL":17,"BHGUGZ":17,"THRDNI":17,"UAPWAP":17}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'WKBTJH,NLDXBT'}
-    components:
-    - name: button_3
-      properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward', align: right}
+  - components:
+    - event_bindings: {click: button_3_click}
+      layout_properties: {full_width_row: true, grid_position: 'ICRFGA,KQXIOY'}
+      name: button_3
+      properties: {align: right, background: '#05264d', foreground: white, icon: 'fa:backward', text: Back}
       type: Button
-      layout_properties: {grid_position: 'ICRFGA,KQXIOY', full_width_row: true}
-      event_bindings: {click: button_3_click}
-    - name: spacer_1
+    - layout_properties: {grid_position: 'CYDQGZ,AGCXZA'}
+      name: spacer_1
       properties: {height: 56}
       type: Spacer
-      layout_properties: {grid_position: 'CYDQGZ,AGCXZA'}
-    - name: label_1
-      properties: {role: title, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 17, tooltip: '', text: Membership Type}
+    - layout_properties: {grid_position: 'SQUNEH,ZBGJEI'}
+      name: label_1
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 17, foreground: '', icon: '', icon_align: left, italic: false, role: title, spacing_above: small, spacing_below: small, text: Membership Type, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'SQUNEH,ZBGJEI'}
-    - name: label_2
-      properties: {role: title, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Minimum Amount}
+    - layout_properties: {grid_position: 'SQUNEH,DSPDVL'}
+      name: label_2
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 18, foreground: '', icon: '', icon_align: left, italic: false, role: title, spacing_above: small, spacing_below: small, text: Minimum Amount, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'SQUNEH,DSPDVL'}
-    - name: label_3
-      properties: {role: title, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Maximum Amount}
+    - layout_properties: {grid_position: 'SQUNEH,BHGUGZ'}
+      name: label_3
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 18, foreground: '', icon: '', icon_align: left, italic: false, role: title, spacing_above: small, spacing_below: small, text: Maximum Amount, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'SQUNEH,BHGUGZ'}
-    - name: spacer_2
+    - layout_properties: {grid_position: 'TWLJBO,KIKITB'}
+      name: spacer_2
       properties: {height: 14}
       type: Spacer
-      layout_properties: {grid_position: 'TWLJBO,KIKITB'}
-    - name: label_6
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Silver}
+    - layout_properties: {grid_position: 'KTIJIY,WOYHGQ'}
+      name: label_6
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Silver, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'KTIJIY,WOYHGQ'}
-    - name: text_box_1
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
+    - event_bindings: {pressed_enter: text_box_1_pressed_enter}
+      layout_properties: {full_width_row: false, grid_position: 'KTIJIY,EGFOTH'}
+      name: text_box_1
+      properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'KTIJIY,EGFOTH', full_width_row: false}
-      event_bindings: {pressed_enter: text_box_1_pressed_enter}
-    - name: text_box_2
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'KTIJIY,UAPWAP'}
+      name: text_box_2
+      properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'KTIJIY,UAPWAP'}
-    - name: label_7
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Gold}
+    - layout_properties: {grid_position: 'TRXCYX,ISDGKT'}
+      name: label_7
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Gold, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'TRXCYX,ISDGKT'}
-    - name: text_box_3
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
+    - layout_properties: {full_width_row: false, grid_position: 'TRXCYX,THRDNI'}
+      name: text_box_3
+      properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'TRXCYX,THRDNI', full_width_row: false}
-    - name: text_box_4
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'TRXCYX,FFMPVH'}
+      name: text_box_4
+      properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'TRXCYX,FFMPVH'}
-    - name: label_8
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Platinum}
+    - layout_properties: {grid_position: 'WABJDY,PRDTTE'}
+      name: label_8
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Platinum, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'WABJDY,PRDTTE'}
-    - name: text_box_5
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'WABJDY,DCBBZO'}
+      name: text_box_5
+      properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'WABJDY,DCBBZO'}
-    - name: text_box_6
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'WABJDY,BEVBQQ'}
+      name: text_box_6
+      properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'WABJDY,BEVBQQ'}
-    - name: spacer_3
+    - layout_properties: {grid_position: 'RGGRLJ,DOLJQB'}
+      name: spacer_3
       properties: {height: 16}
       type: Spacer
-      layout_properties: {grid_position: 'RGGRLJ,DOLJQB'}
-    - name: button_1
-      properties: {role: filled-button, bold: false, align: right, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Edit}
+    - event_bindings: {click: button_1_click}
+      layout_properties: {full_width_row: false, grid_position: 'RLGNZM,FPHZOX'}
+      name: button_1
+      properties: {align: right, background: '#05264d', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: filled-button, spacing_above: small, spacing_below: small, text: Edit, tooltip: '', underline: false, visible: true}
       type: Button
-      layout_properties: {grid_position: 'RLGNZM,FPHZOX', full_width_row: false}
-      event_bindings: {click: button_1_click}
-    - name: button_2
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Save}
+    - event_bindings: {click: button_2_click}
+      layout_properties: {full_width_row: false, grid_position: 'RLGNZM,BLUBIC'}
+      name: button_2
+      properties: {align: left, background: '#05264d', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Save, tooltip: '', underline: false, visible: true}
       type: Button
-      layout_properties: {grid_position: 'RLGNZM,BLUBIC', full_width_row: false}
-      event_bindings: {click: button_2_click}
-  - name: spacer_4
+    layout_properties: {grid_position: 'WKBTJH,NLDXBT'}
+    name: content_panel_copy
+    properties: {col_widths: '{"WOYHGQ":12,"EGFOTH":17,"ISDGKT":12,"FFMPVH":17,"PRDTTE":12,"DCBBZO":17,"BEVBQQ":17,"ZBGJEI":12,"DSPDVL":17,"BHGUGZ":17,"THRDNI":17,"UAPWAP":17}'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'OERKQW,WMFLCA'}
+    name: spacer_4
     properties: {height: 6}
     type: Spacer
-    layout_properties: {grid_position: 'OERKQW,WMFLCA'}
-- type: FlowPanel
+  layout_properties: {slot: default}
+  name: content_panel
   properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
   name: navbar_links
-  layout_properties: {slot: nav-right}
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

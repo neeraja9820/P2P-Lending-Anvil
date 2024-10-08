@@ -1,20 +1,20 @@
-container: {type: ColumnPanel}
 components:
-- name: navigation_form_dashboard_1
+- layout_properties: {full_width_row: true, grid_position: 'NAPPPK,TYGKHP'}
+  name: navigation_form_dashboard_1
   properties: {}
   type: form:borrower.dashboard.Navigation_form_dashboard
-  layout_properties: {grid_position: 'NAPPPK,TYGKHP', full_width_row: true}
-- name: button_2
-  properties: {role: null, bold: false, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+- event_bindings: {click: button_2_click}
+  layout_properties: {full_width_row: true, grid_position: 'KXFJBU,BENTEV'}
+  name: button_2
+  properties: {align: right, background: '#05264d', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
   type: Button
-  layout_properties: {grid_position: 'KXFJBU,BENTEV', full_width_row: true}
-  event_bindings: {click: button_2_click}
-- name: linear_panel_1
-  properties: {}
-  type: LinearPanel
-  layout_properties: {grid_position: 'HJLMKV,WBYBCH'}
-  components:
+- components:
   - name: repeating_panel_1
     properties: {item_template: borrower.dashboard.borrower_notifications.ItemTemplate117}
     type: RepeatingPanel
+  layout_properties: {grid_position: 'HJLMKV,WBYBCH'}
+  name: linear_panel_1
+  properties: {}
+  type: LinearPanel
+container: {type: ColumnPanel}
 is_package: true

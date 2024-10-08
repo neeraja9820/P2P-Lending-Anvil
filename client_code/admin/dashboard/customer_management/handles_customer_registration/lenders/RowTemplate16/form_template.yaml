@@ -1,32 +1,32 @@
-is_package: true
-container: {type: DataRowPanel}
 components:
-- name: label_1
-  properties: {}
-  type: Label
+- data_bindings:
+  - {code: 'self.item[''customer_id'']', property: text, writeback: false}
   layout_properties: {column: JKSDUP}
-  data_bindings:
-  - {property: text, code: 'self.item[''customer_id'']', writeback: false}
-- name: label_2
+  name: label_1
   properties: {}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''full_name'']', property: text, writeback: false}
   layout_properties: {column: VJQQOR}
-  data_bindings:
-  - {property: text, code: 'self.item[''full_name'']', writeback: false}
-- name: label_3
+  name: label_2
   properties: {}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''mobile'']', property: text, writeback: false}
   layout_properties: {column: OJLQEN}
-  data_bindings:
-  - {property: text, code: 'self.item[''mobile'']', writeback: false}
-- name: label_4
+  name: label_3
   properties: {}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''email_user'']', property: text, writeback: false}
   layout_properties: {column: ZMEQER}
-  data_bindings:
-  - {property: text, code: 'self.item[''email_user'']', writeback: false}
-- name: link_1
+  name: label_4
+  properties: {}
+  type: Label
+- event_bindings: {click: link_1_click}
+  layout_properties: {column: JMKZUG}
+  name: link_1
   properties: {text: View Loan Details}
   type: Link
-  layout_properties: {column: JMKZUG}
-  event_bindings: {click: link_1_click}
+container: {type: DataRowPanel}
+is_package: true

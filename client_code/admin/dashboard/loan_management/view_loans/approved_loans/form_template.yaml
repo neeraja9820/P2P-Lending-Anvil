@@ -1,39 +1,39 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: form:admin.dashboard.home_button_admin
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'AETBJQ,WGCLPP'}
     name: home_button_admin_1
-    layout_properties: {grid_position: 'AETBJQ,WGCLPP', full_width_row: true}
-  - name: navbar_links
+    properties: {}
+    type: form:admin.dashboard.home_button_admin
+  - components:
+    - event_bindings: {click: button_1_copy_click}
+      name: button_1_copy
+      properties: {align: center, background: '#05264d', bold: true, border: '', enabled: true, font: '16', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+      type: Button
+    layout_properties: {full_width_row: true, grid_position: 'EOSYVJ,FSYRDG'}
+    name: navbar_links
     properties: {align: right}
     type: FlowPanel
-    layout_properties: {grid_position: 'EOSYVJ,FSYRDG', full_width_row: true}
-    components:
-    - name: button_1_copy
-      properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-      type: Button
-      event_bindings: {click: button_1_copy_click}
-  - name: label_1
-    properties: {text: View Approved loans, align: center, bold: true, role: title}
+  - layout_properties: {full_width_row: true, grid_position: 'JXHFMX,VPZZRO'}
+    name: label_1
+    properties: {align: center, bold: true, role: title, text: View Approved loans}
     type: Label
-    layout_properties: {grid_position: 'JXHFMX,VPZZRO', full_width_row: true}
-  - name: repeating_panel_1
+  - layout_properties: {full_width_row: true, grid_position: 'JGDNVA,FWRPUC'}
+    name: repeating_panel_1
     properties: {item_template: admin.dashboard.loan_management.view_loans.approved_loans.ItemTemplate121}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'JGDNVA,FWRPUC', full_width_row: true}
-  - name: repeating_panel_2
+  - layout_properties: {grid_position: 'JGDNVA,JLHIEB'}
+    name: repeating_panel_2
     properties: {item_template: admin.dashboard.loan_management.view_loans.approved_loans.ItemTemplate122}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'JGDNVA,JLHIEB'}
-  - name: repeating_panel_4
+  - layout_properties: {grid_position: 'VYNPNW,VQTUOB'}
+    name: repeating_panel_4
     properties: {item_template: admin.dashboard.loan_management.view_loans.approved_loans.ItemTemplate31, visible: false}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'VYNPNW,VQTUOB'}
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

@@ -1,149 +1,149 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {tooltip: '', background: white, foreground: '', border: '', visible: true, role: null, html: ''}
 components:
-- type: FlowPanel
-  properties: {}
-  layout_properties: {slot: nav-right}
-  name: navbar_links
-  components:
-  - name: column_panel_1_copy
-    properties: {background: '#Edf0f4', col_widths: '{"NHXJVC":58,"RHOENB":2,"YDQOIK":58,"EQPDZB":2}'}
-    type: ColumnPanel
-    layout_properties: {expand: true}
-    components:
-    - type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
-      properties: {}
-      layout_properties: {grid_position: 'YJLWMT,AKRGBX', full_width_row: true}
+- components:
+  - components:
+    - layout_properties: {full_width_row: true, grid_position: 'YJLWMT,AKRGBX'}
       name: navigation_bar_lender_dashbord_1
-    - type: Button
-      properties: {role: filled-button, bold: true, align: right, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 15, tooltip: '', text: Back}
-      layout_properties: {grid_position: 'MGVRUG,WPZXJC', full_width_row: true}
-      event_bindings: {click: button_1_click}
+      properties: {}
+      type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
+    - event_bindings: {click: button_1_click}
+      layout_properties: {full_width_row: true, grid_position: 'MGVRUG,WPZXJC'}
       name: button_1
-    - name: label_3_copy
-      properties: {text: Borrower Loan Details, bold: true, font_size: 30, align: center}
+      properties: {align: right, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: 15, foreground: 'theme:On Primary', icon: 'fa:angle-double-left', icon_align: left, italic: false, role: filled-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+      type: Button
+    - layout_properties: {full_width_row: true, grid_position: 'YSBCDH,HOTHOD'}
+      name: label_3_copy
+      properties: {align: center, bold: true, font_size: 30, text: Borrower Loan Details}
       type: Label
-      layout_properties: {grid_position: 'YSBCDH,HOTHOD', full_width_row: true}
-    - name: spacer_4_copy
+    - layout_properties: {grid_position: 'LACDGY,HHVTXF'}
+      name: spacer_4_copy
       properties: {height: '15'}
       type: Spacer
-      layout_properties: {grid_position: 'LACDGY,HHVTXF'}
-    - name: label_7_copy
-      properties: {text: '  Borrower Name:', bold: true, role: input-prompt}
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT RQESCS,KVQKRJ'}
+      name: label_7_copy
+      properties: {bold: true, role: input-prompt, text: '  Borrower Name:'}
       type: Label
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT RQESCS,KVQKRJ'}
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT XSKGLW,LHQEFA'}
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT XSKGLW,LHQEFA'}
       name: label_name
-    - name: label_10_copy
-      properties: {bold: true, text: '  Tenure:', role: input-prompt}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT EIWOEQ,CSVGRN'}
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT ZEAGYS,LBRBVO'}
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT EIWOEQ,CSVGRN'}
+      name: label_10_copy
+      properties: {bold: true, role: input-prompt, text: '  Tenure:'}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT ZEAGYS,LBRBVO'}
       name: label_loan_tenure
-    - type: Label
-      properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Member Since :'}
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT NJLWIQ,DOJVEP'}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT NJLWIQ,DOJVEP'}
       name: label_7
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT TTXIGK,ZEVAXS'}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Member Since :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT TTXIGK,ZEVAXS'}
       name: label_member_since
-    - properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Interest Rate :'}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT IXHTBL,UFLNBQ'}
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT IXHTBL,UFLNBQ'}
       name: label_08
-    - properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Interest Rate :', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT CFNCSK,GIBRCU'}
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT CFNCSK,GIBRCU'}
       name: label_interest_rate
-    - type: Label
-      properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Bank Account Details :'}
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT HGSWHG,KQSLBU'}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT HGSWHG,KQSLBU'}
       name: label_11
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,ENPXYT SNATXF,YRLLGO'}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Bank Account Details :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,ENPXYT SNATXF,YRLLGO'}
       name: label_bank_acc_details
-    - type: Label
-      properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Ascend Score}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX RLZDTG,AWVBZQ'}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX RLZDTG,AWVBZQ'}
       name: label_4
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX IGESOV,LDFOLS'}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: Ascend Score, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX IGESOV,LDFOLS'}
       name: label_beseem_score
-    - type: Label
-      properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Member ROM :'}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX HPBIRU,ZTJDOV'}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX HPBIRU,ZTJDOV'}
       name: label_6
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX GPFUGQ,MILFZU'}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Member ROM :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX GPFUGQ,MILFZU'}
       name: label_member_rom
-    - type: Label
-      properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Credit Limit :'}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX KXOBOD,EFFQYZ'}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX KXOBOD,EFFQYZ'}
       name: label_8
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX NJYGAK,DCUAWO'}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Credit Limit :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX NJYGAK,DCUAWO'}
       name: label_credit_limit
-    - type: Label
-      properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '  Loan Amount Applied :'}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX DVXNBK,UGKMQR'}
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX DVXNBK,UGKMQR'}
       name: label_9
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: 2px solid lightgrey, italic: false, font_size: null, tooltip: '', text: ''}
-      layout_properties: {grid_position: 'AGBOXA,UXSRKX LNAEIX,QCJYCK'}
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: input-prompt, spacing_above: small, spacing_below: small, text: '  Loan Amount Applied :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'AGBOXA,UXSRKX LNAEIX,QCJYCK'}
       name: label_loan_amount_applied
-    - name: spacer_3_copy
+      properties: {align: left, background: '', bold: true, border: 2px solid lightgrey, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'SCBTDV,DIZRLM'}
+      name: spacer_3_copy
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'SCBTDV,DIZRLM'}
-    - type: Link
-      properties: {role: null, bold: true, align: center, col_widths: '', spacing_above: small, background: '', icon: '', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: blue, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: View Payment Details Here}
+    - event_bindings: {click: link_1_click}
       layout_properties: {grid_position: 'CTKGRX,FCVJZX'}
-      event_bindings: {click: link_1_click}
       name: link_1
-    - properties: {text: Rejected, align: right, background: '#FF0000', foreground: BLACK, bold: true, font_size: 16}
-      type: Button
+      properties: {align: center, background: '', bold: true, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: blue, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: View Payment Details Here, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+      type: Link
+    - event_bindings: {click: rejected_btn_click}
       layout_properties: {grid_position: 'NCBSEK,PMJFLC'}
-      event_bindings: {click: rejected_btn_click}
       name: rejected_btn
-    - type: Button
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 16, tooltip: '', text: Approved}
-      layout_properties: {grid_position: 'NCBSEK,HMRQGW'}
-      event_bindings: {click: accepted_btn_click}
-      name: accepted_btn
-    - properties: {text: '', role: null, background: '', align: center, bold: true, font: a, font_size: 20, visible: false}
-      type: Label
-      layout_properties: {grid_position: 'EPMNRZ,DUNSOF'}
-      event_bindings: {}
-      name: output_label1
-    - properties: {role: null, bold: true, align: center, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: false, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Loan Disbursment}
+      properties: {align: right, background: '#FF0000', bold: true, font_size: 16, foreground: BLACK, text: Rejected}
       type: Button
+    - event_bindings: {click: accepted_btn_click}
+      layout_properties: {grid_position: 'NCBSEK,HMRQGW'}
+      name: accepted_btn
+      properties: {align: left, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: 16, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Approved, tooltip: '', underline: false, visible: true}
+      type: Button
+    - event_bindings: {}
+      layout_properties: {grid_position: 'EPMNRZ,DUNSOF'}
+      name: output_label1
+      properties: {align: center, background: '', bold: true, font: a, font_size: 20, role: null, text: '', visible: false}
+      type: Label
+    - event_bindings: {click: loan_disbursment_btn_click}
       layout_properties: {grid_position: 'FLXNTC,NHXJVC SAMDCD,YDQOIK'}
-      event_bindings: {click: loan_disbursment_btn_click}
       name: loan_disbursment_btn
-    - properties: {visible: false}
-      type: Label
-      layout_properties: {grid_position: 'FLXNTC,NHXJVC SAMDCD,EQPDZB'}
+      properties: {align: center, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Loan Disbursment, tooltip: '', underline: false, visible: false}
+      type: Button
+    - layout_properties: {grid_position: 'FLXNTC,NHXJVC SAMDCD,EQPDZB'}
       name: label_10
-    - properties: {visible: false}
+      properties: {visible: false}
       type: Label
-      layout_properties: {grid_position: 'FLXNTC,RHOENB'}
+    - layout_properties: {grid_position: 'FLXNTC,RHOENB'}
       name: label_2
-    - name: spacer_5_copy
+      properties: {visible: false}
+      type: Label
+    - layout_properties: {grid_position: 'ICEFVE,TQYGDK'}
+      name: spacer_5_copy
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'ICEFVE,TQYGDK'}
-    - name: spacer_6
+    - layout_properties: {grid_position: 'UAVJTK,AOQVMV'}
+      name: spacer_6
       properties: {height: 76.7000732421875}
       type: Spacer
-      layout_properties: {grid_position: 'UAVJTK,AOQVMV'}
+    layout_properties: {expand: true}
+    name: column_panel_1_copy
+    properties: {background: '#Edf0f4', col_widths: '{"NHXJVC":58,"RHOENB":2,"YDQOIK":58,"EQPDZB":2}'}
+    type: ColumnPanel
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {background: white, border: '', foreground: '', html: '', role: null, tooltip: '', visible: true}
+  type: HtmlTemplate
+is_package: true

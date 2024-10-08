@@ -1,67 +1,67 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: form:borrower.dashboard.Navigation_form_dashboard
-  properties: {}
+- layout_properties: {full_width_row: true, grid_position: 'FUSCTY,GVBCHB'}
   name: navigation_form_dashboard_1
-  layout_properties: {grid_position: 'FUSCTY,GVBCHB', full_width_row: true}
-- name: outlined_card_1
-  properties: {role: outlined-card, col_widths: '{"SIADQG":44,"OFTKKD":3,"JWNWTM":6}', spacing_above: small, background: '#0b2547', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'WQZLDT,XJUHFW'}
-  components:
-  - name: label_1_copy_1_copy_1
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '        Application Tracker'}
+  properties: {}
+  type: form:borrower.dashboard.Navigation_form_dashboard
+- components:
+  - layout_properties: {grid_position: 'YVGBZD,SIADQG'}
+    name: label_1_copy_1_copy_1
+    properties: {align: center, background: '', bold: true, border: '', font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '        Application Tracker', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'YVGBZD,SIADQG'}
-  - type: Label
-    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+  - layout_properties: {grid_position: 'YVGBZD,OFTKKD'}
     name: label_2
-    layout_properties: {grid_position: 'YVGBZD,OFTKKD'}
-  - name: label_1
-    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'YVGBZD,JWNWTM'}
-- name: data_grid_1
-  properties:
-    role: null
-    spacing_above: small
-    columns:
-    - {id: JKSDUP, title: Loan ID, data_key: column_1, $$hashKey: 'object:14969'}
-    - {id: VJQQOR, title: Loan Amount, data_key: column_2, $$hashKey: 'object:14970'}
-    - {id: OJLQEN, title: Intrest Rate, data_key: column_3, $$hashKey: 'object:14971'}
-    - {id: CHVOCG, data_key: column_4, title: Tenure, $$hashKey: 'object:14972'}
-    - {id: VKTTOA, data_key: column_5, title: Lender Name, $$hashKey: 'object:14973'}
-    - {id: HEMILB, data_key: column_6, title: Date Of Apply, $$hashKey: 'object:14974'}
-    - {id: SQXFPE, data_key: column_8, title: Loan Status, $$hashKey: 'object:14975'}
-    - {id: TZDREV, title: '', data_key: '', $$hashKey: 'object:15049'}
-    background: ''
-    rows_per_page: 20
-    wrap_on: mobile
-    foreground: ''
-    show_page_controls: true
-    auto_header: true
-    spacing_below: small
-    visible: false
-    border: ''
-    tooltip: ''
-  type: DataGrid
-  components:
+  - layout_properties: {grid_position: 'YVGBZD,JWNWTM'}
+    name: label_1
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
+  layout_properties: {grid_position: 'WQZLDT,XJUHFW'}
+  name: outlined_card_1
+  properties: {background: '#0b2547', border: '', col_spacing: medium, col_widths: '{"SIADQG":44,"OFTKKD":3,"JWNWTM":6}', foreground: '', role: outlined-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
+- components:
   - name: repeating_panel_5
     properties: {item_template: borrower.dashboard.application_tracker.RowTemplate1}
     type: RepeatingPanel
-  - type: RepeatingPanel
-    properties: {spacing_above: none, spacing_below: none, item_template: borrower.dashboard.application_tracker.RowTemplate26}
+  - layout_properties: {}
     name: repeating_panel_1
-    layout_properties: {}
+    properties: {item_template: borrower.dashboard.application_tracker.RowTemplate26, spacing_above: none, spacing_below: none}
+    type: RepeatingPanel
   layout_properties: {grid_position: 'KJNEQF,EVNPRF'}
-- name: repeating_panel_3
+  name: data_grid_1
+  properties:
+    auto_header: true
+    background: ''
+    border: ''
+    columns:
+    - {$$hashKey: 'object:14969', data_key: column_1, id: JKSDUP, title: Loan ID}
+    - {$$hashKey: 'object:14970', data_key: column_2, id: VJQQOR, title: Loan Amount}
+    - {$$hashKey: 'object:14971', data_key: column_3, id: OJLQEN, title: Intrest Rate}
+    - {$$hashKey: 'object:14972', data_key: column_4, id: CHVOCG, title: Tenure}
+    - {$$hashKey: 'object:14973', data_key: column_5, id: VKTTOA, title: Lender Name}
+    - {$$hashKey: 'object:14974', data_key: column_6, id: HEMILB, title: Date Of Apply}
+    - {$$hashKey: 'object:14975', data_key: column_8, id: SQXFPE, title: Loan Status}
+    - {$$hashKey: 'object:15049', data_key: '', id: TZDREV, title: ''}
+    foreground: ''
+    role: null
+    rows_per_page: 20
+    show_page_controls: true
+    spacing_above: small
+    spacing_below: small
+    tooltip: ''
+    visible: false
+    wrap_on: mobile
+  type: DataGrid
+- layout_properties: {grid_position: 'YSFNJS,GCTPEP CZFPET,MIDKBC'}
+  name: repeating_panel_3
   properties: {item_template: borrower.dashboard.application_tracker.ItemTemplate69}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'YSFNJS,GCTPEP CZFPET,MIDKBC'}
-- name: repeating_panel_2
+- layout_properties: {grid_position: 'YSFNJS,GCTPEP QWAOWU,DYWPZC'}
+  name: repeating_panel_2
   properties: {item_template: borrower.dashboard.application_tracker.ItemTemplate68}
   type: RepeatingPanel
-  layout_properties: {grid_position: 'YSFNJS,GCTPEP QWAOWU,DYWPZC'}
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

@@ -1,86 +1,86 @@
-container: {type: DataRowPanel}
 components:
-- name: column_panel_1
-  properties: {role: elevated-card, col_widths: '{"OGHQMI":5,"CNNKSU":5,"OWYBYL":5,"WRGBDS":5,"WXSDUC":5,"UMHSAC":5,"QXGANI":5,"EZRKCU":5,"QWWEWJ":4,"FKLWMW":4,"RTXVGO":4,"KDCDLL":4,"YORPRS":4}'}
-  type: ColumnPanel
-  layout_properties: {column: ''}
-  components:
-  - type: Label
-    properties: {}
+- components:
+  - data_bindings:
+    - {code: 'self.item[''PaymentNumber'']', property: text}
+    layout_properties: {full_width_row: true, grid_position: 'DGNDMP,OGHQMI'}
     name: label_1
-    layout_properties: {grid_position: 'DGNDMP,OGHQMI', full_width_row: true}
-    data_bindings:
-    - {property: text, code: 'self.item[''PaymentNumber'']'}
-  - type: Label
-    properties: {}
-    name: label_2
-    layout_properties: {grid_position: 'DGNDMP,CNNKSU'}
-    data_bindings:
-    - {property: text, code: 'self.item[''PaymentDate'']'}
-  - type: Label
-    properties: {}
-    name: label_3
-    layout_properties: {grid_position: 'DGNDMP,OWYBYL'}
-    data_bindings:
-    - {property: text, code: 'self.item[''BeginningBalance'']'}
-  - type: Label
-    properties: {}
-    name: label_4
-    layout_properties: {grid_position: 'DGNDMP,WRGBDS'}
-    data_bindings:
-    - {property: text, code: 'self.item[''ScheduledPayment'']'}
-  - type: Label
-    properties: {}
-    name: label_5
-    layout_properties: {grid_position: 'DGNDMP,WXSDUC'}
-    data_bindings:
-    - {property: text, code: 'self.item[''ExtraPayment'']'}
-  - type: Label
-    properties: {}
-    name: label_6
-    layout_properties: {grid_position: 'DGNDMP,UMHSAC'}
-    data_bindings:
-    - {property: text, code: 'self.item[''TotalPayment'']'}
-  - type: Label
-    properties: {}
-    name: label_7
-    layout_properties: {grid_position: 'DGNDMP,QXGANI', full_width_row: false}
-    data_bindings:
-    - {property: text, code: 'self.item[''Principal'']'}
-  - type: Label
-    properties: {}
-    name: label_8
-    layout_properties: {grid_position: 'DGNDMP,EZRKCU'}
-    data_bindings:
-    - {property: text, code: 'self.item[''Interest'']'}
-  - type: Label
-    properties: {}
-    name: label_9
-    layout_properties: {grid_position: 'DGNDMP,QWWEWJ'}
-    data_bindings:
-    - {property: text, code: 'self.item[''EndingBalance'']'}
-  - type: Label
-    properties: {}
-    name: label_10
-    layout_properties: {grid_position: 'DGNDMP,FKLWMW'}
-    data_bindings:
-    - {property: text, code: 'self.item[''EMIDate'']'}
-  - type: Label
-    properties: {}
-    name: label_11
-    layout_properties: {grid_position: 'DGNDMP,RTXVGO'}
-    data_bindings:
-    - {property: text, code: 'self.item[''EMITime'']'}
-  - type: Label
-    properties: {}
-    name: label_12
-    layout_properties: {grid_position: 'DGNDMP,KDCDLL'}
-    data_bindings:
-    - {property: text, code: 'self.item[''AccountNumber'']'}
-  - name: label_13
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'DGNDMP,YORPRS', full_width_row: false}
-    data_bindings:
-    - {property: text, code: 'self.item[''ProcessingFee'']', writeback: false}
+  - data_bindings:
+    - {code: 'self.item[''PaymentDate'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,CNNKSU'}
+    name: label_2
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''BeginningBalance'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,OWYBYL'}
+    name: label_3
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''ScheduledPayment'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,WRGBDS'}
+    name: label_4
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''ExtraPayment'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,WXSDUC'}
+    name: label_5
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''TotalPayment'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,UMHSAC'}
+    name: label_6
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Principal'']', property: text}
+    layout_properties: {full_width_row: false, grid_position: 'DGNDMP,QXGANI'}
+    name: label_7
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Interest'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,EZRKCU'}
+    name: label_8
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''EndingBalance'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,QWWEWJ'}
+    name: label_9
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''EMIDate'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,FKLWMW'}
+    name: label_10
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''EMITime'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,RTXVGO'}
+    name: label_11
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''AccountNumber'']', property: text}
+    layout_properties: {grid_position: 'DGNDMP,KDCDLL'}
+    name: label_12
+    properties: {}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''ProcessingFee'']', property: text, writeback: false}
+    layout_properties: {full_width_row: false, grid_position: 'DGNDMP,YORPRS'}
+    name: label_13
+    properties: {}
+    type: Label
+  layout_properties: {column: ''}
+  name: column_panel_1
+  properties: {col_widths: '{"OGHQMI":5,"CNNKSU":5,"OWYBYL":5,"WRGBDS":5,"WXSDUC":5,"UMHSAC":5,"QXGANI":5,"EZRKCU":5,"QWWEWJ":4,"FKLWMW":4,"RTXVGO":4,"KDCDLL":4,"YORPRS":4}', role: elevated-card}
+  type: ColumnPanel
+container: {type: DataRowPanel}
 is_package: true

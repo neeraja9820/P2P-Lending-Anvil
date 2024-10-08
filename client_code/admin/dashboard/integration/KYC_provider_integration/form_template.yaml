@@ -1,12 +1,12 @@
-container: {type: ColumnPanel}
 components:
-- name: home_button_admin_1
+- layout_properties: {full_width_row: true, grid_position: 'DANRUJ,XEUOBI'}
+  name: home_button_admin_1
   properties: {}
   type: form:admin.dashboard.home_button_admin
-  layout_properties: {grid_position: 'DANRUJ,XEUOBI', full_width_row: true}
-- name: back_button
-  properties: {text: Back, foreground: 'theme:On Secondary', role: elevated-button, align: right, icon: 'fa:backward', background: '#05264d', bold: true}
+- event_bindings: {click: back_button_click}
+  layout_properties: {full_width_row: true, grid_position: 'FGKITI,EKWUGL'}
+  name: back_button
+  properties: {align: right, background: '#05264d', bold: true, foreground: 'theme:On Secondary', icon: 'fa:backward', role: elevated-button, text: Back}
   type: Button
-  layout_properties: {grid_position: 'FGKITI,EKWUGL', full_width_row: true}
-  event_bindings: {click: back_button_click}
+container: {type: ColumnPanel}
 is_package: true

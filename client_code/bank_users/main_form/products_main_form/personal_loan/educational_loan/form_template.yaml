@@ -1,340 +1,336 @@
-container: {type: ColumnPanel}
 components:
-- name: main_header_1
+- layout_properties: {full_width_row: true, grid_position: 'YRSSUD,PUEAKZ'}
+  name: main_header_1
   properties: {}
   type: form:bank_users.main_form.main_header
-  layout_properties: {grid_position: 'YRSSUD,PUEAKZ', full_width_row: true}
-- name: content_panel
-  properties: {col_widths: '{"HCNQRM":15,"UYPFGJ":45,"WTSGJS":45,"MHIHCK":15,"HUVPOX":45,"RVMKVG":15,"BTYKBY":45,"LEWVYU":15,"NUKUZD":45,"OZDPXD":15,"GQGTQZ":45,"FEIDKK":15,"FWFHIH":45,"AIQPTR":15,"HAALVD":45,"PJCSGZ":15,"MKCEIV":10,"MIQGDM":50,"PYMPNQ":10,"FOTLFZ":50,"VKURAG":10,"TIWNID":50,"YARKFF":10,"XUSTDU":50,"QAZCGV":10,"CMLKWM":50}'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'HLOBHF,KXPMOO', full_width_row: true}
-  components:
-  - name: content_panel_copy_2
-    properties: {background: 'theme:Surface Variant', col_widths: '{"OPOTBI":35,"JBTPFF":25}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'VFMWUW,LMUGVD', full_width_row: true}
-    components:
-    - name: label_1
-      properties: {text: Ascend - Your go-to for Education Loans Tailored for Working Professionals., bold: true, font_size: 35}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI WUQDPS,DPVFAQ'}
+      name: label_1
+      properties: {bold: true, font_size: 35, text: Ascend - Your go-to for Education Loans Tailored for Working Professionals.}
       type: Label
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI WUQDPS,DPVFAQ'}
-    - name: spacer_1
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI'}
+      name: spacer_1
       properties: {height: 20.888885498046875}
       type: Spacer
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI'}
-    - name: image_10
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el3.png, height: '100', display_mode: original_size}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,IKLMTS DNKEXJ,NUNJNB'}
+      name: image_10
+      properties: {display_mode: original_size, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el3.png}
       type: Image
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,IKLMTS DNKEXJ,NUNJNB'}
-    - name: label_2
-      properties: {text: Education Loan Interest Rates Starting at 12%, align: center, font_size: 16}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,IKLMTS QWUDKA,ZOTMLP'}
+      name: label_2
+      properties: {align: center, font_size: 16, text: Education Loan Interest Rates Starting at 12%}
       type: Label
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,IKLMTS QWUDKA,ZOTMLP'}
-    - name: image_12
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el4.png, height: '100', display_mode: original_size}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,XKXGWE FGLOLS,HVTNPP'}
+      name: image_12
+      properties: {display_mode: original_size, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el4.png}
       type: Image
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,XKXGWE FGLOLS,HVTNPP'}
-    - name: label_31
-      properties: {text: Education Loans up to 6 Lac, align: center, font_size: 16}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,XKXGWE HBSPER,XVCZIW'}
+      name: label_31
+      properties: {align: center, font_size: 16, text: Education Loans up to 6 Lac}
       type: Label
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,XKXGWE HBSPER,XVCZIW'}
-    - name: image_13
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el5.png, height: '100', display_mode: original_size}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,DQQWBI JYJYFM,MGUSWX'}
+      name: image_13
+      properties: {display_mode: original_size, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el5.png}
       type: Image
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,DQQWBI JYJYFM,MGUSWX'}
-    - name: label_33
-      properties: {text: Tenure 4 - 48 Months, align: center, font_size: 16}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,DQQWBI ZWDRSQ,NCVHKT'}
+      name: label_33
+      properties: {align: center, font_size: 16, text: Tenure 4 - 48 Months}
       type: Label
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,DQQWBI ZWDRSQ,NCVHKT'}
-    - name: image_11
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el6.png, height: '100', display_mode: original_size}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,ZSQUHE WMTQFK,BFUGNG'}
+      name: image_11
+      properties: {display_mode: original_size, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el6.png}
       type: Image
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,ZSQUHE WMTQFK,BFUGNG'}
-    - name: label_37
-      properties: {text: Collateral Free Education Loans, align: center, font_size: 16}
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,ZSQUHE CMTAFX,VQIGFC'}
+      name: label_37
+      properties: {align: center, font_size: 16, text: Collateral Free Education Loans}
       type: Label
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI SSEHLE,ZSQUHE CMTAFX,VQIGFC'}
-    - name: spacer_24
+    - layout_properties: {grid_position: 'QTNQBN,OPOTBI THGHBD,EZSFCM'}
+      name: spacer_24
       properties: {height: 14.25}
       type: Spacer
-      layout_properties: {grid_position: 'QTNQBN,OPOTBI THGHBD,EZSFCM'}
-    - name: button_1
-      properties: {text: Apply Now, foreground: white, font_size: 17, background: '#013065', align: left, role: tonal-button}
-      type: Button
+    - event_bindings: {click: button_1_click}
       layout_properties: {grid_position: 'QTNQBN,OPOTBI TECORI,LIWIMN'}
-      event_bindings: {click: button_1_click}
-    - name: spacer_22
+      name: button_1
+      properties: {align: left, background: '#013065', font_size: 17, foreground: white, role: tonal-button, text: Apply Now}
+      type: Button
+    - layout_properties: {grid_position: 'QTNQBN,JBTPFF OJAYXT,BPJSLJ'}
+      name: spacer_22
       properties: {height: 45.25}
       type: Spacer
-      layout_properties: {grid_position: 'QTNQBN,JBTPFF OJAYXT,BPJSLJ'}
-    - name: image_1
-      properties: {height: 375.5555419921875, source: _/theme/bank_users/personal_loan/education_loan/education-loan-main.png, display_mode: zoom_to_fill}
+    - layout_properties: {grid_position: 'QTNQBN,JBTPFF CKRAJG,VHGQUZ'}
+      name: image_1
+      properties: {display_mode: zoom_to_fill, height: 375.5555419921875, source: _/theme/bank_users/personal_loan/education_loan/education-loan-main.png}
       type: Image
-      layout_properties: {grid_position: 'QTNQBN,JBTPFF CKRAJG,VHGQUZ'}
-  - name: spacer_2
+    layout_properties: {full_width_row: true, grid_position: 'VFMWUW,LMUGVD'}
+    name: content_panel_copy_2
+    properties: {background: 'theme:Surface Variant', col_widths: '{"OPOTBI":35,"JBTPFF":25}'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'DASUWR,ARUNQG'}
+    name: spacer_2
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'DASUWR,ARUNQG'}
-  - name: content_panel_copy_copy
-    properties: {col_widths: '{"ASIZUQ":40,"CUJPAX":20,"CACREY":40}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'DTGLVR,TDSXYI', full_width_row: true}
-    components:
-    - name: label_3
+  - components:
+    - layout_properties: {grid_position: 'MAHCVL,KPERZV'}
+      name: label_3
       properties:
+        align: center
+        bold: true
+        font_size: 30
         text: |
           Education Loan for Working Professionals
-        align: center
-        bold: true
-        font_size: 30
       type: Label
-      layout_properties: {grid_position: 'MAHCVL,KPERZV'}
-    - name: label_4
+    - layout_properties: {grid_position: 'TEGBXJ,PMTTUT'}
+      name: label_4
       properties:
+        align: left
+        font_size: 18
         text: |
           Quality education lays the groundwork for a thriving career. That's why both students and working professionals alike strive to enroll in top-notch educational institutions and earn valuable degrees.
-        align: left
-        font_size: 18
       type: Label
-      layout_properties: {grid_position: 'TEGBXJ,PMTTUT'}
-    - name: label_5
-      properties: {text: 'In today''s rapidly evolving tech landscape, working professionals face fierce competition. They not only require expertise to tackle emerging challenges but also need to keep their skills up-to-date. As a result, many opt to enroll in full-time or part-time courses to demonstrate their capabilities.', align: left, font_size: 18}
+    - layout_properties: {grid_position: 'DBAHUC,QGPHTO'}
+      name: label_5
+      properties: {align: left, font_size: 18, text: 'In today''s rapidly evolving tech landscape, working professionals face fierce competition. They not only require expertise to tackle emerging challenges but also need to keep their skills up-to-date. As a result, many opt to enroll in full-time or part-time courses to demonstrate their capabilities.'}
       type: Label
-      layout_properties: {grid_position: 'DBAHUC,QGPHTO'}
-    - name: label_7
-      properties: {text: 'However, the escalating expenses of education pose a significant challenge for both students and working professionals seeking to enroll in their preferred institutions. The high tuition fees are often compounded by additional expenses, making it financially burdensome to pursue education.', font_size: 18}
+    - layout_properties: {grid_position: ''}
+      name: label_7
+      properties: {font_size: 18, text: 'However, the escalating expenses of education pose a significant challenge for both students and working professionals seeking to enroll in their preferred institutions. The high tuition fees are often compounded by additional expenses, making it financially burdensome to pursue education.'}
       type: Label
-      layout_properties: {grid_position: ''}
-    - name: label_13
+    - layout_properties: {grid_position: 'VTDJNX,CACREY'}
+      name: label_13
       properties:
+        font_size: 18
         text: |
           To tackle this issue, many individuals resort to personal loans. However, despite offering immediate relief, their high interest rates render them less favorable in the long term. In contrast, education loans emerge as a viable alternative in such scenarios.
-        font_size: 18
       type: Label
-      layout_properties: {grid_position: 'VTDJNX,CACREY'}
-  - name: spacer_4
+    layout_properties: {full_width_row: true, grid_position: 'DTGLVR,TDSXYI'}
+    name: content_panel_copy_copy
+    properties: {col_widths: '{"ASIZUQ":40,"CUJPAX":20,"CACREY":40}'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'NUNHKT,JLIKKR'}
+    name: spacer_4
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'NUNHKT,JLIKKR'}
-  - name: content_panel_copy_copy_2
-    properties: {background: '#395275'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'RLILSE,XQHKXC', full_width_row: true}
-    components:
-    - name: spacer_5
+  - components:
+    - layout_properties: {grid_position: 'MCVWLG,BTWACI'}
+      name: spacer_5
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'MCVWLG,BTWACI'}
-    - name: label_6
-      properties: {text: 'What are Education Loans?', align: center, foreground: white, font_size: 30}
+    - layout_properties: {grid_position: 'RVUBWW,TGLEWK'}
+      name: label_6
+      properties: {align: center, font_size: 30, foreground: white, text: 'What are Education Loans?'}
       type: Label
-      layout_properties: {grid_position: 'RVUBWW,TGLEWK'}
-    - name: spacer_3
+    - layout_properties: {grid_position: 'HWOALO,JXSLKR'}
+      name: spacer_3
       properties: {height: '15'}
       type: Spacer
-      layout_properties: {grid_position: 'HWOALO,JXSLKR'}
-    - name: label_14
+    - layout_properties: {grid_position: 'GPVPSI,TZKMDD'}
+      name: label_14
       properties:
-        text: |
-          Education loans are financial resources offered to individuals to facilitate their pursuit of academic endeavors. These loans are designed to cover various expenses related to education, including tuition fees, accommodation costs, books and supplies, and other miscellaneous charges. They provide students with the means to afford quality education and alleviate the financial burden associated with pursuing higher studies.
         align: center
+        background: ''
         bold: false
         font_size: 18
-        background: ''
         foreground: white
+        text: |
+          Education loans are financial resources offered to individuals to facilitate their pursuit of academic endeavors. These loans are designed to cover various expenses related to education, including tuition fees, accommodation costs, books and supplies, and other miscellaneous charges. They provide students with the means to afford quality education and alleviate the financial burden associated with pursuing higher studies.
       type: Label
-      layout_properties: {grid_position: 'GPVPSI,TZKMDD'}
-    - name: label_8
+    - layout_properties: {grid_position: 'MWXPXM,EDHOSI'}
+      name: label_8
       properties:
+        align: center
+        font_size: 18
+        foreground: white
         text: |
           For education loans up to 4 lakh INR, no collateral is necessary. Amounts between 4 lakh INR and 7.5 lakh INR may require a third-party guarantee, while loans exceeding 7.5 lakh INR typically necessitate collateral. The loan funds are directly disbursed to the educational institution where the student intends to enroll.
-        foreground: white
-        font_size: 18
-        align: center
       type: Label
-      layout_properties: {grid_position: 'MWXPXM,EDHOSI'}
-    - name: spacer_6
+    - layout_properties: {grid_position: 'STNVGN,PYQFEV'}
+      name: spacer_6
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'STNVGN,PYQFEV'}
-  - name: spacer_7
+    layout_properties: {full_width_row: true, grid_position: 'RLILSE,XQHKXC'}
+    name: content_panel_copy_copy_2
+    properties: {background: '#395275'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'OJIAUN,PJOHAQ'}
+    name: spacer_7
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'OJIAUN,PJOHAQ'}
-  - name: content_panel_copy_copy_copy
-    properties: {col_widths: '{"POSEEM":35,"FDAXVJ":25}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'NVNOHT,XDUKFH', full_width_row: true}
-    components:
-    - name: label_14_copy
+  - components:
+    - layout_properties: {grid_position: 'RHTNKI,XKOIWT'}
+      name: label_14_copy
       properties:
-        text: |
-          Is relying on Banks the most suitable approach for securing Education Loan?
         align: center
         bold: true
         font_size: 30
+        text: |
+          Is relying on Banks the most suitable approach for securing Education Loan?
       type: Label
-      layout_properties: {grid_position: 'RHTNKI,XKOIWT'}
-    - name: label_15
+    - layout_properties: {grid_position: 'SOTJSA,UEGGGU'}
+      name: label_15
       properties:
+        align: center
+        bold: false
+        font_size: 20
         text: |
           Many working professionals opt to seek education loans from conventional financial institutions such as banks. However, this may not always be the most optimal choice. Banks typically:
-        align: center
-        font_size: 20
-        bold: false
       type: Label
-      layout_properties: {grid_position: 'SOTJSA,UEGGGU'}
-    - name: spacer_9_copy
+    - layout_properties: {grid_position: 'XNHMZY,OQOQKV'}
+      name: spacer_9_copy
       properties: {height: '20'}
       type: Spacer
-      layout_properties: {grid_position: 'XNHMZY,OQOQKV'}
-    - name: label_19
-      properties: {text: ' ✔ Impose substantial interest rates and require adherence to a rigid repayment timetable.', align: left, font_size: 18, bold: false}
+    - layout_properties: {grid_position: 'BFMUDJ,POSEEM WSMABX,YOFPEC'}
+      name: label_19
+      properties: {align: left, bold: false, font_size: 18, text: ' ✔ Impose substantial interest rates and require adherence to a rigid repayment timetable.'}
       type: Label
-      layout_properties: {grid_position: 'BFMUDJ,POSEEM WSMABX,YOFPEC'}
-    - name: label_20
+    - layout_properties: {grid_position: 'BFMUDJ,POSEEM XEKAML,XOIHHO'}
+      name: label_20
       properties:
+        align: left
+        font_size: 18
         text: |2
            ✔ Require unnecessary paperwork and excessive documentation.
+      type: Label
+    - layout_properties: {grid_position: 'BFMUDJ,POSEEM EIYBNS,NYBRWI'}
+      name: label_21
+      properties:
         align: left
         font_size: 18
-      type: Label
-      layout_properties: {grid_position: 'BFMUDJ,POSEEM XEKAML,XOIHHO'}
-    - name: label_21
-      properties:
         text: |2
            ✔ Reject the loan application outright if the applicant's credit score is low.
+      type: Label
+    - layout_properties: {grid_position: 'BFMUDJ,POSEEM LNMDZE,QTZQUS'}
+      name: label_22
+      properties: {align: left, font_size: 18, text: ' ✔ Set substantial margin rates which range between 5% to 15%.'}
+      type: Label
+    - layout_properties: {grid_position: 'BFMUDJ,POSEEM AIBXIX,OKGCZO'}
+      name: label_23
+      properties:
         align: left
         font_size: 18
-      type: Label
-      layout_properties: {grid_position: 'BFMUDJ,POSEEM EIYBNS,NYBRWI'}
-    - name: label_22
-      properties: {text: ' ✔ Set substantial margin rates which range between 5% to 15%.', align: left, font_size: 18}
-      type: Label
-      layout_properties: {grid_position: 'BFMUDJ,POSEEM LNMDZE,QTZQUS'}
-    - name: label_23
-      properties:
         text: |2
            ✔ Indulge in tedious, complex and time-consuming processes.
-        font_size: 18
-        align: left
       type: Label
-      layout_properties: {grid_position: 'BFMUDJ,POSEEM AIBXIX,OKGCZO'}
-    - name: label_9
-      properties: {text: Don't let finances hold you back! There are innovative funding solutions beyond traditional loans to help you achieve your academic goals., bold: true, font_size: 17}
+    - layout_properties: {grid_position: 'BFMUDJ,POSEEM RHPUBB,KBETOS'}
+      name: label_9
+      properties: {bold: true, font_size: 17, text: Don't let finances hold you back! There are innovative funding solutions beyond traditional loans to help you achieve your academic goals.}
       type: Label
-      layout_properties: {grid_position: 'BFMUDJ,POSEEM RHPUBB,KBETOS'}
-    - name: label_10
-      properties: {text: This is precisely what Ascend has to offer., font_size: 17, bold: true}
+    - layout_properties: {grid_position: 'BFMUDJ,POSEEM LRQRDD,QVFHOY'}
+      name: label_10
+      properties: {bold: true, font_size: 17, text: This is precisely what Ascend has to offer.}
       type: Label
-      layout_properties: {grid_position: 'BFMUDJ,POSEEM LRQRDD,QVFHOY'}
-    - name: spacer_15
+    - layout_properties: {grid_position: 'BFMUDJ,FDAXVJ CZDVUM,ZYBOQD'}
+      name: spacer_15
       properties: {height: 61.111083984375}
       type: Spacer
-      layout_properties: {grid_position: 'BFMUDJ,FDAXVJ CZDVUM,ZYBOQD'}
-    - name: image_2
-      properties: {height: 302.77777099609375, source: _/theme/bank_users/personal_loan/education_loan/education%20loan%20.webp, display_mode: zoom_to_fill}
+    - layout_properties: {grid_position: 'BFMUDJ,FDAXVJ SHQBNO,DJWPTH'}
+      name: image_2
+      properties: {display_mode: zoom_to_fill, height: 302.77777099609375, source: _/theme/bank_users/personal_loan/education_loan/education%20loan%20.webp}
       type: Image
-      layout_properties: {grid_position: 'BFMUDJ,FDAXVJ SHQBNO,DJWPTH'}
-  - name: spacer_8
+    layout_properties: {full_width_row: true, grid_position: 'NVNOHT,XDUKFH'}
+    name: content_panel_copy_copy_copy
+    properties: {col_widths: '{"POSEEM":35,"FDAXVJ":25}'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'OOZJJT,MSGZFZ'}
+    name: spacer_8
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'OOZJJT,MSGZFZ'}
-  - name: content_panel_copy_2_copy_2
-    properties: {col_widths: '{"undefined":15,"RXUUNL":30,"GLTAMG":30}', background: '#006699'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'BEJGWE,EWWBJL', full_width_row: true}
-    components:
-    - name: spacer_19
+  - components:
+    - layout_properties: {grid_position: 'NJHMGR,MEORAM'}
+      name: spacer_19
       properties: {height: '10'}
       type: Spacer
-      layout_properties: {grid_position: 'NJHMGR,MEORAM'}
-    - name: label_24
-      properties: {text: 'What defines us?', align: center, font_size: 30, bold: true, background: '', foreground: white}
+    - layout_properties: {grid_position: 'WIXPBY,ZHAAYA'}
+      name: label_24
+      properties: {align: center, background: '', bold: true, font_size: 30, foreground: white, text: 'What defines us?'}
       type: Label
-      layout_properties: {grid_position: 'WIXPBY,ZHAAYA'}
-    - name: column_panel_1
-      properties: {background: '#E9ECEF'}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'JACSWU,RXUUNL'}
-      components:
-      - name: spacer_21
+    - components:
+      - layout_properties: {grid_position: 'PUBBFQ,BEENRC'}
+        name: spacer_21
         properties: {height: '10'}
         type: Spacer
-        layout_properties: {grid_position: 'PUBBFQ,BEENRC'}
-      - name: label_28
+      - layout_properties: {grid_position: 'IFSMFI,MAIQWW'}
+        name: label_28
         properties:
+          align: center
+          background: '#E9ECEF'
+          bold: false
+          font_size: 18
+          foreground: black
           text: |2
              "We are a premier P2P lending platform specializing in education loans, streamlining the borrowing process by directly connecting investors with borrowers. Say goodbye to traditional bank intermediaries and their lengthy procedures; with just a simple registration, you can secure an education loan swiftly, transparently, and effortlessly!"
-          bold: false
-          font_size: 18
-          foreground: black
-          align: center
-          background: '#E9ECEF'
         type: Label
-        layout_properties: {grid_position: 'IFSMFI,MAIQWW'}
-      - name: spacer_23
+      - layout_properties: {grid_position: 'TYEDDM,HLASHC'}
+        name: spacer_23
         properties: {height: '10'}
         type: Spacer
-        layout_properties: {grid_position: 'TYEDDM,HLASHC'}
-    - name: column_panel_3
+      layout_properties: {grid_position: 'JACSWU,RXUUNL'}
+      name: column_panel_1
       properties: {background: '#E9ECEF'}
       type: ColumnPanel
-      layout_properties: {grid_position: 'JACSWU,GLTAMG', row_background: ''}
-      components:
-      - name: spacer_25
+    - components:
+      - layout_properties: {grid_position: 'CSAAOX,RAPODP'}
+        name: spacer_25
         properties: {height: '34'}
         type: Spacer
-        layout_properties: {grid_position: 'CSAAOX,RAPODP'}
-      - name: label_30
+      - layout_properties: {grid_position: 'LFAVHU,APLSFC'}
+        name: label_30
         properties:
-          text: |
-            Utilizing our exclusive Ascend scoring system, we assess your profile, gauge your creditworthiness, propose an appropriate interest rate, and devise a customizable repayment plan tailored to your needs.
+          align: center
+          background: '#E9ECEF'
           bold: false
           font_size: 18
           foreground: black
-          background: '#E9ECEF'
-          align: center
+          text: |
+            Utilizing our exclusive Ascend scoring system, we assess your profile, gauge your creditworthiness, propose an appropriate interest rate, and devise a customizable repayment plan tailored to your needs.
         type: Label
-        layout_properties: {grid_position: 'LFAVHU,APLSFC'}
-      - name: spacer_26
+      - layout_properties: {grid_position: 'BGPKKD,CLHNHM'}
+        name: spacer_26
         properties: {height: '37'}
         type: Spacer
-        layout_properties: {grid_position: 'BGPKKD,CLHNHM'}
-    - name: spacer_20
+      layout_properties: {grid_position: 'JACSWU,GLTAMG', row_background: ''}
+      name: column_panel_3
+      properties: {background: '#E9ECEF'}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'KYFAYE,CDZQRV'}
+      name: spacer_20
       properties: {height: '25'}
       type: Spacer
-      layout_properties: {grid_position: 'KYFAYE,CDZQRV'}
-    - name: label_26_copy_3
-      properties: {text: 'Before you go ahead and apply for a loan from us, it''s a good idea to know what you need to qualify for an education loan.', bold: true, font_size: 17, foreground: white, align: center}
+    - layout_properties: {grid_position: ',undefined'}
+      name: label_26_copy_3
+      properties: {align: center, bold: true, font_size: 17, foreground: white, text: 'Before you go ahead and apply for a loan from us, it''s a good idea to know what you need to qualify for an education loan.'}
       type: Label
-      layout_properties: {grid_position: ',undefined'}
-    - name: spacer_18
+    - layout_properties: {grid_position: 'RTKBPV,IICVUU'}
+      name: spacer_18
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'RTKBPV,IICVUU'}
-  - name: spacer_9
+    layout_properties: {full_width_row: true, grid_position: 'BEJGWE,EWWBJL'}
+    name: content_panel_copy_2_copy_2
+    properties: {background: '#006699', col_widths: '{"undefined":15,"RXUUNL":30,"GLTAMG":30}'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'EQUOKF,JCACKC'}
+    name: spacer_9
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'EQUOKF,JCACKC'}
-  - name: label_27
+  - layout_properties: {grid_position: 'XSEEKM,QMDRMM'}
+    name: label_27
     properties:
-      text: |
-        Prerequisites for availing an Education Loan
       align: center
       bold: true
       font_size: 30
+      text: |
+        Prerequisites for availing an Education Loan
     type: Label
-    layout_properties: {grid_position: 'XSEEKM,QMDRMM'}
-  - name: label_11
-    properties: {text: 'Applicants need to be mindful of certain conditions when applying for an education loan. These include:', align: center, font_size: 18}
+  - layout_properties: {grid_position: 'FRPQAC,WXQNXX'}
+    name: label_11
+    properties: {align: center, font_size: 18, text: 'Applicants need to be mindful of certain conditions when applying for an education loan. These include:'}
     type: Label
-    layout_properties: {grid_position: 'FRPQAC,WXQNXX'}
-  - name: image_3
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites1.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM UENZJO,WTSGJS'}
+    name: image_3
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites1.png}
     type: Image
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM UENZJO,WTSGJS'}
-  - name: label_34
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM UENZJO,MHIHCK'}
+    name: label_34
     properties:
       text: |-
         |
@@ -342,12 +338,12 @@ components:
         |
         |
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM UENZJO,MHIHCK'}
-  - name: image_4
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites2.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM YZARXF,HUVPOX'}
+    name: image_4
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites2.png}
     type: Image
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM YZARXF,HUVPOX'}
-  - name: label_38
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM YZARXF,RVMKVG'}
+    name: label_38
     properties:
       text: |-
         |
@@ -355,12 +351,12 @@ components:
         |
         |
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM YZARXF,RVMKVG'}
-  - name: image_5
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites3.png, display_mode: shrink_to_fit, height: '85'}
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM EKTQHT,BTYKBY'}
+    name: image_5
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites3.png}
     type: Image
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM EKTQHT,BTYKBY'}
-  - name: label_39
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM EKTQHT,LEWVYU'}
+    name: label_39
     properties:
       text: |-
         |
@@ -368,12 +364,12 @@ components:
         |
         |
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM EKTQHT,LEWVYU'}
-  - name: image_6
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites4.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM XZOWHL,NUKUZD'}
+    name: image_6
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites4.png}
     type: Image
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM XZOWHL,NUKUZD'}
-  - name: label_46
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM XZOWHL,OZDPXD'}
+    name: label_46
     properties:
       text: |-
         |
@@ -381,12 +377,12 @@ components:
         |
         |
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM XZOWHL,OZDPXD'}
-  - name: image_7
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites5.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM BWDGHO,GQGTQZ'}
+    name: image_7
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites5.png}
     type: Image
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM BWDGHO,GQGTQZ'}
-  - name: label_47
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM BWDGHO,FEIDKK'}
+    name: label_47
     properties:
       text: |-
         |
@@ -394,12 +390,12 @@ components:
         |
         |
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM BWDGHO,FEIDKK'}
-  - name: image_8
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites6.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM FHCBFX,FWFHIH'}
+    name: image_8
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-Prerequisites6.png}
     type: Image
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM FHCBFX,FWFHIH'}
-  - name: label_48
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM FHCBFX,AIQPTR'}
+    name: label_48
     properties:
       text: |-
         |
@@ -407,12 +403,12 @@ components:
         |
         |
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM FHCBFX,AIQPTR'}
-  - name: image_9
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/el3.png, height: '75', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM SUDLQQ,HAALVD'}
+    name: image_9
+    properties: {display_mode: shrink_to_fit, height: '75', source: _/theme/bank_users/personal_loan/education_loan/el3.png}
     type: Image
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM SUDLQQ,HAALVD'}
-  - name: label_49
+  - layout_properties: {grid_position: 'VAUIWL,HCNQRM SUDLQQ,PJCSGZ'}
+    name: label_49
     properties:
       text: |-
         |
@@ -420,595 +416,599 @@ components:
         |
         |
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,HCNQRM SUDLQQ,PJCSGZ'}
-  - name: label_29
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ TPHDVH,TCMVPF'}
+    name: label_29
     properties:
+      font_size: 18
       text: |
         The total loan amount that can be approved is often determined by the salary of the working professional, making it a key factor in the lending decision.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ TPHDVH,TCMVPF'}
-  - name: spacer_31
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ BYWBQX,VCUMGT'}
+    name: spacer_31
     properties: {height: 4.444427490234375}
     type: Spacer
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ BYWBQX,VCUMGT'}
-  - name: label_12
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ MTHJWQ,HFXVBV'}
+    name: label_12
     properties:
+      font_size: 18
       text: |2
 
         Having a co-borrower, whether it's a parent, colleague, sibling, or spouse, can significantly improve the chances of loan approval.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ MTHJWQ,HFXVBV'}
-  - name: label_16
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ LEUESG,FSSGBD'}
+    name: label_16
     properties:
+      font_size: 18
       text: |2
 
         Loans below 4 lakh INR are typically unsecured, meaning they don't require collateral. However, loans above 6 lakh INR are secured and require collateral of equivalent value.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ LEUESG,FSSGBD'}
-  - name: spacer_30
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ LCAZFG,ZDJWPC'}
+    name: spacer_30
     properties: {height: 29.888885498046875}
     type: Spacer
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ LCAZFG,ZDJWPC'}
-  - name: label_17
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ XYBVVL,WOBEPB'}
+    name: label_17
     properties:
+      font_size: 18
       text: |
         If you've opted for an institution located outside India, purchasing insurance would be mandatory.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ XYBVVL,WOBEPB'}
-  - name: spacer_29
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ SVXXOA,OTQZAW'}
+    name: spacer_29
     properties: {height: 23.6666259765625}
     type: Spacer
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ SVXXOA,OTQZAW'}
-  - name: label_18
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ GOMBKX,QGZXJU'}
+    name: label_18
     properties:
+      align: left
+      font_size: 18
       text: |
         While repayment options may differ among lenders, it's essential to start the payback process within 6 to 12 months after completing the course.
-      font_size: 18
-      align: left
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ GOMBKX,QGZXJU'}
-  - name: spacer_27
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ QDNZWY,FUVOQM'}
+    name: spacer_27
     properties: {height: 19.77777099609375}
     type: Spacer
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ QDNZWY,FUVOQM'}
-  - name: label_25
-    properties: {text: Failure to repay the loan not only affects the borrower's Ascend Score adversely but also puts the collateral at risk of being seized., font_size: 18}
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ ZSFDRY,MGHGAA'}
+    name: label_25
+    properties: {font_size: 18, text: Failure to repay the loan not only affects the borrower's Ascend Score adversely but also puts the collateral at risk of being seized.}
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ ZSFDRY,MGHGAA'}
-  - name: spacer_28
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ EZDGVB,AODEXP'}
+    name: spacer_28
     properties: {height: 0.44439697265625}
     type: Spacer
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ EZDGVB,AODEXP'}
-  - name: label_26
+  - layout_properties: {grid_position: 'VAUIWL,UYPFGJ GCFLJD,JQCAMB'}
+    name: label_26
     properties:
+      font_size: 18
       text: |2
 
         Interest rates can fluctuate but typically range between 12% to 16%.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'VAUIWL,UYPFGJ GCFLJD,JQCAMB'}
-  - name: spacer_10
+  - layout_properties: {grid_position: 'VWRYGI,IDHHLM'}
+    name: spacer_10
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'VWRYGI,IDHHLM'}
-  - name: label_50
-    properties: {text: 'Are you Eligible for an Education Loan?', align: center, bold: true, font_size: 30}
+  - layout_properties: {grid_position: 'UMUTOS,OXMWFF'}
+    name: label_50
+    properties: {align: center, bold: true, font_size: 30, text: 'Are you Eligible for an Education Loan?'}
     type: Label
-    layout_properties: {grid_position: 'UMUTOS,OXMWFF'}
-  - name: label_51
+  - layout_properties: {grid_position: 'UASOQS,LNMHLD'}
+    name: label_51
     properties:
+      align: center
+      font_size: 18
       text: |
         To qualify for an education loan, it's crucial to ensure you meet all the eligibility criteria. At Ascend, when we receive an application for an education loan, we typically start by evaluating the following factors:
-      font_size: 18
-      align: center
     type: Label
-    layout_properties: {grid_position: 'UASOQS,LNMHLD'}
-  - name: image_14
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility1.png, height: '85'}
+  - layout_properties: {grid_position: 'PHJGUM,MKCEIV'}
+    name: image_14
+    properties: {height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility1.png}
     type: Image
-    layout_properties: {grid_position: 'PHJGUM,MKCEIV'}
-  - name: label_52
-    properties: {text: The educational background of the working professional., bold: true, font_size: 18}
+  - layout_properties: {grid_position: 'PHJGUM,MIQGDM HFFBBI,AWVYOK'}
+    name: label_52
+    properties: {bold: true, font_size: 18, text: The educational background of the working professional.}
     type: Label
-    layout_properties: {grid_position: 'PHJGUM,MIQGDM HFFBBI,AWVYOK'}
-  - name: label_54
+  - layout_properties: {grid_position: 'PHJGUM,MIQGDM CCZRMY,LQWFGA'}
+    name: label_54
     properties:
+      font_size: 18
       text: |
         We consider their entire track record, including previous qualifications, academic transcripts, achievements, and extracurricular activities.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'PHJGUM,MIQGDM CCZRMY,LQWFGA'}
-  - name: image_15
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility2.png, display_mode: shrink_to_fit, height: '85'}
+  - layout_properties: {grid_position: 'RSSLAJ,PYMPNQ'}
+    name: image_15
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility2.png}
     type: Image
-    layout_properties: {grid_position: 'RSSLAJ,PYMPNQ'}
-  - name: label_53
+  - layout_properties: {grid_position: 'RSSLAJ,FOTLFZ OUSOUM,MERHDX'}
+    name: label_53
     properties:
+      bold: true
+      font_size: 18
       text: |
         The particular course for which the professional has applied.
-      bold: true
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'RSSLAJ,FOTLFZ OUSOUM,MERHDX'}
-  - name: label_58
+  - layout_properties: {grid_position: 'RSSLAJ,FOTLFZ DOQWTE,GXTKRK'}
+    name: label_58
     properties:
+      font_size: 18
       text: |
         The course should not only be accredited but also offer favorable placement opportunities, increasing the likelihood of loan repayment.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'RSSLAJ,FOTLFZ DOQWTE,GXTKRK'}
-  - name: image_16
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility3.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'BDUDZQ,VKURAG'}
+    name: image_16
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility3.png}
     type: Image
-    layout_properties: {grid_position: 'BDUDZQ,VKURAG'}
-  - name: label_55
+  - layout_properties: {grid_position: 'BDUDZQ,TIWNID QTYVUW,KVTGBY'}
+    name: label_55
     properties:
+      bold: true
+      font_size: 18
       text: |
         The institution in which the professional wants to study
-      bold: true
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'BDUDZQ,TIWNID QTYVUW,KVTGBY'}
-  - name: label_59
+  - layout_properties: {grid_position: 'BDUDZQ,TIWNID KARDFV,XZWSFU'}
+    name: label_59
     properties:
+      font_size: 18
       text: |
         The educational institution should be officially recognized, and the degrees or diplomas they confer should carry sufficient merit.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'BDUDZQ,TIWNID KARDFV,XZWSFU'}
-  - name: image_17
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility4.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'JXSNRH,YARKFF'}
+    name: image_17
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility4.png}
     type: Image
-    layout_properties: {grid_position: 'JXSNRH,YARKFF'}
-  - name: label_56
+  - layout_properties: {grid_position: 'JXSNRH,XUSTDU PQWFWZ,OKCHCX'}
+    name: label_56
     properties:
+      bold: true
+      font_size: 18
       text: |
         The ability of the professional to offer collateral
-      bold: true
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'JXSNRH,XUSTDU PQWFWZ,OKCHCX'}
-  - name: label_60
+  - layout_properties: {grid_position: 'JXSNRH,XUSTDU NQIFRI,DQMJFU'}
+    name: label_60
     properties:
+      font_size: 18
       text: |
         When seeking a loan amount exceeding 6 lakh INR, we assess the type of collateral being offered and its total market value.
-      font_size: 18
     type: Label
-    layout_properties: {grid_position: 'JXSNRH,XUSTDU NQIFRI,DQMJFU'}
-  - name: image_18
-    properties: {source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility5.png, height: '85', display_mode: shrink_to_fit}
+  - layout_properties: {grid_position: 'NBIOMA,QAZCGV'}
+    name: image_18
+    properties: {display_mode: shrink_to_fit, height: '85', source: _/theme/bank_users/personal_loan/education_loan/EL-eligibility5.png}
     type: Image
-    layout_properties: {grid_position: 'NBIOMA,QAZCGV'}
-  - name: label_57
+  - layout_properties: {grid_position: 'NBIOMA,CMLKWM KYNBCD,LKYAWC'}
+    name: label_57
     properties:
-      text: |
-        We also take into account the presence of co-borrowers and guarantors.
       bold: true
       font_size: 18
+      text: |
+        We also take into account the presence of co-borrowers and guarantors.
     type: Label
-    layout_properties: {grid_position: 'NBIOMA,CMLKWM KYNBCD,LKYAWC'}
-  - name: label_61
-    properties: {text: 'If a legitimate third party acts as a co-borrower or guarantor, their creditworthiness and job profiles will undergo thorough examination.', font_size: 18}
+  - layout_properties: {grid_position: 'NBIOMA,CMLKWM LQUFJH,PCYMGH'}
+    name: label_61
+    properties: {font_size: 18, text: 'If a legitimate third party acts as a co-borrower or guarantor, their creditworthiness and job profiles will undergo thorough examination.'}
     type: Label
-    layout_properties: {grid_position: 'NBIOMA,CMLKWM LQUFJH,PCYMGH'}
-  - name: spacer_32
+  - layout_properties: {grid_position: 'DZJFKI,FAFFED'}
+    name: spacer_32
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'DZJFKI,FAFFED'}
-  - name: label_62
-    properties: {text: 'Once this is done, we find out if you fit into the basic eligibility criteria. These include:', bold: true, font_size: 18}
+  - layout_properties: {grid_position: 'UHCXLS,MUMKTY'}
+    name: label_62
+    properties: {bold: true, font_size: 18, text: 'Once this is done, we find out if you fit into the basic eligibility criteria. These include:'}
     type: Label
-    layout_properties: {grid_position: 'UHCXLS,MUMKTY'}
-  - name: label_41
-    properties: {text: ✔ You must be a citizen of India., font_size: 18, foreground: black}
+  - layout_properties: {grid_position: 'KFLXCQ,VJLSCX'}
+    name: label_41
+    properties: {font_size: 18, foreground: black, text: ✔ You must be a citizen of India.}
     type: Label
-    layout_properties: {grid_position: 'KFLXCQ,VJLSCX'}
-  - name: label_40
+  - layout_properties: {grid_position: 'NKPLSN,OEBQAT'}
+    name: label_40
     properties:
-      text: |
-        ✔ You must have already secured admission in an educational institution, either in India or abroad, through an entrance exam or any other selection process.
       font_size: 18
       foreground: black
+      text: |
+        ✔ You must have already secured admission in an educational institution, either in India or abroad, through an entrance exam or any other selection process.
     type: Label
-    layout_properties: {grid_position: 'NKPLSN,OEBQAT'}
-  - name: label_35
-    properties: {text: ✔  There is no age restriction for a working professional., font_size: 18, foreground: black}
+  - layout_properties: {grid_position: 'VYCHVB,RTJFVQ'}
+    name: label_35
+    properties: {font_size: 18, foreground: black, text: ✔  There is no age restriction for a working professional.}
     type: Label
-    layout_properties: {grid_position: 'VYCHVB,RTJFVQ'}
-  - name: label_35_copy
-    properties: {text: '✔  However, the co-borrower or guarantor should be between 21 years of age when the loan is sought and 65 years of age when the loan matures.', font_size: 18, foreground: black}
+  - layout_properties: {grid_position: 'TTHOZR,VSWDFI'}
+    name: label_35_copy
+    properties: {font_size: 18, foreground: black, text: '✔  However, the co-borrower or guarantor should be between 21 years of age when the loan is sought and 65 years of age when the loan matures.'}
     type: Label
-    layout_properties: {grid_position: 'TTHOZR,VSWDFI'}
-  - name: content_panel_copy_copy_3
-    properties: {background: '#3d3d5c'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'QBRTWA,BMDXYA', full_width_row: true}
-    components:
-    - name: spacer_11
+  - components:
+    - layout_properties: {grid_position: 'LFHSZT,ZZYTUZ'}
+      name: spacer_11
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'LFHSZT,ZZYTUZ'}
-    - name: label_32
-      properties: {text: 'Which Documents do you require for Education Loan?', font_size: 30, foreground: white, align: center}
+    - layout_properties: {grid_position: 'SGOEDR,AKMYBP'}
+      name: label_32
+      properties: {align: center, font_size: 30, foreground: white, text: 'Which Documents do you require for Education Loan?'}
       type: Label
-      layout_properties: {grid_position: 'SGOEDR,AKMYBP'}
-    - name: label_36
+    - layout_properties: {grid_position: 'DQAJCV,XZPXSD'}
+      name: label_36
       properties:
+        align: center
+        bold: false
+        font_size: 18
+        foreground: white
         text: |
           When applying for an education loan, working professionals would need to submit several documents, including:
-        foreground: white
-        font_size: 18
-        bold: false
-        align: center
       type: Label
-      layout_properties: {grid_position: 'DQAJCV,XZPXSD'}
-    - name: label_63
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX SLCFJB,NLVFWH'}
+      name: label_63
       properties:
+        bold: true
+        font_size: 18
+        foreground: white
         text: |2-
 
           For courses within India, working professionals would typically be required to submit the following documents:
-        foreground: white
-        font_size: 18
-        bold: true
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX SLCFJB,NLVFWH'}
-    - name: label_65
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX YXCMKV,NCPIKB'}
+      name: label_65
       properties:
+        font_size: 17
+        foreground: white
         text: |
           ✔ An application form detailing the course, institute, and loan amount.
-        foreground: white
-        font_size: 17
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX YXCMKV,NCPIKB'}
-    - name: label_66
-      properties: {text: '✔ Academic certificates, including high school, secondary school, graduation, and post-graduation transcripts.', foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX OOSPDA,MKZUUY'}
+      name: label_66
+      properties: {font_size: 17, foreground: white, text: '✔ Academic certificates, including high school, secondary school, graduation, and post-graduation transcripts.'}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX OOSPDA,MKZUUY'}
-    - name: label_67
-      properties: {text: ✔ Passport-sized photographs., foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX OJROWW,GOSEVD'}
+      name: label_67
+      properties: {font_size: 17, foreground: white, text: ✔ Passport-sized photographs.}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX OJROWW,GOSEVD'}
-    - name: label_68
-      properties: {text: ✔ KYC documents, foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX APZNBI,KYVFOK'}
+      name: label_68
+      properties: {font_size: 17, foreground: white, text: ✔ KYC documents}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX APZNBI,KYVFOK'}
-    - name: label_69
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX OLLSIW,MWSAJS'}
+      name: label_69
       properties:
+        font_size: 17
+        foreground: white
         text: |
           ✔ An identity and age proof, such as an Aadhar card, PAN card, voter ID card, passport, or driving license.
-        foreground: white
-        font_size: 17
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX OLLSIW,MWSAJS'}
-    - name: label_70
-      properties: {text: '✔ An income proof, preferably bank statements from the salary account for the last six months.', foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX YHMONA,MONUNC'}
+      name: label_70
+      properties: {font_size: 17, foreground: white, text: '✔ An income proof, preferably bank statements from the salary account for the last six months.'}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX YHMONA,MONUNC'}
-    - name: label_71
+    - layout_properties: {grid_position: 'IZYDPA,IOHZTX ABVAGQ,SKYINY'}
+      name: label_71
       properties:
+        font: ''
+        font_size: 17
+        foreground: white
         text: |
           ✔ Documentation proving ownership of collateral.
-        foreground: white
-        font_size: 17
-        font: ''
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,IOHZTX ABVAGQ,SKYINY'}
-    - name: label_64
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP FMBNQQ,KGETGN'}
+      name: label_64
       properties:
+        bold: true
+        font_size: 18
+        foreground: white
         text: |2-
 
           For courses outside India, working professionals would typically be required to submit the following documents:
-        foreground: white
-        font_size: 18
-        bold: true
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP FMBNQQ,KGETGN'}
-    - name: label_72
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP ELRGQW,JGIDWW'}
+      name: label_72
       properties:
+        font_size: 17
+        foreground: white
         text: |
           ✔ An application form detailing the course, institute, and loan amount.
-        foreground: white
-        font_size: 17
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP ELRGQW,JGIDWW'}
-    - name: label_73
-      properties: {text: '✔ Academic certificates, including high school, secondary school, graduation, and post-graduation transcripts.', foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP LNOSZH,ARYETU'}
+      name: label_73
+      properties: {font_size: 17, foreground: white, text: '✔ Academic certificates, including high school, secondary school, graduation, and post-graduation transcripts.'}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP LNOSZH,ARYETU'}
-    - name: label_80
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP EMFYWR,GDIJHW'}
+      name: label_80
       properties:
+        font_size: 17
+        foreground: white
         text: |
           ✔ A comprehensive schedule outlining the course structure and anticipated expenses.
-        foreground: white
-        font_size: 17
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP EMFYWR,GDIJHW'}
-    - name: label_74
-      properties: {text: ✔ Passport-sized photographs., foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP RZJGIE,ZHOCOF'}
+      name: label_74
+      properties: {font_size: 17, foreground: white, text: ✔ Passport-sized photographs.}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP RZJGIE,ZHOCOF'}
-    - name: label_75
-      properties: {text: ✔ KYC documents, foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP YAFOSV,IXXMVI'}
+      name: label_75
+      properties: {font_size: 17, foreground: white, text: ✔ KYC documents}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP YAFOSV,IXXMVI'}
-    - name: label_77
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP DNMHTG,LLFDYX'}
+      name: label_77
       properties:
+        font_size: 17
+        foreground: white
         text: |
           ✔ An identity and age proof, such as an Aadhar card, PAN card, voter ID card, passport, or driving license.
-        foreground: white
-        font_size: 17
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP DNMHTG,LLFDYX'}
-    - name: label_78
-      properties: {text: '✔ An income proof, preferably bank statements from the salary account for the last six months.', foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP RYXDQA,JYKVGW'}
+      name: label_78
+      properties: {font_size: 17, foreground: white, text: '✔ An income proof, preferably bank statements from the salary account for the last six months.'}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP RYXDQA,JYKVGW'}
-    - name: label_79
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP WWXADX,TYFZXD'}
+      name: label_79
       properties:
+        font_size: 17
+        foreground: white
         text: |
           ✔ Documentation proving ownership of collateral.
-        foreground: white
-        font_size: 17
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP WWXADX,TYFZXD'}
-    - name: label_76
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP IMQRYB,USWDSL'}
+      name: label_76
       properties:
+        font_size: 17
+        foreground: white
         text: |
           ✔ A copy of the scholarship letter, if applicable, provided by the foreign institution.
-        foreground: white
-        font_size: 17
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP IMQRYB,USWDSL'}
-    - name: label_81
-      properties: {text: ✔ A proof of admission to the foreign university., foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP KSRSYF,WKOMWA'}
+      name: label_81
+      properties: {font_size: 17, foreground: white, text: ✔ A proof of admission to the foreign university.}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP KSRSYF,WKOMWA'}
-    - name: label_82
-      properties: {text: ✔ A copy of the foreign exchange permit, foreground: white, font_size: 17}
+    - layout_properties: {grid_position: 'IZYDPA,WLJHGP RZHZEL,IVCYHD'}
+      name: label_82
+      properties: {font_size: 17, foreground: white, text: ✔ A copy of the foreign exchange permit}
       type: Label
-      layout_properties: {grid_position: 'IZYDPA,WLJHGP RZHZEL,IVCYHD'}
-    - name: spacer_12
+    - layout_properties: {grid_position: 'MBVGZU,ZHPTIE'}
+      name: spacer_12
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'MBVGZU,ZHPTIE'}
-  - name: spacer_13
+    layout_properties: {full_width_row: true, grid_position: 'QBRTWA,BMDXYA'}
+    name: content_panel_copy_copy_3
+    properties: {background: '#3d3d5c'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'MYFFOW,TEADVC'}
+    name: spacer_13
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'MYFFOW,TEADVC'}
-  - name: content_panel_copy_copy_2_copy
-    properties: {col_widths: '{"ACMUHW":10,"VOGBWP":50,"ISUVYU":50,"OTJFUF":10,"NVYYIU":10,"JCKYTR":50,"PHWKJW":50,"BFXPOI":10,"BACOJQ":10,"DJUOPI":50}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'IMRKUT,YJNCEF', full_width_row: true}
-    components:
-    - name: spacer_16
+  - components:
+    - layout_properties: {grid_position: 'QQIHTL,SQAZFC'}
+      name: spacer_16
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'QQIHTL,SQAZFC'}
-    - name: label_42
-      properties: {text: 'What are the Benefits of availing an Education Loan?', align: center, bold: true, font_size: 30}
+    - layout_properties: {grid_position: 'AXKAJT,JKLQDU'}
+      name: label_42
+      properties: {align: center, bold: true, font_size: 30, text: 'What are the Benefits of availing an Education Loan?'}
       type: Label
-      layout_properties: {grid_position: 'AXKAJT,JKLQDU'}
-    - name: label_43
-      properties: {text: 'An education loan can be immensely beneficial for working professionals, providing the necessary financial and career support. Moreover, it offers a plethora of additional advantages, such as:', align: center, font_size: 18, bold: true}
+    - layout_properties: {grid_position: 'UBCVVE,JHVQVP'}
+      name: label_43
+      properties: {align: center, bold: true, font_size: 18, text: 'An education loan can be immensely beneficial for working professionals, providing the necessary financial and career support. Moreover, it offers a plethora of additional advantages, such as:'}
       type: Label
-      layout_properties: {grid_position: 'UBCVVE,JHVQVP'}
-    - name: spacer_33
+    - layout_properties: {grid_position: 'DFARFI,DFEMVZ'}
+      name: spacer_33
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'DFARFI,DFEMVZ'}
-    - name: image_19
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el_benifits1.png, display_mode: shrink_to_fit, background: '#0b2547', height: '100'}
+    - layout_properties: {grid_position: 'NUSJFG,BACOJQ'}
+      name: image_19
+      properties: {background: '#0b2547', display_mode: shrink_to_fit, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el_benifits1.png}
       type: Image
-      layout_properties: {grid_position: 'NUSJFG,BACOJQ'}
-    - name: label_45
+    - layout_properties: {grid_position: 'NUSJFG,DJUOPI'}
+      name: label_45
       properties:
+        font_size: 18
         text: |
           As long as they meet the eligibility criteria and have the necessary documents, education loans are accessible to nearly everyone. Age or professional obligations are not obstacles in obtaining them.
-        font_size: 18
       type: Label
-      layout_properties: {grid_position: 'NUSJFG,DJUOPI'}
-    - name: spacer_34
+    - layout_properties: {grid_position: 'JJKCGO,AAVQRT'}
+      name: spacer_34
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'JJKCGO,AAVQRT'}
-    - name: label_45_copy
+    - layout_properties: {grid_position: 'NSOAVV,PHWKJW'}
+      name: label_45_copy
       properties:
+        font_size: 18
         text: |
           These loans can be used to pursue a wide variety of courses, including vocational, academic, skill enhancement, and educational programs.
-        font_size: 18
       type: Label
-      layout_properties: {grid_position: 'NSOAVV,PHWKJW'}
-    - name: image_20
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el_benifits2.png, display_mode: shrink_to_fit, background: '#0b2547', height: '100'}
+    - layout_properties: {grid_position: 'NSOAVV,BFXPOI'}
+      name: image_20
+      properties: {background: '#0b2547', display_mode: shrink_to_fit, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el_benifits2.png}
       type: Image
-      layout_properties: {grid_position: 'NSOAVV,BFXPOI'}
-    - name: spacer_35
+    - layout_properties: {grid_position: 'UDCSJJ,NJPAND'}
+      name: spacer_35
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'UDCSJJ,NJPAND'}
-    - name: image_21
-      properties: {display_mode: shrink_to_fit, source: _/theme/bank_users/personal_loan/education_loan/el_benifits3.png, background: '#0b2547', height: '100'}
+    - layout_properties: {grid_position: 'AYNVGK,NVYYIU'}
+      name: image_21
+      properties: {background: '#0b2547', display_mode: shrink_to_fit, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el_benifits3.png}
       type: Image
-      layout_properties: {grid_position: 'AYNVGK,NVYYIU'}
-    - name: label_45_copy_copy
+    - layout_properties: {grid_position: 'AYNVGK,JCKYTR'}
+      name: label_45_copy_copy
       properties:
+        font_size: 18
         text: |
           The loan amount being sought, covering fees and additional expenses, can range from 2 lakh INR to 18 lakh INR. This amount can be adjusted based on factors such as the course, university, and location.
-        font_size: 18
       type: Label
-      layout_properties: {grid_position: 'AYNVGK,JCKYTR'}
-    - name: spacer_36
+    - layout_properties: {grid_position: 'CNLZUS,BAXESA'}
+      name: spacer_36
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'CNLZUS,BAXESA'}
-    - name: label_45_copy_copy_2
+    - layout_properties: {grid_position: 'JNWZSX,ISUVYU'}
+      name: label_45_copy_copy_2
       properties:
+        font_size: 18
         text: |
           The education loan doesn't only cover the fundamental institutional fees; it also includes funds for various additional expenses such as caution deposits, building deposits, laboratory fees, examination fees, library fees, hostel fees, uniform and equipment costs, and travel expenses.
-        font_size: 18
       type: Label
-      layout_properties: {grid_position: 'JNWZSX,ISUVYU'}
-    - name: spacer_37
+    - layout_properties: {grid_position: 'JNWZSX,ISUVYU LQGHJV,JQVJTN'}
+      name: spacer_37
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'JNWZSX,ISUVYU LQGHJV,JQVJTN'}
-    - name: image_22
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el_benifits4.png, display_mode: shrink_to_fit, background: '#0b2547', height: '100'}
+    - layout_properties: {grid_position: 'JNWZSX,OTJFUF'}
+      name: image_22
+      properties: {background: '#0b2547', display_mode: shrink_to_fit, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el_benifits4.png}
       type: Image
-      layout_properties: {grid_position: 'JNWZSX,OTJFUF'}
-    - name: image_23
-      properties: {source: _/theme/bank_users/personal_loan/education_loan/el_benifits5.png, display_mode: shrink_to_fit, background: '#0b2547', height: '100'}
+    - layout_properties: {grid_position: 'RZLCFU,ACMUHW'}
+      name: image_23
+      properties: {background: '#0b2547', display_mode: shrink_to_fit, height: '100', source: _/theme/bank_users/personal_loan/education_loan/el_benifits5.png}
       type: Image
-      layout_properties: {grid_position: 'RZLCFU,ACMUHW'}
-    - name: label_45_copy_copy_2_copy_2
+    - layout_properties: {grid_position: 'RZLCFU,VOGBWP'}
+      name: label_45_copy_copy_2_copy_2
       properties:
+        font_size: 18
         text: |
           Finally, the repayment schedule of an education loan is highly flexible. The equated monthly installments (EMIs) don't start immediately; instead, the repayment tenure begins only after the course has been completed.
-        font_size: 18
       type: Label
-      layout_properties: {grid_position: 'RZLCFU,VOGBWP'}
-    - name: spacer_17
+    - layout_properties: {grid_position: 'YIUDEI,IJBOSM'}
+      name: spacer_17
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'YIUDEI,IJBOSM'}
-    - name: label_44
+    - layout_properties: {grid_position: 'RSEEJC,PYBHUB'}
+      name: label_44
       properties:
-        text: |2
-
-          It's clear why education loans are in high demand among the offerings provided by Ascend.
         align: center
         bold: true
         font_size: 18
+        text: |2
+
+          It's clear why education loans are in high demand among the offerings provided by Ascend.
       type: Label
-      layout_properties: {grid_position: 'RSEEJC,PYBHUB'}
-    - name: spacer_38
+    - layout_properties: {grid_position: 'RLFOJZ,UMRLDK'}
+      name: spacer_38
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'RLFOJZ,UMRLDK'}
-    - name: column_panel_2_copy
-      properties: {background: '#0047b3', col_widths: '{}'}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'YHYFES,TEJKLX', full_width_row: true}
-      components:
-      - name: spacer_39
+    - components:
+      - layout_properties: {grid_position: 'WUJJOP,HBKWAZ'}
+        name: spacer_39
         properties: {height: '15'}
         type: Spacer
-        layout_properties: {grid_position: 'WUJJOP,HBKWAZ'}
-      - name: label_83
-        properties: {text: 'Ascend: Your Partner in Educational Excellence!', align: center, bold: true, font_size: 30, foreground: white}
+      - layout_properties: {grid_position: 'BMGQPY,MVTVHZ'}
+        name: label_83
+        properties: {align: center, bold: true, font_size: 30, foreground: white, text: 'Ascend: Your Partner in Educational Excellence!'}
         type: Label
-        layout_properties: {grid_position: 'BMGQPY,MVTVHZ'}
-      - name: label_84
-        properties: {align: center, font_size: 18, text: 'If you''re seeking the optimal place to obtain an education loan, your search ends with Ascend. We not only offer competitive interest rates but also tailor our loan products to align with your unique career aspirations. Enjoy a flexible repayment schedule and zero penal charges on prepayment, ensuring that our education loan maximizes the value of your investment!', foreground: white}
+      - layout_properties: {grid_position: 'YULURJ,SGQATX'}
+        name: label_84
+        properties: {align: center, font_size: 18, foreground: white, text: 'If you''re seeking the optimal place to obtain an education loan, your search ends with Ascend. We not only offer competitive interest rates but also tailor our loan products to align with your unique career aspirations. Enjoy a flexible repayment schedule and zero penal charges on prepayment, ensuring that our education loan maximizes the value of your investment!'}
         type: Label
-        layout_properties: {grid_position: 'YULURJ,SGQATX'}
-      - name: label_85
-        properties: {text: 'Indeed, education is more than just a financial transaction; it''s an investment that enriches your present and secures your future. That''s why obtaining an education loan should be approached as a carefully considered and well-informed decision.', align: center, font_size: 18, foreground: white}
+      - layout_properties: {grid_position: 'NBIFKO,LVDYFY'}
+        name: label_85
+        properties: {align: center, font_size: 18, foreground: white, text: 'Indeed, education is more than just a financial transaction; it''s an investment that enriches your present and secures your future. That''s why obtaining an education loan should be approached as a carefully considered and well-informed decision.'}
         type: Label
-        layout_properties: {grid_position: 'NBIFKO,LVDYFY'}
-      - name: spacer_40
+      - layout_properties: {grid_position: 'DANJXH,VIXWFN'}
+        name: spacer_40
         properties: {height: '15'}
         type: Spacer
-        layout_properties: {grid_position: 'DANJXH,VIXWFN'}
-      - name: button_2
-        properties: {text: Apply Education Loan Now, foreground: white, background: '#013065', font_size: 16}
-        type: Button
+      - event_bindings: {click: button_2_click}
         layout_properties: {grid_position: 'QSSLER,WNBVGC'}
-        event_bindings: {click: button_2_click}
-      - name: spacer_41
+        name: button_2
+        properties: {background: '#013065', font_size: 16, foreground: white, text: Apply Education Loan Now}
+        type: Button
+      - layout_properties: {grid_position: 'HBREGX,MTTKZU'}
+        name: spacer_41
         properties: {height: '10'}
         type: Spacer
-        layout_properties: {grid_position: 'HBREGX,MTTKZU'}
-  - name: column_panel_2
-    properties: {background: white, col_widths: '{"XHAILN":12,"SPJHOO":8,"WNWVDK":16,"YBBTWP":12,"QNSOAB":12}'}
+      layout_properties: {full_width_row: true, grid_position: 'YHYFES,TEJKLX'}
+      name: column_panel_2_copy
+      properties: {background: '#0047b3', col_widths: '{}'}
+      type: ColumnPanel
+    layout_properties: {full_width_row: true, grid_position: 'IMRKUT,YJNCEF'}
+    name: content_panel_copy_copy_2_copy
+    properties: {col_widths: '{"ACMUHW":10,"VOGBWP":50,"ISUVYU":50,"OTJFUF":10,"NVYYIU":10,"JCKYTR":50,"PHWKJW":50,"BFXPOI":10,"BACOJQ":10,"DJUOPI":50}'}
     type: ColumnPanel
-    layout_properties: {grid_position: 'ULJZNE,OOPVXS', full_width_row: true}
-    components:
-    - name: spacer_15_copy
+  - components:
+    - layout_properties: {grid_position: 'MMFQSR,XHAILN GZEMUS,BUIUBY'}
+      name: spacer_15_copy
       properties: {height: 14.888885498046875}
       type: Spacer
-      layout_properties: {grid_position: 'MMFQSR,XHAILN GZEMUS,BUIUBY'}
-    - name: image_29
-      properties: {vertical_align: center, spacing_above: none, background: '', horizontal_align: left, source: _/theme/titled-design.jpg, display_mode: zoom_to_fill, spacing_below: large, border: '', height: 113}
-      type: Image
+    - data_bindings: []
       layout_properties: {grid_position: 'MMFQSR,XHAILN'}
-      data_bindings: []
-    - name: spacer_41_copy_2
+      name: image_29
+      properties: {background: '', border: '', display_mode: zoom_to_fill, height: 113, horizontal_align: left, source: _/theme/titled-design.jpg, spacing_above: none, spacing_below: large, vertical_align: center}
+      type: Image
+    - layout_properties: {grid_position: 'MMFQSR,SPJHOO SCGGTB,GABWCY'}
+      name: spacer_41_copy_2
       properties: {height: 21.555511474609375}
       type: Spacer
-      layout_properties: {grid_position: 'MMFQSR,SPJHOO SCGGTB,GABWCY'}
-    - name: spacer_35_copy
+    - layout_properties: {grid_position: 'MMFQSR,SPJHOO DARVGB,SPSXSM'}
+      name: spacer_35_copy
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'MMFQSR,SPJHOO DARVGB,SPSXSM'}
-    - name: link_7
-      properties: {text: Home, bold: true, font_size: 16, underline: false, foreground: black, align: left}
-      type: Link
+    - event_bindings: {click: link_7_click}
       layout_properties: {grid_position: 'MMFQSR,WNWVDK'}
-      event_bindings: {click: link_7_click}
-    - name: link_10
-      properties: {text: Investment, foreground: black, bold: true, font_size: 16, underline: false, align: left}
+      name: link_7
+      properties: {align: left, bold: true, font_size: 16, foreground: black, text: Home, underline: false}
       type: Link
-      layout_properties: {grid_position: 'MMFQSR,WNWVDK NYPJXO,GZMCYD'}
-    - name: link_13
-      properties: {text: How It Works, foreground: black, bold: true, font_size: 16, underline: false, align: left}
+    - layout_properties: {grid_position: 'MMFQSR,WNWVDK NYPJXO,GZMCYD'}
+      name: link_10
+      properties: {align: left, bold: true, font_size: 16, foreground: black, text: Investment, underline: false}
       type: Link
-      layout_properties: {grid_position: 'MMFQSR,WNWVDK KEVRNO,FAGUHN'}
-    - name: link_11
-      properties: {text: Borrow, font_size: 16, bold: true, foreground: black, underline: false}
+    - layout_properties: {grid_position: 'MMFQSR,WNWVDK KEVRNO,FAGUHN'}
+      name: link_13
+      properties: {align: left, bold: true, font_size: 16, foreground: black, text: How It Works, underline: false}
       type: Link
-      layout_properties: {grid_position: 'MMFQSR,YBBTWP MOYVBC,DMAAWC'}
-    - name: link_8
-      properties: {text: Contact Us, foreground: black, underline: false, font_size: 16, bold: true, align: left}
+    - layout_properties: {grid_position: 'MMFQSR,YBBTWP MOYVBC,DMAAWC'}
+      name: link_11
+      properties: {bold: true, font_size: 16, foreground: black, text: Borrow, underline: false}
       type: Link
+    - event_bindings: {click: link_8_click}
       layout_properties: {grid_position: 'MMFQSR,YBBTWP KKGCYO,GSVXOQ'}
-      event_bindings: {click: link_8_click}
-    - name: link_12
-      properties: {text: Help, foreground: black, bold: true, font_size: 16, underline: false}
+      name: link_8
+      properties: {align: left, bold: true, font_size: 16, foreground: black, text: Contact Us, underline: false}
       type: Link
-      layout_properties: {grid_position: 'MMFQSR,QNSOAB IRVWEK,HAZHMM', full_width_row: true}
-      event_bindings: {click: link_12_click}
-    - name: link_9
-      properties: {text: About Us, bold: true, font_size: 16, underline: false, foreground: black, align: left}
+    - event_bindings: {click: link_12_click}
+      layout_properties: {full_width_row: true, grid_position: 'MMFQSR,QNSOAB IRVWEK,HAZHMM'}
+      name: link_12
+      properties: {bold: true, font_size: 16, foreground: black, text: Help, underline: false}
       type: Link
+    - event_bindings: {click: link_9_click}
       layout_properties: {grid_position: 'MMFQSR,QNSOAB MCUKZK,LUZRLG'}
-      event_bindings: {click: link_9_click}
-    - name: spacer_16_copy
+      name: link_9
+      properties: {align: left, bold: true, font_size: 16, foreground: black, text: About Us, underline: false}
+      type: Link
+    - layout_properties: {grid_position: 'EEWYZY,CQBPUE'}
+      name: spacer_16_copy
       properties: {height: 32.5999755859375}
       type: Spacer
-      layout_properties: {grid_position: 'EEWYZY,CQBPUE'}
-    - name: grid_panel_2_copy
-      properties: {spacing_above: small, spacing_below: small, background: '#05264d', foreground: '', border: '', visible: true, role: null, tooltip: ''}
-      type: GridPanel
-      layout_properties: {grid_position: 'RBHEDE,EWADTZ', full_width_row: true}
-      components:
-      - name: flow_panel_3_copy_1
-        properties: {role: null, vertical_align: full, align: left, spacing_above: none, background: '#05264d', foreground: '', spacing_below: none, visible: true, border: '', tooltip: '', spacing: medium}
-        type: FlowPanel
-        layout_properties: {row: JUWDTC, width_xs: 5, col_xs: 0, width: 198.328}
-        components:
-        - name: label_4_copy_2
-          properties: {role: null, bold: true, align: left, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '© 2023 - 2024, Ascend - All Rights    Reserved'}
+    - components:
+      - components:
+        - layout_properties: {}
+          name: label_4_copy_2
+          properties: {align: left, background: '#05264d', bold: true, border: '', font: '', font_size: null, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '© 2023 - 2024, Ascend - All Rights    Reserved', tooltip: '', underline: false, visible: true}
           type: Label
-          layout_properties: {}
-      - name: link_5_copy
-        properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:linkedin-square', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9179915&mcid=6844056167778418689&cid=&gclid=EAIaIQobChMI1pr54ZHVggMVF6dmAh2IxgGNEAAYASAAEgKqevD_BwE&gclsrc=aw.ds', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
+        layout_properties: {col_xs: 0, row: JUWDTC, width: 198.328, width_xs: 5}
+        name: flow_panel_3_copy_1
+        properties: {align: left, background: '#05264d', border: '', foreground: '', role: null, spacing: medium, spacing_above: none, spacing_below: none, tooltip: '', vertical_align: full, visible: true}
+        type: FlowPanel
+      - layout_properties: {col_xs: 8, row: JUWDTC, width: 93.6875, width_xs: 1}
+        name: link_5_copy
+        properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: 30, foreground: white, icon: 'fa:linkedin-square', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, url: 'https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9179915&mcid=6844056167778418689&cid=&gclid=EAIaIQobChMI1pr54ZHVggMVF6dmAh2IxgGNEAAYASAAEgKqevD_BwE&gclsrc=aw.ds', visible: true, wrap_on: mobile}
         type: Link
-        layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 8, width: 93.6875}
-      - name: link_2
-        properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:facebook-square', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://www.facebook.com/', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
+      - layout_properties: {col_xs: 9, row: JUWDTC, width: 93.6875, width_xs: 1}
+        name: link_2
+        properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: 30, foreground: white, icon: 'fa:facebook-square', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, url: 'https://www.facebook.com/', visible: true, wrap_on: mobile}
         type: Link
-        layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 9, width: 93.6875}
-      - name: link_4_copy
-        properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:instagram', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://www.instagram.com/accounts/login/', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
+      - layout_properties: {col_xs: 10, row: JUWDTC, width: 93.6875, width_xs: 1}
+        name: link_4_copy
+        properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: 30, foreground: white, icon: 'fa:instagram', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, url: 'https://www.instagram.com/accounts/login/', visible: true, wrap_on: mobile}
         type: Link
-        layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 10, width: 93.6875}
-      - name: link_3
-        properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: th, icon: 'fa:twitter', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
+      - layout_properties: {col_xs: 11, row: JUWDTC, width: 93.6875, width_xs: 1}
+        name: link_3
+        properties: {align: left, background: th, bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: 30, foreground: white, icon: 'fa:twitter', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, url: 'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D', visible: true, wrap_on: mobile}
         type: Link
-        layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 11, width: 93.6875}
+      layout_properties: {full_width_row: true, grid_position: 'RBHEDE,EWADTZ'}
+      name: grid_panel_2_copy
+      properties: {background: '#05264d', border: '', foreground: '', role: null, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+      type: GridPanel
+    layout_properties: {full_width_row: true, grid_position: 'ULJZNE,OOPVXS'}
+    name: column_panel_2
+    properties: {background: white, col_widths: '{"XHAILN":12,"SPJHOO":8,"WNWVDK":16,"YBBTWP":12,"QNSOAB":12}'}
+    type: ColumnPanel
+  layout_properties: {full_width_row: true, grid_position: 'HLOBHF,KXPMOO'}
+  name: content_panel
+  properties: {col_widths: '{"HCNQRM":15,"UYPFGJ":45,"WTSGJS":45,"MHIHCK":15,"HUVPOX":45,"RVMKVG":15,"BTYKBY":45,"LEWVYU":15,"NUKUZD":45,"OZDPXD":15,"GQGTQZ":45,"FEIDKK":15,"FWFHIH":45,"AIQPTR":15,"HAALVD":45,"PJCSGZ":15,"MKCEIV":10,"MIQGDM":50,"PYMPNQ":10,"FOTLFZ":50,"VKURAG":10,"TIWNID":50,"YARKFF":10,"XUSTDU":50,"QAZCGV":10,"CMLKWM":50}'}
+  type: ColumnPanel
+container: {type: ColumnPanel}
 is_package: true

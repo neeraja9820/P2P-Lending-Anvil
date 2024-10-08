@@ -1,19 +1,19 @@
-is_package: true
-container: {type: ColumnPanel}
 components:
-- name: column_panel_1
-  properties: {col_widths: '{"PGRSIA":40,"MEVRDW":20}', role: elevated-card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'LHVIHW,JJLIQM'}
-  components:
-  - name: label_1
+- components:
+  - data_bindings:
+    - {code: 'self.item[''occupation_type'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'BICWGR,PGRSIA'}
+    name: label_1
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'BICWGR,PGRSIA'}
-    data_bindings:
-    - {property: text, code: 'self.item[''occupation_type'']', writeback: false}
-  - name: link_1
+  - event_bindings: {click: link_1_click}
+    layout_properties: {grid_position: 'BICWGR,MEVRDW'}
+    name: link_1
     properties: {text: Edit Details}
     type: Link
-    layout_properties: {grid_position: 'BICWGR,MEVRDW'}
-    event_bindings: {click: link_1_click}
+  layout_properties: {grid_position: 'LHVIHW,JJLIQM'}
+  name: column_panel_1
+  properties: {col_widths: '{"PGRSIA":40,"MEVRDW":20}', role: elevated-card}
+  type: ColumnPanel
+container: {type: ColumnPanel}
+is_package: true

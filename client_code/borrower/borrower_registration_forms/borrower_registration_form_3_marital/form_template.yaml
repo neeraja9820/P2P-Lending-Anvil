@@ -1,211 +1,211 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: form:borrower.navigation_bar_main
-  properties: {prop: ''}
+- layout_properties: {full_width_row: true, grid_position: 'KZSWAA,PNCXHD'}
   name: navigation_bar_1
-  layout_properties: {grid_position: 'KZSWAA,PNCXHD', full_width_row: true}
-- name: registration_process_1
+  properties: {prop: ''}
+  type: form:borrower.navigation_bar_main
+- layout_properties: {grid_position: 'MZLTOH,TYUHHR'}
+  name: registration_process_1
   properties: {}
   type: form:borrower.borrower_registration_forms.registration_process
-  layout_properties: {grid_position: 'MZLTOH,TYUHHR'}
-- name: column_panel_3
-  properties: {role: outlined-card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'IXHWAG,LJJJEG'}
-  components:
-  - name: label_1_copy_1
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Provide Guarantor Details}
+- components:
+  - layout_properties: {grid_position: 'ODXWWC,AAALFK'}
+    name: label_1_copy_1
+    properties: {align: center, background: '#05264d', bold: true, border: '', font: '', font_size: 18, foreground: white, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Provide Guarantor Details, tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'ODXWWC,AAALFK'}
-  - name: spacer_1
+  - layout_properties: {grid_position: 'SOQBYK,JRKKMU'}
+    name: spacer_1
     properties: {height: 12.499969482421875}
     type: Spacer
-    layout_properties: {grid_position: 'SOQBYK,JRKKMU'}
-  - name: label_1
+  - layout_properties: {grid_position: 'XEVSMQ,HVGUVD'}
+    name: label_1
     properties:
-      text: |
-        Select Any Guarantor *
       bold: true
       role: null
+      text: |
+        Select Any Guarantor *
     type: Label
-    layout_properties: {grid_position: 'XEVSMQ,HVGUVD'}
-  - name: drop_down_1
+  - data_bindings: []
+    event_bindings: {change: drop_down_1_change}
+    layout_properties: {grid_position: 'SDEZKQ,XPAZLE'}
+    name: drop_down_1
     properties:
-      role: outlined
-      items: []
-      placeholder: Select One
-      include_placeholder: true
       background: white
       font_size: 14
+      include_placeholder: true
+      items: []
+      placeholder: Select One
+      role: outlined
     type: DropDown
-    layout_properties: {grid_position: 'SDEZKQ,XPAZLE'}
-    event_bindings: {change: drop_down_1_change}
-    data_bindings: []
-  - name: column_panel_1
+  - components:
+    - layout_properties: {grid_position: 'IZWJZG,TLVAKY URJEQE,CQXSKM'}
+      name: label_3_copy_1_copy_1
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Enter Full Name  *, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'IZWJZG,TLVAKY WOSAZC,NVAMWO'}
+      name: father_name_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+      type: TextBox
+    - layout_properties: {grid_position: 'IZWJZG,TLVAKY UQRSWK,IYLFJA'}
+      name: label_2_copy_1_copy_1
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Enter mobile Number  *, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'IZWJZG,TLVAKY JMNBYD,ZMKVJM'}
+      name: father_mbl_no_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+      type: TextBox
+    - data_bindings: []
+      layout_properties: {grid_position: 'IZWJZG,PGYLRZ YNICTA,XFOGXX'}
+      name: label_3_copy_1_copy_1_copy_1
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Select DOB  *, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'IZWJZG,PGYLRZ EBMSWY,IRUWHY'}
+      name: date_picker_1
+      properties: {background: white, font_size: 14, placeholder: pick the date, role: outlined}
+      type: DatePicker
+    - layout_properties: {grid_position: 'IZWJZG,PGYLRZ CFCQTJ,ISZTGD'}
+      name: label_3_copy_1
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Enter Profession  *, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'IZWJZG,PGYLRZ PVXYAP,PPEOWO'}
+      name: father_profession_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+      type: TextBox
+    - layout_properties: {grid_position: 'IPNQBV,NYXVBT'}
+      name: label_3_copy_1_copy_2
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Enter Address  *, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'RBXUDK,HIPHUB'}
+      name: father_address_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+      type: TextBox
+    layout_properties: {grid_position: 'EDZKGT,QQKNAV'}
+    name: column_panel_1
     properties: {col_widths: '{}', visible: false}
     type: ColumnPanel
-    layout_properties: {grid_position: 'EDZKGT,QQKNAV'}
-    components:
-    - name: label_3_copy_1_copy_1
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Full Name  *}
+  - components:
+    - layout_properties: {grid_position: 'PEAOFP,OPVRWU PPKRWP,SMEXVK'}
+      name: label_3_copy_1_copy_1_copy_copy
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Enter Full Spouse Name  *, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'IZWJZG,TLVAKY URJEQE,CQXSKM'}
-    - name: father_name_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'PEAOFP,OPVRWU MNENNF,YCZCAS'}
+      name: spouse_name_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'IZWJZG,TLVAKY WOSAZC,NVAMWO'}
-    - name: label_2_copy_1_copy_1
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter mobile Number  *}
+    - layout_properties: {grid_position: 'PEAOFP,GIEIGZ NVUBET,KBWFRL'}
+      name: label_3_copy_1_copy_1_copy_1_copy_copy
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Select Marriage Date  *, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'IZWJZG,TLVAKY UQRSWK,IYLFJA'}
-    - name: father_mbl_no_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
-      type: TextBox
-      layout_properties: {grid_position: 'IZWJZG,TLVAKY JMNBYD,ZMKVJM'}
-    - name: label_3_copy_1_copy_1_copy_1
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Select DOB  *}
-      type: Label
-      layout_properties: {grid_position: 'IZWJZG,PGYLRZ YNICTA,XFOGXX'}
-      data_bindings: []
-    - name: date_picker_1
-      properties: {background: white, placeholder: pick the date, role: outlined, font_size: 14}
+    - layout_properties: {grid_position: 'PEAOFP,GIEIGZ GWJVST,NQFCYR'}
+      name: date_picker_3
+      properties: {background: white, font_size: 14, placeholder: pick the date, role: outlined}
       type: DatePicker
-      layout_properties: {grid_position: 'IZWJZG,PGYLRZ EBMSWY,IRUWHY'}
-    - name: label_3_copy_1
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Profession  *}
+    - layout_properties: {grid_position: 'OBSQRX,EBAWOR XFIVCE,YQUZVQ'}
+      name: label_2_copy_1_copy_1_copy_copy
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Enter Spouse mobile Number  *, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {grid_position: 'IZWJZG,PGYLRZ CFCQTJ,ISZTGD'}
-    - name: father_profession_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
-      type: TextBox
-      layout_properties: {grid_position: 'IZWJZG,PGYLRZ PVXYAP,PPEOWO'}
-    - name: label_3_copy_1_copy_2
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Address  *}
-      type: Label
-      layout_properties: {grid_position: 'IPNQBV,NYXVBT'}
-    - name: father_address_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
-      type: TextBox
-      layout_properties: {grid_position: 'RBXUDK,HIPHUB'}
-  - name: column_panel_2
-    properties: {visible: false}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'DCDYCT,WMRVTS'}
-    components:
-    - name: label_3_copy_1_copy_1_copy_copy
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Full Spouse Name  *}
-      type: Label
-      layout_properties: {grid_position: 'PEAOFP,OPVRWU PPKRWP,SMEXVK'}
-    - name: spouse_name_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
-      type: TextBox
-      layout_properties: {grid_position: 'PEAOFP,OPVRWU MNENNF,YCZCAS'}
-    - name: label_3_copy_1_copy_1_copy_1_copy_copy
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Select Marriage Date  *}
-      type: Label
-      layout_properties: {grid_position: 'PEAOFP,GIEIGZ NVUBET,KBWFRL'}
-    - name: date_picker_3
-      properties: {background: white, placeholder: pick the date, role: outlined, font_size: 14}
-      type: DatePicker
-      layout_properties: {grid_position: 'PEAOFP,GIEIGZ GWJVST,NQFCYR'}
-    - name: label_2_copy_1_copy_1_copy_copy
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Spouse mobile Number  *}
-      type: Label
-      layout_properties: {grid_position: 'OBSQRX,EBAWOR XFIVCE,YQUZVQ'}
-    - name: spouse_mbl_no_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
-      type: TextBox
+    - event_bindings: {pressed_enter: spouse_mbl_no_text_pressed_enter}
       layout_properties: {grid_position: 'OBSQRX,EBAWOR NXHNGT,KGWDTX'}
-      event_bindings: {pressed_enter: spouse_mbl_no_text_pressed_enter}
-    - name: label_3_copy_1_copy_copy
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Spouse Profession  *}
-      type: Label
-      layout_properties: {grid_position: 'OBSQRX,QNIQIL KNUYQT,QJMRUD'}
-    - name: drop_down_1_copy
-      properties:
-        role: outlined
-        include_placeholder: true
-        bold: false
-        align: full
-        placeholder: Select One
-        spacing_above: small
-        background: theme:On Primary
-        underline: false
-        font: ''
-        foreground: ''
-        items: ['']
-        spacing_below: small
-        visible: true
-        border: ''
-        italic: false
-        enabled: true
-        font_size: null
-        tooltip: ''
-      type: DropDown
-      layout_properties: {grid_position: 'OBSQRX,QNIQIL WVEJMR,FSRYCY'}
-    - name: company_name
-      properties:
-        role: null
-        bold: true
-        align: left
-        spacing_above: small
-        background: ''
-        icon: ''
-        underline: false
-        font: ''
-        icon_align: left
-        foreground: ''
-        spacing_below: small
-        visible: true
-        border: ''
-        italic: false
-        font_size: null
-        tooltip: ''
-        text: "Enter Spouse Company Name  \n(If working)"
-      type: Label
-      layout_properties: {grid_position: 'JCDFQW,SMHSOG QTNUQX,KODIDO'}
-    - name: spouse_companyname_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
+      name: spouse_mbl_no_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'JCDFQW,SMHSOG FKVAWM,GMQSPV'}
-    - name: anual_ctc
+    - layout_properties: {grid_position: 'OBSQRX,QNIQIL KNUYQT,QJMRUD'}
+      name: label_3_copy_1_copy_copy
+      properties: {align: left, background: '', bold: true, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Enter Spouse Profession  *, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'OBSQRX,QNIQIL WVEJMR,FSRYCY'}
+      name: drop_down_1_copy
       properties:
-        role: null
-        bold: true
-        align: left
-        spacing_above: small
-        background: ''
-        icon: ''
-        underline: false
-        font: ''
-        icon_align: left
-        foreground: ''
-        spacing_below: small
-        visible: true
+        align: full
+        background: theme:On Primary
+        bold: false
         border: ''
-        italic: false
+        enabled: true
+        font: ''
         font_size: null
+        foreground: ''
+        include_placeholder: true
+        italic: false
+        items: ['']
+        placeholder: Select One
+        role: outlined
+        spacing_above: small
+        spacing_below: small
         tooltip: ''
+        underline: false
+        visible: true
+      type: DropDown
+    - layout_properties: {grid_position: 'JCDFQW,SMHSOG QTNUQX,KODIDO'}
+      name: company_name
+      properties:
+        align: left
+        background: ''
+        bold: true
+        border: ''
+        font: ''
+        font_size: null
+        foreground: ''
+        icon: ''
+        icon_align: left
+        italic: false
+        role: null
+        spacing_above: small
+        spacing_below: small
+        text: "Enter Spouse Company Name  \n(If working)"
+        tooltip: ''
+        underline: false
+        visible: true
+      type: Label
+    - layout_properties: {grid_position: 'JCDFQW,SMHSOG FKVAWM,GMQSPV'}
+      name: spouse_companyname_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+      type: TextBox
+    - layout_properties: {grid_position: 'JCDFQW,BSTDTD GUBFJG,WNLOKI'}
+      name: anual_ctc
+      properties:
+        align: left
+        background: ''
+        bold: true
+        border: ''
+        font: ''
+        font_size: null
+        foreground: ''
+        icon: ''
+        icon_align: left
+        italic: false
+        role: null
+        spacing_above: small
+        spacing_below: small
         text: |-
           Enter Annual Earnings (CTC)  *
           (If working)
+        tooltip: ''
+        underline: false
+        visible: true
       type: Label
-      layout_properties: {grid_position: 'JCDFQW,BSTDTD GUBFJG,WNLOKI'}
-    - name: annual_earning_text
-      properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'JCDFQW,BSTDTD IYTHUQ,QAUVNT'}
+      name: annual_earning_text
+      properties: {align: left, background: 'theme:On Primary', bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
       type: TextBox
-      layout_properties: {grid_position: 'JCDFQW,BSTDTD IYTHUQ,QAUVNT'}
-- name: button_for_begin_3
-  properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Prev}
-  type: Button
+    layout_properties: {grid_position: 'DCDYCT,WMRVTS'}
+    name: column_panel_2
+    properties: {visible: false}
+    type: ColumnPanel
+  layout_properties: {grid_position: 'IXHWAG,LJJJEG'}
+  name: column_panel_3
+  properties: {role: outlined-card}
+  type: ColumnPanel
+- event_bindings: {click: button_1_click}
   layout_properties: {grid_position: 'WJRHME,SGTAPB'}
-  event_bindings: {click: button_1_click}
-- name: button_next
-  properties: {role: elevated-button, bold: true, align: left, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-right', underline: false, font: '', icon_align: right, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Next}
+  name: button_for_begin_3
+  properties: {align: right, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:angle-double-left', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Prev, tooltip: '', underline: false, visible: true}
   type: Button
+- event_bindings: {click: button_next_click}
   layout_properties: {grid_position: 'WJRHME,KZQQNN'}
-  event_bindings: {click: button_next_click}
-is_package: true
+  name: button_next
+  properties: {align: left, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:angle-double-right', icon_align: right, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Next, tooltip: '', underline: false, visible: true}
+  type: Button
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 custom_component: false
+is_package: true

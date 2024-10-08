@@ -1,89 +1,89 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: form:admin.dashboard.home_button_admin
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'KRXBYS,UWCYIV'}
     name: home_button_admin_1
-    layout_properties: {grid_position: 'KRXBYS,UWCYIV', full_width_row: true}
-  - type: DataGrid
-    properties:
-      role: null
-      spacing_above: small
-      columns:
-      - {id: MLIRND, title: Product ID, data_key: column_1, $$hashKey: 'object:2245'}
-      - {id: ZEMFJV, title: Product Group, data_key: column_2, $$hashKey: 'object:2246'}
-      - {id: KICZSB, title: Product Categories, data_key: column_3, $$hashKey: 'object:2247'}
-      - {id: AHLIAF, title: Extension Fee(%), data_key: column_5, $$hashKey: 'object:2297'}
-      - {id: WREVWD, title: Processing Fee(%), data_key: column_4, $$hashKey: 'object:2295'}
-      background: ''
-      rows_per_page: 20
-      wrap_on: never
-      foreground: ''
-      show_page_controls: true
-      auto_header: true
-      spacing_below: small
-      visible: false
-      border: ''
-      tooltip: ''
-    name: data_grid_1
+    properties: {}
+    type: form:admin.dashboard.home_button_admin
+  - components: []
     layout_properties: {grid_position: 'POSQKM,AJXXVP'}
-    components: []
-  - name: label_1
-    properties: {font_size: 25, align: center, background: '#98c1d9', text: ' Product details', role: outlined-card}
+    name: data_grid_1
+    properties:
+      auto_header: true
+      background: ''
+      border: ''
+      columns:
+      - {$$hashKey: 'object:2245', data_key: column_1, id: MLIRND, title: Product ID}
+      - {$$hashKey: 'object:2246', data_key: column_2, id: ZEMFJV, title: Product Group}
+      - {$$hashKey: 'object:2247', data_key: column_3, id: KICZSB, title: Product Categories}
+      - {$$hashKey: 'object:2297', data_key: column_5, id: AHLIAF, title: Extension Fee(%)}
+      - {$$hashKey: 'object:2295', data_key: column_4, id: WREVWD, title: Processing Fee(%)}
+      foreground: ''
+      role: null
+      rows_per_page: 20
+      show_page_controls: true
+      spacing_above: small
+      spacing_below: small
+      tooltip: ''
+      visible: false
+      wrap_on: never
+    type: DataGrid
+  - layout_properties: {grid_position: 'FJXCIM,TDGLEB'}
+    name: label_1
+    properties: {align: center, background: '#98c1d9', font_size: 25, role: outlined-card, text: ' Product details'}
     type: Label
-    layout_properties: {grid_position: 'FJXCIM,TDGLEB'}
-  - name: column_panel_1
-    properties: {background: '#98c1d9', col_widths: '{"CJIRCR":10,"KEGSZU":10,"WUYSFB":10,"IHUKLD":10,"EMIVXP":20}', role: elevated-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'HSFBYO,OQVURQ'}
-    components:
-    - name: label_3
+  - components:
+    - layout_properties: {grid_position: 'TQHUKS,CJIRCR'}
+      name: label_3
       properties: {text: Product ID}
       type: Label
-      layout_properties: {grid_position: 'TQHUKS,CJIRCR'}
-    - name: label_4
+    - layout_properties: {grid_position: 'TQHUKS,KEGSZU'}
+      name: label_4
       properties: {text: Product Group}
       type: Label
-      layout_properties: {grid_position: 'TQHUKS,KEGSZU'}
-    - name: label_5
+    - layout_properties: {grid_position: 'TQHUKS,WUYSFB'}
+      name: label_5
       properties: {text: Product Name}
       type: Label
-      layout_properties: {grid_position: 'TQHUKS,WUYSFB'}
-    - name: label_6
+    - layout_properties: {grid_position: 'TQHUKS,IHUKLD'}
+      name: label_6
       properties: {text: Product Categories}
       type: Label
-      layout_properties: {grid_position: 'TQHUKS,IHUKLD'}
-    - name: label_7
-      properties: {text: Product Description, align: left}
+    - layout_properties: {grid_position: 'TQHUKS,EMIVXP'}
+      name: label_7
+      properties: {align: left, text: Product Description}
       type: Label
-      layout_properties: {grid_position: 'TQHUKS,EMIVXP'}
-    - name: label_2
+    - layout_properties: {grid_position: 'TQHUKS,LMCESE'}
+      name: label_2
       properties: {visible: false}
       type: Label
-      layout_properties: {grid_position: 'TQHUKS,LMCESE'}
-  - type: RepeatingPanel
-    properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.manage_products.view_product.RowTemplate5}
+    layout_properties: {grid_position: 'HSFBYO,OQVURQ'}
+    name: column_panel_1
+    properties: {background: '#98c1d9', col_widths: '{"CJIRCR":10,"KEGSZU":10,"WUYSFB":10,"IHUKLD":10,"EMIVXP":20}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'STVLCH,HUZXEA'}
     name: repeating_panel_1
-    layout_properties: {grid_position: 'STVLCH,HUZXEA'}
-  - name: repeating_panel_2
+    properties: {item_template: admin.dashboard.manage_products.view_product.RowTemplate5, spacing_above: none, spacing_below: none}
+    type: RepeatingPanel
+  - layout_properties: {grid_position: 'XQXUEX,GHECIR'}
+    name: repeating_panel_2
     properties: {item_template: admin.dashboard.manage_products.view_product.ItemTemplate98, visible: false}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'XQXUEX,GHECIR'}
-  - type: Button
-    properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-    name: button_1_copy_3
+  - event_bindings: {click: button_1_copy_3_click}
     layout_properties:
       col_widths: {}
       grid_position: FXVPWF,CYRZPZ
-    event_bindings: {click: button_1_copy_3_click}
-- type: FlowPanel
-  properties: {}
+    name: button_1_copy_3
+    properties: {align: center, background: '#05264d', bold: true, border: '', enabled: true, font: '16', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+    type: Button
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
   name: navbar_links
-  layout_properties: {slot: nav-right}
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

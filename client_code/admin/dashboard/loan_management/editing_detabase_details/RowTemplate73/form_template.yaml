@@ -1,50 +1,50 @@
-is_package: true
-container: {type: DataRowPanel}
 components:
-- name: link_1
-  properties: {align: center, text: Edit Details, bold: true}
-  type: Link
+- event_bindings: {click: link_1_click}
   layout_properties: {column: SLKGWJ}
-  event_bindings: {click: link_1_click}
-- name: label_1
-  properties: {align: center}
-  type: Label
+  name: link_1
+  properties: {align: center, bold: true, text: Edit Details}
+  type: Link
+- data_bindings:
+  - {code: 'self.item[''loan_id'']', property: text, writeback: false}
   layout_properties: {column: JKSDUP}
-  data_bindings:
-  - {property: text, code: 'self.item[''loan_id'']', writeback: false}
-- name: label_2
+  name: label_1
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''borrower_name'']', property: text, writeback: false}
   layout_properties: {column: VJQQOR}
-  data_bindings:
-  - {property: text, code: 'self.item[''borrower_name'']', writeback: false}
-- name: label_3
+  name: label_2
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''borrower_customer_id'']', property: text, writeback: false}
   layout_properties: {column: OJLQEN}
-  data_bindings:
-  - {property: text, code: 'self.item[''borrower_customer_id'']', writeback: false}
-- name: label_4
+  name: label_3
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''lender_customer_id'']', property: text, writeback: false}
   layout_properties: {column: DOSJXL}
-  data_bindings:
-  - {property: text, code: 'self.item[''lender_customer_id'']', writeback: false}
-- name: label_6
+  name: label_4
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''foreclosure_emi_num'']', property: text, writeback: false}
   layout_properties: {column: UARLLF}
-  data_bindings:
-  - {property: text, code: 'self.item[''foreclosure_emi_num'']', writeback: false}
-- name: label_7
+  name: label_6
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''total_due_amount'']', property: text, writeback: false}
   layout_properties: {column: PQMFNL}
-  data_bindings:
-  - {property: text, code: 'self.item[''total_due_amount'']', writeback: false}
-- name: label_8
+  name: label_7
   properties: {align: center}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''status'']', property: text, writeback: false}
   layout_properties: {column: MWGBYZ}
-  data_bindings:
-  - {property: text, code: 'self.item[''status'']', writeback: false}
+  name: label_8
+  properties: {align: center}
+  type: Label
+container: {type: DataRowPanel}
+is_package: true

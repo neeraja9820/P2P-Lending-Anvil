@@ -1,39 +1,39 @@
-is_package: true
-container: {type: ColumnPanel}
 components:
-- name: column_panel_2
-  properties: {role: elevated-card, col_widths: '{"UBYHSW":17,"LDTHSK":10,"CBFKQA":10,"KDRMNF":15,"RCLYPC":10}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'HXCBCK,YIGGEI'}
-  components:
-  - name: link_1
+- components:
+  - data_bindings:
+    - {code: 'self.item[''transaction_id'']', property: text, writeback: false}
+    event_bindings: {click: link_1_click}
+    layout_properties: {grid_position: 'SRQSIS,RCLYPC'}
+    name: link_1
     properties: {}
     type: Link
-    layout_properties: {grid_position: 'SRQSIS,RCLYPC'}
-    data_bindings:
-    - {property: text, code: 'self.item[''transaction_id'']', writeback: false}
-    event_bindings: {click: link_1_click}
-  - name: type
+  - data_bindings:
+    - {code: 'self.item[''transaction_type'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'SRQSIS,UBYHSW', width: 230, x: 179.55358123779297, y: 102.5}
+    name: type
     properties: {}
     type: Label
-    layout_properties: {x: 179.55358123779297, y: 102.5, width: 230, grid_position: 'SRQSIS,UBYHSW'}
-    data_bindings:
-    - {property: text, code: 'self.item[''transaction_type'']', writeback: false}
-  - name: label_7
+  - data_bindings:
+    - {code: 'self.item[''status'']', property: text}
+    layout_properties: {grid_position: 'SRQSIS,LDTHSK', width: 101, x: 492.5536117553711, y: 102.5}
+    name: label_7
     properties: {}
     type: Label
-    layout_properties: {x: 492.5536117553711, y: 102.5, width: 101, grid_position: 'SRQSIS,LDTHSK'}
-    data_bindings:
-    - {property: text, code: 'self.item[''status'']'}
-  - name: amount
+  - data_bindings:
+    - {code: 'self.item[''amount'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'SRQSIS,CBFKQA', width: 102.143, x: 603.5536117553711, y: 102.5}
+    name: amount
     properties: {}
     type: Label
-    layout_properties: {x: 603.5536117553711, y: 102.5, width: 102.143, grid_position: 'SRQSIS,CBFKQA'}
-    data_bindings:
-    - {property: text, code: 'self.item[''amount'']', writeback: false}
-  - name: label_2
+  - data_bindings:
+    - {code: 'self.item[''transaction_time_stamp'']', property: text}
+    layout_properties: {grid_position: 'SRQSIS,KDRMNF', width: 160, x: 726.7143173217773, y: 112.5}
+    name: label_2
     properties: {}
     type: Label
-    layout_properties: {x: 726.7143173217773, y: 112.5, width: 160, grid_position: 'SRQSIS,KDRMNF'}
-    data_bindings:
-    - {property: text, code: 'self.item[''transaction_time_stamp'']'}
+  layout_properties: {grid_position: 'HXCBCK,YIGGEI'}
+  name: column_panel_2
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{"UBYHSW":17,"LDTHSK":10,"CBFKQA":10,"KDRMNF":15,"RCLYPC":10}', foreground: '', role: elevated-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
+container: {type: ColumnPanel}
+is_package: true

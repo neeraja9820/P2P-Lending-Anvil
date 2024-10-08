@@ -1,41 +1,41 @@
-is_package: true
-container:
-  type: DataRowPanel
-  properties: {border: '', background: '', align: center}
 components:
-- name: id
-  properties: {text: '', align: center}
-  type: Label
+- data_bindings:
+  - {code: 'self.item[''product_name'']', property: text, writeback: false}
   layout_properties: {column: JKSDUP}
-  data_bindings:
-  - {property: text, code: 'self.item[''product_name'']', writeback: false}
-- name: amount
-  properties: {text: '', align: center}
+  name: id
+  properties: {align: center, text: ''}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''loan_amount'']', property: text, writeback: false}
   layout_properties: {column: VJQQOR}
-  data_bindings:
-  - {property: text, code: 'self.item[''loan_amount'']', writeback: false}
-- name: tenure
-  properties: {text: '', align: center}
+  name: amount
+  properties: {align: center, text: ''}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''tenure'']', property: text, writeback: false}
   layout_properties: {column: OJLQEN}
-  data_bindings:
-  - {property: text, code: 'self.item[''tenure'']', writeback: false}
-- name: interest
-  properties: {text: '', align: center}
+  name: tenure
+  properties: {align: center, text: ''}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''interest_rate'']', property: text, writeback: false}
   layout_properties: {column: GAVKHZ}
-  data_bindings:
-  - {property: text, code: 'self.item[''interest_rate'']', writeback: false}
-- name: repayment_amount
-  properties: {text: '', align: center}
+  name: interest
+  properties: {align: center, text: ''}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''total_repayment_amount'']', property: text, writeback: false}
   layout_properties: {column: NJWOLU}
-  data_bindings:
-  - {property: text, code: 'self.item[''total_repayment_amount'']', writeback: false}
-- name: actions
-  properties: {text: '', align: center}
+  name: repayment_amount
+  properties: {align: center, text: ''}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''loan_updated_status'']', property: text, writeback: false}
   layout_properties: {column: RNOHUR}
-  data_bindings:
-  - {property: text, code: 'self.item[''loan_updated_status'']', writeback: false}
+  name: actions
+  properties: {align: center, text: ''}
+  type: Label
+container:
+  properties: {align: center, background: '', border: ''}
+  type: DataRowPanel
+is_package: true

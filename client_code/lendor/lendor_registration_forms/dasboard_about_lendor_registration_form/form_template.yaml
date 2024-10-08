@@ -1,9 +1,9 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: form:lendor.navigation_bar.navigation_bar_main_lender
-  properties: {}
+- layout_properties: {full_width_row: true, grid_position: 'UWFKXX,VKRTKI'}
   name: navigation_bar_main_lender_1
-  layout_properties: {grid_position: 'UWFKXX,VKRTKI', full_width_row: true}
+  properties: {}
+  type: form:lendor.navigation_bar.navigation_bar_main_lender
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

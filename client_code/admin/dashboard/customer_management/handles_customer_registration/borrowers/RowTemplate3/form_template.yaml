@@ -1,34 +1,34 @@
-container: {type: DataRowPanel}
 components:
-- type: Link
-  properties: {}
-  name: link_
-  layout_properties: {column: RSMZQS}
-  data_bindings:
-  - {property: text, code: 'self.item[''coustmer_id'']'}
+- data_bindings:
+  - {code: 'self.item[''coustmer_id'']', property: text}
   event_bindings: {click: link_1_click}
-- type: Label
+  layout_properties: {column: RSMZQS}
+  name: link_
   properties: {}
-  name: label_111
+  type: Link
+- data_bindings:
+  - {code: 'self.item[''full_name'']', property: text}
   layout_properties: {column: ZNJCAZ}
-  data_bindings:
-  - {property: text, code: 'self.item[''full_name'']'}
-- type: Label
+  name: label_111
   properties: {}
-  name: label_22
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''email_user'']', property: text}
   layout_properties: {column: AMTTBE}
-  data_bindings:
-  - {property: text, code: 'self.item[''email_user'']'}
-- type: Label
+  name: label_22
   properties: {}
-  name: label_55
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''date_of_birth'']', property: text}
   layout_properties: {column: MKJUDU}
-  data_bindings:
-  - {property: text, code: 'self.item[''date_of_birth'']'}
-- type: Label
+  name: label_55
   properties: {}
-  name: label_66
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''mobile'']', property: text}
   layout_properties: {column: LNLBNV}
-  data_bindings:
-  - {property: text, code: 'self.item[''mobile'']'}
+  name: label_66
+  properties: {}
+  type: Label
+container: {type: DataRowPanel}
 is_package: true

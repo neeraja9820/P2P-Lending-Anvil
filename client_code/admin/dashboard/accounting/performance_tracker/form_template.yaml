@@ -1,206 +1,206 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- name: home_button_admin_1_copy
+- layout_properties: {full_width_row: true, grid_position: 'ICLSVA,UHUMXM'}
+  name: home_button_admin_1_copy
   properties: {}
   type: form:admin.dashboard.home_button_admin
-  layout_properties: {grid_position: 'ICLSVA,UHUMXM', full_width_row: true}
-- name: content_panel_copy_copy_3_copy_3_copy_copy_copy_copy
-  properties: {col_widths: '{"LRMGVL":12,"PPLSYB":12,"FPVXBC":12,"FVTVHC":30}', background: '#Edf0f4', role: null}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'CADCKR,AQUZJG', full_width_row: true}
-  components:
-  - name: label_1_copy_copy
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: Performance Tracker}
+- components:
+  - layout_properties: {grid_position: 'EQXMGV,YVCYTL'}
+    name: label_1_copy_copy
+    properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 30, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Performance Tracker, tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'EQXMGV,YVCYTL'}
-  - name: spacer_4
+  - layout_properties: {grid_position: 'UEOLFA,AWCGTS'}
+    name: spacer_4
     properties: {height: '3'}
     type: Spacer
-    layout_properties: {grid_position: 'UEOLFA,AWCGTS'}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy
-    properties: {col_widths: '{}', background: white, role: elevated-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LKTWOF,LRMGVL TFYOZD,THGIQV'}
-    components:
-    - name: image_4_copy
-      properties: {source: _/theme/admin/dashboard/performance_tracker/approved-applications.png, display_mode: shrink_to_fit, height: '100'}
-      type: Image
+  - components:
+    - event_bindings: {mouse_up: image_4_copy_mouse_up}
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
-      event_bindings: {mouse_up: image_4_copy_mouse_up}
-    - name: button_9
-      properties:
-        text: "Total applications \napproved\n"
-        font_size: 16
-        foreground: black
-        bold: true
-      type: Button
+      name: image_4_copy
+      properties: {display_mode: shrink_to_fit, height: '100', source: _/theme/admin/dashboard/performance_tracker/approved-applications.png}
+      type: Image
+    - event_bindings: {click: button_9_click}
       layout_properties: {grid_position: 'GMECOB,ATAMRQ'}
-      event_bindings: {click: button_9_click}
-    - type: Label
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: black, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+      name: button_9
+      properties:
+        bold: true
+        font_size: 16
+        foreground: black
+        text: "Total applications \napproved\n"
+      type: Button
+    - layout_properties: {grid_position: 'ZSRAFX,IGQCVQ'}
       name: label_8
-      layout_properties: {grid_position: 'ZSRAFX,IGQCVQ'}
-  - name: spacer_6
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: black, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {grid_position: 'LKTWOF,LRMGVL TFYOZD,THGIQV'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy
+    properties: {background: white, col_widths: '{}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'LKTWOF,LRMGVL WPCQYC,IUVQAZ'}
+    name: spacer_6
     properties: {height: '1.5'}
     type: Spacer
-    layout_properties: {grid_position: 'LKTWOF,LRMGVL WPCQYC,IUVQAZ'}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_2
-    properties: {col_widths: '{}', background: white, role: elevated-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LKTWOF,LRMGVL QAKCZK,TLIDIT'}
-    components:
-    - name: image_4_copy_2
-      properties: {source: _/theme/admin/dashboard/loan_management/closed-loans.png, display_mode: shrink_to_fit, height: '100'}
-      type: Image
+  - components:
+    - event_bindings: {mouse_up: image_4_copy_2_mouse_up}
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
-      event_bindings: {mouse_up: image_4_copy_2_mouse_up}
-    - name: button_2
-      properties:
-        text: "Total applications \nClosed\n"
-        align: center
-        foreground: black
-        font_size: 16
-        bold: true
-      type: Button
+      name: image_4_copy_2
+      properties: {display_mode: shrink_to_fit, height: '100', source: _/theme/admin/dashboard/loan_management/closed-loans.png}
+      type: Image
+    - event_bindings: {click: button_2_click}
       layout_properties: {grid_position: 'RVCVIZ,SJZUBG'}
-      event_bindings: {click: button_2_click}
-    - type: Label
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: black, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+      name: button_2
+      properties:
+        align: center
+        bold: true
+        font_size: 16
+        foreground: black
+        text: "Total applications \nClosed\n"
+      type: Button
+    - layout_properties: {grid_position: 'JRTFDM,ASYFPY'}
       name: label_12
-      layout_properties: {grid_position: 'JRTFDM,ASYFPY'}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_10
-    properties: {col_widths: '{}', background: white, role: elevated-card}
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: black, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {grid_position: 'LKTWOF,LRMGVL QAKCZK,TLIDIT'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_2
+    properties: {background: white, col_widths: '{}', role: elevated-card}
     type: ColumnPanel
-    layout_properties: {grid_position: 'LKTWOF,PPLSYB HSZEDN,NYOZZB'}
-    components:
-    - name: image_4_copy_10
-      properties: {source: _/theme/admin/dashboard/performance_tracker/rejected-applications.png, display_mode: shrink_to_fit, height: '100'}
-      type: Image
-      layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
+  - components:
+    - data_bindings: []
       event_bindings: {mouse_up: image_4_copy_10_mouse_up}
-      data_bindings: []
-    - name: button_14
-      properties:
-        text: "Total applications \nrejected\n"
-        font_size: 16
-        foreground: black
-        bold: true
-      type: Button
+      layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
+      name: image_4_copy_10
+      properties: {display_mode: shrink_to_fit, height: '100', source: _/theme/admin/dashboard/performance_tracker/rejected-applications.png}
+      type: Image
+    - event_bindings: {click: button_14_click}
       layout_properties: {grid_position: 'TFDFVQ,VTCDTE'}
-      event_bindings: {click: button_14_click}
-    - type: Label
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: black, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+      name: button_14
+      properties:
+        bold: true
+        font_size: 16
+        foreground: black
+        text: "Total applications \nrejected\n"
+      type: Button
+    - layout_properties: {grid_position: 'TCXXQY,JFMVYV'}
       name: label_6
-      layout_properties: {grid_position: 'TCXXQY,JFMVYV'}
-  - name: spacer_8
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: black, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {grid_position: 'LKTWOF,PPLSYB HSZEDN,NYOZZB'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_10
+    properties: {background: white, col_widths: '{}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'LKTWOF,PPLSYB ECAHCE,GABOJS'}
+    name: spacer_8
     properties: {height: '1.5'}
     type: Spacer
-    layout_properties: {grid_position: 'LKTWOF,PPLSYB ECAHCE,GABOJS'}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_3
-    properties: {col_widths: '{}', background: white, role: elevated-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LKTWOF,PPLSYB JREUIR,TGCNTG'}
-    components:
-    - name: image_4_copy_3
-      properties: {source: _/theme/admin/dashboard/loan_management/under-process.png, display_mode: shrink_to_fit, height: '100'}
-      type: Image
+  - components:
+    - event_bindings: {mouse_up: image_4_copy_3_mouse_up}
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
-      event_bindings: {mouse_up: image_4_copy_3_mouse_up}
-    - name: button_10
-      properties: {text: Total applications Under Process, font_size: 16, foreground: black, bold: true}
-      type: Button
+      name: image_4_copy_3
+      properties: {display_mode: shrink_to_fit, height: '100', source: _/theme/admin/dashboard/loan_management/under-process.png}
+      type: Image
+    - event_bindings: {click: button_10_click}
       layout_properties: {grid_position: 'TSDWZF,VCNTGA'}
-      event_bindings: {click: button_10_click}
-    - type: Label
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: black, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+      name: button_10
+      properties: {bold: true, font_size: 16, foreground: black, text: Total applications Under Process}
+      type: Button
+    - layout_properties: {grid_position: 'BHUYJL,VTWHIY'}
       name: label_13
-      layout_properties: {grid_position: 'BHUYJL,VTWHIY'}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_5
-    properties: {col_widths: '{}', background: white, role: elevated-card}
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: black, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {grid_position: 'LKTWOF,PPLSYB JREUIR,TGCNTG'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_3
+    properties: {background: white, col_widths: '{}', role: elevated-card}
     type: ColumnPanel
-    layout_properties: {grid_position: 'LKTWOF,FPVXBC BAIZDH,HGGOAU'}
-    components:
-    - name: image_4_copy_5
-      properties: {source: _/theme/admin/dashboard/performance_tracker/opened-applications.png, display_mode: shrink_to_fit, height: '100'}
-      type: Image
+  - components:
+    - event_bindings: {mouse_up: image_4_copy_5_mouse_up}
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
-      event_bindings: {mouse_up: image_4_copy_5_mouse_up}
-    - name: button_11
+      name: image_4_copy_5
+      properties: {display_mode: shrink_to_fit, height: '100', source: _/theme/admin/dashboard/performance_tracker/opened-applications.png}
+      type: Image
+    - event_bindings: {click: button_11_click}
+      layout_properties: {grid_position: 'TNRHQQ,HOQMDP'}
+      name: button_11
       properties:
-        text: "Total applications \nOpened\n"
+        bold: true
         font_size: 16
         foreground: black
-        bold: true
+        text: "Total applications \nOpened\n"
       type: Button
-      layout_properties: {grid_position: 'TNRHQQ,HOQMDP'}
-      event_bindings: {click: button_11_click}
-    - type: Label
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: black, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+    - layout_properties: {grid_position: 'CKPODC,ZXEPQW'}
       name: label_14
-      layout_properties: {grid_position: 'CKPODC,ZXEPQW'}
-  - name: spacer_2
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: black, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {grid_position: 'LKTWOF,FPVXBC BAIZDH,HGGOAU'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_5
+    properties: {background: white, col_widths: '{}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'LKTWOF,FPVXBC SGRCCE,WUIAJG'}
+    name: spacer_2
     properties: {height: '1.5'}
     type: Spacer
-    layout_properties: {grid_position: 'LKTWOF,FPVXBC SGRCCE,WUIAJG'}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_3_copy
-    properties: {col_widths: '{}', background: white, role: elevated-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LKTWOF,FPVXBC UPEMQG,XOWJEY'}
-    components:
-    - name: image_4_copy_3_copy
-      properties: {source: _/theme/admin/dashboard/performance_tracker/assigned-application.png, display_mode: shrink_to_fit, height: '100'}
-      type: Image
+  - components:
+    - event_bindings: {mouse_up: image_4_copy_3_copy_mouse_up}
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
-      event_bindings: {mouse_up: image_4_copy_3_copy_mouse_up}
-    - name: button_3
-      properties:
-        text: "Total applications \nassigned "
-        font_size: 16
-        bold: true
-        foreground: black
-      type: Button
+      name: image_4_copy_3_copy
+      properties: {display_mode: shrink_to_fit, height: '100', source: _/theme/admin/dashboard/performance_tracker/assigned-application.png}
+      type: Image
+    - event_bindings: {click: button_3_click}
       layout_properties: {grid_position: 'QLBPLX,JPLEMY'}
-      event_bindings: {click: button_3_click}
-    - type: Label
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: black, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+      name: button_3
+      properties:
+        bold: true
+        font_size: 16
+        foreground: black
+        text: "Total applications \nassigned "
+      type: Button
+    - layout_properties: {grid_position: 'MNJOZT,DKVWZH'}
       name: label_4
-      layout_properties: {grid_position: 'MNJOZT,DKVWZH'}
-  - name: spacer_3
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: black, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {grid_position: 'LKTWOF,FPVXBC UPEMQG,XOWJEY'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_3_copy
+    properties: {background: white, col_widths: '{}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'EWGRDI,IELXEG'}
+    name: spacer_3
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'EWGRDI,IELXEG'}
-  - name: column_panel_1
-    properties: {role: elevated-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'EWGRDI,VCGFUU'}
-    components:
-    - name: image_1_copy_1
+  - components:
+    - event_bindings: {mouse_up: image_1_copy_1_mouse_up}
+      layout_properties: {grid_position: 'UFWPZR,JPHRIE'}
+      name: image_1_copy_1
       properties: {height: 127, source: _/theme/admin/dashboard/accounting/performance.png}
       type: Image
-      layout_properties: {grid_position: 'UFWPZR,JPHRIE'}
-      event_bindings: {mouse_up: image_1_copy_1_mouse_up}
-    - name: button_4
-      properties: {text: Product Performance, bold: true, foreground: black, font_size: 16}
-      type: Button
+    - event_bindings: {click: button_4_click}
       layout_properties: {grid_position: 'NEQJZR,XIVQQC'}
-      event_bindings: {click: button_4_click}
-    - name: label_1
+      name: button_4
+      properties: {bold: true, font_size: 16, foreground: black, text: Product Performance}
+      type: Button
+    - layout_properties: {grid_position: 'PVRAPF,OHMQYA'}
+      name: label_1
       properties: {align: center, foreground: black}
       type: Label
-      layout_properties: {grid_position: 'PVRAPF,OHMQYA'}
-  - name: spacer_1
+    layout_properties: {grid_position: 'EWGRDI,VCGFUU'}
+    name: column_panel_1
+    properties: {role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'EWGRDI,WKIGUP'}
+    name: spacer_1
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'EWGRDI,WKIGUP'}
-  - name: spacer_5
+  - layout_properties: {grid_position: 'LXEPFH,FVTVHC'}
+    name: spacer_5
     properties: {height: '30'}
     type: Spacer
-    layout_properties: {grid_position: 'LXEPFH,FVTVHC'}
-  - type: Button
-    properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-    name: button_1
+  - event_bindings: {click: button_1_click}
     layout_properties: {grid_position: 'ZAPOQC,MONGXB'}
-    event_bindings: {click: button_1_click}
+    name: button_1
+    properties: {align: center, background: '#05264d', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: white, icon: 'fa:backward', icon_align: left, italic: false, role: outlined-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+    type: Button
+  layout_properties: {full_width_row: true, grid_position: 'CADCKR,AQUZJG'}
+  name: content_panel_copy_copy_3_copy_3_copy_copy_copy_copy
+  properties: {background: '#Edf0f4', col_widths: '{"LRMGVL":12,"PPLSYB":12,"FPVXBC":12,"FVTVHC":30}', role: null}
+  type: ColumnPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

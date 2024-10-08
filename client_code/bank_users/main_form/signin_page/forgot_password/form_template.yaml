@@ -1,136 +1,136 @@
-container: {type: ColumnPanel}
 components:
-- name: main_header_1
+- layout_properties: {full_width_row: true, grid_position: 'FTPLVG,JCESWL'}
+  name: main_header_1
   properties: {}
   type: form:bank_users.main_form.main_header
-  layout_properties: {grid_position: 'FTPLVG,JCESWL', full_width_row: true}
-- name: column_panel_2
-  properties: {col_widths: '{"QCZGCQ":40,"AGIDMN":20}', background: '#094586'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'PWXZIP,NPFBRE', full_width_row: true}
-  components:
-  - name: spacer_1
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'FOQTZU,ZSUIVO'}
+    name: spacer_1
     properties: {height: -0.25}
     type: Spacer
-    layout_properties: {grid_position: 'FOQTZU,ZSUIVO', full_width_row: true}
-  - name: column_panel_3
-    properties: {col_widths: '{"QSUOUY":2,"RTKSOW":58}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'AUEKVR,QCZGCQ', full_width_row: true}
-    components:
-    - name: spacer_11
+  - components:
+    - layout_properties: {grid_position: 'LOUJDS,QSUOUY'}
+      name: spacer_11
       properties: {height: 413.75}
       type: Spacer
-      layout_properties: {grid_position: 'LOUJDS,QSUOUY'}
-    - name: label_6
-      properties: {role: display, text: Welcome to Ascend's P2P, foreground: white, font_size: 36}
+    - layout_properties: {full_width_row: true, grid_position: 'LOUJDS,RTKSOW QUVAAZ,ZIPZDI'}
+      name: label_6
+      properties: {font_size: 36, foreground: white, role: display, text: Welcome to Ascend's P2P}
       type: Label
-      layout_properties: {grid_position: 'LOUJDS,RTKSOW QUVAAZ,ZIPZDI', full_width_row: true}
-    - name: label_9
-      properties: {text: 'Ascend''s P2P it is a Peer to Peer Lending platform. The company uses technology to match borrowers and lenders and in the process eliminates the margin which is charged by traditional banks and NBFCs, thus, making borrowing cheaper and investing a more lucrative opportunity as compared to traditional investment avenues.', background: '', foreground: white, font_size: 16, role: input-prompt}
+    - layout_properties: {full_width_row: true, grid_position: 'LOUJDS,RTKSOW SJSTRL,ROCLRP'}
+      name: label_9
+      properties: {background: '', font_size: 16, foreground: white, role: input-prompt, text: 'Ascend''s P2P it is a Peer to Peer Lending platform. The company uses technology to match borrowers and lenders and in the process eliminates the margin which is charged by traditional banks and NBFCs, thus, making borrowing cheaper and investing a more lucrative opportunity as compared to traditional investment avenues.'}
       type: Label
-      layout_properties: {grid_position: 'LOUJDS,RTKSOW SJSTRL,ROCLRP', full_width_row: true}
-    - name: image_1
-      properties: {source: _/theme/bank_users/main_form/login_page/login-image.webp, display_mode: shrink_to_fit, height: '280'}
+    - layout_properties: {full_width_row: true, grid_position: 'LOUJDS,RTKSOW IYLGEA,XVBVAK'}
+      name: image_1
+      properties: {display_mode: shrink_to_fit, height: '280', source: _/theme/bank_users/main_form/login_page/login-image.webp}
       type: Image
-      layout_properties: {grid_position: 'LOUJDS,RTKSOW IYLGEA,XVBVAK', full_width_row: true}
-  - name: column_panel_1
-    properties: {background: '#094586', col_widths: '{"LLBEDS":45,"FZHHNU":5,"TSUFAE":10}'}
+    layout_properties: {full_width_row: true, grid_position: 'AUEKVR,QCZGCQ'}
+    name: column_panel_3
+    properties: {col_widths: '{"QSUOUY":2,"RTKSOW":58}'}
     type: ColumnPanel
-    layout_properties: {grid_position: 'AUEKVR,AGIDMN UVWPRW,XZEJHL', full_width_row: true}
-    components:
-    - name: spacer_5
+  - components:
+    - layout_properties: {grid_position: 'WUAZDP,FZHHNU'}
+      name: spacer_5
       properties: {height: 477.5999755859375}
       type: Spacer
-      layout_properties: {grid_position: 'WUAZDP,FZHHNU'}
-    - name: column_panel_1_copy_copy
-      properties: {role: elevated-card, col_widths: '{"EKYSFD":54,"EOHAME":6,"PKGYXY":70,"UXCVZV":40,"DOATLH":70,"PERMDT":10,"MNRTIL":10}'}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'WUAZDP,LLBEDS', full_width_row: false}
-      components:
-      - name: label_7
-        properties: {role: title, bold: true, spacing_above: none, background: '', underline: false, foreground: '#094586', spacing_below: none, italic: false, font_size: 25, text: Reset Your  Password}
+    - components:
+      - layout_properties: {grid_position: 'MPYCNK,UXCVZV'}
+        name: label_7
+        properties: {background: '', bold: true, font_size: 25, foreground: '#094586', italic: false, role: title, spacing_above: none, spacing_below: none, text: Reset Your  Password, underline: false}
         type: Label
-        layout_properties: {grid_position: 'MPYCNK,UXCVZV'}
-      - name: label_4
-        properties: {text: Email, bold: true, font_size: 14, spacing_above: none, spacing_below: none}
+      - layout_properties: {grid_position: 'SSSREI,FEIKYR'}
+        name: label_4
+        properties: {bold: true, font_size: 14, spacing_above: none, spacing_below: none, text: Email}
         type: Label
-        layout_properties: {grid_position: 'SSSREI,FEIKYR'}
-      - name: text_box_1
-        properties: {role: outlined, background: white, placeholder: '', visible: true, foreground: '', bold: false, font_size: 14}
-        type: TextBox
+      - event_bindings: {}
         layout_properties: {grid_position: 'XRBTUN,EKYSFD NXFGVC,PGDDKR'}
-        event_bindings: {}
-      - name: send_otp
-        properties: {text: Send otp, bold: false, underline: true, align: left, font_size: 14, spacing_above: small, spacing_below: none}
-        type: Link
+        name: text_box_1
+        properties: {background: white, bold: false, font_size: 14, foreground: '', placeholder: '', role: outlined, visible: true}
+        type: TextBox
+      - event_bindings: {click: send_otp_click}
         layout_properties: {grid_position: 'XRBTUN,EKYSFD CHTSZK,EYZZSJ'}
-        event_bindings: {click: send_otp_click}
-      - name: image_2
-        properties: {height: '33.5', source: _/theme/bank_users/main_form/login_page/phone-book.png, horizontal_align: left}
+        name: send_otp
+        properties: {align: left, bold: false, font_size: 14, spacing_above: small, spacing_below: none, text: Send otp, underline: true}
+        type: Link
+      - layout_properties: {grid_position: 'XRBTUN,EOHAME'}
+        name: image_2
+        properties: {height: '33.5', horizontal_align: left, source: _/theme/bank_users/main_form/login_page/phone-book.png}
         type: Image
-        layout_properties: {grid_position: 'XRBTUN,EOHAME'}
-      - name: text_box_otp
-        properties: {visible: false, background: white, type: text, role: outlined, font_size: 14, spacing_below: none, placeholder: Enter OTP}
-        type: TextBox
+      - data_bindings: []
         layout_properties: {grid_position: 'KADOWN,ZRHWCT'}
-        data_bindings: []
-      - name: verify_otp_button
-        properties: {text: verify otp, background: '#094586', foreground: 'theme:On Primary', visible: false, font_size: 14, spacing_below: none}
-        type: Button
+        name: text_box_otp
+        properties: {background: white, font_size: 14, placeholder: Enter OTP, role: outlined, spacing_below: none, type: text, visible: false}
+        type: TextBox
+      - event_bindings: {click: verify_otp_button_click}
         layout_properties: {grid_position: 'KADOWN,YTCZOS'}
-        event_bindings: {click: verify_otp_button_click}
-      - name: error_label
-        properties: {visible: false, foreground: red, font_size: 14, spacing_above: none, spacing_below: none}
+        name: verify_otp_button
+        properties: {background: '#094586', font_size: 14, foreground: 'theme:On Primary', spacing_below: none, text: verify otp, visible: false}
+        type: Button
+      - layout_properties: {grid_position: 'OOHXYV,HMEMON'}
+        name: error_label
+        properties: {font_size: 14, foreground: red, spacing_above: none, spacing_below: none, visible: false}
         type: Label
-        layout_properties: {grid_position: 'OOHXYV,HMEMON'}
-      - name: label_5
-        properties: {text: Password, bold: true, visible: false, font_size: 14, spacing_above: none, spacing_below: none}
+      - layout_properties: {grid_position: 'VLFKXH,ZGCZXK'}
+        name: label_5
+        properties: {bold: true, font_size: 14, spacing_above: none, spacing_below: none, text: Password, visible: false}
         type: Label
-        layout_properties: {grid_position: 'VLFKXH,ZGCZXK'}
-      - name: text_box_2
-        properties: {role: outlined, placeholder: '', spacing_above: none, background: white, hide_text: true, spacing_below: none, visible: false, enabled: true, font_size: 14}
-        type: TextBox
+      - event_bindings: {change: text_box_2_change}
         layout_properties: {grid_position: 'JHGYMR,PKGYXY ZZMDNT,NKQTZZ'}
-        event_bindings: {change: text_box_2_change}
-      - name: password_error_label
-        properties: {visible: false, foreground: red}
-        type: Label
-        layout_properties: {grid_position: 'JHGYMR,PKGYXY KBHUFC,YHYEYZ'}
-      - name: eye_icon_1
-        properties: {height: '27', visible: false, horizontal_align: left}
-        type: Image
-        layout_properties: {grid_position: 'JHGYMR,MNRTIL'}
-        event_bindings: {mouse_up: eye_icon_1_click}
-      - name: label_5_copy
-        properties: {text: Retype Password, bold: true, visible: false, font_size: 14, spacing_above: none, spacing_below: none}
-        type: Label
-        layout_properties: {grid_position: 'WVMLLN,IZRJJU'}
-      - name: text_box_2_copy
-        properties: {role: outlined, placeholder: '', spacing_above: none, background: white, hide_text: true, spacing_below: none, visible: false, enabled: true, font_size: 14}
+        name: text_box_2
+        properties: {background: white, enabled: true, font_size: 14, hide_text: true, placeholder: '', role: outlined, spacing_above: none, spacing_below: none, visible: false}
         type: TextBox
+      - layout_properties: {grid_position: 'JHGYMR,PKGYXY KBHUFC,YHYEYZ'}
+        name: password_error_label
+        properties: {foreground: red, visible: false}
+        type: Label
+      - event_bindings: {mouse_up: eye_icon_1_click}
+        layout_properties: {grid_position: 'JHGYMR,MNRTIL'}
+        name: eye_icon_1
+        properties: {height: '27', horizontal_align: left, visible: false}
+        type: Image
+      - layout_properties: {grid_position: 'WVMLLN,IZRJJU'}
+        name: label_5_copy
+        properties: {bold: true, font_size: 14, spacing_above: none, spacing_below: none, text: Retype Password, visible: false}
+        type: Label
+      - event_bindings: {change: text_box_2_copy_change}
         layout_properties: {grid_position: 'DMDHVP,DOATLH MDXTMG,AGVOWQ'}
-        event_bindings: {change: text_box_2_copy_change}
-      - name: retype_password_error_label
+        name: text_box_2_copy
+        properties: {background: white, enabled: true, font_size: 14, hide_text: true, placeholder: '', role: outlined, spacing_above: none, spacing_below: none, visible: false}
+        type: TextBox
+      - layout_properties: {grid_position: 'DMDHVP,DOATLH GSTCBI,OIOODB'}
+        name: retype_password_error_label
         properties: {foreground: red}
         type: Label
-        layout_properties: {grid_position: 'DMDHVP,DOATLH GSTCBI,OIOODB'}
-      - name: eye_icon_2
-        properties: {height: '27', visible: false, horizontal_align: left}
-        type: Image
+      - event_bindings: {mouse_up: eye_icon_2_click}
         layout_properties: {grid_position: 'DMDHVP,PERMDT'}
-        event_bindings: {mouse_up: eye_icon_2_click}
-      - name: button_1
-        properties: {text: Save, background: '#094586', foreground: white, align: full, visible: false, font_size: 14, spacing_above: none, spacing_below: none}
-        type: Button
+        name: eye_icon_2
+        properties: {height: '27', horizontal_align: left, visible: false}
+        type: Image
+      - event_bindings: {click: button_1_click}
         layout_properties: {grid_position: 'MPSRUO,XLAMBF', row_background: ''}
-        event_bindings: {click: button_1_click}
-    - name: spacer_10
+        name: button_1
+        properties: {align: full, background: '#094586', font_size: 14, foreground: white, spacing_above: none, spacing_below: none, text: Save, visible: false}
+        type: Button
+      layout_properties: {full_width_row: false, grid_position: 'WUAZDP,LLBEDS'}
+      name: column_panel_1_copy_copy
+      properties: {col_widths: '{"EKYSFD":54,"EOHAME":6,"PKGYXY":70,"UXCVZV":40,"DOATLH":70,"PERMDT":10,"MNRTIL":10}', role: elevated-card}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'WUAZDP,TSUFAE'}
+      name: spacer_10
       properties: {height: 384}
       type: Spacer
-      layout_properties: {grid_position: 'WUAZDP,TSUFAE'}
-  - name: spacer_3
+    layout_properties: {full_width_row: true, grid_position: 'AUEKVR,AGIDMN UVWPRW,XZEJHL'}
+    name: column_panel_1
+    properties: {background: '#094586', col_widths: '{"LLBEDS":45,"FZHHNU":5,"TSUFAE":10}'}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'AUEKVR,AGIDMN IEYSKI,WLUTYA'}
+    name: spacer_3
     properties: {height: -16.25}
     type: Spacer
-    layout_properties: {grid_position: 'AUEKVR,AGIDMN IEYSKI,WLUTYA'}
+  layout_properties: {full_width_row: true, grid_position: 'PWXZIP,NPFBRE'}
+  name: column_panel_2
+  properties: {background: '#094586', col_widths: '{"QCZGCQ":40,"AGIDMN":20}'}
+  type: ColumnPanel
+container: {type: ColumnPanel}
 is_package: true

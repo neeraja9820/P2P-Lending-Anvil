@@ -1,151 +1,151 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: form:admin.dashboard.home_button_admin
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'KRBWAI,VZOSKE', slot: title}
     name: home_button_admin_1
-    layout_properties: {grid_position: 'KRBWAI,VZOSKE', slot: title, full_width_row: true}
-  - type: ColumnPanel
     properties: {}
-    name: content_panel_copy
-    layout_properties:
-      col_widths: {}
-      grid_position: KNABFB,NHDGAU
-    components:
-    - type: ColumnPanel
-      properties: {}
-      name: content_panel_copy_2
-      layout_properties:
-        col_widths: {}
-        grid_position: KIQFII,WRQGTB
-      components:
-      - type: ColumnPanel
-        properties: {col_widths: '{"YHCYVB":20,"BHYDMK":50,"UCFXSF":30,"OEHQRW":30,"KQXGWV":10}'}
-        name: content_panel_copy_3
+    type: form:admin.dashboard.home_button_admin
+  - components:
+    - components:
+      - components:
+        - event_bindings: {click: button_1_copy_click}
+          layout_properties: {full_width_row: true, grid_position: 'OIGLNV,VTBLUS'}
+          name: button_1_copy
+          properties: {align: right, background: '#05264d', bold: true, border: '', enabled: true, font: '16', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+          type: Button
+        - layout_properties: {grid_position: 'USMHYY,GVJVPF'}
+          name: label_7
+          properties: {align: center, bold: true, font_size: 30, role: outlined-card, text: Edit Details}
+          type: Label
+        - layout_properties: {grid_position: 'TSCCCQ,VNYZCU'}
+          name: spacer_3
+          properties: {height: 32}
+          type: Spacer
+        - layout_properties: {grid_position: 'WZNCPP,YHCYVB'}
+          name: spacer_1
+          properties: {height: 269.0714416503906}
+          type: Spacer
+        - layout_properties: {grid_position: 'WZNCPP,BHYDMK ZQCHPM,ELLQUG'}
+          name: label_1
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Name :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - event_bindings: {pressed_enter: text_box_1_pressed_enter}
+          layout_properties: {grid_position: 'WZNCPP,BHYDMK ZQCHPM,NXTETA'}
+          name: text_box_1
+          properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: 'Enter your name ', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+          type: TextBox
+        - layout_properties: {grid_position: 'WZNCPP,BHYDMK KQKSKY,RIRTUQ'}
+          name: label_2
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Email ID :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - event_bindings: {pressed_enter: text_box_2_pressed_enter}
+          layout_properties: {grid_position: 'WZNCPP,BHYDMK KQKSKY,CTBEXH'}
+          name: text_box_2
+          properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: Enter your email, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+          type: TextBox
+        - layout_properties: {grid_position: 'WZNCPP,BHYDMK BJZPVN,UCFXSF'}
+          name: label_3
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Mobile No :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - event_bindings: {pressed_enter: text_box_3_pressed_enter}
+          layout_properties: {grid_position: 'WZNCPP,BHYDMK BJZPVN,OEHQRW'}
+          name: text_box_3
+          properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: Enter your mobile no, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: number, underline: false, visible: true}
+          type: TextBox
+        - layout_properties: {grid_position: 'WZNCPP,BHYDMK TYWJKH,MQOQUL'}
+          name: label_4
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Joined Date :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - event_bindings: {change: date_picker_1_change}
+          layout_properties: {grid_position: 'WZNCPP,BHYDMK TYWJKH,AWVJEN'}
+          name: date_picker_1
+          properties: {align: left, background: '', bold: false, border: '', date: '', enabled: true, font: '', font_size: null, foreground: '', format: '', italic: false, max_date: '', min_date: '', pick_time: false, placeholder: Date, role: outlined, spacing_above: small, spacing_below: small, tooltip: '', underline: false, visible: true}
+          type: DatePicker
+        - layout_properties: {grid_position: 'WZNCPP,BHYDMK ZGNHNP,JEMXLX'}
+          name: label_5
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Role :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - event_bindings: {change: drop_down_1_change}
+          layout_properties: {grid_position: 'WZNCPP,BHYDMK ZGNHNP,VBLIXY'}
+          name: drop_down_1
+          properties:
+            align: full
+            background: ''
+            bold: false
+            border: ''
+            enabled: true
+            font: ''
+            font_size: null
+            foreground: ''
+            include_placeholder: true
+            italic: false
+            items: [Sales Executives, Operations Manager, Business Manager, '']
+            placeholder: Enter your role
+            role: outlined
+            spacing_above: small
+            spacing_below: small
+            tooltip: ''
+            underline: false
+            visible: true
+          type: DropDown
+        - layout_properties: {grid_position: 'WZNCPP,BHYDMK SHNOUY,RNBDAW'}
+          name: label_6
+          properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Permission :', tooltip: '', underline: false, visible: true}
+          type: Label
+        - event_bindings: {change: drop_down_2_change}
+          layout_properties: {grid_position: 'WZNCPP,BHYDMK SHNOUY,GJPOPB'}
+          name: drop_down_2
+          properties:
+            align: full
+            background: ''
+            bold: false
+            border: ''
+            enabled: true
+            font: ''
+            font_size: null
+            foreground: ''
+            include_placeholder: true
+            italic: false
+            items: [Admin, Super Admin]
+            placeholder: Enter Your permission
+            role: outlined
+            spacing_above: small
+            spacing_below: small
+            tooltip: ''
+            underline: false
+            visible: true
+          type: DropDown
+        - layout_properties: {grid_position: 'WZNCPP,KQXGWV'}
+          name: spacer_2
+          properties: {height: 32}
+          type: Spacer
+        - event_bindings: {click: button_1_click}
+          layout_properties: {grid_position: 'VXIUVB,PJXVIE'}
+          name: button_1
+          properties: {align: center, background: '#05264d', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:save', icon_align: left, italic: false, role: outlined-button, spacing_above: small, spacing_below: small, text: Save, tooltip: '', underline: false, visible: true}
+          type: Button
         layout_properties:
           col_widths: {}
           grid_position: PQADQZ,DQLBXL
-        components:
-        - type: Button
-          properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-          name: button_1_copy
-          layout_properties: {grid_position: 'OIGLNV,VTBLUS', full_width_row: true}
-          event_bindings: {click: button_1_copy_click}
-        - name: label_7
-          properties: {align: center, text: Edit Details, role: outlined-card, bold: true, font_size: 30}
-          type: Label
-          layout_properties: {grid_position: 'USMHYY,GVJVPF'}
-        - name: spacer_3
-          properties: {height: 32}
-          type: Spacer
-          layout_properties: {grid_position: 'TSCCCQ,VNYZCU'}
-        - name: spacer_1
-          properties: {height: 269.0714416503906}
-          type: Spacer
-          layout_properties: {grid_position: 'WZNCPP,YHCYVB'}
-        - type: Label
-          properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Name :'}
-          name: label_1
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK ZQCHPM,ELLQUG'}
-        - type: TextBox
-          properties: {role: outlined, bold: false, align: left, placeholder: 'Enter your name ', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
-          name: text_box_1
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK ZQCHPM,NXTETA'}
-          event_bindings: {pressed_enter: text_box_1_pressed_enter}
-        - type: Label
-          properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Email ID :'}
-          name: label_2
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK KQKSKY,RIRTUQ'}
-        - type: TextBox
-          properties: {role: outlined, bold: false, align: left, placeholder: Enter your email, spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
-          name: text_box_2
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK KQKSKY,CTBEXH'}
-          event_bindings: {pressed_enter: text_box_2_pressed_enter}
-        - type: Label
-          properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Mobile No :'}
-          name: label_3
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK BJZPVN,UCFXSF'}
-        - type: TextBox
-          properties: {role: outlined, bold: false, align: left, placeholder: Enter your mobile no, spacing_above: small, background: '', type: number, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
-          name: text_box_3
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK BJZPVN,OEHQRW'}
-          event_bindings: {pressed_enter: text_box_3_pressed_enter}
-        - type: Label
-          properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Joined Date :'}
-          name: label_4
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK TYWJKH,MQOQUL'}
-        - type: DatePicker
-          properties: {role: outlined, bold: false, format: '', align: left, date: '', placeholder: Date, pick_time: false, spacing_above: small, background: '', underline: false, font: '', max_date: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', min_date: ''}
-          name: date_picker_1
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK TYWJKH,AWVJEN'}
-          event_bindings: {change: date_picker_1_change}
-        - type: Label
-          properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Role :'}
-          name: label_5
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK ZGNHNP,JEMXLX'}
-        - type: DropDown
-          properties:
-            role: outlined
-            include_placeholder: true
-            bold: false
-            align: full
-            placeholder: Enter your role
-            spacing_above: small
-            background: ''
-            underline: false
-            font: ''
-            foreground: ''
-            items: [Sales Executives, Operations Manager, Business Manager, '']
-            spacing_below: small
-            visible: true
-            border: ''
-            italic: false
-            enabled: true
-            font_size: null
-            tooltip: ''
-          name: drop_down_1
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK ZGNHNP,VBLIXY'}
-          event_bindings: {change: drop_down_1_change}
-        - type: Label
-          properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Permission :'}
-          name: label_6
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK SHNOUY,RNBDAW'}
-        - type: DropDown
-          properties:
-            role: outlined
-            include_placeholder: true
-            bold: false
-            align: full
-            placeholder: Enter Your permission
-            spacing_above: small
-            background: ''
-            underline: false
-            font: ''
-            foreground: ''
-            items: [Admin, Super Admin]
-            spacing_below: small
-            visible: true
-            border: ''
-            italic: false
-            enabled: true
-            font_size: null
-            tooltip: ''
-          name: drop_down_2
-          layout_properties: {grid_position: 'WZNCPP,BHYDMK SHNOUY,GJPOPB'}
-          event_bindings: {change: drop_down_2_change}
-        - name: spacer_2
-          properties: {height: 32}
-          type: Spacer
-          layout_properties: {grid_position: 'WZNCPP,KQXGWV'}
-        - type: Button
-          properties: {role: outlined-button, bold: false, align: center, spacing_above: small, background: '#05264d', icon: 'fa:save', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Save}
-          name: button_1
-          layout_properties: {grid_position: 'VXIUVB,PJXVIE'}
-          event_bindings: {click: button_1_click}
+        name: content_panel_copy_3
+        properties: {col_widths: '{"YHCYVB":20,"BHYDMK":50,"UCFXSF":30,"OEHQRW":30,"KQXGWV":10}'}
+        type: ColumnPanel
+      layout_properties:
+        col_widths: {}
+        grid_position: KIQFII,WRQGTB
+      name: content_panel_copy_2
+      properties: {}
+      type: ColumnPanel
+    layout_properties:
+      col_widths: {}
+      grid_position: KNABFB,NHDGAU
+    name: content_panel_copy
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

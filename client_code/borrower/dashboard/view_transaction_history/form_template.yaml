@@ -1,60 +1,60 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: form:borrower.dashboard.Navigation_form_dashboard
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'DFBSVE,GHFDCG'}
     name: navigation_form_dashboard_1
-    layout_properties: {grid_position: 'DFBSVE,GHFDCG', full_width_row: true}
-  - name: spacer_1
+    properties: {}
+    type: form:borrower.dashboard.Navigation_form_dashboard
+  - layout_properties: {full_width_row: true, grid_position: 'KZLBKG,TLRTOO'}
+    name: spacer_1
     properties: {height: 20.77777099609375}
     type: Spacer
-    layout_properties: {grid_position: 'KZLBKG,TLRTOO', full_width_row: true}
-  - name: repeating_panel_1
+  - layout_properties: {grid_position: 'SRAQHO,LQAEKR UBNWBW,FMVXMC'}
+    name: repeating_panel_1
     properties: {item_template: borrower.dashboard.view_transaction_history.ItemTemplate66, visible: false}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'SRAQHO,LQAEKR UBNWBW,FMVXMC'}
-  - name: label_1
-    properties: {role: outlined-card, bold: false, align: center, background: 'theme:Disabled Container', underline: false, foreground: '', italic: false, font_size: 25, text: ' Transaction History'}
+  - layout_properties: {grid_position: 'ZXUKTS,SFEVZN'}
+    name: label_1
+    properties: {align: center, background: 'theme:Disabled Container', bold: false, font_size: 25, foreground: '', italic: false, role: outlined-card, text: ' Transaction History', underline: false}
     type: Label
-    layout_properties: {grid_position: 'ZXUKTS,SFEVZN'}
-  - name: column_panel_1
-    properties: {role: elevated-card, background: 'theme:Secondary Container', col_widths: '{"KHYZKC":10,"UJYQMF":15,"XOEYIQ":10,"PVELEK":10,"WQEHHG":15}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'XWSJRW,ALJGHA'}
-    components:
-    - name: label_2
+  - components:
+    - layout_properties: {grid_position: 'TWRYIO,KHYZKC'}
+      name: label_2
       properties: {text: Transactioin Id}
       type: Label
-      layout_properties: {grid_position: 'TWRYIO,KHYZKC'}
-    - name: label_3
+    - layout_properties: {grid_position: 'TWRYIO,UJYQMF'}
+      name: label_3
       properties: {text: Transaction Type}
       type: Label
-      layout_properties: {grid_position: 'TWRYIO,UJYQMF'}
-    - name: label_5
+    - layout_properties: {grid_position: 'TWRYIO,XOEYIQ'}
+      name: label_5
       properties: {text: Status}
       type: Label
-      layout_properties: {grid_position: 'TWRYIO,XOEYIQ'}
-    - name: label_7
+    - layout_properties: {grid_position: 'TWRYIO,PVELEK'}
+      name: label_7
       properties: {text: Amount}
       type: Label
-      layout_properties: {grid_position: 'TWRYIO,PVELEK'}
-    - name: label_6
+    - layout_properties: {grid_position: 'TWRYIO,WQEHHG'}
+      name: label_6
       properties: {text: Date and Time}
       type: Label
-      layout_properties: {grid_position: 'TWRYIO,WQEHHG'}
-  - name: repeating_panel_2
+    layout_properties: {grid_position: 'XWSJRW,ALJGHA'}
+    name: column_panel_1
+    properties: {background: 'theme:Secondary Container', col_widths: '{"KHYZKC":10,"UJYQMF":15,"XOEYIQ":10,"PVELEK":10,"WQEHHG":15}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'SMILZA,GNOUHR'}
+    name: repeating_panel_2
     properties: {item_template: borrower.dashboard.view_transaction_history.ItemTemplate101}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'SMILZA,GNOUHR'}
-- type: FlowPanel
-  properties: {}
-  name: navbar_links
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components: []
   layout_properties: {slot: nav-right}
-  components: []
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

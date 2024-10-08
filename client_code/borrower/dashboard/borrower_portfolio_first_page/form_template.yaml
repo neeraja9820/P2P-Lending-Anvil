@@ -1,26 +1,26 @@
-container: {type: ColumnPanel}
 components:
-- name: navigation_bar_lender_dashbord_1
+- layout_properties: {full_width_row: true, grid_position: 'OLYBMX,LYKRVF'}
+  name: navigation_bar_lender_dashbord_1
   properties: {}
   type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
-  layout_properties: {grid_position: 'OLYBMX,LYKRVF', full_width_row: true}
-- name: label_1
-  properties: {text: Borrowers List, bold: true, align: center, font_size: 22}
+- layout_properties: {grid_position: 'ZBMVLX,IGOHLH'}
+  name: label_1
+  properties: {align: center, bold: true, font_size: 22, text: Borrowers List}
   type: Label
-  layout_properties: {grid_position: 'ZBMVLX,IGOHLH'}
-- name: data_grid_2
-  properties:
-    columns:
-    - {id: JKSDUP, title: Borrower Name, data_key: column_1}
-    - {id: VJQQOR, title: Borrower Email, data_key: column_2}
-    - {id: OJLQEN, title: Ascend Score, data_key: column_3}
-    - {id: TAGHWB, data_key: column_4, title: Member Since}
-    - {id: QVCTQP, data_key: column_5, title: ''}
-    role: tonal-data-grid
-  type: DataGrid
-  components:
+- components:
   - name: repeating_panel_2
     properties: {item_template: borrower.dashboard.borrower_portfolio_first_page.RowTemplate38}
     type: RepeatingPanel
   layout_properties: {grid_position: 'NPFLDZ,RZPZKG'}
+  name: data_grid_2
+  properties:
+    columns:
+    - {data_key: column_1, id: JKSDUP, title: Borrower Name}
+    - {data_key: column_2, id: VJQQOR, title: Borrower Email}
+    - {data_key: column_3, id: OJLQEN, title: Ascend Score}
+    - {data_key: column_4, id: TAGHWB, title: Member Since}
+    - {data_key: column_5, id: QVCTQP, title: ''}
+    role: tonal-data-grid
+  type: DataGrid
+container: {type: ColumnPanel}
 is_package: true

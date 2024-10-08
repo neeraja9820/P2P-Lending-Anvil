@@ -1,119 +1,119 @@
-is_package: true
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{"GDFDDS":20,"NTAIFP":5,"VHIORD":15,"MOWUML":20}'}
 components:
-- name: spacer_2
+- layout_properties: {grid_position: 'GUHMTH,VXURZI'}
+  name: spacer_2
   properties: {height: 22.888885498046875}
   type: Spacer
-  layout_properties: {grid_position: 'GUHMTH,VXURZI'}
-- name: image_1
+- data_bindings:
+  - {code: 'self.item[''user_photo'']', property: source, writeback: false}
+  layout_properties: {grid_position: 'ABPZFN,GDFDDS ZINMKB,LHNIKJ'}
+  name: image_1
   properties: {role: outlined-card}
   type: Image
-  layout_properties: {grid_position: 'ABPZFN,GDFDDS ZINMKB,LHNIKJ'}
-  data_bindings:
-  - {property: source, code: 'self.item[''user_photo'']', writeback: false}
-- name: email_id
-  properties: {foreground: '', role: title, align: center}
-  type: Label
+- data_bindings:
+  - {code: 'self.item[''email_user'']', property: text, writeback: false}
   layout_properties: {grid_position: 'ABPZFN,GDFDDS YNKUHM,YXYXOH'}
-  data_bindings:
-  - {property: text, code: 'self.item[''email_user'']', writeback: false}
-- name: label_6
-  properties: {icon: 'fa:window-maximize', align: center}
+  name: email_id
+  properties: {align: center, foreground: '', role: title}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,GDFDDS XXNMYQ,VXFKZJ'}
-- name: spacer_1
+- layout_properties: {grid_position: 'ABPZFN,GDFDDS XXNMYQ,VXFKZJ'}
+  name: label_6
+  properties: {align: center, icon: 'fa:window-maximize'}
+  type: Label
+- layout_properties: {grid_position: 'ABPZFN,NTAIFP'}
+  name: spacer_1
   properties: {height: 448.8888854980469}
   type: Spacer
-  layout_properties: {grid_position: 'ABPZFN,NTAIFP'}
-- name: label_7
-  properties: {text: 'Name :', bold: true, spacing_below: small, role: input-prompt}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD BAYABM,PJKJWH'}
+  name: label_7
+  properties: {bold: true, role: input-prompt, spacing_below: small, text: 'Name :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD BAYABM,PJKJWH'}
-- name: label_11
-  properties: {text: 'Email_Id :', bold: true, role: input-prompt, spacing_below: small}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD FJPXDC,KSHMHX'}
+  name: label_11
+  properties: {bold: true, role: input-prompt, spacing_below: small, text: 'Email_Id :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD FJPXDC,KSHMHX'}
-- name: label_8
-  properties: {text: 'Phone_No :', bold: true, role: input-prompt}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD AJQWSA,OULBHF'}
+  name: label_8
+  properties: {bold: true, role: input-prompt, text: 'Phone_No :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD AJQWSA,OULBHF'}
-- name: label_9
-  properties: {text: 'Altername_email_Id :', bold: true, role: input-prompt}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD XQJVWF,QOJNET'}
+  name: label_9
+  properties: {bold: true, role: input-prompt, text: 'Altername_email_Id :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD XQJVWF,QOJNET'}
-- name: label_5
-  properties: {text: 'User_Type :', bold: true, role: input-prompt}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD PYTKVF,TNNNGS'}
+  name: label_5
+  properties: {bold: true, role: input-prompt, text: 'User_Type :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD PYTKVF,TNNNGS'}
-- name: label_12
-  properties: {role: input-prompt, text: 'Father_Name :', bold: true}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD QJQNVC,BVLZXP'}
+  name: label_12
+  properties: {bold: true, role: input-prompt, text: 'Father_Name :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD QJQNVC,BVLZXP'}
-- name: label_14
+- layout_properties: {grid_position: 'ABPZFN,VHIORD ZKGSZN,SZWJPC'}
+  name: label_14
   properties: {bold: true, role: input-prompt, text: 'Father_No :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD ZKGSZN,SZWJPC'}
-- name: label_16
-  properties: {text: 'Mother_Name :', bold: true, role: input-prompt}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD UHCMKR,CMUBCI'}
+  name: label_16
+  properties: {bold: true, role: input-prompt, text: 'Mother_Name :'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD UHCMKR,CMUBCI'}
-- name: label_17
-  properties: {text: Mother_No, bold: true, role: input-prompt}
+- layout_properties: {grid_position: 'ABPZFN,VHIORD FIWMNT,LNDZIQ'}
+  name: label_17
+  properties: {bold: true, role: input-prompt, text: Mother_No}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,VHIORD FIWMNT,LNDZIQ'}
-- name: label_1
+- data_bindings:
+  - {code: 'self.item[''full_name'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'ABPZFN,MOWUML CKULPO,JESEDL'}
+  name: label_1
   properties: {role: null, spacing_below: medium, text: Name}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,MOWUML CKULPO,JESEDL'}
-  data_bindings:
-  - {property: text, code: 'self.item[''full_name'']', writeback: false}
-- name: label_2
+- data_bindings:
+  - {code: 'self.item[''email_user'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'ABPZFN,MOWUML BFLFUY,WDTXMC'}
+  name: label_2
   properties: {role: null, spacing_below: medium, text: 'Email_Id:'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,MOWUML BFLFUY,WDTXMC'}
-  data_bindings:
-  - {property: text, code: 'self.item[''email_user'']', writeback: false}
-- name: label_3
+- data_bindings:
+  - {code: 'self.item[''mobile'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'ABPZFN,MOWUML DZELOZ,OFLUBF'}
+  name: label_3
   properties: {role: null, spacing_below: small, text: 'Ph_no:'}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,MOWUML DZELOZ,OFLUBF'}
-  data_bindings:
-  - {property: text, code: 'self.item[''mobile'']', writeback: false}
-- name: label_4
-  properties: {spacing_below: medium, role: null, text: 'Alternate_Email_Id:', spacing_above: medium}
-  type: Label
+- data_bindings:
+  - {code: 'self.item[''another_email'']', property: text, writeback: false}
   layout_properties: {grid_position: 'ABPZFN,MOWUML JOBESF,MPONBD'}
-  data_bindings:
-  - {property: text, code: 'self.item[''another_email'']', writeback: false}
-- name: label_10
-  properties: {text: User_type, role: null, bold: false, spacing_below: medium}
+  name: label_4
+  properties: {role: null, spacing_above: medium, spacing_below: medium, text: 'Alternate_Email_Id:'}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''usertype'']', property: text, writeback: false}
   layout_properties: {grid_position: 'ABPZFN,MOWUML OOVPEK,DRVVAD'}
-  data_bindings:
-  - {property: text, code: 'self.item[''usertype'']', writeback: false}
-- name: label_13
+  name: label_10
+  properties: {bold: false, role: null, spacing_below: medium, text: User_type}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''father_name'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'ABPZFN,MOWUML LNVIOT,BJMUBW'}
+  name: label_13
   properties: {spacing_below: medium, text: Father_name}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,MOWUML LNVIOT,BJMUBW'}
-  data_bindings:
-  - {property: text, code: 'self.item[''father_name'']', writeback: false}
-- name: label_15
+- data_bindings:
+  - {code: 'self.item[''father_number'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'ABPZFN,MOWUML KXYOHB,YGBVAX'}
+  name: label_15
   properties: {spacing_below: medium, text: Father_no}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,MOWUML KXYOHB,YGBVAX'}
-  data_bindings:
-  - {property: text, code: 'self.item[''father_number'']', writeback: false}
-- name: label_18
-  properties: {text: Mother_name, spacing_below: medium}
-  type: Label
+- data_bindings:
+  - {code: 'self.item[''mother_name'']', property: text, writeback: false}
   layout_properties: {grid_position: 'ABPZFN,MOWUML DCWRXR,PBZVAJ'}
-  data_bindings:
-  - {property: text, code: 'self.item[''mother_name'']', writeback: false}
-- name: label_19
+  name: label_18
+  properties: {spacing_below: medium, text: Mother_name}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''mother_number'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'ABPZFN,MOWUML FBNRHV,GJXGBS'}
+  name: label_19
   properties: {text: Mother_no}
   type: Label
-  layout_properties: {grid_position: 'ABPZFN,MOWUML FBNRHV,GJXGBS'}
-  data_bindings:
-  - {property: text, code: 'self.item[''mother_number'']', writeback: false}
+container:
+  properties: {col_widths: '{"GDFDDS":20,"NTAIFP":5,"VHIORD":15,"MOWUML":20}'}
+  type: ColumnPanel
+is_package: true

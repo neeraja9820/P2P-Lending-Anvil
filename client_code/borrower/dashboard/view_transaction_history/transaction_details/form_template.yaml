@@ -1,77 +1,77 @@
-container: {type: ColumnPanel}
 components:
-- name: navigation_form_dashboard_1
+- layout_properties: {full_width_row: true, grid_position: 'IDJVKE,MDYONK'}
+  name: navigation_form_dashboard_1
   properties: {}
   type: form:borrower.dashboard.Navigation_form_dashboard
-  layout_properties: {grid_position: 'IDJVKE,MDYONK', full_width_row: true}
-- name: button_1_copy_2
-  properties: {role: null, bold: true, align: right, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+- event_bindings: {click: button_1_copy_2_click}
+  layout_properties: {full_width_row: true, grid_position: 'RIXAYS,QGTIOQ'}
+  name: button_1_copy_2
+  properties: {align: right, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:angle-double-left', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
   type: Button
-  layout_properties: {grid_position: 'RIXAYS,QGTIOQ', full_width_row: true}
-  event_bindings: {click: button_1_copy_2_click}
-- name: label_1
-  properties: {text: Transaction Details, background: 'theme:Secondary Container', role: outlined-card, font_size: 25}
+- layout_properties: {grid_position: 'CTPUEG,VDTVEO'}
+  name: label_1
+  properties: {background: 'theme:Secondary Container', font_size: 25, role: outlined-card, text: Transaction Details}
   type: Label
-  layout_properties: {grid_position: 'CTPUEG,VDTVEO'}
-- name: column_panel_1
-  properties: {role: elevated-card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'PFWOEL,YHTTWG'}
-  components:
-  - name: label_2
+- components:
+  - layout_properties: {grid_position: 'CWELKH,QPANHK'}
+    name: label_2
     properties: {text: Transaction Id}
     type: Label
-    layout_properties: {grid_position: 'CWELKH,QPANHK'}
-  - name: label_3
+  - layout_properties: {grid_position: 'CWELKH,ZSJKFF'}
+    name: label_3
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'CWELKH,ZSJKFF'}
-  - name: label_4
+  - layout_properties: {grid_position: 'UQUUYG,OXRVER ZKTBUJ,GIWTMA'}
+    name: label_4
     properties: {text: User Email}
     type: Label
-    layout_properties: {grid_position: 'UQUUYG,OXRVER ZKTBUJ,GIWTMA'}
-  - name: label_16
+  - layout_properties: {grid_position: 'UQUUYG,OXRVER LLNUXS,TWJVZB'}
+    name: label_16
     properties: {text: Receiver Email}
     type: Label
-    layout_properties: {grid_position: 'UQUUYG,OXRVER LLNUXS,TWJVZB'}
-  - name: label_5
+  - layout_properties: {grid_position: 'UQUUYG,RTSSRA VMBTAP,WOEYOH'}
+    name: label_5
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'UQUUYG,RTSSRA VMBTAP,WOEYOH'}
-  - name: label_17
+  - layout_properties: {grid_position: 'UQUUYG,RTSSRA WMWGLC,TIAITM'}
+    name: label_17
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'UQUUYG,RTSSRA WMWGLC,TIAITM'}
-  - name: label_8
+  - layout_properties: {grid_position: 'YOVLUQ,UQTVWE'}
+    name: label_8
     properties: {text: Transaction Type}
     type: Label
-    layout_properties: {grid_position: 'YOVLUQ,UQTVWE'}
-  - name: label_9
+  - layout_properties: {grid_position: 'YOVLUQ,BHTNRA'}
+    name: label_9
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'YOVLUQ,BHTNRA'}
-  - name: label_10
+  - layout_properties: {grid_position: 'BZBGCU,VIEKNE'}
+    name: label_10
     properties: {text: Amount}
     type: Label
-    layout_properties: {grid_position: 'BZBGCU,VIEKNE'}
-  - name: label_11
+  - layout_properties: {grid_position: 'BZBGCU,WFEDWP'}
+    name: label_11
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'BZBGCU,WFEDWP'}
-  - name: label_12
+  - layout_properties: {grid_position: 'VLDFIL,UVUAKW CKOLEE,IQFXGZ'}
+    name: label_12
     properties: {text: Date and Time}
     type: Label
-    layout_properties: {grid_position: 'VLDFIL,UVUAKW CKOLEE,IQFXGZ'}
-  - name: label_14
+  - layout_properties: {grid_position: 'VLDFIL,UVUAKW RXJOQY,CLBOAZ'}
+    name: label_14
     properties: {text: Status}
     type: Label
-    layout_properties: {grid_position: 'VLDFIL,UVUAKW RXJOQY,CLBOAZ'}
-  - name: label_13
+  - layout_properties: {grid_position: 'VLDFIL,YXFMOJ QYOYGE,FSAYVU'}
+    name: label_13
     properties: {}
     type: Label
-    layout_properties: {grid_position: 'VLDFIL,YXFMOJ QYOYGE,FSAYVU'}
-  - name: label_15
+  - layout_properties: {grid_position: 'VLDFIL,YXFMOJ ZSVDLQ,GYJNCW'}
+    name: label_15
     properties: {background: '', foreground: green}
     type: Label
-    layout_properties: {grid_position: 'VLDFIL,YXFMOJ ZSVDLQ,GYJNCW'}
+  layout_properties: {grid_position: 'PFWOEL,YHTTWG'}
+  name: column_panel_1
+  properties: {role: elevated-card}
+  type: ColumnPanel
+container: {type: ColumnPanel}
 is_package: true

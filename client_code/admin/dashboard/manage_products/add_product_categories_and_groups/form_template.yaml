@@ -1,78 +1,78 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{"EMHHXZ":30,"LMHRTT":10,"OWFYDN":20}', visible: true}
 components:
-- type: ColumnPanel
-  properties: {role: null, col_widths: '{"FDDXVJ":15,"HACQJG":45,"GVPHFB":15,"VRVUMX":45}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
-  name: column_panel_2
-  layout_properties: {grid_position: 'UQCZNB,KHJKIT', full_width_row: true}
-  components:
-  - type: form:admin.dashboard.home_button_admin
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'XMKVND,CVZVLB'}
     name: home_button_admin_1
-    layout_properties: {grid_position: 'XMKVND,CVZVLB', full_width_row: true}
-  - name: label_3
-    properties: {align: center, text: ADD CATEGORIES, bold: true}
+    properties: {}
+    type: form:admin.dashboard.home_button_admin
+  - layout_properties: {grid_position: 'XPQOWT,RGSKQT'}
+    name: label_3
+    properties: {align: center, bold: true, text: ADD CATEGORIES}
     type: Label
-    layout_properties: {grid_position: 'XPQOWT,RGSKQT'}
-  - type: Spacer
-    properties: {height: 36.500030517578125}
+  - layout_properties: {grid_position: 'KKFONF,HHEVLC'}
     name: spacer_1
-    layout_properties: {grid_position: 'KKFONF,HHEVLC'}
-  - type: Label
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Product Group}
+    properties: {height: 36.500030517578125}
+    type: Spacer
+  - layout_properties: {grid_position: 'SPGCWB,GVPHFB'}
     name: label_1
-    layout_properties: {grid_position: 'SPGCWB,GVPHFB'}
-  - type: DropDown
-    properties:
-      role: outlined
-      include_placeholder: true
-      bold: false
-      align: full
-      placeholder: select group
-      spacing_above: small
-      background: ''
-      underline: false
-      font: ''
-      foreground: ''
-      items: []
-      spacing_below: small
-      visible: true
-      border: ''
-      italic: false
-      enabled: true
-      font_size: null
-      tooltip: ''
-    name: drop_down_1
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 16, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Product Group, tooltip: '', underline: false, visible: true}
+    type: Label
+  - event_bindings: {change: name_change}
     layout_properties: {grid_position: 'SPGCWB,VRVUMX'}
-    event_bindings: {change: name_change}
-  - type: Label
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Categories}
+    name: drop_down_1
+    properties:
+      align: full
+      background: ''
+      bold: false
+      border: ''
+      enabled: true
+      font: ''
+      font_size: null
+      foreground: ''
+      include_placeholder: true
+      italic: false
+      items: []
+      placeholder: select group
+      role: outlined
+      spacing_above: small
+      spacing_below: small
+      tooltip: ''
+      underline: false
+      visible: true
+    type: DropDown
+  - layout_properties: {grid_position: 'GMJCJS,FDDXVJ'}
     name: label_2
-    layout_properties: {grid_position: 'GMJCJS,FDDXVJ'}
-  - type: TextBox
-    properties: {role: outlined, bold: false, align: left, placeholder: Enter product categories, spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
-    name: text_box_1
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 16, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Categories, tooltip: '', underline: false, visible: true}
+    type: Label
+  - event_bindings: {pressed_enter: text_box_1_pressed_enter}
     layout_properties: {grid_position: 'GMJCJS,HACQJG'}
-    event_bindings: {pressed_enter: text_box_1_pressed_enter}
-- type: Spacer
-  properties: {height: 28}
+    name: text_box_1
+    properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: Enter product categories, role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+    type: TextBox
+  layout_properties: {full_width_row: true, grid_position: 'UQCZNB,KHJKIT'}
+  name: column_panel_2
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{"FDDXVJ":15,"HACQJG":45,"GVPHFB":15,"VRVUMX":45}', foreground: '', role: null, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
+- layout_properties: {grid_position: 'PZQYRS,IQBKVI'}
   name: spacer_2
-  layout_properties: {grid_position: 'PZQYRS,IQBKVI'}
-- type: Button
-  properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-  name: button_1_copy_3
+  properties: {height: 28}
+  type: Spacer
+- event_bindings: {click: button_1_copy_3_click}
   layout_properties:
     col_widths: {}
     grid_position: ASAVVK,EMHHXZ
-  event_bindings: {click: button_1_copy_3_click}
-- type: Button
-  properties: {role: elevated-button, bold: true, align: full, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: SAVE}
-  name: button_2
+  name: button_1_copy_3
+  properties: {align: right, background: '#05264d', bold: true, border: '', enabled: true, font: '16', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+  type: Button
+- event_bindings: {click: button_2_click}
   layout_properties: {grid_position: 'ASAVVK,LMHRTT'}
-  event_bindings: {click: button_2_click}
-- type: Spacer
-  properties: {height: 32}
+  name: button_2
+  properties: {align: full, background: '#05264d', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: SAVE, tooltip: '', underline: false, visible: true}
+  type: Button
+- layout_properties: {grid_position: 'ASAVVK,OWFYDN'}
   name: spacer_3
-  layout_properties: {grid_position: 'ASAVVK,OWFYDN'}
+  properties: {height: 32}
+  type: Spacer
+container:
+  properties: {col_widths: '{"EMHHXZ":30,"LMHRTT":10,"OWFYDN":20}', visible: true}
+  type: ColumnPanel
 is_package: true

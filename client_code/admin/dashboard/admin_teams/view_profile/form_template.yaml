@@ -1,110 +1,110 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: ColumnPanel
-    properties: {role: null, col_widths: '{"PWLLJC":30,"JLUSGY":35,"VEUHUR":25,"THXISZ":20,"FOOZGC":15,"FVVEWJ":25}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
-    name: content_panel_copy_2
-    layout_properties:
-      col_widths: {}
-      grid_position: TBRFPP,BUUPDC
-      full_width_row: true
-    components:
-    - type: form:admin.dashboard.home_button_admin
-      properties: {}
+- components:
+  - components:
+    - layout_properties: {full_width_row: true, grid_position: 'OIHFRN,PWLLJC', row_background: ''}
       name: home_button_admin_1
-      layout_properties: {grid_position: 'OIHFRN,PWLLJC', row_background: '', full_width_row: true}
-    - type: Button
-      properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+      properties: {}
+      type: form:admin.dashboard.home_button_admin
+    - event_bindings: {click: button_1_click}
+      layout_properties: {full_width_row: true, grid_position: 'YMAEOH,SUTUCQ'}
       name: button_1_copy
-      layout_properties: {grid_position: 'YMAEOH,SUTUCQ', full_width_row: true}
-      event_bindings: {click: button_1_click}
-    - type: Label
-      properties: {role: outlined-card, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: View Profile}
+      properties: {align: right, background: '#05264d', bold: true, border: '', enabled: true, font: '16', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+      type: Button
+    - layout_properties: {full_width_row: true, grid_position: 'JSNJZR,SUFXXP'}
       name: label_1_copy
-      layout_properties: {grid_position: 'JSNJZR,SUFXXP', full_width_row: true}
-    - name: spacer_3
+      properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 30, foreground: '', icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: View Profile, tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'RKJXSZ,QDVVEU'}
+      name: spacer_3
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'RKJXSZ,QDVVEU'}
-    - name: spacer_1
+    - layout_properties: {grid_position: 'KJQTJM,THXISZ'}
+      name: spacer_1
       properties: {height: 254.8570556640625}
       type: Spacer
-      layout_properties: {grid_position: 'KJQTJM,THXISZ'}
-    - type: Label
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Name :'}
+    - layout_properties: {grid_position: 'KJQTJM,FOOZGC CSPQKF,ALQPFH'}
       name: label_2_copy
-      layout_properties: {grid_position: 'KJQTJM,FOOZGC CSPQKF,ALQPFH'}
-    - type: Label
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Email :'}
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Name :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FOOZGC SVARPQ,UQYDDM'}
       name: label_3_copy
-      layout_properties: {grid_position: 'KJQTJM,FOOZGC SVARPQ,UQYDDM'}
-    - type: Label
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Mobile No :'}
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Email :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FOOZGC UYQTUG,JHJKZI'}
       name: label_4_copy
-      layout_properties: {grid_position: 'KJQTJM,FOOZGC UYQTUG,JHJKZI'}
-    - type: Label
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Joining Date :'}
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Mobile No :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FOOZGC EXWMKC,VVCVMW'}
       name: label_5_copy
-      layout_properties: {grid_position: 'KJQTJM,FOOZGC EXWMKC,VVCVMW'}
-    - type: Label
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Role :'}
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Joining Date :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FOOZGC GZYQPW,QXYJUR'}
       name: label_6_copy
-      layout_properties: {grid_position: 'KJQTJM,FOOZGC GZYQPW,QXYJUR'}
-    - type: Label
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Permission :'}
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Role :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FOOZGC BPWAUL,LUCJZC'}
       name: label_12_copy
-      layout_properties: {grid_position: 'KJQTJM,FOOZGC BPWAUL,LUCJZC'}
-    - type: Label
-      properties: {}
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '   Permission :', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY NCCWWD,RRGMJW'}
       name: label_7_copy
-      layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY NCCWWD,RRGMJW'}
-    - type: Label
       properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY LAHKVM,XCSJEB'}
       name: label_8_copy
-      layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY LAHKVM,XCSJEB'}
-    - type: Label
       properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY IBUZXX,LZEPRQ'}
       name: label_9_copy
-      layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY IBUZXX,LZEPRQ'}
-    - type: Label
       properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY YMWLLU,VFJAMV'}
       name: label_10_copy
-      layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY YMWLLU,VFJAMV'}
-    - type: Label
       properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY FYIIDR,HXHBRA'}
       name: label_11_copy
-      layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY FYIIDR,HXHBRA'}
-    - type: Label
       properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY CAVYOV,CEKVWU'}
       name: label_13_copy
-      layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,JLUSGY CAVYOV,CEKVWU'}
-    - name: spacer_2
+      properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,VEUHUR'}
+      name: spacer_2
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'KJQTJM,FVVEWJ VNSYUG,VEUHUR'}
-    - type: Label
-      properties: {}
+    - layout_properties: {grid_position: 'TORGCF,SMXDMW'}
       name: label_14_copy
-      layout_properties: {grid_position: 'TORGCF,SMXDMW'}
-    - type: Button
-      properties: {role: outlined-button, bold: false, align: right, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Edit}
-      name: button_2_copy
+      properties: {}
+      type: Label
+    - event_bindings: {click: button_2_click}
       layout_properties: {grid_position: 'JXACMF,LLLMAJ'}
-      event_bindings: {click: button_2_click}
-    - type: Button
-      properties: {role: outlined-button, bold: false, align: center, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Update}
-      name: button_3_copy
+      name: button_2_copy
+      properties: {align: right, background: '#0b2547', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: outlined-button, spacing_above: small, spacing_below: small, text: Edit, tooltip: '', underline: false, visible: true}
+      type: Button
+    - event_bindings: {click: button_3_click}
       layout_properties: {grid_position: 'JXACMF,UZPBBT'}
-      event_bindings: {click: button_3_click}
-    - type: Button
-      properties: {role: outlined-button, bold: false, align: left, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Delete}
-      name: button_4_copy
+      name: button_3_copy
+      properties: {align: center, background: '#0b2547', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: outlined-button, spacing_above: small, spacing_below: small, text: Update, tooltip: '', underline: false, visible: true}
+      type: Button
+    - event_bindings: {click: button_4_click}
       layout_properties: {grid_position: 'JXACMF,TLVGCF'}
-      event_bindings: {click: button_4_click}
+      name: button_4_copy
+      properties: {align: left, background: '#0b2547', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: outlined-button, spacing_above: small, spacing_below: small, text: Delete, tooltip: '', underline: false, visible: true}
+      type: Button
+    layout_properties:
+      col_widths: {}
+      full_width_row: true
+      grid_position: TBRFPP,BUUPDC
+    name: content_panel_copy_2
+    properties: {background: '', border: '', col_spacing: medium, col_widths: '{"PWLLJC":30,"JLUSGY":35,"VEUHUR":25,"THXISZ":20,"FOOZGC":15,"FVVEWJ":25}', foreground: '', role: null, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

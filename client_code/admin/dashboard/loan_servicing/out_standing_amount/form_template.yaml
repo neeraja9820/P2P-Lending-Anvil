@@ -1,28 +1,28 @@
-container: {type: ColumnPanel}
 components:
-- name: home_button_admin_1
+- layout_properties: {full_width_row: true, grid_position: 'KXCBTB,ANWUBZ'}
+  name: home_button_admin_1
   properties: {}
   type: form:admin.dashboard.home_button_admin
-  layout_properties: {grid_position: 'KXCBTB,ANWUBZ', full_width_row: true}
-- name: data_grid_1
-  properties:
-    columns:
-    - {id: JKSDUP, title: Product Name, data_key: column_1, width: 185.71417236328125, expand: false}
-    - {id: VJQQOR, title: Borrower Name, data_key: column_2, width: 198.142822265625, expand: false}
-    - {id: OJLQEN, title: Borrower Id, data_key: column_3, width: 210.5714111328125, expand: false}
-    - {id: RKPOSI, data_key: column_1, title: Repayment Amount, width: 183.7142333984375, expand: false}
-    - {id: CHTHOV, data_key: column_1, title: ''}
-    role: tonal-data-grid
-    visible: true
-  type: DataGrid
-  layout_properties: {grid_position: ''}
-  components:
+- components:
   - name: repeating_panel_1
     properties: {item_template: admin.dashboard.loan_servicing.out_standing_amount.ItemTemplate110}
     type: RepeatingPanel
-- name: button_1
-  properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-  type: Button
+  layout_properties: {grid_position: ''}
+  name: data_grid_1
+  properties:
+    columns:
+    - {data_key: column_1, expand: false, id: JKSDUP, title: Product Name, width: 185.71417236328125}
+    - {data_key: column_2, expand: false, id: VJQQOR, title: Borrower Name, width: 198.142822265625}
+    - {data_key: column_3, expand: false, id: OJLQEN, title: Borrower Id, width: 210.5714111328125}
+    - {data_key: column_1, expand: false, id: RKPOSI, title: Repayment Amount, width: 183.7142333984375}
+    - {data_key: column_1, id: CHTHOV, title: ''}
+    role: tonal-data-grid
+    visible: true
+  type: DataGrid
+- event_bindings: {click: button_1_click}
   layout_properties: {grid_position: 'ABCUNE,DFEZQK'}
-  event_bindings: {click: button_1_click}
+  name: button_1
+  properties: {align: center, background: '#05264d', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: white, icon: 'fa:backward', icon_align: left, italic: false, role: outlined-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+  type: Button
+container: {type: ColumnPanel}
 is_package: true

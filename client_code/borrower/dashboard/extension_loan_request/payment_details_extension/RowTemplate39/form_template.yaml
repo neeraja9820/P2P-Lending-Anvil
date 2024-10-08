@@ -1,80 +1,80 @@
-container: {type: DataRowPanel}
 components:
-- name: column_panel_1
-  properties: {role: elevated-card, background: ''}
-  type: ColumnPanel
-  layout_properties: {column: VSQOWI}
-  components:
-  - type: Label
-    properties: {}
+- components:
+  - data_bindings:
+    - {code: 'self.item[''PaymentNumber'']', property: text}
+    layout_properties: {full_width_row: true, grid_position: 'JXNWKE,XJYOUW'}
     name: label_1
-    layout_properties: {grid_position: 'JXNWKE,XJYOUW', full_width_row: true}
-    data_bindings:
-    - {property: text, code: 'self.item[''PaymentNumber'']'}
-  - type: Label
     properties: {}
-    name: label_2
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''PaymentDate'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,XWJFOV'}
-    data_bindings:
-    - {property: text, code: 'self.item[''PaymentDate'']'}
-  - type: Label
+    name: label_2
     properties: {}
-    name: label_3
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''BeginningBalance'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,VSFGAG'}
-    data_bindings:
-    - {property: text, code: 'self.item[''BeginningBalance'']'}
-  - type: Label
+    name: label_3
     properties: {}
-    name: label_4
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''ScheduledPayment'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,FYSNHL'}
-    data_bindings:
-    - {property: text, code: 'self.item[''ScheduledPayment'']'}
-  - type: Label
+    name: label_4
     properties: {}
-    name: label_5
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''ExtensionFee'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,YYRCNZ'}
-    data_bindings:
-    - {property: text, code: 'self.item[''ExtensionFee'']'}
-  - type: Label
+    name: label_5
     properties: {}
-    name: label_6
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''TotalPayment'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,SHSLMN'}
-    data_bindings:
-    - {property: text, code: 'self.item[''TotalPayment'']'}
-  - type: Label
+    name: label_6
     properties: {}
-    name: label_7
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Principal'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,FQKAKR'}
-    data_bindings:
-    - {property: text, code: 'self.item[''Principal'']'}
-  - type: Label
+    name: label_7
     properties: {}
-    name: label_8
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''Interest'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,IOZJNH'}
-    data_bindings:
-    - {property: text, code: 'self.item[''Interest'']'}
-  - type: Label
+    name: label_8
     properties: {}
-    name: label_9
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''EndingBalance'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,ARUKHN'}
-    data_bindings:
-    - {property: text, code: 'self.item[''EndingBalance'']'}
-  - type: Label
+    name: label_9
     properties: {}
-    name: label_10
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''EMIDate'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,OKPXZP'}
-    data_bindings:
-    - {property: text, code: 'self.item[''EMIDate'']'}
-  - type: Label
+    name: label_10
     properties: {}
-    name: label_11
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''EMITime'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,NQOWGK'}
-    data_bindings:
-    - {property: text, code: 'self.item[''EMITime'']'}
-  - type: Label
+    name: label_11
     properties: {}
-    name: label_12
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''AccountNumber'']', property: text}
     layout_properties: {grid_position: 'JXNWKE,NDULKF'}
-    data_bindings:
-    - {property: text, code: 'self.item[''AccountNumber'']'}
+    name: label_12
+    properties: {}
+    type: Label
+  layout_properties: {column: VSQOWI}
+  name: column_panel_1
+  properties: {background: '', role: elevated-card}
+  type: ColumnPanel
+container: {type: DataRowPanel}
 is_package: true

@@ -1,26 +1,26 @@
-is_package: true
-container: {type: DataRowPanel}
 components:
-- name: loan_id_label
-  properties: {}
-  type: Label
+- data_bindings:
+  - {code: 'self.item[''loan_id'']', property: text, writeback: false}
   layout_properties: {column: JKSDUP}
-  data_bindings:
-  - {property: text, code: 'self.item[''loan_id'']', writeback: false}
-- name: loan_amount_label
+  name: loan_id_label
   properties: {}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''loan_amount'']', property: text, writeback: false}
   layout_properties: {column: VJQQOR}
-  data_bindings:
-  - {property: text, code: 'self.item[''loan_amount'']', writeback: false}
-- name: loan_status_label
+  name: loan_amount_label
   properties: {}
   type: Label
+- data_bindings:
+  - {code: 'self.item[''loan_updated_status'']', property: text, writeback: false}
   layout_properties: {column: OJLQEN}
-  data_bindings:
-  - {property: text, code: 'self.item[''loan_updated_status'']', writeback: false}
-- name: view_profile_link
+  name: loan_status_label
+  properties: {}
+  type: Label
+- event_bindings: {click: view_profile_link_click}
+  layout_properties: {column: QSSLLG}
+  name: view_profile_link
   properties: {text: View Details, visible: true}
   type: Link
-  layout_properties: {column: QSSLLG}
-  event_bindings: {click: view_profile_link_click}
+container: {type: DataRowPanel}
+is_package: true

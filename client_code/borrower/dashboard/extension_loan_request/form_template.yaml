@@ -1,55 +1,55 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: ''}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: form:borrower.dashboard.Navigation_form_dashboard
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'WQVRWZ,EYHGGL'}
     name: navigation_form_dashboard_1
-    layout_properties: {grid_position: 'WQVRWZ,EYHGGL', full_width_row: true}
-  - type: Label
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: true, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: Extension Loans}
-    name: label_1
-    layout_properties:
+    properties: {}
+    type: form:borrower.dashboard.Navigation_form_dashboard
+  - layout_properties:
       col_widths: {}
       grid_position: DYDEPP,WYGGME
-  - type: DataGrid
-    properties:
-      role: null
-      spacing_above: small
-      columns:
-      - {id: RZABYV, title: Loan ID, data_key: column_1, $$hashKey: 'object:8993'}
-      - {id: IYDVHH, title: Name, data_key: column_2, $$hashKey: 'object:8994'}
-      - {id: GEVQOH, title: Loan Amount, data_key: column_3, $$hashKey: 'object:8995'}
-      - {id: OEKFTT, title: Tenure, data_key: column_2, $$hashKey: 'object:9051'}
-      - {id: QRAUJX, title: '', data_key: column_4, $$hashKey: 'object:9053'}
-      background: ''
-      rows_per_page: 20
-      wrap_on: never
-      foreground: ''
-      show_page_controls: true
-      auto_header: true
-      spacing_below: small
-      visible: false
-      border: ''
-      tooltip: ''
-    name: data_grid_1
-    layout_properties: {grid_position: 'FQLNTP,HCIUQQ'}
-    components:
-    - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: borrower.dashboard.extension_loan_request.RowTemplate37}
+    name: label_1
+    properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 20, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Extension Loans, tooltip: '', underline: true, visible: true}
+    type: Label
+  - components:
+    - layout_properties: {}
       name: repeating_panel_1
-      layout_properties: {}
-  - name: repeating_panel_2
+      properties: {item_template: borrower.dashboard.extension_loan_request.RowTemplate37, spacing_above: none, spacing_below: none}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'FQLNTP,HCIUQQ'}
+    name: data_grid_1
+    properties:
+      auto_header: true
+      background: ''
+      border: ''
+      columns:
+      - {$$hashKey: 'object:8993', data_key: column_1, id: RZABYV, title: Loan ID}
+      - {$$hashKey: 'object:8994', data_key: column_2, id: IYDVHH, title: Name}
+      - {$$hashKey: 'object:8995', data_key: column_3, id: GEVQOH, title: Loan Amount}
+      - {$$hashKey: 'object:9051', data_key: column_2, id: OEKFTT, title: Tenure}
+      - {$$hashKey: 'object:9053', data_key: column_4, id: QRAUJX, title: ''}
+      foreground: ''
+      role: null
+      rows_per_page: 20
+      show_page_controls: true
+      spacing_above: small
+      spacing_below: small
+      tooltip: ''
+      visible: false
+      wrap_on: never
+    type: DataGrid
+  - layout_properties: {grid_position: 'VGBDCC,NZWKZT'}
+    name: repeating_panel_2
     properties: {item_template: borrower.dashboard.extension_loan_request.ItemTemplate75, visible: true}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'VGBDCC,NZWKZT'}
-- type: FlowPanel
-  properties: {}
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
   name: navbar_links
-  layout_properties: {slot: nav-right}
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: ''}
+  type: HtmlTemplate
+is_package: true

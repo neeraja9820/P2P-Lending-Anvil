@@ -1,332 +1,332 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- type: form:borrower.dashboard.Navigation_form_dashboard
-  properties: {}
+- layout_properties: {full_width_row: true, grid_position: 'XGHWUA,TRGSNV'}
   name: navigation_form_dashboard_1
-  layout_properties: {grid_position: 'XGHWUA,TRGSNV', full_width_row: true}
-- type: Spacer
-  properties: {height: 27}
+  properties: {}
+  type: form:borrower.dashboard.Navigation_form_dashboard
+- layout_properties: {full_width_row: true, grid_position: 'GAQDQF,NOUIYL'}
   name: spacer_1
-  layout_properties: {grid_position: 'GAQDQF,NOUIYL', full_width_row: true}
-- name: column_panel_2
-  properties: {col_widths: '{"KUGKXP":10,"KALRBF":20,"RXBWZS":10,"OWAXPD":20,"XOGALD":10,"NNZQOO":20,"LHYLYO":10,"NVWVDR":20,"DQDPDF":10,"ZNDFAT":20,"POLCSO":15,"SPUPWO":30,"YOVGXH":10,"RVCDPS":20,"PTZDAZ":10,"GYLSZA":20,"WOSPEI":10,"XZXZPO":20,"UHZRVE":15,"ODCITM":30}', role: outlined-card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'JUBBHB,UXXWQH'}
-  components:
-  - name: label_9
-    properties: {text: Apply loan request, align: center, bold: true, role: outlined-card, spacing_below: large, font_size: 18, background: '#0b2547', foreground: white}
+  properties: {height: 27}
+  type: Spacer
+- components:
+  - layout_properties: {grid_position: 'OIZRHY,SEWUGD'}
+    name: label_9
+    properties: {align: center, background: '#0b2547', bold: true, font_size: 18, foreground: white, role: outlined-card, spacing_below: large, text: Apply loan request}
     type: Label
-    layout_properties: {grid_position: 'OIZRHY,SEWUGD'}
-  - type: Label
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: Product Group}
+  - layout_properties: {grid_position: 'URKLNA,KUGKXP'}
     name: label_1
-    layout_properties: {grid_position: 'URKLNA,KUGKXP'}
-  - type: DropDown
-    properties:
-      role: outlined
-      include_placeholder: true
-      bold: false
-      align: full
-      placeholder: Select Product Group
-      spacing_above: small
-      background: white
-      underline: false
-      font: ''
-      foreground: ''
-      items: ['']
-      spacing_below: none
-      visible: true
-      border: ''
-      italic: false
-      enabled: true
-      font_size: 14
-      tooltip: ''
-    name: name
-    layout_properties: {grid_position: 'URKLNA,KALRBF URSBEG,SDKAZZ'}
-    data_bindings: []
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Product Group, tooltip: '', underline: false, visible: true}
+    type: Label
+  - data_bindings: []
     event_bindings: {change: name_change}
-  - type: Label
-    properties: {role: null, bold: false, align: left, spacing_above: none, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
-    name: label_3
-    layout_properties: {grid_position: 'URKLNA,KALRBF XPIVEX,VEEKHR'}
-  - type: Label
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: Product Categories}
-    name: label_2
-    layout_properties: {grid_position: 'URKLNA,RXBWZS'}
-  - type: DropDown
+    layout_properties: {grid_position: 'URKLNA,KALRBF URSBEG,SDKAZZ'}
+    name: name
     properties:
-      role: outlined
-      include_placeholder: true
-      bold: false
       align: full
-      placeholder: Select Product Categories
-      spacing_above: small
       background: white
-      underline: false
+      bold: false
+      border: ''
+      enabled: true
       font: ''
+      font_size: 14
       foreground: ''
-      items: []
+      include_placeholder: true
+      italic: false
+      items: ['']
+      placeholder: Select Product Group
+      role: outlined
+      spacing_above: small
       spacing_below: none
-      visible: false
-      border: ''
-      italic: false
-      enabled: true
-      font_size: 14
       tooltip: ''
-    name: drop_down_2
-    layout_properties: {grid_position: 'URKLNA,OWAXPD XXLGSN,FBZEHB'}
-    event_bindings: {change: drop_down_2_change}
-  - type: Label
-    properties: {role: null, bold: false, align: left, spacing_above: none, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
-    name: label_4
-    layout_properties: {grid_position: 'URKLNA,OWAXPD VZBJZO,LMEYYP'}
-  - type: Label
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: Product Name}
-    name: label_6
-    layout_properties: {grid_position: 'PFWBDK,XOGALD'}
-  - type: DropDown
-    properties:
-      role: outlined
-      include_placeholder: true
-      bold: false
-      align: full
-      placeholder: Select Product Name
-      spacing_above: small
-      background: white
       underline: false
-      font: ''
-      foreground: ''
-      items: []
-      spacing_below: small
-      visible: false
+      visible: true
+    type: DropDown
+  - layout_properties: {grid_position: 'URKLNA,KALRBF XPIVEX,VEEKHR'}
+    name: label_3
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: none, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'URKLNA,RXBWZS'}
+    name: label_2
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Product Categories, tooltip: '', underline: false, visible: false}
+    type: Label
+  - event_bindings: {change: drop_down_2_change}
+    layout_properties: {grid_position: 'URKLNA,OWAXPD XXLGSN,FBZEHB'}
+    name: drop_down_2
+    properties:
+      align: full
+      background: white
+      bold: false
       border: ''
-      italic: false
       enabled: true
+      font: ''
       font_size: 14
+      foreground: ''
+      include_placeholder: true
+      italic: false
+      items: []
+      placeholder: Select Product Categories
+      role: outlined
+      spacing_above: small
+      spacing_below: none
       tooltip: ''
-    name: drop_down_1
+      underline: false
+      visible: false
+    type: DropDown
+  - layout_properties: {grid_position: 'URKLNA,OWAXPD VZBJZO,LMEYYP'}
+    name: label_4
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: none, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
+    type: Label
+  - layout_properties: {grid_position: 'PFWBDK,XOGALD'}
+    name: label_6
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Product Name, tooltip: '', underline: false, visible: false}
+    type: Label
+  - event_bindings: {change: drop_down_1_change}
     layout_properties: {grid_position: 'PFWBDK,NNZQOO IUXTWB,GOLIWQ'}
-    event_bindings: {change: drop_down_1_change}
-  - type: Label
-    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
+    name: drop_down_1
+    properties:
+      align: full
+      background: white
+      bold: false
+      border: ''
+      enabled: true
+      font: ''
+      font_size: 14
+      foreground: ''
+      include_placeholder: true
+      italic: false
+      items: []
+      placeholder: Select Product Name
+      role: outlined
+      spacing_above: small
+      spacing_below: small
+      tooltip: ''
+      underline: false
+      visible: false
+    type: DropDown
+  - layout_properties: {grid_position: 'PFWBDK,NNZQOO CJTIWA,HRTEVZ'}
     name: label_7
-    layout_properties: {grid_position: 'PFWBDK,NNZQOO CJTIWA,HRTEVZ'}
-  - type: Label
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: Product Description}
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
+    type: Label
+  - layout_properties: {grid_position: 'PFWBDK,LHYLYO'}
     name: label_8
-    layout_properties: {grid_position: 'PFWBDK,LHYLYO'}
-  - name: product_description_label
-    properties: {foreground: black, background: white, visible: false, auto_expand: false, font_size: 14, role: outlined}
-    type: TextArea
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Product Description, tooltip: '', underline: false, visible: false}
+    type: Label
+  - event_bindings: {change: product_description_label_change}
     layout_properties: {grid_position: 'PFWBDK,NVWVDR'}
-    event_bindings: {change: product_description_label_change}
-  - name: link_2
+    name: product_description_label
+    properties: {auto_expand: false, background: white, font_size: 14, foreground: black, role: outlined, visible: false}
+    type: TextArea
+  - event_bindings: {}
+    layout_properties: {grid_position: 'WWIXSP,VTNYQO'}
+    name: link_2
     properties: {align: center, text: Enter values, visible: false}
     type: Link
-    layout_properties: {grid_position: 'WWIXSP,VTNYQO'}
-    event_bindings: {}
-  - name: label_20
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: Processing fee(%)}
+  - layout_properties: {grid_position: 'BXKFIB,PTZDAZ'}
+    name: label_20
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Processing fee(%), tooltip: '', underline: false, visible: false}
     type: Label
-    layout_properties: {grid_position: 'BXKFIB,PTZDAZ'}
-  - name: label_21
+  - layout_properties: {grid_position: 'BXKFIB,GYLSZA'}
+    name: label_21
     properties: {role: outlined, visible: false}
     type: TextBox
-    layout_properties: {grid_position: 'BXKFIB,GYLSZA'}
-  - name: label_4_copy
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: Interest Rate (%)}
+  - layout_properties: {grid_position: 'BXKFIB,WOSPEI'}
+    name: label_4_copy
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Interest Rate (%), tooltip: '', underline: false, visible: false}
     type: Label
-    layout_properties: {grid_position: 'BXKFIB,WOSPEI'}
-  - name: label_7_copy
+  - layout_properties: {grid_position: 'BXKFIB,XZXZPO'}
+    name: label_7_copy
     properties: {role: outlined, visible: false}
     type: TextBox
-    layout_properties: {grid_position: 'BXKFIB,XZXZPO'}
-  - name: label_2_copy
-    properties: {role: title, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: right, foreground: '', spacing_below: none, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: Loan Amount}
+  - layout_properties: {grid_position: 'NFDDRK,DQDPDF'}
+    name: label_2_copy
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: right, italic: false, role: title, spacing_above: small, spacing_below: none, text: Loan Amount, tooltip: '', underline: false, visible: false}
     type: Label
-    layout_properties: {grid_position: 'NFDDRK,DQDPDF'}
-  - name: loan_amount_tb
-    properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: white, type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: none, visible: false, border: '', italic: false, enabled: true, font_size: 15, tooltip: '', text: ''}
-    type: TextBox
+  - event_bindings: {change: loan_amount_tb_change}
     layout_properties: {grid_position: 'NFDDRK,ZNDFAT WSXCLO,ULMVFY'}
-    event_bindings: {change: loan_amount_tb_change}
-  - name: label_22
-    properties: {role: null, bold: false, align: left, spacing_above: none, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 12, tooltip: '', text: ''}
-    type: Label
-    layout_properties: {grid_position: 'NFDDRK,ZNDFAT SGPLEJ,OAZFWI'}
-  - name: label_3_copy
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: none, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: Loan Period(months)}
-    type: Label
-    layout_properties: {grid_position: 'NFDDRK,YOVGXH'}
-  - name: text_box_1
-    properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: white, type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: false, border: '', italic: false, enabled: true, font_size: 14, tooltip: '', text: ''}
+    name: loan_amount_tb
+    properties: {align: left, background: white, bold: false, border: '', enabled: true, font: '', font_size: 15, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: none, text: '', tooltip: '', type: text, underline: false, visible: false}
     type: TextBox
+  - layout_properties: {grid_position: 'NFDDRK,ZNDFAT SGPLEJ,OAZFWI'}
+    name: label_22
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 12, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: none, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
+    type: Label
+  - layout_properties: {grid_position: 'NFDDRK,YOVGXH'}
+    name: label_3_copy
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: none, text: Loan Period(months), tooltip: '', underline: false, visible: false}
+    type: Label
+  - event_bindings: {change: text_box_1_change}
     layout_properties: {grid_position: 'NFDDRK,RVCDPS JWMVNR,JQHGTX'}
-    event_bindings: {change: text_box_1_change}
-  - name: label_23
-    properties: {role: null, bold: false, align: left, spacing_above: none, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
+    name: text_box_1
+    properties: {align: left, background: white, bold: false, border: '', enabled: true, font: '', font_size: 14, foreground: '', hide_text: false, italic: false, placeholder: '', role: outlined, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: false}
+    type: TextBox
+  - layout_properties: {grid_position: 'NFDDRK,RVCDPS POMCBU,MLDZSD'}
+    name: label_23
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: none, spacing_below: small, text: '', tooltip: '', underline: false, visible: false}
     type: Label
-    layout_properties: {grid_position: 'NFDDRK,RVCDPS POMCBU,MLDZSD'}
-  - name: label_39
-    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: 14, tooltip: '', text: 'Select EMI Payment Type '}
+  - layout_properties: {grid_position: 'IWGMLE,POLCSO'}
+    name: label_39
+    properties: {align: left, background: '', bold: true, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Select EMI Payment Type ', tooltip: '', underline: false, visible: false}
     type: Label
-    layout_properties: {grid_position: 'IWGMLE,POLCSO'}
-  - name: drop_down_3
-    properties: {font_size: 14, background: white, role: outlined, foreground: black, placeholder: Select the EMI type, include_placeholder: true, visible: false}
-    type: DropDown
+  - event_bindings: {change: drop_down_3_change}
     layout_properties: {grid_position: 'IWGMLE,SPUPWO RLGOWQ,FLCFYF'}
-    event_bindings: {change: drop_down_3_change}
-  - name: label_24
-    properties: {role: null, bold: false, align: left, spacing_above: none, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+    name: drop_down_3
+    properties: {background: white, font_size: 14, foreground: black, include_placeholder: true, placeholder: Select the EMI type, role: outlined, visible: false}
+    type: DropDown
+  - layout_properties: {grid_position: 'IWGMLE,SPUPWO WFGFWO,TSCTBB'}
+    name: label_24
+    properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: none, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'IWGMLE,SPUPWO WFGFWO,TSCTBB'}
-  - name: spacer_2
+  - layout_properties: {grid_position: 'IWGMLE,UHZRVE'}
+    name: spacer_2
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'IWGMLE,UHZRVE'}
-  - name: spacer_3
+  - layout_properties: {grid_position: 'IWGMLE,ODCITM'}
+    name: spacer_3
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'IWGMLE,ODCITM'}
-  - name: link_1
-    properties: {text: View Loan Summary, align: center, bold: true, visible: false}
-    type: Link
-    layout_properties: {grid_position: 'NCBAUO,AOCWVD'}
+  - components: []
     event_bindings: {click: link_1_click}
-    components: []
-- name: column_panel_3
-  properties: {visible: false}
+    layout_properties: {grid_position: 'NCBAUO,AOCWVD'}
+    name: link_1
+    properties: {align: center, bold: true, text: View Loan Summary, visible: false}
+    type: Link
+  layout_properties: {grid_position: 'JUBBHB,UXXWQH'}
+  name: column_panel_2
+  properties: {col_widths: '{"KUGKXP":10,"KALRBF":20,"RXBWZS":10,"OWAXPD":20,"XOGALD":10,"NNZQOO":20,"LHYLYO":10,"NVWVDR":20,"DQDPDF":10,"ZNDFAT":20,"POLCSO":15,"SPUPWO":30,"YOVGXH":10,"RVCDPS":20,"PTZDAZ":10,"GYLSZA":20,"WOSPEI":10,"XZXZPO":20,"UHZRVE":15,"ODCITM":30}', role: outlined-card}
   type: ColumnPanel
-  layout_properties: {grid_position: 'QVUJAP,UIAWTW'}
-  components:
-  - name: grid_panel_2
-    properties: {spacing_above: small, spacing_below: small, background: '', foreground: '', border: '', visible: true, role: outlined-card, tooltip: ''}
-    type: GridPanel
-    layout_properties: {grid_position: 'COPWUE,AKZGJB'}
-    components:
-    - name: label_26
-      properties: {role: null, bold: true, align: center, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Loan summary}
+- components:
+  - components:
+    - layout_properties: {col_xs: 0, row: LIJSZJ, width: 645, width_xs: 12}
+      name: label_26
+      properties: {align: center, background: '#0b2547', bold: true, border: '', font: '', font_size: 18, foreground: 'theme:On Primary', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Loan summary, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: LIJSZJ, width_xs: 12, col_xs: 0, width: 645}
-    - name: label_27
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: Loan Amount}
+    - layout_properties: {col_xs: 3, row: OTEILU, width_xs: 2}
+      name: label_27
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Loan Amount, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: OTEILU, width_xs: 2, col_xs: 3}
-    - name: label_28
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
+    - layout_properties: {col_xs: 6, row: OTEILU, width: 157.1, width_xs: 3}
+      name: label_28
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: OTEILU, width_xs: 3, col_xs: 6, width: 157.1}
-    - name: label_29
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: Total Interest Amount}
+    - layout_properties: {col_xs: 3, row: FHKFTV, width: 157.1, width_xs: 3}
+      name: label_29
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Total Interest Amount, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: FHKFTV, width_xs: 3, col_xs: 3, width: 157.1}
-    - name: label_30
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
+    - layout_properties: {col_xs: 6, row: FHKFTV, width: 157.1, width_xs: 3}
+      name: label_30
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: FHKFTV, width_xs: 3, col_xs: 6, width: 157.1}
-    - name: label_31
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: Processing fee Amount}
+    - layout_properties: {col_xs: 3, row: YFKQRV, width: 157.1, width_xs: 3}
+      name: label_31
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Processing fee Amount, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: YFKQRV, width_xs: 3, col_xs: 3, width: 157.1}
-    - name: label_32
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
+    - layout_properties: {col_xs: 6, row: YFKQRV, width: 157.1, width_xs: 3}
+      name: label_32
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: YFKQRV, width_xs: 3, col_xs: 6, width: 157.1}
-    - name: label_35
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: EMI Payment}
+    - layout_properties: {col_xs: 3, row: YXRTVR, width: 157.1, width_xs: 3}
+      name: label_35
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: EMI Payment, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: YXRTVR, width_xs: 3, col_xs: 3, width: 157.1}
-    - name: label_36
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
+    - layout_properties: {col_xs: 6, row: YXRTVR, width: 157.1, width_xs: 3}
+      name: label_36
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: YXRTVR, width_xs: 3, col_xs: 6, width: 157.1}
-    - name: label_33
-      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: Total Repayment Amount}
+    - layout_properties: {col_xs: 3, row: ZRTKDP, width_xs: 3}
+      name: label_33
+      properties: {align: left, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Total Repayment Amount, tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: ZRTKDP, width_xs: 3, col_xs: 3}
-    - name: label_34
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
+    - layout_properties: {col_xs: 6, row: ZRTKDP, width: 157.1, width_xs: 3}
+      name: label_34
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 14, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
       type: Label
-      layout_properties: {row: ZRTKDP, width_xs: 3, col_xs: 6, width: 157.1}
-    - name: label_5_copy
-      properties: {align: left, text: The processing fees are added when you pay the total amount via EMI, foreground: 'theme:Error', font_size: 13, bold: false, italic: true, icon: 'fa:info-circle'}
+    - data_bindings: []
+      layout_properties: {col_xs: 3, row: DAWCPT, width_xs: 6}
+      name: label_5_copy
+      properties: {align: left, bold: false, font_size: 13, foreground: 'theme:Error', icon: 'fa:info-circle', italic: true, text: The processing fees are added when you pay the total amount via EMI}
       type: Label
-      layout_properties: {row: DAWCPT, width_xs: 6, col_xs: 3}
-      data_bindings: []
-    - name: link_3
+    - event_bindings: {click: link_3_click}
+      layout_properties: {col_xs: 0, row: DGIELU, width_xs: 12}
+      name: link_3
       properties: {align: center, text: View Payment details}
       type: Link
-      layout_properties: {row: DGIELU, width_xs: 12, col_xs: 0}
-      event_bindings: {click: link_3_click}
-- name: column_panel_1
+    layout_properties: {grid_position: 'COPWUE,AKZGJB'}
+    name: grid_panel_2
+    properties: {background: '', border: '', foreground: '', role: outlined-card, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+    type: GridPanel
+  layout_properties: {grid_position: 'QVUJAP,UIAWTW'}
+  name: column_panel_3
   properties: {visible: false}
   type: ColumnPanel
-  layout_properties: {grid_position: 'ZBGOFM,TASTWQ'}
-  components:
-  - name: label_2_copy_2
-    properties: {role: outlined-card, bold: true, align: center, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: ' Payment Details'}
+- components:
+  - layout_properties: {grid_position: 'SRVXLO,AYVSAE'}
+    name: label_2_copy_2
+    properties: {align: center, background: '#0b2547', bold: true, border: '', font: '', font_size: 18, foreground: white, icon: '', icon_align: left, italic: false, role: outlined-card, spacing_above: small, spacing_below: small, text: ' Payment Details', tooltip: '', underline: false, visible: true}
     type: Label
-    layout_properties: {grid_position: 'SRVXLO,AYVSAE'}
-  - name: column_panel_1_copy
-    properties: {role: elevated-card, col_widths: '{"FZKRQG":8,"MBXDYI":8,"KIRZBV":8,"YVAEBM":10,"BRIQUB":10,"SGTBFZ":8,"ITEJNG":8}', background: 'theme:Secondary Container'}
-    type: ColumnPanel
+  - components:
+    - layout_properties: {full_width_row: true, grid_position: 'CORNNT,FZKRQG'}
+      name: label_3_copy_2
+      properties: {align: left, font_size: 14, text: EMI Number}
+      type: Label
+    - layout_properties: {grid_position: 'CORNNT,MBXDYI'}
+      name: label_5_copy_2
+      properties: {font_size: 14, text: Beginning Balance}
+      type: Label
+    - layout_properties: {grid_position: 'CORNNT,YVAEBM'}
+      name: label_9_copy
+      properties: {font_size: 14, text: Principal Amount}
+      type: Label
+    - layout_properties: {grid_position: 'CORNNT,SGTBFZ'}
+      name: label_10
+      properties: {font_size: 14, text: Interest Amount}
+      type: Label
+    - layout_properties: {grid_position: 'CORNNT,ITEJNG'}
+      name: label_11
+      properties: {font_size: 14, text: Processing Fee}
+      type: Label
+    - layout_properties: {grid_position: 'CORNNT,KIRZBV'}
+      name: label_8_copy
+      properties: {font_size: 14, text: Total EMI Payment}
+      type: Label
+    - layout_properties: {grid_position: 'CORNNT,BRIQUB'}
+      name: label_12
+      properties: {font_size: 14, text: Ending Balance}
+      type: Label
     layout_properties: {grid_position: 'XVSPHP,PDGFIR'}
-    components:
-    - name: label_3_copy_2
-      properties: {align: left, text: EMI Number, font_size: 14}
-      type: Label
-      layout_properties: {grid_position: 'CORNNT,FZKRQG', full_width_row: true}
-    - name: label_5_copy_2
-      properties: {text: Beginning Balance, font_size: 14}
-      type: Label
-      layout_properties: {grid_position: 'CORNNT,MBXDYI'}
-    - name: label_9_copy
-      properties: {text: Principal Amount, font_size: 14}
-      type: Label
-      layout_properties: {grid_position: 'CORNNT,YVAEBM'}
-    - name: label_10
-      properties: {text: Interest Amount, font_size: 14}
-      type: Label
-      layout_properties: {grid_position: 'CORNNT,SGTBFZ'}
-    - name: label_11
-      properties: {text: Processing Fee, font_size: 14}
-      type: Label
-      layout_properties: {grid_position: 'CORNNT,ITEJNG'}
-    - name: label_8_copy
-      properties: {text: Total EMI Payment, font_size: 14}
-      type: Label
-      layout_properties: {grid_position: 'CORNNT,KIRZBV'}
-    - name: label_12
-      properties: {text: Ending Balance, font_size: 14}
-      type: Label
-      layout_properties: {grid_position: 'CORNNT,BRIQUB'}
-  - name: repeating_panel_1
+    name: column_panel_1_copy
+    properties: {background: 'theme:Secondary Container', col_widths: '{"FZKRQG":8,"MBXDYI":8,"KIRZBV":8,"YVAEBM":10,"BRIQUB":10,"SGTBFZ":8,"ITEJNG":8}', role: elevated-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'ROQIFB,JACCUK'}
+    name: repeating_panel_1
     properties: {item_template: borrower.dashboard.apply_loan_request.ItemTemplate116}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'ROQIFB,JACCUK'}
-- name: submit
-  properties:
-    role: null
-    bold: false
-    align: center
-    spacing_above: small
-    background: '#05264d'
-    icon: fa:angle-double-right
-    underline: false
-    font: ''
-    icon_align: left
-    foreground: theme:On Primary
-    spacing_below: small
-    visible: false
-    border: ''
-    italic: false
-    enabled: true
-    font_size: null
-    tooltip: ''
-    text: "Send Request \n"
-  type: Button
+  layout_properties: {grid_position: 'ZBGOFM,TASTWQ'}
+  name: column_panel_1
+  properties: {visible: false}
+  type: ColumnPanel
+- event_bindings: {click: submit_click}
   layout_properties: {grid_position: 'EHMRGI,ODGGIJ'}
-  event_bindings: {click: submit_click}
+  name: submit
+  properties:
+    align: center
+    background: '#05264d'
+    bold: false
+    border: ''
+    enabled: true
+    font: ''
+    font_size: null
+    foreground: theme:On Primary
+    icon: fa:angle-double-right
+    icon_align: left
+    italic: false
+    role: null
+    spacing_above: small
+    spacing_below: small
+    text: "Send Request \n"
+    tooltip: ''
+    underline: false
+    visible: false
+  type: Button
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

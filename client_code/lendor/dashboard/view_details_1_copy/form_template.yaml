@@ -1,96 +1,96 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- name: column_panel_1
-  properties: {background: '#Edf0f4'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'NJQNVU,RIMCNG', full_width_row: true}
-  components:
-  - type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'TUHEWT,YNBOIN'}
     name: navigation_bar_lender_dashbord_1
-    layout_properties: {grid_position: 'TUHEWT,YNBOIN', full_width_row: true}
-  - name: label_3
-    properties: {text: View Details, bold: true, font_size: 30, align: center}
+    properties: {}
+    type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
+  - layout_properties: {grid_position: 'YSBCDH,HOTHOD'}
+    name: label_3
+    properties: {align: center, bold: true, font_size: 30, text: View Details}
     type: Label
-    layout_properties: {grid_position: 'YSBCDH,HOTHOD'}
-  - name: spacer_4
+  - layout_properties: {grid_position: 'LACDGY,HHVTXF'}
+    name: spacer_4
     properties: {height: '15'}
     type: Spacer
-    layout_properties: {grid_position: 'LACDGY,HHVTXF'}
-  - name: label_7
-    properties: {text: '  Borrower Full Name:', bold: true, role: input-prompt}
+  - layout_properties: {grid_position: 'UCREEW,ZUOPMO'}
+    name: label_7
+    properties: {bold: true, role: input-prompt, text: '  Borrower Full Name:'}
     type: Label
-    layout_properties: {grid_position: 'UCREEW,ZUOPMO'}
-  - name: label_8
-    properties: {bold: true, text: '  Loan Amount:', role: input-prompt}
+  - layout_properties: {grid_position: 'UCREEW,WGCIGK'}
+    name: label_8
+    properties: {bold: true, role: input-prompt, text: '  Loan Amount:'}
     type: Label
-    layout_properties: {grid_position: 'UCREEW,WGCIGK'}
-  - name: loan_id_label
-    properties: {role: outlined-card, border: 2px solid lightgrey}
+  - layout_properties: {grid_position: 'DPPCNI,FPJRJI CUHSTS,NUNQBH'}
+    name: loan_id_label
+    properties: {border: 2px solid lightgrey, role: outlined-card}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,FPJRJI CUHSTS,NUNQBH'}
-  - name: label_11
-    properties: {bold: true, text: '  Intrest Rate:', role: input-prompt}
+  - layout_properties: {grid_position: 'DPPCNI,FPJRJI ZGGUQU,ULUMGC'}
+    name: label_11
+    properties: {bold: true, role: input-prompt, text: '  Intrest Rate:'}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,FPJRJI ZGGUQU,ULUMGC'}
-  - name: interest_rate_label
-    properties: {role: outlined-card, border: 2px solid lightgrey}
+  - layout_properties: {grid_position: 'DPPCNI,FPJRJI QCISCA,RNSBBF'}
+    name: interest_rate_label
+    properties: {border: 2px solid lightgrey, role: outlined-card}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,FPJRJI QCISCA,RNSBBF'}
-  - name: label_12
-    properties: {bold: true, text: '  Date Of Apply:', font_size: null, role: input-prompt}
+  - layout_properties: {grid_position: 'DPPCNI,FPJRJI HPDTEB,HHMVLV'}
+    name: label_12
+    properties: {bold: true, font_size: null, role: input-prompt, text: '  Date Of Apply:'}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,FPJRJI HPDTEB,HHMVLV'}
-  - name: date_of_apply_label
-    properties: {role: outlined-card, border: 2px solid lightgrey}
-    type: Label
+  - data_bindings: []
     layout_properties: {grid_position: 'DPPCNI,FPJRJI NYUVID,PEAPOV'}
-    data_bindings: []
-  - name: loan_amount_label
-    properties: {role: outlined-card, border: 2px solid lightgrey}
+    name: date_of_apply_label
+    properties: {border: 2px solid lightgrey, role: outlined-card}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,CDNBJI NPUKNU,ELOCDT'}
-  - name: label_10
-    properties: {bold: true, text: '  Tenure:', role: input-prompt}
+  - layout_properties: {grid_position: 'DPPCNI,CDNBJI NPUKNU,ELOCDT'}
+    name: loan_amount_label
+    properties: {border: 2px solid lightgrey, role: outlined-card}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,CDNBJI ZIRVXD,OGJFQW'}
-  - name: tenure_label
-    properties: {role: outlined-card, border: "2px solid \t#D3D3D3"}
+  - layout_properties: {grid_position: 'DPPCNI,CDNBJI ZIRVXD,OGJFQW'}
+    name: label_10
+    properties: {bold: true, role: input-prompt, text: '  Tenure:'}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,CDNBJI AQXULH,YAVQDV'}
-  - name: label_2
-    properties: {bold: true, text: '  Loan Updated Status:', role: input-prompt}
+  - layout_properties: {grid_position: 'DPPCNI,CDNBJI AQXULH,YAVQDV'}
+    name: tenure_label
+    properties: {border: "2px solid \t#D3D3D3", role: outlined-card}
     type: Label
-    layout_properties: {grid_position: 'DPPCNI,CDNBJI RNXUAO,SPPTVU'}
-  - name: loan_updated_status_label
-    properties: {role: outlined-card, background: '', border: 2px solid lightgrey}
+  - layout_properties: {grid_position: 'DPPCNI,CDNBJI RNXUAO,SPPTVU'}
+    name: label_2
+    properties: {bold: true, role: input-prompt, text: '  Loan Updated Status:'}
     type: Label
+  - data_bindings:
+    - {code: 'self.item[''loan_updated_status'']', property: text, writeback: false}
     layout_properties: {grid_position: 'DPPCNI,CDNBJI OGUOEV,MDMFST'}
-    data_bindings:
-    - {property: text, code: 'self.item[''loan_updated_status'']', writeback: false}
-  - name: spacer_3
+    name: loan_updated_status_label
+    properties: {background: '', border: 2px solid lightgrey, role: outlined-card}
+    type: Label
+  - layout_properties: {grid_position: 'SCBTDV,DIZRLM'}
+    name: spacer_3
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'SCBTDV,DIZRLM'}
-  - type: Link
-    properties: {role: null, bold: true, align: center, col_widths: '', spacing_above: small, background: '', icon: '', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: blue, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 22, tooltip: '', text: View Payment Details Here}
-    name: link_1
-    layout_properties: {grid_position: 'MTOSDQ,XOFDRE'}
-    event_bindings: {click: link_1_click}
-    components:
-    - name: spacer_5
+  - components:
+    - layout_properties: {grid_position: 'OJWYVL,PNYFGJ'}
+      name: spacer_5
       properties: {height: 32}
       type: Spacer
-      layout_properties: {grid_position: 'OJWYVL,PNYFGJ'}
-  - name: button_1
-    properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#0b2547', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-    type: Button
+    event_bindings: {click: link_1_click}
+    layout_properties: {grid_position: 'MTOSDQ,XOFDRE'}
+    name: link_1
+    properties: {align: center, background: '', bold: true, border: '', col_spacing: medium, col_widths: '', font: '', font_size: 22, foreground: blue, icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: View Payment Details Here, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: button_1_click}
     layout_properties: {grid_position: 'FPCHMK,VVBMBZ'}
-    event_bindings: {click: button_1_click}
-  - name: spacer_6
+    name: button_1
+    properties: {align: center, background: '#0b2547', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
+    type: Button
+  - layout_properties: {grid_position: 'UAVJTK,AOQVMV'}
+    name: spacer_6
     properties: {height: '350'}
     type: Spacer
-    layout_properties: {grid_position: 'UAVJTK,AOQVMV'}
+  layout_properties: {full_width_row: true, grid_position: 'NJQNVU,RIMCNG'}
+  name: column_panel_1
+  properties: {background: '#Edf0f4'}
+  type: ColumnPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true

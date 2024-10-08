@@ -1,39 +1,39 @@
-container:
-  type: ColumnPanel
-  properties: {col_widths: '{}'}
 components:
-- name: content_panel
-  properties: {role: null, col_widths: '{}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'KHVPST,EVIYBM', full_width_row: true}
-  components:
-  - type: form:admin.dashboard.home_button_admin
-    properties: {}
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'LMMSHE,TXGFPS'}
     name: home_button_admin_1
-    layout_properties: {grid_position: 'LMMSHE,TXGFPS', full_width_row: true}
-  - name: button_1_copy
-    properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+    properties: {}
+    type: form:admin.dashboard.home_button_admin
+  - event_bindings: {click: button_1_copy_click}
+    layout_properties: {full_width_row: true, grid_position: 'UJNESR,RHIGQG'}
+    name: button_1_copy
+    properties: {align: right, background: '#05264d', bold: true, border: '', enabled: true, font: '16', font_size: null, foreground: 'theme:On Primary', icon: 'fa:backward', icon_align: left, italic: false, role: elevated-button, spacing_above: small, spacing_below: small, text: Back, tooltip: '', underline: false, visible: true}
     type: Button
-    layout_properties: {grid_position: 'UJNESR,RHIGQG', full_width_row: true}
-    event_bindings: {click: button_1_copy_click}
-  - name: label_1
-    properties: {text: View Default loans, align: center, bold: true, role: title}
+  - layout_properties: {full_width_row: true, grid_position: 'GOWIXX,ODBIYG'}
+    name: label_1
+    properties: {align: center, bold: true, role: title, text: View Default loans}
     type: Label
-    layout_properties: {grid_position: 'GOWIXX,ODBIYG', full_width_row: true}
-  - name: spacer_1
+  - layout_properties: {full_width_row: true, grid_position: 'ZBOYIL,NSMNRQ'}
+    name: spacer_1
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'ZBOYIL,NSMNRQ', full_width_row: true}
-  - name: repeating_panel_1
+  - layout_properties: {full_width_row: true, grid_position: 'ZSBBEQ,KVLXAI'}
+    name: repeating_panel_1
     properties: {item_template: admin.dashboard.loan_management.view_loans.default_loans.ItemTemplate123}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'ZSBBEQ,KVLXAI', full_width_row: true}
-  - name: repeating_panel_3
+  - layout_properties: {full_width_row: true, grid_position: 'ZSBBEQ,JOLVKK'}
+    name: repeating_panel_3
     properties: {item_template: admin.dashboard.loan_management.view_loans.default_loans.ItemTemplate124}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'ZSBBEQ,JOLVKK', full_width_row: true}
-  - name: repeating_panel_2
+  - layout_properties: {grid_position: 'VZDZFF,DGFOSF'}
+    name: repeating_panel_2
     properties: {item_template: admin.dashboard.loan_management.view_loans.default_loans.ItemTemplate32, visible: false}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'VZDZFF,DGFOSF'}
+  layout_properties: {full_width_row: true, grid_position: 'KHVPST,EVIYBM'}
+  name: content_panel
+  properties: {background: '', border: '', col_spacing: medium, col_widths: '{}', foreground: '', role: null, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+  type: ColumnPanel
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
 is_package: true
